@@ -1,0 +1,91 @@
+﻿{
+    "generated_at":  "2026-09-24T14:24:52.0309132Z",
+    "mission":  "CONSOLIDACAO_INTEGRACAO_VALIDACAO_INTEGRAL_DO_SISTEMA",
+    "terminal_state":  "MISSION_PROVEN",
+    "scope":  "Canonical Windows deployment; OpenAI/Ollama/llama.cpp live inference, Linux and DISTRIBUTED_HA remain NAO_COMPROVADA",
+    "canonical_root":  "C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0",
+    "runtime_profile":  "V5.5-PRIMARY",
+    "release_channel":  "MEMORIA_PERMANENTE_CANONICAL_1.0",
+    "version":  "0.29.2",
+    "code_commit":  "9da2146db0742948c7d60c74fbf4319bdbf896b0",
+    "code_tag":  "MEMORIA_PERMANENTE_CANONICAL_1.0_MISSION_CODE_20260924",
+    "final_wheel_sha256":  "ad22cdb56ef23bc445ebc029f25fc342e65dda2e7a2e319a53013dbb5be64695",
+    "inventory":  {
+                      "source_python_modules":  54,
+                      "test_files":  76,
+                      "migrations":  54,
+                      "api_routes":  115,
+                      "GET":  56,
+                      "POST":  58,
+                      "PATCH":  1,
+                      "agents":  4,
+                      "skills":  6,
+                      "postgresql":  "18.6",
+                      "pgvector":  "0.8.6",
+                      "runtime_python":  "3.13.15",
+                      "api_ports":  [
+                                        8787,
+                                        8790
+                                    ],
+                      "workers":  [
+                                      "conversation_ingestion",
+                                      "embedding"
+                                  ]
+                  },
+    "database_counts":  {
+                            "memory_items":  426,
+                            "memory_versions":  431,
+                            "checkpoints":  28,
+                            "session_checkpoints":  11,
+                            "retrieval_traces":  336,
+                            "experience_graph_nodes":  18,
+                            "experience_graph_edges":  15,
+                            "operational_proofs":  4,
+                            "operational_skill_versions":  2,
+                            "integrity_manifests":  1,
+                            "integrity_anchor_events":  2,
+                            "audit_events":  1575
+                        },
+    "tests":  {
+                  "full_pytest":  "340 passed, 2 POSIX-only skipped, 0 failed",
+                  "security":  "74 passed",
+                  "cognitive":  "67 passed",
+                  "providers_adapters":  "25 passed",
+                  "v55":  "4 passed",
+                  "packaging":  "1 passed",
+                  "ruff":  "PASS",
+                  "compileall":  "PASS",
+                  "pip_check":  "PASS",
+                  "secret_scan":  "PASS, 0 confirmed secrets",
+                  "pip_audit":  "PASS, 62 third-party dependencies, 0 known vulnerabilities"
+              },
+    "e2e":  [
+                "V5.5 conformance PASS and restart_recovery_verified=true",
+                "Agent+Skill E2E PASS and restart_verified=true",
+                "Learning REPLAY+RECOVERY -\u003e proof-engine PROVEN",
+                "MCP Inspector 2.5.0 tools/call real PASS",
+                "Encrypted backup + isolated restore + pg_amcheck + erasure replay PASS",
+                "M16 Ed25519 audit-chain anchor create/verify PASS",
+                "Final wheel installed and post-promotion regression PASS"
+            ],
+    "not_proven":  [
+                       "OpenAI live inference",
+                       "Ollama live inference",
+                       "llama.cpp live inference",
+                       "Linux runtime proof",
+                       "DISTRIBUTED_HA"
+                   ],
+    "remaining_risks":  [
+                            "PostgreSQL physical storage remains under legacy-named MEMORIA-PERMANENTE path",
+                            "Historical V4/V5.x scripts may encode old topology assumptions",
+                            "One Starlette/anyio TestClient deprecation warning",
+                            "Original lost Git objects unavailable without authoritative external copy"
+                        ],
+    "evidence":  {
+                     "report_md":  "evidence/INTEGRAL_SYSTEM_CONSOLIDATION_MISSION_PROVEN_20260924.md",
+                     "vulnerability_audit":  "evidence/CANONICAL_VULNERABILITY_AUDIT_20260924.json",
+                     "v55":  "evidence/MEMORIA_PERMANENTE_CANONICAL_1_0_LIVE_RUNTIME_PROOF.json",
+                     "agent_skill":  "evidence/AGENT_SKILL_E2E_PROOF_20260905.json",
+                     "secret_scan":  "evidence/CANONICAL_SECRET_SCAN.json"
+                 }
+}
