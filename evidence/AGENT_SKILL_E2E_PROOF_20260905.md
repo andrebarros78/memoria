@@ -4,8 +4,8 @@ Result: **PASS**
 
 Agents loaded: **4/4**
 Skills callable: **6/6**
-E2E item: `mem-d76e8ef469054cebab7635d121d9ae55`
-Retrieval trace: `trace-09c6b4b725aa4d168bc6768d5d413d2e`
+E2E item: `mem-fda4072428ce4422829f89b7a5bb3736`
+Retrieval trace: `trace-f0a6341df2a849c8b45a1d343ec6c7e1`
 Restart persistence: **PASS**
 
 ## Chain

@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-09-24T15:13:02.857668+00:00",
+  "result": "PASS",
+  "change": "REMOVE_CONCRETE_LLM_INFERENCE_FROM_MEMORY_CORE",
+  "version": "0.29.3",
+  "code_commit": "7088f09a92a76b34921872ba29cacc17f7e50818",
+  "code_tag": "MEMORIA_PERMANENTE_CANONICAL_1.0_CORE_BOUNDARY_0.29.3_20260924",
+  "wheel_sha256": "bb7e7a5ab0d0116706cf4f293f31c42eb53592cb239c3c97a3b14227272f29cc",
+  "core_boundary": {
+    "provider_adapter_module_installed": false,
+    "concrete_llm_markers_in_core": 0,
+    "concrete_llm_markers_in_wheel": 0,
+    "legacy_packaged_in_wheel": false,
+    "external_llm_inference_owned_by_core": false,
+    "official_adapters": [
+      "REST_OPENAPI",
+      "MCP",
+      "MEMORY_CLIENT",
+      "AI_INTEGRATION",
+      "CONVERSATIONAL"
+    ],
+    "legacy_path": "legacy/provider_integrations"
+  },
+  "moved_to_legacy": [
+    "provider_adapter.py",
+    "finalize_gate_m2.py",
+    "prove_gate_m2_provider_swap.py",
+    "prove_gate_m6_provider_substitution.py",
+    "test_provider_adapter.py"
+  ],
+  "tests": {
+    "full_regression": "340 passed, 2 POSIX-only skipped, 0 failed",
+    "security_regression": "101 passed, 0 failed",
+    "external_ai_boundary": "3 passed",
+    "ruff": "PASS",
+    "compileall": "PASS",
+    "pip_check_isolated": "PASS",
+    "secret_scan_staged": "PASS / 0 confirmed secrets"
+  },
+  "runtime": {
+    "ports": [
+      8787,
+      8790
+    ],
+    "health": "ok",
+    "runtime_profile": "V5.5-PRIMARY",
+    "release_channel": "MEMORIA_PERMANENTE_CANONICAL_1.0",
+    "v55_conformance_compatible": true,
+    "restart_recovery_verified": true,
+    "agent_skill_restart_verified": true,
+    "source_python_modules": 53,
+    "installed_python_modules": 53,
+    "postgresql": "18.6",
+    "pgvector": "0.8.6",
+    "migrations": 54
+  },
+  "principle": "External AI/LLM systems consume Memoria Permanente through governed integration; the sovereign memory core does not own concrete LLM inference."
+}

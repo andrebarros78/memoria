@@ -1,7 +1,7 @@
 {
   "result": "PASS",
   "mode": "CREATE_AND_RETRIEVE",
-  "generated_at": "2026-09-24T12:44:47.086943+00:00",
+  "generated_at": "2026-09-24T15:04:51.085513+00:00",
   "runtime_health": {
     "status": "ok",
     "service": "MEMORIA-PERMANENTE",
@@ -18,12 +18,12 @@
   },
   "agents": {
     "memory_steward": {
-      "procedure_id": "procedure-12f456e38cef76242b99",
-      "sha256": "12f456e38cef76242b99ef436ebf06e25f8ae462685855ba800cfcc5f3365e9f"
+      "procedure_id": "procedure-814dab1570e038f323d1",
+      "sha256": "814dab1570e038f323d1921f70354b2883c9d57d2af074e468d7deb854d7782a"
     },
     "memory_evolution_capacity": {
       "capacity_state": "NORMAL",
-      "free_ratio": 0.5687149181653817,
+      "free_ratio": 0.5561211410588303,
       "evolution_status": "DENY",
       "evolution_reasons": [
         "BACKUP_FAILED",
@@ -48,7 +48,7 @@
         "temporal_violation_rate": 0.0,
         "authority_violation_rate": 0.0
       },
-      "trace_id": "trace-42a88d00794a41a4b13fd9d3fcb2e2a6"
+      "trace_id": "trace-94d2c65a5a824aa0b072467277ead542"
     }
   },
   "skills": [
@@ -97,34 +97,34 @@
   ],
   "e2e": {
     "tenant": "LEGACY",
-    "namespace": "AGENT_SKILL_E2E_PROOF_4595F569B4604F01",
-    "mission_id": "mission:agent-skill-e2e:4595F569B4604F01",
-    "checkpoint_id": "cp-agent-skill-e2e-4595F569B4604F01",
+    "namespace": "AGENT_SKILL_E2E_PROOF_BC6EB3340D11404E",
+    "mission_id": "mission:agent-skill-e2e:BC6EB3340D11404E",
+    "checkpoint_id": "cp-agent-skill-e2e-BC6EB3340D11404E",
     "checkpoint_result": {
-      "checkpoint_id": "cp-agent-skill-e2e-4595F569B4604F01",
-      "namespace": "AGENT_SKILL_E2E_PROOF_4595F569B4604F01",
-      "mission_id": "mission:agent-skill-e2e:4595F569B4604F01",
+      "checkpoint_id": "cp-agent-skill-e2e-BC6EB3340D11404E",
+      "namespace": "AGENT_SKILL_E2E_PROOF_BC6EB3340D11404E",
+      "mission_id": "mission:agent-skill-e2e:BC6EB3340D11404E",
       "project_id": null,
       "step_index": 1,
       "state": {
         "phase": "E2E_CREATED",
-        "item_id": "mem-d76e8ef469054cebab7635d121d9ae55",
-        "token": "vault://memory/legacy/da2a0b3d83a2f53ac6459cbe"
+        "item_id": "mem-fda4072428ce4422829f89b7a5bb3736",
+        "token": "vault://memory/legacy/e5f500f765ed82fd498b0007"
       },
-      "state_sha256": "e8474433b89bd820fc8a55a5b5ec2bccae8916fbf7cbe7bbee76e9dd85db4d5a",
-      "created_at": "2026-09-24T12:44:48.126731+00:00",
-      "occurred_at": "2026-09-24T12:44:48.126710+00:00",
-      "observed_at": "2026-09-24T12:44:48.126710+00:00",
-      "valid_from": "2026-09-24T12:44:48.126710+00:00",
+      "state_sha256": "5a7aa7c0aca0106a6b2ab95972451cfd2d0a8e67654b80cc44b867eabf080f96",
+      "created_at": "2026-09-24T15:04:51.319681+00:00",
+      "occurred_at": "2026-09-24T15:04:51.319666+00:00",
+      "observed_at": "2026-09-24T15:04:51.319666+00:00",
+      "valid_from": "2026-09-24T15:04:51.319666+00:00",
       "valid_to": null,
       "late_arrival": false,
       "version": "BT-1.0.0"
     },
-    "item_id": "mem-d76e8ef469054cebab7635d121d9ae55",
-    "token": "AGENT-SKILL-E2E-4595F569B4604F01",
-    "retrieval_trace_id": "trace-09c6b4b725aa4d168bc6768d5d413d2e",
+    "item_id": "mem-fda4072428ce4422829f89b7a5bb3736",
+    "token": "AGENT-SKILL-E2E-BC6EB3340D11404E",
+    "retrieval_trace_id": "trace-f0a6341df2a849c8b45a1d343ec6c7e1",
     "selected_item_ids": [
-      "mem-d76e8ef469054cebab7635d121d9ae55"
+      "mem-fda4072428ce4422829f89b7a5bb3736"
     ]
   },
   "restart_verified": true,
@@ -136,10 +136,10 @@
   },
   "restart_verification": {
     "memory_versions": 1,
-    "checkpoint_id": "cp-agent-skill-e2e-4595F569B4604F01",
-    "retrieval_trace_id": "trace-22af37ff005c4b169555c5d141d109e5",
+    "checkpoint_id": "cp-agent-skill-e2e-BC6EB3340D11404E",
+    "retrieval_trace_id": "trace-d5b5bcc32e3a425390b87f9639745e37",
     "selected_item_ids": [
-      "mem-d76e8ef469054cebab7635d121d9ae55"
+      "mem-fda4072428ce4422829f89b7a5bb3736"
     ]
   }
 }
