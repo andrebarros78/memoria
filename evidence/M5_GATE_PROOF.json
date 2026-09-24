@@ -1,0 +1,145 @@
+{
+  "generated_at": "2026-09-01T13:41:31",
+  "gate": "M5",
+  "tenant": "TENANT_M5_BD072AAE83",
+  "namespace": "M5_MULTIAGENT_BD072AAE83",
+  "item_ids": {
+    "AGENT_PRIVATE": "mem-fc60d7fceb894063899bf8ff74bc11ca",
+    "AGENT_TEAM": "mem-e5f25f04d8c141e18df6b2c25b40bb02",
+    "PROJECT_SHARED": "mem-184ee3770eb84b5e9bfde49ea5771114",
+    "ORGANIZATION_SHARED": "mem-8223e3c85b4f4f3995fa2821c98b055a",
+    "PRIVATE_USER": "mem-a6953ba4b91b435ba221a4936f6b6eb9",
+    "SYSTEM_SHARED": "mem-9a40c83848d54b4f8312825c5c3ab3e3"
+  },
+  "concurrency_item_id": "mem-e856ad2b684f4c7d9751cefb175e9a0e",
+  "visibility": {
+    "A": {
+      "AGENT_PRIVATE": true,
+      "AGENT_TEAM": true,
+      "PROJECT_SHARED": true,
+      "ORGANIZATION_SHARED": true,
+      "PRIVATE_USER": true,
+      "SYSTEM_SHARED": true
+    },
+    "B": {
+      "AGENT_PRIVATE": false,
+      "AGENT_TEAM": true,
+      "PROJECT_SHARED": true,
+      "ORGANIZATION_SHARED": true,
+      "PRIVATE_USER": false,
+      "SYSTEM_SHARED": true
+    },
+    "C": {
+      "AGENT_PRIVATE": false,
+      "AGENT_TEAM": false,
+      "PROJECT_SHARED": false,
+      "ORGANIZATION_SHARED": false,
+      "PRIVATE_USER": false,
+      "SYSTEM_SHARED": true
+    }
+  },
+  "concurrency_results": [
+    {
+      "worker": "worker-a",
+      "status": 409,
+      "body": {
+        "detail": "expected_version=1 current_version=2 item_id=mem-e856ad2b684f4c7d9751cefb175e9a0e"
+      }
+    },
+    {
+      "worker": "worker-b",
+      "status": 201,
+      "body": {
+        "item_id": "mem-e856ad2b684f4c7d9751cefb175e9a0e",
+        "version_id": "ver-cc1bfd667d284d598f163f4495980ad1",
+        "version_no": 2,
+        "status": "REVISED"
+      }
+    }
+  ],
+  "lease": {
+    "first": {
+      "tenant_id": "TENANT_M5_BD072AAE83",
+      "lease_key": "m5-job-BD072AAE83",
+      "owner_agent_id": "agent-a",
+      "lease_version": 1,
+      "fencing_token": 1,
+      "expires_at": "2026-09-01T13:42:30.474099-03:00",
+      "updated_at": "2026-09-01T13:41:30.465852-03:00"
+    },
+    "blocked_status": 409,
+    "second": {
+      "tenant_id": "TENANT_M5_BD072AAE83",
+      "lease_key": "m5-job-BD072AAE83",
+      "owner_agent_id": "agent-b",
+      "lease_version": 2,
+      "fencing_token": 2,
+      "expires_at": "2026-09-01T13:42:31.275858-03:00",
+      "updated_at": "2026-09-01T13:41:31.266512-03:00"
+    },
+    "stale_status": 409
+  },
+  "worker_exit": 0,
+  "worker_stdout_tail": "{\"ts\": 1788280883.7145925, \"model_id\": \"sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2\", \"dimensions\": 384, \"jobs\": 7, \"embedded\": 7, \"failed\": 0, \"errors\": []}\n",
+  "outbox": {
+    "events": 2,
+    "outbox": 2
+  },
+  "audit": {
+    "ok": true,
+    "errors": [],
+    "events": 3232,
+    "head": "8fa8c2cafa38842a2690c98f79e3e1ac99709a1946f45f343c9403c94ada531f",
+    "resealed": true,
+    "reseal_seq": 3261,
+    "sealed_until_seq": 3260,
+    "legacy_manifest_root": "63b391508976de8b1cb64bf650944f823705bf9c3c63a4ab3ff56a4e61bba144",
+    "legacy_manifest_matches_seal": true,
+    "legacy_fork_group_count": 17,
+    "legacy_fork_event_count": 40,
+    "legacy_invalid_hash": [],
+    "legacy_missing_parent": [],
+    "strict_chain_from_seq": 3261,
+    "strict_errors": []
+  },
+  "checks": {
+    "A_AGENT_PRIVATE_VISIBILITY": true,
+    "A_AGENT_TEAM_VISIBILITY": true,
+    "A_PROJECT_SHARED_VISIBILITY": true,
+    "A_ORGANIZATION_SHARED_VISIBILITY": true,
+    "A_PRIVATE_USER_VISIBILITY": true,
+    "A_SYSTEM_SHARED_VISIBILITY": true,
+    "B_AGENT_PRIVATE_VISIBILITY": true,
+    "B_AGENT_TEAM_VISIBILITY": true,
+    "B_PROJECT_SHARED_VISIBILITY": true,
+    "B_ORGANIZATION_SHARED_VISIBILITY": true,
+    "B_PRIVATE_USER_VISIBILITY": true,
+    "B_SYSTEM_SHARED_VISIBILITY": true,
+    "C_AGENT_PRIVATE_VISIBILITY": true,
+    "C_AGENT_TEAM_VISIBILITY": true,
+    "C_PROJECT_SHARED_VISIBILITY": true,
+    "C_ORGANIZATION_SHARED_VISIBILITY": true,
+    "C_PRIVATE_USER_VISIBILITY": true,
+    "C_SYSTEM_SHARED_VISIBILITY": true,
+    "A_PRIVATE_CONTEXT_VISIBLE": true,
+    "B_PRIVATE_CONTEXT_BLOCKED": true,
+    "DB_RLS_A_SEES_PRIVATE": true,
+    "DB_RLS_B_CANNOT_SEE_PRIVATE": true,
+    "CONCURRENCY_ONE_SUCCESS_ONE_409": true,
+    "CONCURRENCY_EXACTLY_TWO_VERSIONS": true,
+    "LEASE_A_ACQUIRED": true,
+    "LEASE_B_BLOCKED_WHILE_A_ACTIVE": true,
+    "LEASE_A_RELEASED": true,
+    "LEASE_B_ACQUIRED_AFTER_RELEASE": true,
+    "FENCING_TOKEN_MONOTONIC": true,
+    "STALE_FENCING_REJECTED": true,
+    "OUTBOX_MATCHES_MEMORY_EVENTS": true,
+    "AGENT_POLICY_INSTALLED": true,
+    "ALL_SIX_SCOPES_PERSISTED": true,
+    "LEASE_DB_FINAL_OWNER_B": true,
+    "AUDIT_CHAIN_OK": true
+  },
+  "failed_checks": [],
+  "GATE_M5": "PASS",
+  "MULTIAGENT_PROVEN": true
+}

@@ -1,0 +1,42 @@
+﻿{
+    "schema":  "memoria-permanente.post-baseline-attestation.v1",
+    "generated_at":  "2026-09-06T12:07:07.114739-03:00",
+    "release_version":  "0.28.1",
+    "functional_line":  "V5.3",
+    "source_baseline_tag":  "baseline-0.28.1",
+    "source_baseline_commit":  "a00b7ec6664251e41456770d5ef7e70ff384aaaf",
+    "intended_tag":  "v5.3-agent-skill-restart-proven-20260906",
+    "delta":  {
+                  "file":  "evidence/AGENT_SKILL_E2E_PROOF_20260905.json",
+                  "sha256":  "ebafaf61b01b026500cda76776b2b7bb766d05c874d6bf718ac194a835376217",
+                  "change":  "restart retrieval trace refreshed by explicit E2E verification",
+                  "software_code_changed":  false
+              },
+    "verification":  {
+                         "agent_skill_e2e_result":  "PASS",
+                         "restart_verified":  true,
+                         "tenant":  "LEGACY",
+                         "retrieval_trace_id":  "trace-3f8ea9f2fc3a47c9b7596d9e948dd112",
+                         "retrieval_trace_persisted":  true,
+                         "retrieval_trace_created_at":  "2026-09-06T12:01:09.25273-03:00",
+                         "retrieval_traces_visible_in_tenant":  157,
+                         "pytest_passed":  319,
+                         "pytest_skipped":  2,
+                         "pytest_failed":  0,
+                         "compileall":  "PASS",
+                         "migration_immutability":  "PASS",
+                         "db_migrations":  51,
+                         "migration_files_matched":  51,
+                         "migration_files_missing":  0,
+                         "migration_checksum_mismatches":  0,
+                         "git_diff_check":  "PASS",
+                         "live_runtime_profile":  "V5.3-PRIMARY",
+                         "live_release_channel":  "v5.3-primary-promoted"
+                     },
+    "governance":  {
+                       "semantic_version_bumped":  false,
+                       "rationale":  "Evidence-only refresh does not change public software behavior; preserve 0.28.1 and immutable baseline-0.28.1.",
+                       "baseline_tag_moved":  false
+                   },
+    "result":  "PASS_READY_FOR_COMMIT"
+}

@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-09-04T04:03:09.305515+00:00",
+  "run": "20260904T035248Z-fabd22f9",
+  "canary_item_id": "mem-ef22a43121c644f29f729e44ee0a2d91",
+  "backup_id": "p18-pre-erasure-20260904T035248Z-fabd22f9",
+  "erasure_id": "ler-bcc6ba8b91e94e7687922ee12bafd6ed",
+  "restore_database": "memory_restore_p18",
+  "checks": {
+    "MIGRATIONS_38_SOURCE": true,
+    "M12_PROVEN": true,
+    "P18_PROVEN": true,
+    "AUDIT_CHAIN_VALID": true,
+    "LEDGER_CHAIN_VALID": true,
+    "LEDGER_ITEM_ID_BLINDED": true,
+    "LEDGER_CANARY_BLINDED": true,
+    "SOURCE_NO_CANARY": true,
+    "RESTORE_NO_CANARY": true,
+    "RESTORE_REPLAY_PASS": true,
+    "MINIMAL_TOMBSTONE": true,
+    "BACKUP_AES_256_GCM": true,
+    "BACKUP_KEY_SHREDDED": true,
+    "MANIFEST_NO_CANARY": true,
+    "MANIFEST_NO_ITEM_ID": true,
+    "NO_PLAINTEXT_DUMPS": true
+  },
+  "failed_checks": [],
+  "RESTORE_ERASURE_NO_RESURRECTION": "PASS",
+  "P18_STATUS": "PROVEN",
+  "M12_STATUS": "PROVEN"
+}

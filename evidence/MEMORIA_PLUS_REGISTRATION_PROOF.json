@@ -1,0 +1,175 @@
+{
+  "generated_at": "2026-09-01T19:31:40.903994+00:00",
+  "tag": "MEMORIA PLUS",
+  "document": "C:\\New Projet\\MEMORIA-PERMANENTE\\docs\\MEMORIA_PLUS_PRIORIDADES_CORRECAO.md",
+  "document_sha256": "198574e52f4b9e0c156f9f3d3e87f8b88136f7ebec4396c88730b8ebf7c65078",
+  "priorities_registered": 18,
+  "manifest_item_id": "mem-900c60e620db481891267028f011556b",
+  "items": [
+    {
+      "rank": 1,
+      "priority": "P0",
+      "memory_key": "memoria-plus.priority.01",
+      "item_id": "mem-df8cb25aaea840a2a9a66e7e5a401d68",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "28d350b2e22f95f605ccb5abb74314c7ee4a9d565ccc8d00482ae3159904953c"
+    },
+    {
+      "rank": 2,
+      "priority": "P0",
+      "memory_key": "memoria-plus.priority.02",
+      "item_id": "mem-646c862e4910400fbcf2f1a91868eb1d",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "0f03e3e2f6e603dd83f3efaf54878a57c84e861080676573d5ff1ce00388e95d"
+    },
+    {
+      "rank": 3,
+      "priority": "P0",
+      "memory_key": "memoria-plus.priority.03",
+      "item_id": "mem-bb20a5a895fe4574bb3e4dbcbd5886d5",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "aa6094d90313ac2d637741bcd332a25a5c5f35ef2bb9b4507fadbea878feb090"
+    },
+    {
+      "rank": 4,
+      "priority": "P0",
+      "memory_key": "memoria-plus.priority.04",
+      "item_id": "mem-954f8f4fde484b26bc789c57c58cb312",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "db21c44ab2fd82d3cef4e136c86f4558984f71cc911a9b7f363921f67e55135d"
+    },
+    {
+      "rank": 5,
+      "priority": "P0",
+      "memory_key": "memoria-plus.priority.05",
+      "item_id": "mem-89026d1b43e74430b3cface0783a2e89",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "448e5fc5f8d8f4dbcd450ec1d294a6729cacf8baccd2491430bb29c30632895b"
+    },
+    {
+      "rank": 6,
+      "priority": "P0",
+      "memory_key": "memoria-plus.priority.06",
+      "item_id": "mem-300aad836c4e42469bb4a1a54f605d44",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "0e7bf8b426db9bdf283d3bef57f1f0a184b0fcfcf05513fe19c318943c0c1b00"
+    },
+    {
+      "rank": 7,
+      "priority": "P1",
+      "memory_key": "memoria-plus.priority.07",
+      "item_id": "mem-13bcc829a54f471c83b6308d2f5d21c1",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "993c0a87f3ad620f6db84cf5ed3e1335b8b8fd9d291a54608b88d3de342b77aa"
+    },
+    {
+      "rank": 8,
+      "priority": "P1",
+      "memory_key": "memoria-plus.priority.08",
+      "item_id": "mem-ee578288d2494b1eb6b8eddb3c51eb7f",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "0b64e908d5f20885bd721fea1ae5e5c3a4818e3e180e972aa995661b8e6c5d5a"
+    },
+    {
+      "rank": 9,
+      "priority": "P1",
+      "memory_key": "memoria-plus.priority.09",
+      "item_id": "mem-6653b33ec15f40c5988101ec7d94bd7e",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "e0d4f49b71957231b0b6a1e2a82ca56131347b72358467e3cc9c57c44227c965"
+    },
+    {
+      "rank": 10,
+      "priority": "P1",
+      "memory_key": "memoria-plus.priority.10",
+      "item_id": "mem-8e7e9c426bf84801bc59c152ca8da461",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "601c0ed8f2af6e8df68bce9ee16f98eacd9fd0bcd2a53c8d9365c23afe3dda78"
+    },
+    {
+      "rank": 11,
+      "priority": "P1",
+      "memory_key": "memoria-plus.priority.11",
+      "item_id": "mem-48633165d1be4a999f61830d9d82a312",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "2c2a1f94ed1a67b47601a3f0a660c733a486ef891f0d26541fb8752e8b2aff79"
+    },
+    {
+      "rank": 12,
+      "priority": "P1",
+      "memory_key": "memoria-plus.priority.12",
+      "item_id": "mem-c63e61b83b46471aa8791d4707a87ea8",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "2770388ae3da646aa925fdeb965175c21539c56d703f6cccfe6789f950886a65"
+    },
+    {
+      "rank": 13,
+      "priority": "P2",
+      "memory_key": "memoria-plus.priority.13",
+      "item_id": "mem-40d6ba435bc3405991d68cc303814b12",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "2d76ef38628986414ec12916439e1902bdd6b7dd36f7d5321d8d09b75f1cdade"
+    },
+    {
+      "rank": 14,
+      "priority": "P2",
+      "memory_key": "memoria-plus.priority.14",
+      "item_id": "mem-ce5d6cb61a1e43f2978e3cd12d9af01b",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "bfe0f25c65b507338e951293c966959145d7d73f5d6b71a245d2e94c555fcf34"
+    },
+    {
+      "rank": 15,
+      "priority": "P2",
+      "memory_key": "memoria-plus.priority.15",
+      "item_id": "mem-0a43c85342cb4776ad5d96353898bb92",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "1aa27557537a6f2f8309dc737efd5c683337d9fcbe6096d22cc023e4de5811fe"
+    },
+    {
+      "rank": 16,
+      "priority": "P2",
+      "memory_key": "memoria-plus.priority.16",
+      "item_id": "mem-98f8398da299407597fd40463301d39e",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "628ac7090c41e46e93d1faa8e61174d5de2d69822dd1a2798de687a53f549774"
+    },
+    {
+      "rank": 17,
+      "priority": "P2",
+      "memory_key": "memoria-plus.priority.17",
+      "item_id": "mem-147d8c7bf6514a3e89dfe15eaff580ba",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "662d0db78134c2d21eab1ac62b9418305fc07c60f8e46e63e982e73ec9693f24"
+    },
+    {
+      "rank": 18,
+      "priority": "P2",
+      "memory_key": "memoria-plus.priority.18",
+      "item_id": "mem-02c2025f40384ed5abadabc4a113829c",
+      "version_count": 1,
+      "latest_version": 1,
+      "latest_content_sha256": "729f6c9b3c57c9d7ef71c3da7ef3c582bebbf845d1dc8f27298d576220e8fe15"
+    }
+  ],
+  "all_unvalidated_by_design": true,
+  "governor_eligible": false,
+  "registration": "PASS"
+}

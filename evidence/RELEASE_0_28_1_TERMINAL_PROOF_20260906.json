@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "release": "0.28.1",
+  "date_brasilia": "2026-09-06",
+  "technical_status": "PASS",
+  "technical_commit": "1c2a56cd44a530cfb3029cca9f01d9c2c0e4533d",
+  "technical_tree": "87e515a8bb490b728569358189a2797bc3a514d7",
+  "runtime": {
+    "profile": "V5.3-PRIMARY",
+    "release_channel": "v5.3-primary-promoted",
+    "health": "ok",
+    "api_version": "0.28.1",
+    "isolated_python": true,
+    "python_flag_I": true,
+    "package_location": "runtime/api-clean/Lib/site-packages",
+    "database_role": "memory_app",
+    "database_role_privileged": false,
+    "postgresql": "18.6",
+    "pgvector": "0.8.6",
+    "migration_count": 51,
+    "latest_migration": "0051_reserved_system_and_restore_gate_hardening"
+  },
+  "release_artifact": {
+    "wheel": "memoria_permanente-0.28.1-py3-none-any.whl",
+    "sha256": "75282d46a34f44c95323697f450d0ea56e44492650494e5e4f7d8920fe371ab7",
+    "forbidden_entries": 0,
+    "migration_files": 51,
+    "resource_check": "PASS"
+  },
+  "regression": {
+    "compile": "PASS",
+    "ruff": "PASS",
+    "mypy": "PASS",
+    "bandit": "PASS",
+    "pytest_passed": 318,
+    "pytest_skipped_expected": 2,
+    "pytest_warning": "third-party Starlette/AnyIO deprecation warning only",
+    "pip_check_dev": "PASS",
+    "pip_audit_dev": "PASS",
+    "pip_check_api_clean": "PASS",
+    "pip_check_auditor": "PASS",
+    "powershell_parse": "PASS",
+    "git_diff_check": "PASS",
+    "tracked_secret_scan": "PASS"
+  },
+  "live_security": {
+    "hmac_authentication": "12/12 PASS",
+    "cross_tenant_security_definer": "PASS SQLSTATE 42501",
+    "reserved_system_boundary": "PASS",
+    "restore_gate_runtime_denied": "PASS SQLSTATE 42501",
+    "derived_artifact_boundary": "PASS",
+    "retrieval_auditor": {
+      "verdict": "PASS",
+      "pass_rate": 1.0,
+      "scope_leaks": 0,
+      "api_failures": 0,
+      "conflicts": 0,
+      "phoenix_health": true,
+      "evidence_sha256": "571e82e40807e19b4700bcc5042f5d33e750ac9f83b8d7035e31655863d44199"
+    }
+  },
+  "continuity": {
+    "backup_id": "v52-20260906T144714Z-3d89d37a",
+    "cipher": "AES-256-GCM",
+    "ciphertext_sha256": "88c1c3a971f1f34f8de7091105b7757b14f918e7cf3d5f68bf7cce80bb19b715",
+    "backup_manifest_sha256": "8b64a313c4a1aed61064489a6859f375630df80b249bed59bcd58807e86fc4ca",
+    "plaintext_retained": false,
+    "restore": "PASS",
+    "pg_amcheck": "PASS",
+    "audit_chain_ok": true,
+    "audit_events": 349,
+    "erasure_replay": "PASS",
+    "restart_persistence": "PASS",
+    "agent_skill_restart_verified": true
+  },
+  "evidence_hashes": {
+    "agent_skill_e2e": "1d434ec867c818588b3cbb37e9d9901629363533e5123952cdd5e5b851097d72",
+    "security_auth": "4dbe378ce8498196f48e3fa0a9fd33131d4ba64a6cf705361103318f3ddd8ed7",
+    "reserved_system": "2c840bf2025199c6c540ab802c9ec8d0863385049f88822a71e7d41a66592122",
+    "derived_artifact": "fa316df9cb2ee6f52fe66b241d828dabc5448cd38b1d4c1713c754daf0abdeab",
+    "terminal_agent_evolution": "c4c96b3079cbfa402a592d2de96e00391e569074cbee693440dd9f3e19019854",
+    "recovery": "b442cfd97a2f7c2d225e57b3d18fe8bd14e4a51696cf460b23c2771eabeaadcc"
+  },
+  "defense_in_depth": [
+    "HMAC-SHA256 authentication with anti-replay nonces and scoped capabilities",
+    "Read-only browser bearer sessions with mutation denial",
+    "PostgreSQL RLS tenant isolation",
+    "Reserved __SYSTEM__ context denial for runtime role",
+    "SECURITY DEFINER tenant-boundary wrappers with safe search_path",
+    "Least-privilege non-superuser memory_app database runtime",
+    "Derived-artifact no-direct-write boundary",
+    "Loopback/origin validation and redirect denial for signed clients",
+    "HTTP request/response size limits and fail-closed network policy",
+    "DPAPI-backed credential protection and secret sanitization",
+    "Isolated production wheel execution with Python -I and no inherited PYTHONPATH",
+    "Encrypted AES-256-GCM backup with authenticated manifest and no plaintext retention",
+    "Audit chain, Phoenix/OpenTelemetry observability and OPA retrieval-quality gate",
+    "Static analysis, dependency integrity, vulnerability audit, regression and recovery testing"
+  ],
+  "security_statement": "No claim of absolute invulnerability is made. The validated controls reduce attack surface using defense in depth and Zero Trust principles.",
+  "mission_decision_condition": "MISSION_PROVEN is valid when baseline-0.28.1 points to the documentary evidence commit containing this file, git worktree is clean, and the canonical isolated runtime remains healthy."
+}

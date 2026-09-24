@@ -1,0 +1,23 @@
+﻿{
+    "product":  "MEMORIA_PERMANENTE_CANONICAL_1.0",
+    "baseline_class":  "EXCLUSIVE_CONVERGENCE_BASELINE",
+    "status":  "REGISTERED_NOT_YET_SCOPE_SEALED",
+    "registered_at":  "2026-09-08T12:30:00.4056194-03:00",
+    "development_environment":  "PC CASA - Windows 11",
+    "canonical_worktree":  "C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0",
+    "source_repository":  "C:\\New Projet\\MEMORIA-PERMANENTE",
+    "source_branch":  "v5.3-primary-20260904",
+    "source_head":  "9701e124a19bfda03048abbaa671b4bfdc2d6d9a",
+    "source_runtime_profile":  "V5.5-PRIMARY",
+    "source_package_version":  "0.29.1",
+    "source_wheel_sha256":  "423600d63a16100b28c52344a37090e75ca90948574f30920abeebad1bdbe21e",
+    "canonical_branch":  "canonical/memoria-permanente-1.0",
+    "canonical_tag":  "MEMORIA_PERMANENTE_CANONICAL_1.0_BASELINE",
+    "rules":  [
+                  "PC CASA Windows 11 is the sovereign development and consolidation environment.",
+                  "Legacy V4/V5.x runtimes remain preserved until convergence, validation, rollback proof and scope seal.",
+                  "Linux is a legacy-data source and portability/validation target, not canonical source code.",
+                  "This registration is a convergence baseline, not final MISSION_PROVEN release.",
+                  "No previous history, database, evidence or rollback asset is deleted by this registration."
+              ]
+}

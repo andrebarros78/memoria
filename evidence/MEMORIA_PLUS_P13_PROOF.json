@@ -1,0 +1,73 @@
+{
+  "result": "PASS",
+  "failed": [],
+  "checks": {
+    "api_0_21_0": true,
+    "economic_spec_requires_auth": true,
+    "economic_spec_em_1_0_0": true,
+    "economic_domain_complete": true,
+    "mission_checkpoint_created": true,
+    "evidence_memory_created": true,
+    "sovereign_decision_created": true,
+    "experience_evidence_node": true,
+    "experience_intervention_node": true,
+    "experience_result_node": true,
+    "graph_edge_evidence_decision": true,
+    "graph_edge_decision_intervention": true,
+    "graph_edge_intervention_result": true,
+    "product_created": true,
+    "sku_created_with_product_parent": true,
+    "campaign_created": true,
+    "ad_created_with_campaign_parent": true,
+    "invalid_economic_parent_rejected": true,
+    "inventory_state_created": true,
+    "margin_state_created": true,
+    "capital_state_created": true,
+    "economic_result_created": true,
+    "five_attribution_snapshots": true,
+    "attribution_weight_total_exact": true,
+    "decision_attribution_snapshot_exact": true,
+    "experience_result_binding_exact": true,
+    "source_evidence_revised_after_result": true,
+    "attribution_snapshot_survives_source_revision": true,
+    "economic_result_hidden_before_persistence": true,
+    "economic_result_visible_after_persistence": true,
+    "schema_memory_0_21_0": true,
+    "schema_em_1_0_0": true,
+    "bitemporal_bt_1_0_0_preserved": true,
+    "migration_0028_exact": true,
+    "economic_tables_force_rls": true,
+    "economic_security_triggers_enabled": true,
+    "direct_economic_insert_rejected": true,
+    "economic_append_only_rejected": true,
+    "over_attribution_rejected": true,
+    "wrong_experience_attribution_type_rejected": true
+  },
+  "run": "B8B05DD334",
+  "mission_id": "P13-ECO-B8B05DD334",
+  "decision_id": "dec-6e22dd2da04d4303a8f1f2b5c3344264",
+  "economic_result_id": "ecr-643c5ffcfd2b41bbaf3a9f42199e2123",
+  "entities": {
+    "product": "eco-829d60887adf4b34b00f8cf860c52dd0",
+    "sku": "eco-a0ee16f03bbc4e42a2c3deb2d503e163",
+    "campaign": "eco-9dba7190009848239b5d67f99b4f5b78",
+    "ad": "eco-153c2939358d42b9b392ad3bb554087f"
+  },
+  "states": {
+    "inventory": "ecs-f98e1cdc9d4f4fc3ad6f958773c527e4",
+    "margin": "ecs-d1ef6ab1d33b4e44abe93355a23a8b14",
+    "capital": "ecs-96e37ad3587a4560b13247718a8e6d3a"
+  },
+  "experience": {
+    "evidence": "egn-a69e5a8ad0ca4a43ab8dbf1de136cc85",
+    "decision": "egn-c06c191e22654d119b33926e373f52cf",
+    "intervention": "egn-2d229deed956425e854cc954837098bb",
+    "result": "egn-1c2876d71961456499e66f3f9041a74b"
+  },
+  "schema": {
+    "schema_version": "memory-0.21.0",
+    "economic_memory_version": "EM-1.0.0",
+    "bitemporal_version": "BT-1.0.0"
+  },
+  "migration_0028_sha256": "6bbd7623c8b46409287f2897f634b9ffd4035694920d1250d041ee7ab71414f3"
+}

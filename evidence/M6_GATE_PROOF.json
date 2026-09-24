@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-08-26T20:02:47-0300",
+  "gate": "M6",
+  "GATE_M6": "PASS",
+  "criterion": "Two independent ProviderAdapter runtimes consume the same sovereign Context Pack without memory migration; provider authentication is external to Memory Core.",
+  "providers": [
+    "ollama",
+    "llama.cpp"
+  ],
+  "context_pack_id": "ctx-a2b67dd58d0741b58599b51b65420e67",
+  "context_sha256": "83086e3c3389fe30e6d17a09488f1af4050b9d398c90c96a3eb651d29a8abb94",
+  "checkpoint_id": "scp-3287acd4afa440f49c9c4934f1cffe5e",
+  "required_memory_ids": [
+    "mem-d07c313f1c6b4e7fb67ed4f743344bb9",
+    "mem-fb29eaebdb1d4a198ca855fc3bc0a00c"
+  ],
+  "probes": {
+    "ollama": {
+      "provider": "ollama",
+      "reachable": true,
+      "models": [
+        "gemma4:12b",
+        "qwen2.5-coder:3b"
+      ],
+      "model_available": true,
+      "latency_ms": 3.583
+    },
+    "llama.cpp": {
+      "provider": "llama.cpp",
+      "reachable": true,
+      "model": "qwen2.5-coder:3b",
+      "latency_ms": 2.073,
+      "credential_required_by_memory": false
+    }
+  },
+  "observations": {
+    "ollama": {
+      "provider": "ollama",
+      "model": "qwen2.5-coder:3b",
+      "external_session_ref": "ollama:qwen2.5-coder:3b:5cf701ca8fdb447cbb9db0c393974b59",
+      "context_sha256": "83086e3c3389fe30e6d17a09488f1af4050b9d398c90c96a3eb651d29a8abb94",
+      "checkpoint_id": "scp-3287acd4afa440f49c9c4934f1cffe5e",
+      "required_memory_ids": [
+        "mem-d07c313f1c6b4e7fb67ed4f743344bb9",
+        "mem-fb29eaebdb1d4a198ca855fc3bc0a00c"
+      ],
+      "objective": "Prove sovereign session survives a real Memory API restart without context loss.",
+      "raw_response_sha256": "9bccfa1c09c48d2312d69a7e198ab1f70256c137a2ebc857d0275cbee4f3ceeb",
+      "latency_ms": 3931.46,
+      "metadata": {
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 193,
+        "prompt_eval_count": 269
+      }
+    },
+    "llama.cpp": {
+      "provider": "llama.cpp",
+      "model": "qwen2.5-coder:3b",
+      "external_session_ref": "chatcmpl-kqYvwpcRPuqpWBPNP6XT0ibjdSDdvnIB",
+      "context_sha256": "83086e3c3389fe30e6d17a09488f1af4050b9d398c90c96a3eb651d29a8abb94",
+      "checkpoint_id": "scp-3287acd4afa440f49c9c4934f1cffe5e",
+      "required_memory_ids": [
+        "mem-d07c313f1c6b4e7fb67ed4f743344bb9",
+        "mem-fb29eaebdb1d4a198ca855fc3bc0a00c"
+      ],
+      "objective": "Prove sovereign session survives a real Memory API restart without context loss.",
+      "raw_response_sha256": "d1f54db5e7d62eda8c783492fce57f8edc8a039f714536a17642e35c0d85794b",
+      "latency_ms": 33416.714,
+      "metadata": {
+        "prompt_tokens": 258,
+        "completion_tokens": 197,
+        "credential_required_by_memory": false
+      }
+    }
+  },
+  "errors": {},
+  "before": {
+    "memories": 441,
+    "schema": "memory-0.8.0"
+  },
+  "after": {
+    "memories": 441,
+    "schema": "memory-0.8.0"
+  },
+  "checks": {
+    "M2_CONTINUITY_BASELINE_PASS": true,
+    "MEMORY_API_HEALTHY": true,
+    "CONTEXT_PACK_PRESENT": true,
+    "PROVIDER_IDS_DISTINCT": true,
+    "OLLAMA_REACHABLE": true,
+    "LLAMACPP_REACHABLE": true,
+    "OLLAMA_USED_SAME_MEMORY": true,
+    "LLAMACPP_USED_SAME_MEMORY": true,
+    "BOTH_OBSERVED_SAME_CONTEXT_HASH": true,
+    "BOTH_OBSERVED_SAME_CHECKPOINT": true,
+    "BOTH_OBSERVED_SAME_REQUIRED_IDS": true,
+    "BOTH_OBSERVED_SAME_OBJECTIVE": true,
+    "NO_PROVIDER_API_KEY_REQUIRED": true,
+    "NO_MEMORY_MIGRATION": true
+  },
+  "failed_checks": []
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Memória Permanente</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div id="m12-governance-lock" hidden>P0-UI-B bloqueado até M12 — DELETE_ELIGIBLE não é exclusão física.</div>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">M</div>
+        <div><strong>Memória Permanente</strong><span>Operational Console</span></div>
+      </div>
+      <nav>
+        <button class="nav-item active">Visão geral</button>
+        <button class="nav-item">Memórias</button>
+        <button class="nav-item">Aprendizado</button>
+        <button class="nav-item">Relatórios</button>
+      </nav>
+      <div class="sidebar-foot">V4 · Painel prioritário</div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">MEMORY INTELLIGENCE</p>
+          <h1>Painel Operacional</h1>
+        </div>
+        <div class="health"><span class="dot"></span><div><strong id="healthLabel">Conectando</strong><small>saúde do sistema</small></div></div>
+      </header>
+
+      <section class="cards" id="cards">
+        <article class="card"><span>Total</span><strong id="total">—</strong><small>memórias registradas</small></article>
+        <article class="card"><span>Permanentes</span><strong id="permanent">—</strong><small>protegidas por decisão</small></article>
+        <article class="card"><span>Reutilizações</span><strong id="reuse">—</strong><small>aplicações registradas</small></article>
+        <article class="card accent"><span>Sucesso</span><strong id="successRate">—</strong><small>reuso comprovado</small></article>
+      </section>
+
+      <section class="grid-two">
+        <article class="panel">
+          <div class="panel-head"><div><p class="eyebrow">EVOLUÇÃO</p><h2>Distribuição da memória</h2></div><span class="muted">estado atual</span></div>
+          <div class="distribution">
+            <div><span>Ativas</span><strong id="activeCount">—</strong></div>
+            <div><span>Arquivadas</span><strong id="archivedCount">—</strong></div>
+            <div><span>Descartáveis</span><strong id="discardCount">—</strong></div>
+            <div><span>Protegidas</span><strong id="protectedCount">—</strong></div>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-head"><div><p class="eyebrow">APRENDIZADO</p><h2>Uso do conhecimento</h2></div></div>
+          <div class="learning-row"><span>Aprendizados</span><strong id="learningCount">—</strong></div>
+          <div class="learning-row"><span>Recuperações</span><strong id="retrievalCount">—</strong></div>
+          <div class="learning-row"><span>Eventos auditados</span><strong id="auditCount">—</strong></div>
+        </article>
+      </section>
+
+      <section class="grid-two v52-operational" id="v52Operational">
+        <article class="panel">
+          <div class="panel-head"><div><p class="eyebrow">V5.2 · IDENTIDADE HUMANA</p><h2>Memórias por escopo legível</h2></div><span class="muted">IDs técnicos secundários</span></div>
+          <div id="humanScopes" class="v52-list"><div class="empty">Aguardando dados...</div></div>
+        </article>
+        <article class="panel">
+          <div class="panel-head"><div><p class="eyebrow">EXPLICABILIDADE</p><h2>Último retrieval</h2></div><span id="latestTraceBadge" class="badge">sem trace</span></div>
+          <div id="latestRetrieval" class="v52-list"><div class="empty">Aguardando trace...</div></div>
+        </article>
+      </section>
+
+      <section class="panel v52-observability-panel">
+        <div class="panel-head"><div><p class="eyebrow">OBSERVABILIDADE SOBERANA</p><h2>V5.2 RC1</h2></div><span id="v52ObsStatus" class="badge">verificando</span></div>
+        <div id="v52ObsBody" class="v52-list"><div class="empty">Aguardando métricas assinadas...</div></div>
+      </section>
+
+
+      <section class="panel v53-ai-panel">
+        <div class="panel-head"><div><p class="eyebrow">V5.3 · INTEGRACAO IA EXTERNA</p><h2>AI Integration Adapter</h2></div><span id="v53AIStatus" class="badge">verificando</span></div>
+        <div id="v53AIBody" class="v52-list"><div class="empty">Aguardando contrato V5.3...</div></div>
+      </section>
+
+      <section class="panel memories-panel">
+        <div class="panel-head wrap">
+          <div><p class="eyebrow">GOVERNANÇA</p><h2>Memórias</h2></div>
+          <div class="toolbar">
+            <input id="search" type="search" placeholder="Pesquisar memória..." />
+            <select id="filterClass">
+              <option value="">Todos os estados</option>
+              <option>PERMANENTE</option><option>ATIVA</option><option>ARQUIVADA</option><option>DESCARTÁVEL</option><option>PROTEGIDA</option>
+            </select>
+            <button id="refreshBtn" class="secondary">Atualizar</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Memória</th><th>Estado</th><th>Último uso</th><th>Reuso</th><th>Confiança</th></tr></thead>
+            <tbody id="memoryRows"><tr><td colspan="5" class="empty">Carregando...</td></tr></tbody>
+          </table>
+        </div>
+        <div class="actions read-only"><span>Classificação: somente via cliente HMAC autenticado.</span><a class="button-link secondary" href="/v1/reports/operational.md">Relatório .MD</a></div>
+        <p class="safety-note">Painel em modo leitura. Mutações administrativas exigem autenticação HMAC e não são executadas por token do navegador.</p>
+      </section>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
+
+<!-- P0-UI-B bloqueado até M12 | DELETE_ELIGIBLE -->

@@ -1,0 +1,23 @@
+﻿{
+    "product":  "MEMORIA_PERMANENTE_CANONICAL_1.0",
+    "proof_type":  "EXCLUSIVE_BASELINE_REGISTRATION",
+    "generated_at":  "2026-09-08T12:30:55.9080494-03:00",
+    "host":  "PC CASA - Windows 11",
+    "canonical_worktree":  "C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0",
+    "canonical_branch":  "canonical/memoria-permanente-1.0",
+    "source_head":  "9701e124a19bfda03048abbaa671b4bfdc2d6d9a",
+    "source_runtime":  "V5.5-PRIMARY",
+    "source_package":  "0.29.1",
+    "source_wheel_sha256":  "423600d63a16100b28c52344a37090e75ca90948574f30920abeebad1bdbe21e",
+    "imported_files":  43,
+    "imported_file_hash_mismatches":  0,
+    "targeted_tests":  {
+                           "command":  "pytest tests/test_v55_runtime.py tests/test_consumer_adapter.py tests/test_conversational_adapter.py tests/test_integrity_anchor.py -q",
+                           "result":  "PASS",
+                           "failed":  0,
+                           "passed":  11
+                       },
+    "scope_seal":  "NOT_YET_EXECUTED",
+    "previous_runtimes_retired":  false,
+    "registration_result":  "PASS"
+}

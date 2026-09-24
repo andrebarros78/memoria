@@ -1,0 +1,15 @@
+﻿{
+    "schema_version":  1,
+    "default_state":  "ACQUIRED_NOT_AUTO_EXECUTED",
+    "scripts_auto_execute":  false,
+    "external_code_execution_requires_policy_gate":  true,
+    "network_calls_require_explicit_tool_authorization":  true,
+    "secrets_must_use_secret_refs":  true,
+    "direct_shell_from_skill":  false,
+    "notes":  [
+                  "Upstream files preserved byte-for-byte.",
+                  "Anthropic helper scripts were not executed during acquisition.",
+                  "Phoenix skills contain Markdown/reference content only.",
+                  "Phoenix repository root is ELv2; skill frontmatter currently declares Apache-2.0. Conservative repository-root license treatment applies until upstream clarifies."
+              ]
+}

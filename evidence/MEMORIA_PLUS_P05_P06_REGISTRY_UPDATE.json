@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-09-02T12:58:37.406622+00:00",
+  "tag": "MEMORIA PLUS",
+  "items": [
+    {
+      "rank": 5,
+      "item_id": "mem-89026d1b43e74430b3cface0783a2e89",
+      "version_no": 3,
+      "content_sha256": "05b73fc76da7685ac5e921cb7dcb4267f65abc2d74a8fb6212ae3b124a6ce8e6",
+      "validation_id": "val-76c09a8dab774a6bb0b70914632fe95e",
+      "status": "PROVEN"
+    },
+    {
+      "rank": 6,
+      "item_id": "mem-300aad836c4e42469bb4a1a54f605d44",
+      "version_no": 3,
+      "content_sha256": "b059fcb14ee8c060d9754132ea3ce1f96c6f2d4ad60172b5ec91d6d2ba780ea4",
+      "validation_id": "val-258b0dd91dcc4675a9a09a025bd4892a",
+      "status": "PROVEN"
+    }
+  ],
+  "status": "PASS"
+}

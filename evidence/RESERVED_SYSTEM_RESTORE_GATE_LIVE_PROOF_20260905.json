@@ -1,0 +1,12 @@
+{
+  "latest_migration": "0051_reserved_system_and_restore_gate_hardening",
+  "reserved_system_agent_bypass": false,
+  "reserved_system_visible_items": 0,
+  "runtime_gate_execute": true,
+  "runtime_gate_owner": "memory_admin",
+  "runtime_restore_gate_denied": true,
+  "runtime_restore_gate_sqlstate": "42501",
+  "runtime_role": "memory_app",
+  "secret_material_exposed": false,
+  "status": "PASS"
+}

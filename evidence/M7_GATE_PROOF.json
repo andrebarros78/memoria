@@ -1,0 +1,18 @@
+{
+    "generated_at":  "2026-08-25T13:40:26.4775146-03:00",
+    "gate":  "M7",
+    "GATE_M7":  "NOT_APPLICABLE_OPTIONAL_DISABLED",
+    "MEMOS_INTEGRATED":  false,
+    "MEMOS_BLOCKS_V4":  false,
+    "CANONICAL_MEMORY_INDEPENDENT":  true,
+    "api_health":  "ok",
+    "api_version":  "0.8.1",
+    "source_import_matches":  0,
+    "basis":  "MemOS is optional controlled in V4; Gate M7 applies only if included. Canonical PostgreSQL memory must remain independent.",
+    "checks":  {
+                   "MEMOS_NOT_REQUIRED_FOR_API":  true,
+                   "NO_MEMOS_RUNTIME_IMPORTS":  true,
+                   "OPTIONAL_COMPONENT_DISABLED":  true,
+                   "POSTGRES_CANONICAL_REMAINS_ACTIVE":  true
+               }
+}

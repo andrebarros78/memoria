@@ -1,0 +1,27 @@
+﻿{
+    "generated_at":  "2026-09-02T17:35:28.0965711-03:00",
+    "proof":  "PG_RESTORE_CATALOG_PLUS_FULL_RENDER",
+    "live_isolated_restore":  false,
+    "live_restore_block_reason":  "memory_app has no CREATEDB; administrative secret access is blocked by S-WMCP policy",
+    "dump_file":  "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p15-final\\memory-20260902-173237.dump",
+    "dump_bytes":  8701465,
+    "dump_sha256":  "86e1dc1046a9b11e70c25fe27aa9f86bcfe45b456210862796a7bbd0f44458ca",
+    "restore_catalog_entries":  740,
+    "render_bytes":  28408833,
+    "render_sha256":  "0250e0d24fd189f23c57f785f1414c4c503c925aaeb650374ef066eef775937e",
+    "checks":  {
+                   "DUMP_EXISTS":  true,
+                   "PG_RESTORE_LIST_RC0":  true,
+                   "CATALOG_ENTRIES_GE_700":  true,
+                   "PG_RESTORE_RENDER_RC0":  true,
+                   "RENDER_BYTES_GT_20M":  true,
+                   "SCHEMA_0_23_0_PRESENT":  true,
+                   "INPUT_GUARD_IG_2_0_0_PRESENT":  true,
+                   "P15_ITEM_PRESENT":  true,
+                   "P15_VERSION_2_HASH_PRESENT":  true
+               },
+    "failed_checks":  [
+
+                      ],
+    "RECOVERY_PROVEN":  true
+}

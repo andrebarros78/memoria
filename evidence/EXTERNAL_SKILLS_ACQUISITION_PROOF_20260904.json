@@ -1,0 +1,132 @@
+﻿{
+    "schema":  "memoria-permanente.external-acquisition-proof.v1",
+    "generated_at":  "2026-09-04T15:09:51.2918371-03:00",
+    "branch":  "v5.2-rebase-acquisitions-20260904",
+    "baseline_commit":  "c77686471dbec0b53002b8d2653cf7dcb90b658f",
+    "upstream":  {
+                     "anthropics_skills":  "41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f",
+                     "openai_plugins":  "1e285826e604f66f7208f7ac4dba0fe8341d1f57",
+                     "agentskills_spec":  "69ef37e9424c0a7ea9dd2293b559e43ec8176379",
+                     "gemini_cli":  "567afbbe8fc7927e38bd40733bf09cafc227ede4"
+                 },
+    "copied_file_count":  21,
+    "executable_file_count":  0,
+    "external_scripts_activated":  false,
+    "pytest":  {
+                   "passed":  162,
+                   "failed":  0,
+                   "exit_code":  0,
+                   "runtime":  "runtime/api-clean/Scripts/python.exe",
+                   "prior_failure_cause":  "project .venv lacked pytest; not a code regression"
+               },
+    "defender":  {
+                     "threats":  0
+                 },
+    "files":  [
+                  {
+                      "path":  "third_party/agent-skills/README.md",
+                      "sha256":  "6ed94642e07f92f7eab0a4c98ac24bbb91adcefb6ece92632193cbed67dc856b",
+                      "bytes":  534
+                  },
+                  {
+                      "path":  "third_party/agent-skills/agentskills-standard/best-practices.mdx",
+                      "sha256":  "9c2327006120d87c2cca4dc0edc3fd100645ebff96f2279f2fe355405c5ba890",
+                      "bytes":  14883
+                  },
+                  {
+                      "path":  "third_party/agent-skills/agentskills-standard/evaluating-skills.mdx",
+                      "sha256":  "6c9e6c512fe2d27a6463ce63ff7fc05fb1838d6de24cd2d489459fcd444b9eb4",
+                      "bytes":  17053
+                  },
+                  {
+                      "path":  "third_party/agent-skills/agentskills-standard/LICENSE",
+                      "sha256":  "cbd5af318286b74656f145dff5091907cc23d6d8c9ad09e0291ec2497792ba41",
+                      "bytes":  19051
+                  },
+                  {
+                      "path":  "third_party/agent-skills/agentskills-standard/specification.mdx",
+                      "sha256":  "fdbd51921c822f5249632e33e129effd1278a3356e50d0c1a81f91dd969d025a",
+                      "bytes":  7413
+                  },
+                  {
+                      "path":  "third_party/agent-skills/anthropic/mcp-builder/LICENSE.txt",
+                      "sha256":  "52b223c318576d65c32f70cb745f31352730e9f4c2c2c2570a66ce700f4f5a64",
+                      "bytes":  11546
+                  },
+                  {
+                      "path":  "third_party/agent-skills/anthropic/mcp-builder/SKILL.md",
+                      "sha256":  "57231330040e18e033dad8b2fdc0340a6185034c32b42b7d3448f444a6af6cf2",
+                      "bytes":  9328
+                  },
+                  {
+                      "path":  "third_party/agent-skills/anthropic/mcp-builder/reference/evaluation.md",
+                      "sha256":  "830d9a3a69c9d6d01b638ce3497e0a7680b1d422d318929181a101f7d3816983",
+                      "bytes":  22264
+                  },
+                  {
+                      "path":  "third_party/agent-skills/anthropic/mcp-builder/reference/mcp_best_practices.md",
+                      "sha256":  "900b5c9ec725b594ea04270d27c33cc51a0c8e866f5cb7ad4f57fb48d3838380",
+                      "bytes":  7579
+                  },
+                  {
+                      "path":  "third_party/agent-skills/anthropic/mcp-builder/reference/node_mcp_server.md",
+                      "sha256":  "2157ec5b77d6a7f2f84884d81acd060126f969e01a8a780470c1d927c2dabd37",
+                      "bytes":  29519
+                  },
+                  {
+                      "path":  "third_party/agent-skills/anthropic/mcp-builder/reference/python_mcp_server.md",
+                      "sha256":  "890a64d0949e5b40c639682cda46661311ab818fc03976884ce46f00e2eff462",
+                      "bytes":  25817
+                  },
+                  {
+                      "path":  "third_party/agent-skills/anthropic/skill-creator/LICENSE.txt",
+                      "sha256":  "52b223c318576d65c32f70cb745f31352730e9f4c2c2c2570a66ce700f4f5a64",
+                      "bytes":  11546
+                  },
+                  {
+                      "path":  "third_party/agent-skills/anthropic/skill-creator/SKILL.md",
+                      "sha256":  "e030e7685e26283b4a76f5202aa3ae8516fb41dde799be5ae8ea6393ec009fe9",
+                      "bytes":  33653
+                  },
+                  {
+                      "path":  "third_party/agent-skills/anthropic/skill-creator/agents/analyzer.md",
+                      "sha256":  "8ccce0d9755f7684277870e791ffb643b026d5dd4508e5c1bdc8dfec9e8532b5",
+                      "bytes":  10650
+                  },
+                  {
+                      "path":  "third_party/agent-skills/anthropic/skill-creator/agents/comparator.md",
+                      "sha256":  "ee90af43eb0dbe2fdadbb96d01f9776f387ed5c529ce083c22b8bec4e3ae10d3",
+                      "bytes":  7489
+                  },
+                  {
+                      "path":  "third_party/agent-skills/anthropic/skill-creator/agents/grader.md",
+                      "sha256":  "6ec1c6950fcafa3e00d5e845b2498c5ea3e8f7f012bd9c6abad25425f3ee619c",
+                      "bytes":  9272
+                  },
+                  {
+                      "path":  "third_party/agent-skills/anthropic/skill-creator/references/schemas.md",
+                      "sha256":  "5ef5fd3c1ac7baae965b5bda6b4f2cf6a191a2d712c7fef2a12dde84573b4833",
+                      "bytes":  12491
+                  },
+                  {
+                      "path":  "third_party/agent-skills/google/LICENSE",
+                      "sha256":  "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+                      "bytes":  11357
+                  },
+                  {
+                      "path":  "third_party/agent-skills/google/gemini-memory/SKILL.md",
+                      "sha256":  "0d62e0b3bfc0af3d15fac471fa404939b20b8963e45c1cfacd483d77db36d645",
+                      "bytes":  3666
+                  },
+                  {
+                      "path":  "third_party/agent-skills/openai/agents-sdk/SKILL.md",
+                      "sha256":  "c7b0f97dafbbba1a6b6a35e6160c57c06a214367dbabf9972c73a87495046a31",
+                      "bytes":  10135
+                  },
+                  {
+                      "path":  "third_party/agent-skills/openai/agents-sdk/agents/openai.yaml",
+                      "sha256":  "dc2ca3a57d02bf98a7e91ba821bfc04cbc7f1ee38d23fd507efaab20007fa7e4",
+                      "bytes":  106
+                  }
+              ]
+}

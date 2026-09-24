@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-08-24T13:09:40.228684-03:00",
+  "backup_dir": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\P7_PREMIGRATION_20260824-130743",
+  "backups": {
+    "governor_memory_legacy.dump": {
+      "bytes": 211764,
+      "sha256": "04a3724867473e3795341a932d685a9b84fb15754fe99d499122aadcf2ff0898"
+    },
+    "memory_new_before.dump": {
+      "bytes": 19996,
+      "sha256": "aabe011e0ac555e5415ff316838cfc2fb2affc62f086c26ddf899cc75e939dc0"
+    }
+  },
+  "source_counts": {
+    "memory_items": 126,
+    "retrieval_traces": 384,
+    "checkpoints": 249,
+    "legacy_security_audit": 1770
+  },
+  "inserted_counts": {
+    "memory_items": 126,
+    "retrieval_traces": 384,
+    "checkpoints": 249,
+    "legacy_security_audit": 1770
+  },
+  "target_source_counts": {
+    "memory_items": 126,
+    "retrieval_traces": 384,
+    "checkpoints": 249,
+    "legacy_security_audit": 1770
+  },
+  "source_memory_manifest_sha256": "f1a75c6a48dfe56ee60b9edbeba736738d96549b99902af1e146992c530efb9d",
+  "target_memory_manifest_sha256": "f1a75c6a48dfe56ee60b9edbeba736738d96549b99902af1e146992c530efb9d",
+  "memory_manifest_match": true,
+  "source_trace_manifest_sha256": "8a206d27c295ba0bdb7c70bfebb22388b006d2cebf9af119b944b1f2284197a3",
+  "source_checkpoint_manifest_sha256": "13e2e78562fc09490dde44bed951f0a7a1f50d41327b52f2ee68c74dbb266a77",
+  "source_audit_manifest_sha256": "6225a03b2d1bfe7c4963f1880696dca48bbce4dd7838f86c942c85456f3bdeff",
+  "id_collisions": [],
+  "unexplained_duplication": 0,
+  "provenance_missing": 0,
+  "legacy_chain_link_errors": [],
+  "rollback_changed_state_inside_transaction": true,
+  "rollback_restored_final_state": true,
+  "P7_DATA_MIGRATION_PROOF": "PASS"
+}

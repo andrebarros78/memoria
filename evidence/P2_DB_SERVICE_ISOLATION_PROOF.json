@@ -1,0 +1,11 @@
+{
+    "governor_ready_before":  true,
+    "memory_ready_before":  true,
+    "memory_confirmed_down":  true,
+    "governor_ready_while_memory_down":  true,
+    "memory_ready_after_service_restart":  true,
+    "memory_count_after_restart":  5,
+    "discardable_state_after_restart":  "DELETE_ELIGIBLE",
+    "permanent_class_after_restart":  "PERMANENTE",
+    "P2_DB_SERVICE_ISOLATION_PROOF":  "PASS"
+}

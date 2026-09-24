@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "project": "MEMORIA_PERMANENTE_IA_SISTEMAS",
+  "standard_layout": ".agents/skills",
+  "generated_layout": ".agents/generated-skills",
+  "default_activation_state": "ACQUIRED_NOT_AUTO_EXECUTED",
+  "invocation_contract": "SKILL.md is callable as a versioned instruction resource; helper scripts require the activation policy gate and are never auto-executed.",
+  "updated_at": "2026-09-05T18:48:00-03:00",
+  "skills": [
+    {
+      "name": "skill-creator",
+      "type": "SKILL",
+      "path": ".agents/skills/skill-creator",
+      "organization": "Anthropic",
+      "source_repository": "https://github.com/anthropics/skills",
+      "source_commit": "41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f",
+      "tree_sha256": "1dc537d6c8667990627852cc50dab39efeecb949c67066765c6d3d525a2ff050",
+      "state": "ACQUIRED_NOT_AUTO_EXECUTED",
+      "execution_mode": "GATED_SCRIPT_TOOL",
+      "consumers": ["memory-steward-agent"]
+    },
+    {
+      "name": "mcp-builder",
+      "type": "SKILL",
+      "path": ".agents/skills/mcp-builder",
+      "organization": "Anthropic",
+      "source_repository": "https://github.com/anthropics/skills",
+      "source_commit": "41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f",
+      "tree_sha256": "6e9a839f2fc593c4247c8d2fd3f60caeaef38c5dbf321880ff509968cebff849",
+      "state": "ACQUIRED_NOT_AUTO_EXECUTED",
+      "execution_mode": "GATED_SCRIPT_TOOL",
+      "consumers": ["memory-steward-agent"]
+    },
+    {
+      "name": "phoenix-evals",
+      "type": "SKILL",
+      "path": ".agents/skills/phoenix-evals",
+      "organization": "Arize AI",
+      "source_repository": "https://github.com/Arize-ai/phoenix",
+      "source_commit": "bb77c31f2c22cb4ba3a99ce626a695595abad0fb",
+      "tree_sha256": "231a04e1d41f92c75600197c21772ddfef820a78c1b109b801ef579fc1645a92",
+      "state": "ACQUIRED_NOT_AUTO_EXECUTED",
+      "execution_mode": "INSTRUCTION_RESOURCE",
+      "consumers": ["retrieval-quality-agent"]
+    },
+    {
+      "name": "phoenix-tracing",
+      "type": "SKILL",
+      "path": ".agents/skills/phoenix-tracing",
+      "organization": "Arize AI",
+      "source_repository": "https://github.com/Arize-ai/phoenix",
+      "source_commit": "bb77c31f2c22cb4ba3a99ce626a695595abad0fb",
+      "tree_sha256": "a0be6f5049245460303eb76a65e3dcd2d2d3181c795bbc4a684f086d88f6a1eb",
+      "state": "ACQUIRED_NOT_AUTO_EXECUTED",
+      "execution_mode": "INSTRUCTION_RESOURCE",
+      "consumers": ["retrieval-quality-agent", "memory-evolution-capacity-agent", "recovery-integrity-agent"]
+    },
+    {
+      "name": "mcp-inspector-powershell-call",
+      "type": "GENERATED_SKILL",
+      "path": ".agents/generated-skills/mcp-inspector-powershell-call",
+      "organization": "MEMORIA-PERMANENTE",
+      "source_repository": "internal",
+      "state": "GENERATED_GATED",
+      "execution_mode": "INSTRUCTION_RESOURCE",
+      "consumers": ["recovery-integrity-agent"]
+    },
+    {
+      "name": "retrieval-quality-validation",
+      "type": "GENERATED_SKILL",
+      "path": ".agents/generated-skills/retrieval-quality-validation",
+      "organization": "MEMORIA-PERMANENTE",
+      "source_repository": "internal",
+      "state": "GENERATED_GATED",
+      "execution_mode": "INSTRUCTION_RESOURCE",
+      "consumers": ["retrieval-quality-agent", "memory-evolution-capacity-agent"]
+    }
+  ]
+}

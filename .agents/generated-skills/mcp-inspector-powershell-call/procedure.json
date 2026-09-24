@@ -1,0 +1,19 @@
+{
+  "procedure_id": "procedure-bb400ea9a602cc5a8293",
+  "title": "MCP Inspector tools/call via PowerShell",
+  "version": "1.0.0",
+  "steps": [
+    "Use the Inspector CLI entrypoint directly when launcher argument forwarding is ambiguous.",
+    "Place the stdio target command and its arguments before the -- delimiter.",
+    "Place Inspector options after the -- delimiter.",
+    "Provide PYTHONPATH to the child process with Inspector -e, not only in the parent PowerShell environment.",
+    "Run tools/list first, then tools/call, and require exit code 0 plus isError=false."
+  ],
+  "source_experience_id": "mcp-inspector-powershell-target-order-20260904",
+  "evidence_refs": [
+    "C:\\New Projet\\MEMORIA-PERMANENTE\\.agents\\evidence\\mission-20260904-terminal\\learning-loop\\experience-before-inspector.txt",
+    "C:\\New Projet\\MEMORIA-PERMANENTE\\.agents\\evidence\\mission-20260904-terminal\\learning-loop\\experience-after-inspector.txt",
+    "C:\\New Projet\\MEMORIA-PERMANENTE\\.agents\\evidence\\mission-20260904-terminal\\learning-loop\\experience-metrics.json"
+  ],
+  "sha256": "bb400ea9a602cc5a8293305c17ae0b18dd67f2864baba834e968f1268d90ac9a"
+}

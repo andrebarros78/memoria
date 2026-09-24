@@ -1,0 +1,25 @@
+{
+    "generated_at":  "2026-08-25T13:04:51.9697151-03:00",
+    "contract":  "MEMORY_GOVERNOR_CONTRACT_V1",
+    "contract_version":  "1.0.0",
+    "deployment_state":  "STAGED_ONLY",
+    "installed_in_governor":  false,
+    "activation_condition":  "AFTER_MEMORIA_PERMANENTE_IA_SISTEMAS_V5.1_FINALIZED_AND_APPROVED",
+    "governor_release_generation":  38,
+    "governor_trust_tests":  "7/7 PASS",
+    "governor_regression":  "52/52 PASS",
+    "checks":  {
+                   "contract_doc_exists":  true,
+                   "staging_exists":  true,
+                   "real_governor_binding_absent":  true,
+                   "governor_key_absent":  true,
+                   "governor_config_has_no_governor_id":  true,
+                   "governor_config_has_no_project_id":  true,
+                   "governor_config_has_no_contract_version":  true,
+                   "future_install_readme_exists":  true
+               },
+    "failed_checks":  [
+
+                      ],
+    "status":  "PASS"
+}

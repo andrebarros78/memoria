@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Memória Permanente V4</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <h1>Memória Permanente V4</h1>
+    <div id="capture" class="status">Verificando…</div>
+    <dl>
+      <div><dt>API</dt><dd id="api">—</dd></div>
+      <div><dt>Tenant</dt><dd id="tenant">—</dd></div>
+      <div><dt>Fila local</dt><dd id="queue">—</dd></div>
+      <div><dt>Servidor</dt><dd id="server">—</dd></div>
+      <div><dt>Último erro</dt><dd id="error">Nenhum</dd></div>
+    </dl>
+    <button id="retry">Reenviar fila agora</button>
+    <button id="options" class="secondary">Configurações</button>
+  </main>
+<script src="popup.js"></script>
+</body>
+</html>

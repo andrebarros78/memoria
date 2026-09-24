@@ -1,0 +1,231 @@
+{
+  "proof": "PG18_STAGE_PARITY",
+  "source": {
+    "meta": {
+      "server_version": "17.10",
+      "vector_version": "0.8.6",
+      "schema_version": "memory-0.8.0",
+      "db_owner": "memory_app"
+    },
+    "tables": {
+      "agent_leases": {
+        "rows": 2,
+        "sha256": "91e3b30915c24e57250dde5817c3ccdf38ef454fb76be404ece12145901193ce"
+      },
+      "audit_events": {
+        "rows": 559,
+        "sha256": "7c7a1d3af98e3dc77eae66f849b2d0a5caaf1de74cdcfbc08b367ccc08558b85"
+      },
+      "checkpoints": {
+        "rows": 271,
+        "sha256": "fe612f52c80df5a3f1b0ccfc0940f4a931e9df63a776221fcd4896aa2c70efac"
+      },
+      "context_packs": {
+        "rows": 20,
+        "sha256": "86b2ce51b50bb99975f4abbb3398735d3c52bb672ad19ddabf6866220ada42fd"
+      },
+      "external_session_bindings": {
+        "rows": 28,
+        "sha256": "9d48144e3b95a0990153a25002d4a30b77873914f5b91893fbf7e3a6ddd7f4e2"
+      },
+      "governor_project_bindings": {
+        "rows": 2,
+        "sha256": "e84d3439215c72530856278d83983871ff577ed80ccf7f4487d5277b8b5c06f3"
+      },
+      "idempotency_records": {
+        "rows": 66,
+        "sha256": "15e0b9e0e65c608b2b5228ffa68caf4a525736b6ed1b068789a177af92d2de88"
+      },
+      "legacy_security_audit": {
+        "rows": 1770,
+        "sha256": "e81970297461b025a539f4ab7b695ae780ded54e4a55055b7477339ec1b43fc9"
+      },
+      "memory_embeddings": {
+        "rows": 482,
+        "sha256": "dd963881a8851fcc3ed06bf930c088e3598ed716c119ef60730edd1d6bf2f1ca"
+      },
+      "memory_events": {
+        "rows": 494,
+        "sha256": "5a920b099fec158487de6d3516a5c8854d9aaec489eebbdcdc7babb53d27ce78"
+      },
+      "memory_items": {
+        "rows": 482,
+        "sha256": "07a0b53970e24b9cb11504ccede40b1070f9d5b40f47d0c587a79b8ba02c0183"
+      },
+      "memory_operator_state": {
+        "rows": 482,
+        "sha256": "aa6a9248e0ec3537b58a48b30daf5730bd5c681df5ceb69a8301b1e629130c72"
+      },
+      "memory_outbox": {
+        "rows": 316,
+        "sha256": "9ba6c1a85010a48d52f0e75dc43c597c996b624f9c222a8bc3384f70bfdc63f4"
+      },
+      "memory_versions": {
+        "rows": 494,
+        "sha256": "50d5f556c26835d00322516ce1001b4e009ed91cabea1bdf2fa97fa01d34a133"
+      },
+      "provider_invocations": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "retention_holds": {
+        "rows": 2,
+        "sha256": "585cf64fee3c7de064ba8181b42af3d894f1490f74dd08afd5bec56ac7e4ecd4"
+      },
+      "retrieval_traces": {
+        "rows": 408,
+        "sha256": "74841e71b4f2b9608bb5cddf2f0416a1d871c58a6b109593c6243c38ca39e37e"
+      },
+      "schema_meta": {
+        "rows": 1,
+        "sha256": "4807bf0e105417a338fa3c93dead6b032978d36e6c9926e95cd1cb69dfc61779"
+      },
+      "schema_migrations": {
+        "rows": 8,
+        "sha256": "723012759f400d136c13ca6559fea26854e52f7014b9e7cbe86de99f32d5c1a0"
+      },
+      "session_checkpoints": {
+        "rows": 20,
+        "sha256": "41540ff7f51b9c66d00a2bbe81aa9ed33539a036832d3b1e52ae312268f1efee"
+      },
+      "session_rotations": {
+        "rows": 21,
+        "sha256": "133a33cd27acbe597d0dd1318b31e5d862763dde563ba7a31c26611effc0d94f"
+      },
+      "sovereign_sessions": {
+        "rows": 14,
+        "sha256": "5dec9bd5f997e481d95d431c911d9eabee80e7ec18871361f3b0b583fb52bc38"
+      }
+    },
+    "rls_policies": 17,
+    "force_rls_tables": 17,
+    "indexes": 58,
+    "constraints": 65
+  },
+  "target": {
+    "meta": {
+      "server_version": "18.6",
+      "vector_version": "0.8.6",
+      "schema_version": "memory-0.8.0",
+      "db_owner": "memory_app"
+    },
+    "tables": {
+      "agent_leases": {
+        "rows": 2,
+        "sha256": "91e3b30915c24e57250dde5817c3ccdf38ef454fb76be404ece12145901193ce"
+      },
+      "audit_events": {
+        "rows": 559,
+        "sha256": "7c7a1d3af98e3dc77eae66f849b2d0a5caaf1de74cdcfbc08b367ccc08558b85"
+      },
+      "checkpoints": {
+        "rows": 271,
+        "sha256": "fe612f52c80df5a3f1b0ccfc0940f4a931e9df63a776221fcd4896aa2c70efac"
+      },
+      "context_packs": {
+        "rows": 20,
+        "sha256": "86b2ce51b50bb99975f4abbb3398735d3c52bb672ad19ddabf6866220ada42fd"
+      },
+      "external_session_bindings": {
+        "rows": 28,
+        "sha256": "9d48144e3b95a0990153a25002d4a30b77873914f5b91893fbf7e3a6ddd7f4e2"
+      },
+      "governor_project_bindings": {
+        "rows": 2,
+        "sha256": "e84d3439215c72530856278d83983871ff577ed80ccf7f4487d5277b8b5c06f3"
+      },
+      "idempotency_records": {
+        "rows": 66,
+        "sha256": "15e0b9e0e65c608b2b5228ffa68caf4a525736b6ed1b068789a177af92d2de88"
+      },
+      "legacy_security_audit": {
+        "rows": 1770,
+        "sha256": "e81970297461b025a539f4ab7b695ae780ded54e4a55055b7477339ec1b43fc9"
+      },
+      "memory_embeddings": {
+        "rows": 482,
+        "sha256": "dd963881a8851fcc3ed06bf930c088e3598ed716c119ef60730edd1d6bf2f1ca"
+      },
+      "memory_events": {
+        "rows": 494,
+        "sha256": "5a920b099fec158487de6d3516a5c8854d9aaec489eebbdcdc7babb53d27ce78"
+      },
+      "memory_items": {
+        "rows": 482,
+        "sha256": "07a0b53970e24b9cb11504ccede40b1070f9d5b40f47d0c587a79b8ba02c0183"
+      },
+      "memory_operator_state": {
+        "rows": 482,
+        "sha256": "aa6a9248e0ec3537b58a48b30daf5730bd5c681df5ceb69a8301b1e629130c72"
+      },
+      "memory_outbox": {
+        "rows": 316,
+        "sha256": "9ba6c1a85010a48d52f0e75dc43c597c996b624f9c222a8bc3384f70bfdc63f4"
+      },
+      "memory_versions": {
+        "rows": 494,
+        "sha256": "50d5f556c26835d00322516ce1001b4e009ed91cabea1bdf2fa97fa01d34a133"
+      },
+      "provider_invocations": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "retention_holds": {
+        "rows": 2,
+        "sha256": "585cf64fee3c7de064ba8181b42af3d894f1490f74dd08afd5bec56ac7e4ecd4"
+      },
+      "retrieval_traces": {
+        "rows": 408,
+        "sha256": "74841e71b4f2b9608bb5cddf2f0416a1d871c58a6b109593c6243c38ca39e37e"
+      },
+      "schema_meta": {
+        "rows": 1,
+        "sha256": "4807bf0e105417a338fa3c93dead6b032978d36e6c9926e95cd1cb69dfc61779"
+      },
+      "schema_migrations": {
+        "rows": 8,
+        "sha256": "723012759f400d136c13ca6559fea26854e52f7014b9e7cbe86de99f32d5c1a0"
+      },
+      "session_checkpoints": {
+        "rows": 20,
+        "sha256": "41540ff7f51b9c66d00a2bbe81aa9ed33539a036832d3b1e52ae312268f1efee"
+      },
+      "session_rotations": {
+        "rows": 21,
+        "sha256": "133a33cd27acbe597d0dd1318b31e5d862763dde563ba7a31c26611effc0d94f"
+      },
+      "sovereign_sessions": {
+        "rows": 14,
+        "sha256": "5dec9bd5f997e481d95d431c911d9eabee80e7ec18871361f3b0b583fb52bc38"
+      }
+    },
+    "rls_policies": 17,
+    "force_rls_tables": 17,
+    "indexes": 58,
+    "constraints": 245
+  },
+  "mismatched_tables": [],
+  "audit": {
+    "ok": true,
+    "errors": [],
+    "events": 559,
+    "head": "0f5790a422c315c3650de62deec34875b67b70d4c7b7ff43ef00538c42e73413"
+  },
+  "checks": {
+    "TARGET_POSTGRES_18_6": true,
+    "TARGET_PGVECTOR_0_8_6": true,
+    "SCHEMA_VERSION_EQUAL": true,
+    "DATABASE_OWNER_EQUAL": true,
+    "TABLE_SET_EQUAL": true,
+    "ALL_TABLE_ROW_COUNTS_AND_CONTENT_HASHES_EQUAL": true,
+    "RLS_POLICY_COUNT_EQUAL": true,
+    "FORCE_RLS_COUNT_EQUAL": true,
+    "INDEX_COUNT_EQUAL": true,
+    "CONSTRAINT_COUNT_EQUAL": false,
+    "TARGET_AUDIT_CHAIN_VALID": true
+  },
+  "failed_checks": [
+    "CONSTRAINT_COUNT_EQUAL"
+  ],
+  "PG18_STAGE_PARITY_PROOF": "FAIL"
+}

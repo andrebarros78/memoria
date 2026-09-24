@@ -1,0 +1,14 @@
+{
+    "generated_at":  "2026-08-25T07:44:13.3642532-03:00",
+    "source_repository":  "https://github.com/pgvector/pgvector.git",
+    "source_tag":  "v0.8.6",
+    "source_commit":  "8ee86c96f0fd72390f890aa8a336fda6d3ab4c6c",
+    "source_manifest":  "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\build\\pgvector-v0.8.6-source-sha256.txt",
+    "source_manifest_sha256":  "8942459DCA1C0F5AB2312EEF09AEFBBACC5A6AD218E525AC180C17B95123836D",
+    "built_vector_dll_sha256":  "B57AEF40715999551F1B1D20FB905127CE76B99994C12016760500B3EDFB83C2",
+    "installed_vector_dll_sha256":  "B57AEF40715999551F1B1D20FB905127CE76B99994C12016760500B3EDFB83C2",
+    "dll_hash_match":  true,
+    "extension_version":  "0.8.6",
+    "hnsw_index":  "CREATE INDEX idx_memory_embeddings_hnsw_cosine ON public.memory_embeddings USING hnsw (embedding_vector vector_cosine_ops) WHERE ((status = \u0027READY\u0027::text) AND (embedding_vector IS NOT NULL))",
+    "m1_gate":  "PASS"
+}

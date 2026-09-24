@@ -1,0 +1,42 @@
+﻿{
+    "generated_at":  "2026-09-09T14:34:56.5519592-03:00",
+    "proof":  "CANONICAL_STARTUP_PERSISTENCE",
+    "status":  "PASS",
+    "scheduled_task":  {
+                           "name":  "MEMORIA_PERMANENTE_CANONICAL_STARTUP",
+                           "enabled":  true,
+                           "state":  "Ready",
+                           "last_task_result":  0,
+                           "last_run":  "2026-09-09T14:33:14.0000000-03:00",
+                           "run_as":  "SISTEMA",
+                           "triggers":  [
+                                            "MSFT_TaskBootTrigger"
+                                        ],
+                           "action_execute":  "powershell.exe",
+                           "action_arguments":  "-NoProfile -NonInteractive -WindowStyle Hidden -ExecutionPolicy Bypass -File \"C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0\\deploy\\canonical\\start-all.ps1\""
+                       },
+    "ports":  [
+                  {
+                      "port":  8787,
+                      "status":  "ok",
+                      "runtime_profile":  "V5.5-PRIMARY",
+                      "release_channel":  "MEMORIA_PERMANENTE_CANONICAL_1.0"
+                  },
+                  {
+                      "port":  8790,
+                      "status":  "ok",
+                      "runtime_profile":  "V5.5-PRIMARY",
+                      "release_channel":  "MEMORIA_PERMANENTE_CANONICAL_1.0"
+                  }
+              ],
+    "logical_workers":  {
+                            "conversation_ingestion_running":  true,
+                            "embedding_running":  true
+                        },
+    "legacy_tasks_disabled":  [
+                                  "MEMORIA_PERMANENTE_API",
+                                  "MEMORIA_PERMANENTE_PHOENIX",
+                                  "MEMORIA-PERMANENTE-EMBEDDING-WORKER",
+                                  "MEMORIA-PERMANENTE-CONVERSATION-INGESTION-WORKER"
+                              ]
+}

@@ -1,0 +1,27 @@
+{
+  "migration": "PLAINTEXT_MASTER_KEY_TO_WINDOWS_DPAPI_MACHINE",
+  "source_root": "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\vault",
+  "target_root": "C:\\ProgramData\\MemoriaPermanente\\vault",
+  "target_key_file": "C:\\ProgramData\\MemoriaPermanente\\vault\\vault-master.dpapi",
+  "target_key_file_sha256": "d7ae75a5f8d81dfaa67b06291cc53414f73ad07ecb086687e5592b55fb0de4ab",
+  "target_key_is_dpapi_blob": true,
+  "plaintext_key_inside_product_before": true,
+  "vault_records_validated": 2,
+  "records": [
+    {
+      "name": "tenant_secret_dc2ac860ad-ba319798e72a6009fdb79c47.json",
+      "cipher_sha256": "7df9176e090256421740b1f63621659b856bba66fce8620302161a2012c2cd77",
+      "cipher_bytes": 337,
+      "reference_validated": true
+    },
+    {
+      "name": "tenant_secret_f0a64aef48-059bd3c45ce8482d48b9f3c4.json",
+      "cipher_sha256": "5fcfb85fc4abacd8f7f4d731137944968e3fb6a2392eafbd30a47ea39d8ac9b2",
+      "cipher_bytes": 337,
+      "reference_validated": true
+    }
+  ],
+  "plaintext_key_inside_product_after": false,
+  "legacy_cipher_files_inside_product_after": 0,
+  "PASS": true
+}

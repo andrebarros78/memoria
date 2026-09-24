@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-08-24T17:44:05.650888-03:00",
+  "memory_ids": {
+    "conflict_a": "mem-56197739be224d8e8c9cca3b80b96668",
+    "conflict_b": "mem-73b963f274b84072812eaaf1fc99d120",
+    "poison": "mem-c2191557827d43458589778d4768336d"
+  },
+  "trace_id": "trace-ffe25df279014395ae44d3d1b0b4cce3",
+  "trace_persisted": true,
+  "explicit_conflict_detected": true,
+  "poison_quarantined": true,
+  "poison_not_selected": true,
+  "audit_chain_ok": true,
+  "audit_events": 24,
+  "forbidden_consumer_imports": 0,
+  "P3_REUSED_COMPONENTS_PROOF": "PASS"
+}

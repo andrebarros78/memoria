@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-08-24T12:21:30.854221-03:00",
+  "database": "memoria_permanente",
+  "port": 55436,
+  "governor_legacy_port": 55435,
+  "database_isolated_by_port": true,
+  "classification_results": {
+    "proof:permanent": {
+      "updated": 1,
+      "operator_class": "PERMANENTE",
+      "lifecycle_state": "HOT",
+      "purge_allowed": false
+    },
+    "proof:active": {
+      "updated": 1,
+      "operator_class": "ATIVA",
+      "lifecycle_state": "HOT",
+      "purge_allowed": false
+    },
+    "proof:archived": {
+      "updated": 1,
+      "operator_class": "ARQUIVADA",
+      "lifecycle_state": "COLD",
+      "purge_allowed": false
+    },
+    "proof:discardable": {
+      "updated": 1,
+      "operator_class": "DESCARTÁVEL",
+      "lifecycle_state": "DELETE_ELIGIBLE",
+      "purge_allowed": false
+    },
+    "proof:protected": {
+      "updated": 1,
+      "operator_class": "PROTEGIDA",
+      "lifecycle_state": "HOT",
+      "purge_allowed": false
+    }
+  },
+  "classifications_ok": true,
+  "memory_count_before_classification": 5,
+  "memory_count_after_classification": 5,
+  "discardable_state": "DELETE_ELIGIBLE",
+  "direct_delete_occurred": false,
+  "holds": {
+    "mem-5283bd2abe1943798f66dbd84aeacbdf": "SOVEREIGN_HOLD",
+    "mem-ed895250a0614f86bc8d155814e7c96f": "EVIDENCE_HOLD"
+  },
+  "holds_ok": true,
+  "report_generated": true,
+  "summary": {
+    "health": "OK",
+    "memories_total": 5,
+    "learning_items": 0,
+    "operator_classes": {
+      "PROTEGIDA": 1,
+      "ARQUIVADA": 1,
+      "ATIVA": 1,
+      "DESCARTÁVEL": 1,
+      "PERMANENTE": 1
+    },
+    "retrievals": 0,
+    "applications": 0,
+    "successes": 0,
+    "failures": 0,
+    "reuse_success_rate": null,
+    "conflicts": 0,
+    "audit_events": 10,
+    "purge_direct_enabled": false
+  },
+  "PANEL_CORE_PROOF": "PASS"
+}

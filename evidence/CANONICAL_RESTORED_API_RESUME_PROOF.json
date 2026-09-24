@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-09-11T13:01:40.180495+00:00",
+  "status": "PASS",
+  "base": "http://127.0.0.1:8791",
+  "runtime_profile": "V5.5-PRIMARY",
+  "release_channel": "MEMORIA_PERMANENTE_CANONICAL_RESTORE_PROOF",
+  "checkpoint_resume": true,
+  "context_resume": true,
+  "checkpoint_id_matches": true,
+  "required_memory_recovered": true,
+  "secret_material_exposed": false
+}

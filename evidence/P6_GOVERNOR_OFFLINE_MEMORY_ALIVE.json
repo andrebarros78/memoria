@@ -1,0 +1,7 @@
+{
+    "governor_store_offline":  true,
+    "memory_health_while_governor_offline":  "ok",
+    "memory_count":  135,
+    "governor_store_restored":  true,
+    "P6_GOVERNOR_OFFLINE_MEMORY_ALIVE":  "PASS"
+}

@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-08-27T13:49:00-0300",
+  "proof": "CONVERSATION_ID_RECOVERY_BRIDGE",
+  "fixture": {
+    "project": "bridge-fixture",
+    "conversation_id": "bridge-fixture-20260827-v1",
+    "external_ref": "g/g-p-bridge-fixture/c/bridge-fixture-20260827-v1"
+  },
+  "first_capture": {
+    "status": "CAPTURED",
+    "message_count": 3,
+    "operator_interference": {
+      "screen": false,
+      "mouse": false,
+      "keyboard": false,
+      "window_focus": false,
+      "personal_browser": false
+    },
+    "operator_desktop_used": false,
+    "personal_browser_used": false
+  },
+  "capture_memory": {
+    "memory_ids": [
+      "mem-849f31e6f98a476faea986e466ae68e3",
+      "mem-aab40f1c2252487a8d3a6a24e445ed0a",
+      "mem-d17a161391f9402c98b84cfa78ae24cc"
+    ],
+    "checkpoint_id": "scp-ext-68cd55f43b681a7f89978098730d1c6d",
+    "context_pack_id": "ctx-ext-8e722a6ebf767c7d3d0ddced979f18e9",
+    "context_sha256": "8e722a6ebf767c7d3d0ddced979f18e9d99f8438c85896d86fa7f9f86a7e0028"
+  },
+  "second_capture_memory_ids": [
+    "mem-849f31e6f98a476faea986e466ae68e3",
+    "mem-aab40f1c2252487a8d3a6a24e445ed0a",
+    "mem-d17a161391f9402c98b84cfa78ae24cc"
+  ],
+  "recovery": {
+    "found": true,
+    "recoverable": true,
+    "session_id": "ext-1969c0312c3a51d63e028661b23003ea",
+    "checkpoint_id": "scp-ext-68cd55f43b681a7f89978098730d1c6d",
+    "context_pack_id": "ctx-ext-8e722a6ebf767c7d3d0ddced979f18e9",
+    "integrity": {
+      "checkpoint_sha256_valid": true,
+      "context_sha256_valid": true,
+      "all_valid": true
+    },
+    "lookup_ms": 284.953
+  },
+  "checks": {
+    "FIRST_CAPTURED": true,
+    "SECOND_CAPTURE_IDEMPOTENT": true,
+    "INVISIBLE_BROWSER": true,
+    "RECOVER_FOUND": true,
+    "RECOVERABLE": true,
+    "CHECKPOINT_PRESENT": true,
+    "CONTEXT_PACK_PRESENT": true,
+    "CONTEXT_INTEGRITY": true,
+    "REQUIRED_MEMORY_IDS_3": true,
+    "SOURCE_OFFLINE_RECOVERY": true,
+    "LOOKUP_LT_2S": true
+  },
+  "failed_checks": [],
+  "CONVERSATION_ID_RECOVERY_BRIDGE_PROOF": "PASS"
+}

@@ -1,0 +1,140 @@
+{
+  "architecture": {
+    "adapter_inside_existing_memory_api": true,
+    "external_ai_direct_database_access": false,
+    "external_ai_direct_memory_write": false,
+    "internal_ai_api_created": false,
+    "rule": "AI externa sugere; Memoria Permanente valida, governa, grava e audita."
+  },
+  "base_head_before_final_commit": "2d4f31df37641602b95ef8c7beecd8ce760a7809",
+  "branch": "v5.2-rebase-acquisitions-20260904",
+  "corrections": [
+    "0045 SQL BOM removed before successful administrative migration.",
+    "Runtime privilege gap corrected with 0046 minimum SELECT/INSERT grants.",
+    "MCP live probe corrected from structuredContent to structured_content.",
+    "Test contracts updated from 0.27.0/44 migrations to 0.28.0/46 migrations."
+  ],
+  "database": {
+    "append_only_blocked": [
+      "suggestion_update",
+      "suggestion_delete",
+      "decision_update",
+      "decision_delete"
+    ],
+    "decisions_count": 2,
+    "migrations_applied": [
+      "0045_ai_integration_adapter",
+      "0046_ai_integration_runtime_privileges"
+    ],
+    "rls_force_rls": {
+      "ai_integration_decisions": true,
+      "ai_integration_suggestions": true
+    },
+    "runtime_grants": {
+      "ai_integration_decisions": [
+        "SELECT",
+        "INSERT"
+      ],
+      "ai_integration_suggestions": [
+        "SELECT",
+        "INSERT"
+      ]
+    },
+    "suggestions_count": 2
+  },
+  "external_ai_client": {
+    "client_id": "market-intelligence-ai",
+    "list_status": 403,
+    "permissions": [
+      "memory:ai-suggest"
+    ],
+    "promote_status": 403,
+    "registry_sha256": "6a813d1b190ba5599ec464b6c725deea71aadcea437bd7ad5e637cfc96edba5d",
+    "secret_blob_bytes": 318,
+    "secret_blob_sha256": "2a850d8dba2edf2925088fd0a8734540f750ef52015e2e72dfead4631b575267",
+    "secret_material_exposed": false,
+    "secret_storage": "Windows DPAPI machine scope",
+    "submit_status": 202
+  },
+  "finalization_note": "Final Git commit/tag are recorded in repository metadata and final operator report; product identity remains preserved.",
+  "generated_at": "2026-09-04T23:55:00.224450-03:00",
+  "implemented": {
+    "api_routes": [
+      "GET /v1/ai-integration/spec",
+      "POST /v1/ai-integration/suggestions",
+      "GET /v1/ai-integration/suggestions",
+      "GET /v1/ai-integration/suggestions/{suggestion_id}",
+      "POST /v1/ai-integration/suggestions/{suggestion_id}/decisions",
+      "POST /v1/ai-integration/suggestions/{suggestion_id}/promote"
+    ],
+    "deploy_script": "deploy/v5.3/start-primary-v53.ps1",
+    "mcp_tool": "memory_ai_integration_spec",
+    "migrations": [
+      "0045_ai_integration_adapter",
+      "0046_ai_integration_runtime_privileges"
+    ],
+    "module": "src/memory_permanent/ai_integration_adapter.py",
+    "panel_surface": "V5.3 AI Integration Adapter"
+  },
+  "live_api_probe": {
+    "accept_decision": 201,
+    "admin_submit": 202,
+    "duplicate_replay": true,
+    "forbidden_direct_control_blocked": 422,
+    "promote_after_accept": 201,
+    "promote_before_accept_blocked": 409,
+    "promoted_item_id": "mem-4900a35b9b16445c943b885d7f199919",
+    "promoted_memory_found": true,
+    "reader_list_blocked": 403,
+    "reader_submit_blocked": 403,
+    "spec_reader": 200
+  },
+  "mcp": {
+    "contract": "V5.3_AI_INTEGRATION_ADAPTER",
+    "direct_database_access": false,
+    "is_error": false,
+    "source": "SIGNED_MEMORY_API",
+    "tool_count": 6,
+    "tools_include_v53": true
+  },
+  "proof_id": "V5_3_AI_INTEGRATION_ADAPTER_PROOF_20260904",
+  "recovery": {
+    "amcheck_primary_exit": 0,
+    "amcheck_restore_exit": 0,
+    "dump_exit": 0,
+    "dump_sha256": "673231d8acb057d189a40f991011e74364142af94a360a458a161e87345a65bf",
+    "restore_database_dropped": true,
+    "restore_exit": 0,
+    "restore_table_count": 78,
+    "row_count_mismatches": {},
+    "row_counts_equal": true,
+    "source_table_count": 78,
+    "table_sets_equal": true
+  },
+  "result": "V5.3_AI_INTEGRATION_ADAPTER_MISSION_PROVEN",
+  "runtime": {
+    "api": "127.0.0.1:8787",
+    "database": "memoria_permanente_v52_primary",
+    "phoenix_legacy": "127.0.0.1:6006",
+    "product_id_preserved": "memory-permanente-v4",
+    "release_channel": "v5.3-primary-promoted",
+    "runtime_profile": "V5.3-PRIMARY",
+    "version": "0.28.0"
+  },
+  "security": {
+    "defender_project_threats": 0,
+    "openapi_delete_methods": 0,
+    "openapi_paths": 107,
+    "trivy_high_critical": 0,
+    "trivy_scope": "src",
+    "trivy_secrets": 0
+  },
+  "tests": {
+    "compileall_exit": 0,
+    "focused_after_ui": "18 passed",
+    "full": "260 passed, 2 skipped",
+    "git_diff_check_exit": 0,
+    "pip_check_sanitized_exit": 0
+  },
+  "working_tree_entries_before_commit": 184
+}

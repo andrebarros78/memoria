@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-08-25T10:28:39",
+  "tenant": "TENANT_M4_9B8D266C783D",
+  "namespace": "M4_RECOVERY_9B8D266C783D",
+  "mission_id": "m4-recovery-9b8d266c783d",
+  "fact_id": "mem-de8a8897a6f641549082157eaa5365b2",
+  "document_id": "mem-3aaef81f61024472bef949a899d5add7",
+  "checkpoint_id": "cp-79eb84653d574396ad495e75e3543389",
+  "checkpoint_sha256": "04bee0fdcb1daa8003de0beb083e42ef25a272aa42fb291417164cc8de8938c5",
+  "hashes": {
+    "items": "6571b89176b67af8d9f06f3abe9d226e9067d91586d3e9590f62e817d1081db6",
+    "versions": "8a414307e9309fcaf84add3f943bfc32176896aca77007058fac4b8345820815",
+    "embeddings": "6d192b47e8b5dac9d2ba1eef672b95ebcae58ae78d806a066d3fb825d052c6f7",
+    "checkpoint": "00b4338bc57c4866fa718a0c8fb14607a38d3f0f5a1ef1a8acc8e209c58c7fd5"
+  },
+  "counts": {
+    "items": 2,
+    "versions": 3,
+    "embeddings": 2
+  },
+  "worker_ok": true
+}

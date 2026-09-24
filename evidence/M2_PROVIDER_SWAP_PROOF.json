@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-08-25T13:42:57-0300",
+  "gate": "M2",
+  "proof": "PROVIDER_SWAP",
+  "session_id": "m2-restart-session-20260825134239-9584b6d7",
+  "rotation_id": "rot-58ef6b7ec8344400881fde1a80a55e14",
+  "old_provider": "openai",
+  "new_provider": "ollama",
+  "new_model": "qwen2.5-coder:3b",
+  "old_binding_id": "bind-e318168dd8494e9eaa9d75a581ceed3e",
+  "new_binding_id": "bind-9c7a141124d34b2999d124fe134c483b",
+  "checkpoint_id": "scp-3287acd4afa440f49c9c4934f1cffe5e",
+  "context_sha256": "83086e3c3389fe30e6d17a09488f1af4050b9d398c90c96a3eb651d29a8abb94",
+  "required_memory_ids": [
+    "mem-d07c313f1c6b4e7fb67ed4f743344bb9",
+    "mem-fb29eaebdb1d4a198ca855fc3bc0a00c"
+  ],
+  "openai_probe": {
+    "provider": "openai",
+    "reachable": true,
+    "model_count": 124,
+    "latency_ms": 1036.495,
+    "paid_inference_used": false
+  },
+  "ollama_probe": {
+    "provider": "ollama",
+    "reachable": true,
+    "models": [
+      "gemma4:12b",
+      "qwen2.5-coder:3b"
+    ],
+    "model_available": true,
+    "latency_ms": 40.554
+  },
+  "ollama_observation": {
+    "provider": "ollama",
+    "model": "qwen2.5-coder:3b",
+    "external_session_ref": "ollama:qwen2.5-coder:3b:08bde5a735ba4d20a87873e02e8e166a",
+    "context_sha256": "83086e3c3389fe30e6d17a09488f1af4050b9d398c90c96a3eb651d29a8abb94",
+    "checkpoint_id": "scp-3287acd4afa440f49c9c4934f1cffe5e",
+    "required_memory_ids": [
+      "mem-d07c313f1c6b4e7fb67ed4f743344bb9",
+      "mem-fb29eaebdb1d4a198ca855fc3bc0a00c"
+    ],
+    "objective": "Prove sovereign session survives a real Memory API restart without context loss.",
+    "raw_response_sha256": "9bccfa1c09c48d2312d69a7e198ab1f70256c137a2ebc857d0275cbee4f3ceeb",
+    "latency_ms": 4822.551,
+    "metadata": {
+      "done": true,
+      "done_reason": "stop",
+      "eval_count": 193,
+      "prompt_eval_count": 269
+    }
+  },
+  "validation": {
+    "validated": true,
+    "checks": {
+      "context_sha256": true,
+      "checkpoint_id": true,
+      "required_memory_ids": true
+    },
+    "rotation": {
+      "rotation_id": "rot-58ef6b7ec8344400881fde1a80a55e14",
+      "session_id": "m2-restart-session-20260825134239-9584b6d7",
+      "old_binding_id": "bind-e318168dd8494e9eaa9d75a581ceed3e",
+      "new_binding_id": "bind-9c7a141124d34b2999d124fe134c483b",
+      "checkpoint_id": "scp-3287acd4afa440f49c9c4934f1cffe5e",
+      "context_pack_id": "ctx-a2b67dd58d0741b58599b51b65420e67",
+      "status": "VALIDATED",
+      "reason": "M2_RESTART_PROOF",
+      "safe_point_json": {
+        "streaming_critical": false,
+        "upload_unconfirmed": false,
+        "checkpoint_possible": true,
+        "last_event_confirmed": true,
+        "tool_call_unpersisted": false,
+        "non_idempotent_write_pending": false
+      },
+      "memory_before_mb": 128.0,
+      "memory_after_mb": null,
+      "memory_released_mb": null,
+      "client_close_evidence": null,
+      "failure_reason": null,
+      "requested_at": "2026-08-25T13:42:40.323719-03:00",
+      "validated_at": "2026-08-25T13:42:57.306231-03:00",
+      "completed_at": null,
+      "updated_at": "2026-08-25T13:42:57.306231-03:00",
+      "tenant_id": "LEGACY"
+    }
+  },
+  "completion_status": "COMPLETED",
+  "audit_events": [
+    {
+      "event_type": "EXTERNAL_SESSION_BOUND",
+      "entity_id": "bind-e318168dd8494e9eaa9d75a581ceed3e",
+      "created_at": "2026-08-25 13:42:40.243165-03:00"
+    },
+    {
+      "event_type": "SESSION_ROTATION_REQUESTED",
+      "entity_id": "rot-58ef6b7ec8344400881fde1a80a55e14",
+      "created_at": "2026-08-25 13:42:40.344518-03:00"
+    },
+    {
+      "event_type": "SESSION_ROTATION_CHECKPOINTED",
+      "entity_id": "rot-58ef6b7ec8344400881fde1a80a55e14",
+      "created_at": "2026-08-25 13:42:40.471082-03:00"
+    },
+    {
+      "event_type": "SESSION_ROTATION_NEW_BOUND",
+      "entity_id": "rot-58ef6b7ec8344400881fde1a80a55e14",
+      "created_at": "2026-08-25 13:42:57.190978-03:00"
+    },
+    {
+      "event_type": "SESSION_ROTATION_VALIDATED",
+      "entity_id": "rot-58ef6b7ec8344400881fde1a80a55e14",
+      "created_at": "2026-08-25 13:42:57.322299-03:00"
+    },
+    {
+      "event_type": "SESSION_ROTATION_COMPLETED",
+      "entity_id": "rot-58ef6b7ec8344400881fde1a80a55e14",
+      "created_at": "2026-08-25 13:42:57.447236-03:00"
+    }
+  ],
+  "checks": {
+    "M2_RESTART_PROOF_ALREADY_PASS": true,
+    "OPENAI_REAL_PROVIDER_REACHABLE": true,
+    "OPENAI_PAID_INFERENCE_NOT_USED": true,
+    "OLLAMA_REAL_PROVIDER_REACHABLE": true,
+    "OLLAMA_TARGET_MODEL_AVAILABLE": true,
+    "OLLAMA_REAL_INFERENCE_EXECUTED": true,
+    "TARGET_OBSERVED_CONTEXT_HASH": true,
+    "TARGET_OBSERVED_CHECKPOINT": true,
+    "TARGET_OBSERVED_REQUIRED_MEMORY_IDS": true,
+    "TARGET_OBSERVED_OBJECTIVE": true,
+    "ROTATION_VALIDATED": true,
+    "ROTATION_COMPLETED": true,
+    "SESSION_ID_UNCHANGED": true,
+    "CHECKPOINT_UNCHANGED": true,
+    "CONTEXT_HASH_UNCHANGED": true,
+    "CURRENT_PROVIDER_IS_OLLAMA": true,
+    "NEW_BINDING_IS_CURRENT": true,
+    "OLD_BINDING_IS_SUPERSEDED": true,
+    "MEMORY_COUNT_UNCHANGED_BY_SWAP": true,
+    "SCHEMA_UNCHANGED_BY_SWAP": true,
+    "RESUME_INTEGRITY_VALID": true
+  },
+  "failed_checks": [],
+  "M2_PROVIDER_SWAP_PROOF": "PASS",
+  "GATE_M2": "PASS",
+  "CONTINUITY_PROVEN": true
+}

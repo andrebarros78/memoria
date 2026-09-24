@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-09-02T17:35:13.455695+00:00",
+  "tag": "MEMORIA PLUS",
+  "rank": 12,
+  "item_id": "mem-c63e61b83b46471aa8791d4707a87ea8",
+  "version_no": 3,
+  "version_id": "ver-aac4fc8ae2174565a5096a76276da0f0",
+  "content_sha256": "2a4b5fc5f9f62f9f59274a1db7fd475cbddc7453a43830d464f359f805655cc7",
+  "validation_id": "val-c91ff9dac06540758fe30959e1fa9bd4",
+  "validation_status": "VALIDATED",
+  "governor_eligible": false,
+  "status": "PROVEN",
+  "implemented_version": "0.20.0",
+  "bitemporal_version": "BT-1.0.0",
+  "proof_sha256": "ec424197995d7d8505d01caceb6df8c3435a969751612ee539a948e7bbc45ec6",
+  "proof_result": "PASS",
+  "proof_checks": "42/42",
+  "regression": {
+    "core": "95/95 PASS",
+    "adapter": "3/3 PASS",
+    "audit": "PASS"
+  }
+}

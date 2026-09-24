@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-09-02T17:38:17.218857+00:00",
+  "result": "PASS",
+  "failed": [],
+  "checks": {
+    "health_0_20_0": true,
+    "schema_memory_0_20_0": true,
+    "bitemporal_bt_1_0_0": true,
+    "temporal_contract_43": true,
+    "bitemporal_entities_30": true,
+    "unclassified_temporal_zero": true,
+    "legacy_repairs_five": true,
+    "migration_count_27": true,
+    "migration_0027_exact": true,
+    "p12_proof_42_42": true,
+    "p12_proof_hash_matches_registry": true,
+    "p12_registry_v3_proven_validated": true,
+    "p12_hash_binding": true,
+    "p12_governor_false": true,
+    "core_95_95": true,
+    "adapter_3_3": true,
+    "audit_pass": true,
+    "backup_manifest_valid": true,
+    "backup_pg_restore_full_render": true,
+    "wheel_0_20_0_clean": true
+  },
+  "runtime": {
+    "api_version": "0.20.0",
+    "schema_version": "memory-0.20.0",
+    "bitemporal_version": "BT-1.0.0",
+    "postgresql": "18.6",
+    "pgvector": "0.8.6"
+  },
+  "tests": {
+    "core": "95 passed in 11.33s",
+    "adapter": "3 passed in 0.08s"
+  },
+  "audit": {
+    "events": 3721,
+    "invalid_hash": [],
+    "missing_parent": [],
+    "fork_group_count": 17,
+    "fork_event_count": 40,
+    "manifest_root": "6e92ae1087ea48ad708ca7e2c8fd8cab860ef94c92206d794d1144bfd27128c9",
+    "PASS": true
+  },
+  "migrations": {
+    "count": 27,
+    "migration_0027_sha256": "c0335ef7d6b5f97c577cf49564375a0120fe7b5f97557ad5fc85cf1853a1609c"
+  },
+  "p12": {
+    "item_id": "mem-c63e61b83b46471aa8791d4707a87ea8",
+    "version_no": 3,
+    "version_id": "ver-aac4fc8ae2174565a5096a76276da0f0",
+    "content_sha256": "2a4b5fc5f9f62f9f59274a1db7fd475cbddc7453a43830d464f359f805655cc7",
+    "validation_id": "val-c91ff9dac06540758fe30959e1fa9bd4",
+    "status": "PROVEN",
+    "validation_status": "VALIDATED",
+    "proof_sha256": "ec424197995d7d8505d01caceb6df8c3435a969751612ee539a948e7bbc45ec6",
+    "registry_sha256": "0074f7c32322457933b3767b873b8efd6d4aeb0d60c8ce4497731fd2aab30b49"
+  },
+  "backup": {
+    "manifest": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p12-final\\memory-20260902-143548.manifest.json",
+    "dump": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p12-final\\memory-20260902-143548.dump",
+    "bytes": 8550454,
+    "sha256": "6197c8079d676af4d09396a312b2a320a75707c9494fae0d4dfffac7116a6c12",
+    "restore_catalog_entries": 608,
+    "restore_render_rc": 0,
+    "restore_render_bytes": 28063150
+  },
+  "wheel": {
+    "file": "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\baseline-wheel-0.20.0\\memoria_permanente-0.20.0-py3-none-any.whl",
+    "bytes": 86204,
+    "sha256": "eb90864ed0aa27901acba4dab00ab1ea9827821ac1a936a24f7b40e672ff775c",
+    "entries": 35,
+    "forbidden_entries": [],
+    "clean": true
+  },
+  "security": {
+    "staged_scan": "PASS",
+    "candidate_files": 19,
+    "forbidden_paths": [],
+    "secret_hits": [],
+    "proof_hashes_match": true,
+    "registry_hash_matches": true,
+    "migration_0027_hash_matches_applied": true,
+    "scanner_scope": "final amended commit candidate (HEAD^ to index)"
+  },
+  "v4_full_proven": false,
+  "recovery_note": "Final dump was fully parsed/rendered by pg_restore. No new isolated database restore was performed in this gate."
+}

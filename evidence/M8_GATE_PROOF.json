@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-08-25T13:36:50.471892-03:00",
+  "gate": "M8",
+  "mode": "CONTROLLED_LOCAL_ENDURANCE",
+  "requested_duration_seconds": 90,
+  "elapsed_seconds": 90.198,
+  "writes_created": 271,
+  "confirmed_reads": 271,
+  "health_checks": 27,
+  "metric_checks": 27,
+  "checkpoints": 10,
+  "namespace": "M8_ENDURANCE_1787675718-2B1D67CE",
+  "mission_id": "m8-endurance-1787675718-2b1d67ce",
+  "start_counts": {
+    "events": 170,
+    "items": 164,
+    "outbox": 1
+  },
+  "final_counts": {
+    "events": 441,
+    "items": 435,
+    "outbox": 272
+  },
+  "proof_counts": {
+    "items": 271,
+    "events": 271,
+    "unique_event_ids": 271,
+    "outbox": 271
+  },
+  "latest_checkpoint": {
+    "checkpoint_id": "cp-43db97596f08403aade10434ca1f2ff2",
+    "step_index": 250,
+    "state_sha256": "5acfc78e210d3439675525b27d25c10dcf57a44f3771aa94d1d63ebd789a363c"
+  },
+  "backup": {
+    "generated_at": "2026-08-25T13:36:50.1362059-03:00",
+    "database": "memoria_permanente",
+    "host": "127.0.0.1",
+    "port": 55436,
+    "dump_file": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\operational\\memory-20260825-133649.dump",
+    "dump_bytes": 2545806,
+    "sha256": "C5BC2C9EC696ED5E4D9A6C5F10A79FC2A0829517E83EDDAD6BA3CBC6832BB285",
+    "restore_catalog_entries": 210,
+    "pg_dump_version": "pg_dump (PostgreSQL) 17.10",
+    "backup_valid": true
+  },
+  "audit": {
+    "ok": true,
+    "errors": [],
+    "events": 485,
+    "head": "7db3fd821eeb44cacb0d43c7b945cfb28c06d1627629321ecf6b70dd5ff3d797"
+  },
+  "errors": [],
+  "checks": {
+    "API_VERSION_0_8_1": true,
+    "ENDURANCE_DURATION_REACHED": true,
+    "AT_LEAST_100_WRITES": true,
+    "ZERO_OPERATION_ERRORS": true,
+    "READS_CONFIRMED": true,
+    "HEALTH_CHECKS_CONFIRMED": true,
+    "METRICS_CHECKS_CONFIRMED": true,
+    "ALL_CREATED_ITEMS_PRESENT": true,
+    "ALL_CREATED_EVENTS_PRESENT": true,
+    "CREATED_EVENT_IDS_UNIQUE": true,
+    "OUTBOX_EVENT_PARITY": true,
+    "CHECKPOINTS_PERSISTED": true,
+    "EVENT_COUNTER_GREW": true,
+    "ITEM_COUNTER_GREW": true,
+    "OUTBOX_COUNTER_GREW": true,
+    "METRICS_AVAILABLE_BEFORE": true,
+    "METRICS_AVAILABLE_AFTER": true,
+    "METRICS_AUDIT_NONDECREASING": true,
+    "BACKUP_COMMAND_PASS": true,
+    "BACKUP_VALID": true,
+    "BACKUP_SHA256_VALID": true,
+    "AUDIT_CHAIN_VALID": true
+  },
+  "failed_checks": [],
+  "GATE_M8": "PASS",
+  "CONTINUOUS_OPERATION_PROVEN": true,
+  "EVENT_LOSS_DETECTED": false
+}

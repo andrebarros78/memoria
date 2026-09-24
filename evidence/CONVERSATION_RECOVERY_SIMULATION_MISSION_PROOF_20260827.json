@@ -1,0 +1,200 @@
+{
+  "generated_at": "2026-08-27T15:14:31.673739-03:00",
+  "mission": "MEMORIA_V4_ISOLATED_SIMULATION_AND_COMPONENT_ACTIVATION",
+  "production": {
+    "postgres_service": "MEMORIA_PERMANENTE_PG",
+    "postgres_port": 55436,
+    "postgres_state": "running",
+    "start_type": "automatic",
+    "api_port": 8787,
+    "api_pid": 24776,
+    "embedding_worker_pid": 15240
+  },
+  "isolated_environment": {
+    "root": "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\simulation\\conversation-recovery-lab",
+    "postgres_port": 55490,
+    "api_port": 8792,
+    "postgres_version": "18.6",
+    "pgvector": "0.8.6",
+    "schema_version": "memory-0.9.0",
+    "auth": "LOCAL_SIMULATION_TRUST_ONLY",
+    "production_data_touched": false
+  },
+  "simulation": {
+    "cycles": 20,
+    "messages_per_cycle": 3,
+    "idempotent_replay_per_cycle": true,
+    "physical_postgres_restarts": 2,
+    "recovered_after_restart": 20,
+    "failed_conversations": [],
+    "lookup_ms": {
+      "min": 234.253,
+      "avg": 306.983,
+      "p95": 369.504,
+      "max": 589.9
+    },
+    "database_counts": {
+      "memory_items": 60,
+      "external_session_bindings": 20,
+      "sovereign_sessions": 20,
+      "session_checkpoints": 20,
+      "context_packs": 20,
+      "memory_embeddings": 10,
+      "schema_migrations": 9
+    },
+    "audit_events": 140,
+    "audit_ok": true,
+    "embedding_worker_last_batch": {
+      "jobs": 10,
+      "embedded": 10,
+      "failed": 0
+    },
+    "pytest": {
+      "passed": 31,
+      "failed": 0
+    }
+  },
+  "recovered": [
+    {
+      "conversation_id": "sim-conv-0001",
+      "ok": true,
+      "lookup_ms": 274.452,
+      "session_id": "ext-b5db7f8391c54f2416271d50332107c2"
+    },
+    {
+      "conversation_id": "sim-conv-0002",
+      "ok": true,
+      "lookup_ms": 589.9,
+      "session_id": "ext-a88543be559ad391debc58c817899939"
+    },
+    {
+      "conversation_id": "sim-conv-0003",
+      "ok": true,
+      "lookup_ms": 266.328,
+      "session_id": "ext-90368c0f59070ae600b1b62359bae051"
+    },
+    {
+      "conversation_id": "sim-conv-0004",
+      "ok": true,
+      "lookup_ms": 256.989,
+      "session_id": "ext-f40325f0704b74a2e4dc873e3e551fc0"
+    },
+    {
+      "conversation_id": "sim-conv-0005",
+      "ok": true,
+      "lookup_ms": 249.58,
+      "session_id": "ext-12cc15ad4d8cdc539a979e45d756d39d"
+    },
+    {
+      "conversation_id": "sim-conv-0006",
+      "ok": true,
+      "lookup_ms": 278.399,
+      "session_id": "ext-7ef390ace3a8399d0a55f5579ba5d39b"
+    },
+    {
+      "conversation_id": "sim-conv-0007",
+      "ok": true,
+      "lookup_ms": 280.386,
+      "session_id": "ext-28ab85c44521fc665a0bc373c50de62c"
+    },
+    {
+      "conversation_id": "sim-conv-0008",
+      "ok": true,
+      "lookup_ms": 355.528,
+      "session_id": "ext-8d88bc9d2ebe53262edf504c385e1641"
+    },
+    {
+      "conversation_id": "sim-conv-0009",
+      "ok": true,
+      "lookup_ms": 320.229,
+      "session_id": "ext-3cca29dab5c57d37113063ce0e6c9dac"
+    },
+    {
+      "conversation_id": "sim-conv-0010",
+      "ok": true,
+      "lookup_ms": 369.504,
+      "session_id": "ext-45269c872e2a5f1e7c03c57638ef5b86"
+    },
+    {
+      "conversation_id": "sim-conv-0011",
+      "ok": true,
+      "lookup_ms": 318.594,
+      "session_id": "ext-e12ed132fb8f2df6dedd541ee5ae59dc"
+    },
+    {
+      "conversation_id": "sim-conv-0012",
+      "ok": true,
+      "lookup_ms": 282.345,
+      "session_id": "ext-17f38661150af46d3d857921bfd869c8"
+    },
+    {
+      "conversation_id": "sim-conv-0013",
+      "ok": true,
+      "lookup_ms": 262.273,
+      "session_id": "ext-b24ae30f60bff6ea31c0a4fa1a612f26"
+    },
+    {
+      "conversation_id": "sim-conv-0014",
+      "ok": true,
+      "lookup_ms": 267.472,
+      "session_id": "ext-c7a596365b3820146d98c6a8c1916ccc"
+    },
+    {
+      "conversation_id": "sim-conv-0015",
+      "ok": true,
+      "lookup_ms": 304.907,
+      "session_id": "ext-fe4477a3fff386b59c2bcba54893b044"
+    },
+    {
+      "conversation_id": "sim-conv-0016",
+      "ok": true,
+      "lookup_ms": 234.253,
+      "session_id": "ext-38675fd0a1e649b78f21fb23f60db730"
+    },
+    {
+      "conversation_id": "sim-conv-0017",
+      "ok": true,
+      "lookup_ms": 241.431,
+      "session_id": "ext-0dbb4e2281ba71828d2b67d1514ac200"
+    },
+    {
+      "conversation_id": "sim-conv-0018",
+      "ok": true,
+      "lookup_ms": 312.728,
+      "session_id": "ext-e9ce18a5476bfc9aa892c72184296a87"
+    },
+    {
+      "conversation_id": "sim-conv-0019",
+      "ok": true,
+      "lookup_ms": 320.564,
+      "session_id": "ext-74e06b884058d2ec3323ff24ab718da5"
+    },
+    {
+      "conversation_id": "sim-conv-0020",
+      "ok": true,
+      "lookup_ms": 353.797,
+      "session_id": "ext-8a0ab0d79ca1bb88d5d4c9308f0d1922"
+    }
+  ],
+  "checks": {
+    "postgres_18_6": true,
+    "pgvector_0_8_6": true,
+    "migrations_0001_0009": true,
+    "twenty_sessions": true,
+    "twenty_bindings": true,
+    "twenty_checkpoints": true,
+    "twenty_context_packs": true,
+    "sixty_memories": true,
+    "twenty_of_twenty_recovered": true,
+    "audit_chain_valid": true,
+    "pytest_31_31": true,
+    "embedding_worker_batch_10_10": true,
+    "production_pg_running_automatic": true,
+    "production_api_listener_8787": true,
+    "production_embedding_worker_active": true,
+    "isolated_pg_listener_55490": true,
+    "isolated_api_listener_8792": true
+  },
+  "failed_checks": [],
+  "MISSION_PROVEN": true
+}

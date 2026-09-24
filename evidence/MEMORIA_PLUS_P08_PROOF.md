@@ -1,0 +1,41 @@
+# MEMORIA PLUS — Prioridade 08 — Prova
+
+- Resultado: **PASS**
+- API: `0.16.1`
+- Schema: `memory-0.16.1`
+- Experience Graph: `EG-1.0.0`
+- Missão de prova: `P08-MISSION-40960388B0E1`
+- Entidades first-class: `7`
+- Arestas da cadeia causal: `6`
+- Reconstrução: `COMPLETE`
+
+## Checks
+- api_0_16_1: PASS
+- spec_requires_auth: PASS
+- graph_spec_version: PASS
+- exact_first_class_types: PASS
+- exact_7_causal_rules: PASS
+- seven_bound_first_class_nodes_created: PASS
+- complete_graph_has_7_bound_nodes: PASS
+- complete_graph_has_6_chain_edges: PASS
+- mission_reconstruction_complete: PASS
+- causal_order_exact: PASS
+- timeline_exact: PASS
+- invalid_memory_binding_api_422: PASS
+- invalid_relation_api_422: PASS
+- cross_mission_edge_api_403: PASS
+- temporal_violation_api_422: PASS
+- historical_category_snapshot_preserved: PASS
+- historical_version_snapshot_preserved: PASS
+- reconstruction_survives_source_transition: PASS
+- schema_invalid_relation_rejected: PASS
+- schema_temporal_violation_rejected: PASS
+- nodes_append_only: PASS
+- edges_append_only: PASS
+- causal_rules_immutable: PASS
+- experience_tables_force_rls: PASS
+- tenant_isolation_proven: PASS
+- legacy_experience_graph_preserved: PASS
+- audit_events_recorded: PASS
+- schema_version: PASS
+- experience_graph_schema_version: PASS

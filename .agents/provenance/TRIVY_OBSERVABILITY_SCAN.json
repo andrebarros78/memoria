@@ -1,0 +1,10 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.74.0"
+  },
+  "ReportID": "01a069ff-2709-7b46-81fe-371a81fc49ba",
+  "CreatedAt": "2026-09-03T22:18:44.4897389-03:00",
+  "ArtifactName": "C:/New Projet/MEMORIA-PERMANENTE/.agents/runtime/observability",
+  "ArtifactType": "filesystem"
+}

@@ -1,0 +1,11 @@
+{
+    "source_manifest":  "C:\\New Projet\\MEMORIA-PERMANENTE\\evidence\\M4_SOURCE_MANIFEST.json",
+    "bytes":  1104812,
+    "source_port":  "55436",
+    "system_context":  "__SYSTEM__",
+    "rls":  "ENABLED",
+    "sha256":  "6031DB4EEEDA9D3A73F8AF97C12B609FC9651373334730872D1CDA09C1BB28ED",
+    "generated_at":  "2026-08-25T10:30:02.4953584-03:00",
+    "dump":  "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\m4-restore-proof-20260825-103001\\memoria_permanente.dump",
+    "source_db":  "memoria_permanente"
+}

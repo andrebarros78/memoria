@@ -1,0 +1,29 @@
+{
+  "domain": "CLIENT-AUTH",
+  "backup_dir": "C:\\ProgramData\\MemoriaPermanente\\auth\\pre-client-auth-domain-v2",
+  "clients": [
+    {
+      "client_id": "chatgpt-capture",
+      "old_domain": "VAULT-LEGACY",
+      "new_domain": "CLIENT-AUTH",
+      "blob_bytes": 318,
+      "secret_preserved": true
+    },
+    {
+      "client_id": "governor-runtime",
+      "old_domain": "VAULT-LEGACY",
+      "new_domain": "CLIENT-AUTH",
+      "blob_bytes": 318,
+      "secret_preserved": true
+    },
+    {
+      "client_id": "local-admin",
+      "old_domain": "VAULT-LEGACY",
+      "new_domain": "CLIENT-AUTH",
+      "blob_bytes": 318,
+      "secret_preserved": true
+    }
+  ],
+  "consumer_mirror_updated": true,
+  "PASS": true
+}

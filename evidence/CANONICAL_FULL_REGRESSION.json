@@ -1,0 +1,8 @@
+﻿{
+    "generated_at":  "2026-09-09T14:42:12.0364255-03:00",
+    "command":  "runtime/canonical-api/Scripts/python.exe -I -m pytest tests -q",
+    "exit_code":  0,
+    "log_sha256":  "9940ae73a6dbd3c633c80e6df4a2cef143293c7f72a2efb2019a9e89f2e35500",
+    "tail":  ".............................................................ss......... [ 64%]\n........................................................................ [ 86%]\n.............................................                            [100%]\n============================== warnings summary ===============================\nruntime\\canonical-api\\Lib\\site-packages\\starlette\\testclient.py:53\n  C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0\\runtime\\canonical-api\\Lib\\site-packages\\starlette\\testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n331 passed, 2 skipped, 1 warning in 11.11s",
+    "status":  "PASS"
+}

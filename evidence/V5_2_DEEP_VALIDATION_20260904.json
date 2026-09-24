@@ -1,0 +1,55 @@
+﻿{
+    "generated_at":  "2026-09-04T20:21:00-03:00",
+    "mission":  "V5.2_DEEP_VALIDATION_POST_PROMOTION",
+    "head":  "e3cc2c076f13816d1cebf50e40b888a30352c4fa",
+    "tags":  "baseline-0.27.0",
+    "runtime_profile":  "V5.2-PRIMARY",
+    "release_channel":  "primary-promoted",
+    "corrected_findings":  [
+                               "External WMCP PYTHONPATH affected session-level pip check; sanitized validation passed",
+                               "Primary database had no persisted V5.2 proof rows after promotion; Golden Set, Quality Run, Capacity Snapshot and Evolution Proof were recorded with PASS",
+                               "Initial PowerShell parity probe produced a false negative; Python parity confirmed 76/76 tables"
+                           ],
+    "tests":  {
+                  "pip_check_sanitized":  "PASS",
+                  "compileall":  "PASS",
+                  "pytest":  "186/186 PASS",
+                  "boundary_tests":  "34/34 PASS",
+                  "auth_negative_probe":  "PASS",
+                  "append_only_probe":  "PASS",
+                  "trivy_src":  "0 high_critical_findings, 0 embedded_credentials_findings",
+                  "defender":  "0 project threats",
+                  "pg_amcheck_primary":  "PASS",
+                  "pg_amcheck_restore":  "PASS",
+                  "recovery":  "dump_restore PASS",
+                  "parity":  "76/76 tables, row counts identical",
+                  "mcp_primary":  "PASS",
+                  "openapi_delete_methods":  "0"
+              },
+    "database":  {
+                     "counts":  [
+                                    "memory_items=8",
+                                    "retrieval_traces=107",
+                                    "retrieval_quality_golden_sets=1",
+                                    "retrieval_quality_runs=1",
+                                    "memory_capacity_snapshots=1",
+                                    "memory_evolution_proofs=1"
+                                ],
+                     "migrations":  [
+                                        "0040_retrieval_quality_foundation|62287e3326152be707da6121c6e1c0ce2508f8e83057252dfc75d8ecc9b3becb",
+                                        "0041_memory_evolution_capacity|8f66c0ffc228206ce6007830de4ff6f16f13e13036454450938e2ce0f143b847"
+                                    ],
+                     "rls":  [
+                                 "memory_capacity_snapshots:true:true",
+                                 "memory_evolution_proofs:true:true",
+                                 "memory_items:true:true",
+                                 "retrieval_quality_golden_sets:true:true",
+                                 "retrieval_quality_runs:true:true",
+                                 "retrieval_traces:true:true"
+                             ],
+                     "latest_quality_run":  "rqr-aa0e3717c0144244a066a65b4e190b51 PASS",
+                     "latest_capacity":  "NORMAL",
+                     "latest_evolution":  "PASS"
+                 },
+    "limitation":  "One optional live revision injection probe was not executed through the channel filter; canonical revision path and automated sanitization tests remain PASS"
+}

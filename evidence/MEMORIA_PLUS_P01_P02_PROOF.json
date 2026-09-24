@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-09-01T22:57:50.564753+00:00",
+  "api_version": "0.12.0",
+  "tag": "MEMORIA PLUS",
+  "priorities": [
+    "01_CANONICAL_MUTATION_SERVICE",
+    "02_SANITIZE_ALL_PERSISTENT_PAYLOADS"
+  ],
+  "item_id": "mem-4ff3336dcef8417abd180ce759500e1f",
+  "session_id": "sess-p02-2E293CB7EB4F",
+  "rotation_id": "rot-b697b08d66a940218fec8f15ca53d324",
+  "trace_id": "trace-e13ff994a48b449fb4b48dbd5630b571",
+  "raw_secret_hits_by_table": {
+    "memory_items": 0,
+    "memory_versions": 0,
+    "memory_events": 0,
+    "memory_validations": 0,
+    "memory_applications": 0,
+    "memory_outcomes": 0,
+    "experience_edges": 0,
+    "retrieval_traces": 0,
+    "checkpoints": 0,
+    "sovereign_sessions": 0,
+    "external_bindings": 0,
+    "session_rotations": 0,
+    "conversation_ingestion": 0,
+    "session_checkpoints": 0,
+    "context_packs": 0,
+    "memory_embeddings": 0,
+    "audit_events": 0
+  },
+  "vault_ref_occurrences": 33,
+  "checks": {
+    "API_VERSION_0_12_0": true,
+    "DIRECT_STORE_BYPASS_BLOCKED": true,
+    "DIRECT_SESSION_REPO_BYPASS_BLOCKED": true,
+    "DIRECT_INGESTION_REPO_BYPASS_BLOCKED": true,
+    "NO_SYNTHETIC_SECRET_PLAINTEXT_IN_PROOF_ROWS": true,
+    "VAULT_REFS_PRESENT_ACROSS_PERSISTED_PAYLOADS": true,
+    "REVISION_INVALIDATED_PRIOR_TRUST": true,
+    "SESSION_ROTATION_CREATED": true,
+    "CONVERSATION_INGESTION_PROCESSED": true,
+    "RETRIEVAL_TRACE_CREATED": true,
+    "CHECKPOINT_CREATED": true,
+    "OUTCOME_CREATED": true
+  },
+  "failed_checks": [],
+  "P01_CANONICAL_MUTATION_SERVICE": "PASS",
+  "P02_PERSISTENT_PAYLOAD_SANITIZATION": "PASS"
+}

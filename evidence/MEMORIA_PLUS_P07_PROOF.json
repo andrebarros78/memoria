@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-09-02T13:44:55.182610+00:00",
+  "tag": "MEMORIA PLUS",
+  "priority": 7,
+  "title": "Ontologia formal de conhecimento",
+  "result": "PASS",
+  "failed": [],
+  "checks": {
+    "api_0_15_2": true,
+    "ontology_requires_auth": true,
+    "ontology_api_version": true,
+    "exact_15_types": true,
+    "invalid_category_api_422": true,
+    "valid_relation_api_201": true,
+    "invalid_relation_api_422": true,
+    "valid_transition_api_200": true,
+    "invalid_transition_api_422": true,
+    "relation_snapshot_preserved_after_transition": true,
+    "relation_stale_on_category_transition": true,
+    "relation_stale_on_source_revision": true,
+    "transition_invalidates_validation": true,
+    "transition_ledger_exact": true,
+    "relation_state_events_recorded": true,
+    "schema_invalid_category_rejected": true,
+    "schema_invalid_relation_rejected": true,
+    "schema_direct_category_update_rejected": true,
+    "schema_invalid_transition_rejected": true,
+    "ontology_rules_immutable": true,
+    "domain_db_relation_rules_identical": true,
+    "domain_db_transition_rules_identical": true,
+    "legacy_categories_migrated": true,
+    "all_persisted_categories_canonical": true,
+    "category_check_constraint_present": true,
+    "ontology_tables_force_rls": true,
+    "schema_version": true,
+    "ontology_schema_version": true
+  },
+  "api": {
+    "version": "0.15.2",
+    "unsigned_ontology": 401,
+    "invalid_category": 422,
+    "invalid_relation": 422,
+    "invalid_transition": 422
+  },
+  "ontology": {
+    "version": "KO-1.0.0",
+    "knowledge_types": [
+      "CAUSE",
+      "CONSTRAINT",
+      "CORRELATION",
+      "DECISION",
+      "EVIDENCE",
+      "EXPERIMENT",
+      "FACT",
+      "HYPOTHESIS",
+      "INFERENCE",
+      "INTERVENTION",
+      "LEARNING",
+      "OBJECTIVE",
+      "OBSERVATION",
+      "OUTCOME",
+      "PROCEDURE"
+    ],
+    "relation_rule_count": 96,
+    "transition_rule_count": 7
+  },
+  "legacy_migration_counts": {
+    "DOCUMENT": 4,
+    "EVENT": 586,
+    "REQUIREMENT": 19,
+    "RULE": 7,
+    "STATE": 1
+  },
+  "relation_proof": {
+    "relation1": {
+      "relation_id": "rel-cb730e0404d44ef185bfeee3cbfc2a22",
+      "from_category": "EVIDENCE",
+      "to_category": "HYPOTHESIS",
+      "status": "STALE",
+      "stale_reason": "ONTOLOGY_CATEGORY_TRANSITION"
+    },
+    "relation2": {
+      "relation_id": "rel-d6f355008fda4c0fbeb0650c41152f0f",
+      "from_category": "EVIDENCE",
+      "to_category": "FACT",
+      "status": "STALE",
+      "stale_reason": "SOURCE_VERSION_SUPERSEDED"
+    },
+    "event_count": 4
+  },
+  "transition_proof": {
+    "transition_id": "trn-ac4c99e22bb8492c95358ac200dfec1b",
+    "from_category": "HYPOTHESIS",
+    "to_category": "FACT"
+  },
+  "schema_rejection_sqlstates": {
+    "invalid_category": "23514",
+    "invalid_relation": "23514",
+    "direct_category_update": "42501",
+    "invalid_transition": "23514",
+    "rule_mutation": "42501"
+  },
+  "schema": "memory-0.15.2"
+}

@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-08-27T14:17:33-0300",
+  "target": {
+    "external_ref": "g/g-p-6a27f887c1608191acc5627e0f9edd21/c/6a906c3c-8e58-83e9-a16a-85e4635e2805",
+    "conversation_id": "6a906c3c-8e58-83e9-a16a-85e4635e2805"
+  },
+  "bridge_result": {
+    "conversation_id": "6a906c3c-8e58-83e9-a16a-85e4635e2805",
+    "project_id": "6a27f887c1608191acc5627e0f9edd21",
+    "final_url": "https://chatgpt.com/g/g-p-6a27f887c1608191acc5627e0f9edd21/c/6a906c3c-8e58-83e9-a16a-85e4635e2805",
+    "http_status": 403,
+    "title": "Um momento…",
+    "message_count": 0,
+    "operator_interference": {
+      "screen": false,
+      "mouse": false,
+      "keyboard": false,
+      "window_focus": false,
+      "personal_browser": false
+    },
+    "operator_desktop_used": false,
+    "personal_browser_used": false,
+    "learning_project_id": "mem-v4-chatgpt-recovery-6a906c3c",
+    "status": "EXTERNAL_SOURCE_BLOCKED_403",
+    "captured": false,
+    "recoverable": false
+  },
+  "resolver_after_attempt": {
+    "found": false,
+    "reason": "NOT_CAPTURED",
+    "recoverable": false,
+    "lookup_ms": 208.119
+  },
+  "classification": "BLOCKED_EXTERNAL_SOURCE_403",
+  "operator_desktop_used": false,
+  "personal_browser_used": false,
+  "REAL_CONVERSATION_RECOVERY_PROVEN": false
+}

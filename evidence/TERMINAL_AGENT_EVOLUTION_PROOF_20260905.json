@@ -1,0 +1,86 @@
+{
+  "result": "PASS",
+  "generated_at": "2026-09-06T14:57:53.564182+00:00",
+  "migration": {
+    "migration_count": 51,
+    "latest_migration": "0051_reserved_system_and_restore_gate_hardening",
+    "postgresql": "18.6",
+    "pgvector": "0.8.6",
+    "database_role": "memory_app",
+    "database_role_privileged": false,
+    "status": "READY"
+  },
+  "backup_ok": true,
+  "restore_ok": true,
+  "e2e_ok": true,
+  "security_ok": true,
+  "release_ok": true,
+  "regression": [
+    {
+      "name": "ruff",
+      "returncode": 0,
+      "pass": true,
+      "tail": "All checks passed!\n"
+    },
+    {
+      "name": "mypy",
+      "returncode": 0,
+      "pass": true,
+      "tail": "Success: no issues found in 48 source files\n"
+    },
+    {
+      "name": "bandit",
+      "returncode": 0,
+      "pass": true,
+      "tail": "[manager]\tWARNING\tTest in comment: restricted is not a test name or id, ignoring\n[manager]\tWARNING\tTest in comment: to is not a test name or id, ignoring\n[manager]\tWARNING\tTest in comment: HTTP is not a test name or id, ignoring\n[manager]\tWARNING\tTest in comment: S is not a test name or id, ignoring\n[manager]\tWARNING\tTest in comment: numeric is not a test name or id, ignoring\n[manager]\tWARNING\tTest in comment: quality is not a test name or id, ignoring\n[manager]\tWARNING\tTest in comment: metric is not a test name or id, ignoring\n[manager]\tWARNING\tTest in comment: named is not a test name or id, ignoring\n[manager]\tWARNING\tTest in comment: pass_rate is not a test name or id, ignoring\n[manager]\tWARNING\tTest in comment: not is not a test name or id, ignoring\n[manager]\tWARNING\tTest in comment: a is not a test name or id, ignoring\n[manager]\tWARNING\tTest in comment: credential is not a test name or id, ignoring\n[tester]\tWARNING\tnosec encountered (B105), but no failed test on file src/memory_permanent\\retrieval_quality.py:180\n[tester]\tWARNING\tnosec encountered (B105), but no failed test on file src/memory_permanent\\retrieval_quality.py:180\n[tester]\tWARNING\tnosec encountered (B105), but no failed test on file src/memory_permanent\\retrieval_quality.py:180\n[tester]\tWARNING\tnosec encountered (B105), but no failed test on file src/memory_permanent\\retrieval_quality.py:180\n[tester]\tWARNING\tnosec encountered (B105), but no failed test on file src/memory_permanent\\retrieval_quality.py:180\n[tester]\tWARNING\tnosec encountered (B105), but no failed test on file src/memory_permanent\\retrieval_quality.py:180\n[tester]\tWARNING\tnosec encountered (B105), but no failed test on file src/memory_permanent\\retrieval_quality.py:180\n[tester]\tWARNING\tnosec encountered (B105), but no failed test on file src/memory_permanent\\retrieval_quality.py:180\n[tester]\tWARNING\tnosec encountered (B608), but no failed test on file src/memory_permanent\\store.py:376\n[tester]\tWARNING\tnosec encountered (B608), but no failed test on file src/memory_permanent\\store.py:376\n[tester]\tWARNING\tnosec encountered (B608), but no failed test on file src/memory_permanent\\store.py:1555\n[tester]\tWARNING\tnosec encountered (B608), but no failed test on file src/memory_permanent\\store.py:1555\n[tester]\tWARNING\tnosec encountered (B608), but no failed test on file src/memory_permanent\\store.py:1557\n[tester]\tWARNING\tnosec encountered (B608), but no failed test on file src/memory_permanent\\store.py:1557\n[tester]\tWARNING\tnosec encountered (B608), but no failed test on file src/memory_permanent\\store.py:1751\n[tester]\tWARNING\tnosec encountered (B608), but no failed test on file src/memory_permanent\\store.py:1751\n[tester]\tWARNING\tnosec encountered (B608), but no failed test on file src/memory_permanent\\store.py:2088\n[tester]\tWARNING\tnosec encountered (B608), but no failed test on file src/memory_permanent\\store.py:2088"
+    },
+    {
+      "name": "pytest",
+      "returncode": 0,
+      "pass": true,
+      "tail": "........................................................................ [ 22%]\n........................................................................ [ 44%]\n......................................................ss................ [ 67%]\n........................................................................ [ 89%]\n.................................                                        [100%]\n============================== warnings summary ===============================\n.venv\\Lib\\site-packages\\starlette\\testclient.py:53\n  C:\\New Projet\\MEMORIA-PERMANENTE\\.venv\\Lib\\site-packages\\starlette\\testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n319 passed, 2 skipped, 1 warning in 5.53s\n"
+    },
+    {
+      "name": "pip-check",
+      "returncode": 0,
+      "pass": true,
+      "tail": "No broken requirements found.\n"
+    }
+  ],
+  "capacity": {
+    "state": "NORMAL",
+    "allow_growth": true,
+    "allow_nonessential_derivatives": true,
+    "reasons": [],
+    "free_ratio": 0.6138254903147111
+  },
+  "evolution": {
+    "status": "PASS",
+    "allowed": true,
+    "reasons": []
+  },
+  "agent_skill_plane": {
+    "status": "HEALTHY",
+    "agents_total": 4,
+    "agents_loaded": 4,
+    "skills_total": 6,
+    "skills_callable": 6,
+    "errors": []
+  },
+  "retrieval_quality": {
+    "status": "PASS",
+    "metrics": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "case_pass_rate": 1.0,
+      "forbidden_hit_rate": 0.0,
+      "scope_violation_rate": 0.0,
+      "temporal_violation_rate": 0.0,
+      "authority_violation_rate": 0.0
+    },
+    "trace_id": "trace-1daa3e01f2134ae488bae23698e1af06"
+  },
+  "backup_id": "v52-20260906T144714Z-3d89d37a",
+  "wheel_sha256": "75282d46a34f44c95323697f450d0ea56e44492650494e5e4f7d8920fe371ab7",
+  "secret_material_exposed": false
+}

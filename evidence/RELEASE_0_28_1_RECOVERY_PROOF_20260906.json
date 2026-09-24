@@ -1,0 +1,34 @@
+{
+    "audit_chain_ok":  true,
+    "audit_events":  349,
+    "backup_id":  "v52-20260906T144714Z-3d89d37a",
+    "erasure_replay":  {
+                           "ledger_entries":  0,
+                           "ledger_verified":  true,
+                           "matched_targets":  0,
+                           "redacted_targets":  0,
+                           "replay_id":  "lrr-b763cb185bc44a9f92f6d932e073a817",
+                           "result":  "PASS"
+                       },
+    "migration_count_after_restore":  51,
+    "pg_amcheck":  "PASS",
+    "plaintext_restore_temp_retained":  false,
+    "restore_flow":  [
+                         "RESTORE",
+                         "MIGRATE",
+                         "ERASURE_REPLAY",
+                         "VERIFY"
+                     ],
+    "runtime_preflight":  {
+                              "database_role":  "memory_app",
+                              "database_role_privileged":  false,
+                              "latest_migration":  "0051_reserved_system_and_restore_gate_hardening",
+                              "migration_count":  51,
+                              "pgvector":  "0.8.6",
+                              "postgresql":  "18.6",
+                              "status":  "READY"
+                          },
+    "secret_material_exposed":  false,
+    "status":  "PASS",
+    "target_database":  "memoria_permanente_v52_restoreproof"
+}

@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-08-25T13:42:21",
+  "gate": "M3",
+  "schema_version": "0.8.1",
+  "migration_checksum": "197f228e4c535720f14609dbfb051365bbcb3fd0de952045aed408d84ccba575",
+  "subproofs": {
+    "M3_TENANT_ISOLATION_PROOF": {
+      "status": "PASS",
+      "file": "evidence/M3_TENANT_ISOLATION_PROOF.json"
+    },
+    "M3_SECRET_PROOF": {
+      "status": "PASS",
+      "file": "evidence/M3_SECRET_PROOF.json"
+    },
+    "M3_POISONING_PROOF": {
+      "status": "PASS",
+      "file": "evidence/M3_POISONING_PROOF.json"
+    },
+    "M3_CORRECTION_PROOF": {
+      "status": "PASS",
+      "file": "evidence/M3_CORRECTION_PROOF.json"
+    }
+  },
+  "audit": {
+    "ok": true,
+    "errors": [],
+    "events": 518,
+    "head": "038962b9b41a99af08792b9af7d15651eaa084bad9a58c1bf7d8b08a08294d80"
+  },
+  "checks": {
+    "API_MIN_0_6_0_HEALTHY": true,
+    "MIGRATION_0006_CHECKSUM_MATCH": true,
+    "TENANT_ISOLATION_PASS": true,
+    "SECRET_SANITIZATION_PASS": true,
+    "POISONING_PASS": true,
+    "CORRECTION_PASS": true,
+    "AUDIT_CHAIN_INTACT": true,
+    "VAULT_MASTER_KEY_PRESENT": true,
+    "PURGE_STILL_FAIL_CLOSED": true
+  },
+  "failed_checks": [],
+  "GATE_M3": "PASS",
+  "SECURITY_PROVEN": true
+}

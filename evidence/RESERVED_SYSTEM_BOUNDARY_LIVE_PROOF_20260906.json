@@ -1,0 +1,40 @@
+{
+  "checks": {
+    "gate_owner_memory_admin": true,
+    "gate_search_path_hardened": true,
+    "latest_migration_0051": true,
+    "probe_row_not_persisted": true,
+    "restore_gate_denied_42501": true,
+    "runtime_no_bypassrls": true,
+    "runtime_not_superuser": true,
+    "runtime_role_is_memory_app": true,
+    "system_context_insert_denied_42501": true,
+    "system_context_reads_no_rows": true
+  },
+  "failed": [],
+  "generated_at": "2026-09-06T14:46:37.505041+00:00",
+  "insert_attempt": {
+    "denied": true,
+    "error_type": "InsufficientPrivilege",
+    "sqlstate": "42501"
+  },
+  "latest_migration": "0051_reserved_system_and_restore_gate_hardening",
+  "restore_gate_attempt": {
+    "denied": true,
+    "error_type": "InsufficientPrivilege",
+    "sqlstate": "42501"
+  },
+  "runtime_gate": {
+    "config": "search_path=pg_catalog, public, pg_temp",
+    "owner": "memory_admin",
+    "runtime_execute": true
+  },
+  "runtime_role": {
+    "rolbypassrls": false,
+    "role": "memory_app",
+    "rolsuper": false
+  },
+  "secret_material_exposed": false,
+  "status": "PASS",
+  "system_visible_rows": 0
+}

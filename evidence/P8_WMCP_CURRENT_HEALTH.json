@@ -1,0 +1,9 @@
+{
+  "status": "ok",
+  "server": "windows-mcp",
+  "process_id": 28772,
+  "started_at": "2026-08-24T17:15:47.306190+00:00",
+  "checked_at": "2026-08-24T20:43:10.618975+00:00",
+  "python": "3.13.15",
+  "safe_probe": true
+}

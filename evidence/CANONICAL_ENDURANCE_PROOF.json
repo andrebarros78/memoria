@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-09-11T13:05:11.717199+00:00",
+  "proof": "CANONICAL_ENDURANCE_AND_CONCURRENT_READBACK",
+  "base": "http://127.0.0.1:8790",
+  "duration_target_seconds": 30,
+  "elapsed_seconds": 30.106,
+  "minimum_writes": 120,
+  "writes_created": 124,
+  "unique_item_ids": 124,
+  "versions_verified": 124,
+  "context_reads": 12,
+  "health_checks": 6,
+  "checkpoints": 4,
+  "idempotency_checks": 5,
+  "negative_scope_isolation": true,
+  "unauthenticated_runtime_status": 401,
+  "checks": {
+    "DURATION_REACHED": true,
+    "MINIMUM_WRITES_REACHED": true,
+    "ZERO_OPERATION_ERRORS": false,
+    "UNIQUE_ITEM_IDS": true,
+    "ALL_VERSIONS_INTEGRITY_OK": true,
+    "CONTEXT_READS_EXECUTED": true,
+    "HEALTH_CHECKS_EXECUTED": true,
+    "CHECKPOINTS_EXECUTED": true,
+    "LATEST_CHECKPOINT_RESUMABLE": true,
+    "IDEMPOTENCY_PROVEN": true,
+    "NEGATIVE_SCOPE_ISOLATION": true,
+    "UNAUTHENTICATED_PROTECTED_ENDPOINT_DENIED": true
+  },
+  "failed_checks": [
+    "ZERO_OPERATION_ERRORS"
+  ],
+  "errors": [
+    "context_missing_100",
+    "context_missing_110"
+  ],
+  "status": "FAIL",
+  "project_a": "scope-seal-a-a833146a8a53",
+  "project_b": "scope-seal-b-a833146a8a53",
+  "mission_id": "scope-seal-mission-a833146a8a53",
+  "sample_item_ids": [
+    "mem-23c23d8546d745389abd197c14393b79",
+    "mem-8d186ce98c0b43b99c983b232ab0916a",
+    "mem-b4da380a577c496891fdd3d2d3ce74eb",
+    "mem-092ea3866c7a45b09aa994285df75466",
+    "mem-a67bba87d8be4bfb9b18923b0029e5af"
+  ],
+  "latest_checkpoint_id": "cp-7ced0c200f24437d81a39aad5ec20083"
+}

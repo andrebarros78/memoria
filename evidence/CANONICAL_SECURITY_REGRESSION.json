@@ -1,0 +1,25 @@
+﻿{
+    "generated_at":  "2026-09-09T14:40:16.8855484-03:00",
+    "test_files":  [
+                       "tests\\test_api_auth_boundary.py",
+                       "tests\\test_capture_integration_security.py",
+                       "tests\\test_client_auth.py",
+                       "tests\\test_client_auth_adversarial.py",
+                       "tests\\test_client_auth_permissions.py",
+                       "tests\\test_dependency_security_contract.py",
+                       "tests\\test_input_guard.py",
+                       "tests\\test_memory_scope.py",
+                       "tests\\test_network_policy.py",
+                       "tests\\test_release_runtime_isolation.py",
+                       "tests\\test_reserved_system_context_hardening.py",
+                       "tests\\test_security_audit_v53.py",
+                       "tests\\test_trigger_security_definer_hardening.py",
+                       "tests\\test_ui_governance.py",
+                       "tests\\test_universal_auth_only.py",
+                       "tests\\test_windows_security_scripts_contract.py"
+                   ],
+    "exit_code":  0,
+    "log_sha256":  "2e0d37c15d4feaaa8756b88dee1b4cba8f211929a93b9872bd58741fc55d3da1",
+    "tail":  "..........................                                               [100%]\n============================== warnings summary ===============================\nruntime\\canonical-api\\Lib\\site-packages\\starlette\\testclient.py:53\n  C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0\\runtime\\canonical-api\\Lib\\site-packages\\starlette\\testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\n    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n98 passed, 1 warning in 5.42s",
+    "status":  "PASS"
+}

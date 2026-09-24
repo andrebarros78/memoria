@@ -1,0 +1,13 @@
+{
+  "observed_at": "2026-08-24T13:10:23-03:00",
+  "memory_api_offline": true,
+  "memory_api_previous_pid": 5296,
+  "wmcp_health": {
+    "status": "ok",
+    "server": "windows-mcp",
+    "process_id": 16452,
+    "python": "3.13.15",
+    "safe_probe": true
+  },
+  "result": "MEMORY_OFFLINE_WMCP_ALIVE=PASS"
+}

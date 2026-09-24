@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-09-01T13:45:59",
+  "gate": "M3",
+  "proof": "TENANT_RLS_ISOLATION_AUTH_HARDENED",
+  "tenant_a": "TENANT_A_6C1DB5E96C31",
+  "tenant_b": "TENANT_B_6C1DB5E96C31",
+  "item_a": "mem-0dac9f55daa44f469326cd0fded9766c",
+  "item_b": "mem-8f5cb8db025f451580ab4c9cc5baf5f4",
+  "trace_a": "trace-9140d80bd24b4dc3b42331f8e381eb98",
+  "trace_b": "trace-8cb7f047d81947979957278cc2a55c40",
+  "rls_policies": 17,
+  "force_rls_tables": 18,
+  "checks": {
+    "SIGNED_API_USED": true,
+    "RLS_POLICIES_MIN_14": true,
+    "FORCE_RLS_MIN_14": true,
+    "TENANT_A_RETRIEVES_OWN": true,
+    "TENANT_A_NEVER_RETRIEVES_B": true,
+    "TENANT_B_RETRIEVES_OWN": true,
+    "TENANT_B_NEVER_RETRIEVES_A": true,
+    "TENANT_A_LIST_ISOLATED": true,
+    "TENANT_B_LIST_ISOLATED": true,
+    "DB_RLS_A_ONLY": true,
+    "DB_RLS_B_ONLY": true,
+    "SEMANTIC_MODE_A": true,
+    "SEMANTIC_MODE_B": true,
+    "WORKER_OK": true
+  },
+  "failed_checks": [],
+  "M3_TENANT_ISOLATION_PROOF": "PASS"
+}

@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-09-01T13:46:10",
+  "gate": "M3",
+  "proof": "CORRECTION_VERSIONING_AUTH_HARDENED",
+  "tenant": "TENANT_CORRECTION_3E6D8CB731",
+  "item_id": "mem-d4b48adcc25e4f318f175a039bcfe7d5",
+  "version_1": {
+    "id": "ver-a4027494072f48dfba443a1cbbcf0b6e",
+    "valid_from": "2026-09-01T13:46:09.607247-03:00",
+    "valid_until": "2026-09-01T13:46:10.601633-03:00",
+    "sha256": "e5b2bcaacd746057815db84cb0910d88b88ba825a46e3bf84c30bffd632c9c9b"
+  },
+  "version_2": {
+    "id": "ver-1849374f4444411686ce6529e607d2ef",
+    "valid_from": "2026-09-01T13:46:10.601633-03:00",
+    "valid_until": null,
+    "sha256": "33a5c6ceb6864a05bf20036b4518e212d29faca3436cfcc81ff6e93fac51b678"
+  },
+  "checks": {
+    "SIGNED_API_USED": true,
+    "TWO_VERSIONS_PRESENT": true,
+    "VERSION_NUMBERS_1_2": true,
+    "V1_CONTENT_A": true,
+    "V2_CONTENT_B": true,
+    "CURRENT_IS_B": true,
+    "V2_LINKS_V1": true,
+    "V1_IMMUTABLE_HASH": true,
+    "TEMPORAL_VALID_FROM": true,
+    "V1_VALID_UNTIL_EQUALS_V2_VALID_FROM": true,
+    "V2_CURRENT_OPEN_ENDED": true,
+    "CREATE_AND_REVISE_EVENTS": true,
+    "APPEND_ONLY_UPDATE_BLOCKED": true,
+    "REVISION_RESPONSE_V2": true
+  },
+  "failed_checks": [],
+  "M3_CORRECTION_PROOF": "PASS"
+}

@@ -1,0 +1,209 @@
+{
+  "generated_at": "2026-09-02T13:04:12.997074+00:00",
+  "baseline": "0.14.2",
+  "result": "PASS",
+  "api": {
+    "status": "ok",
+    "service": "MEMORIA-PERMANENTE",
+    "version": "0.14.2",
+    "purge_direct_enabled": false,
+    "product_id": "memory-permanente-v4",
+    "dna_sha256": "1b39519b550e88c3913ea28a90469bb649cd792ab21de99ea34f215263ee7ead",
+    "trust_class": "FIRST_PARTY_INTERNAL"
+  },
+  "schema": "memory-0.14.2",
+  "postgresql": "18.6",
+  "pgvector": "0.8.6",
+  "pytest": {
+    "returncode": 0,
+    "summary": "55 passed in 1.00s",
+    "pass": true
+  },
+  "adapter_pytest": {
+    "returncode": 0,
+    "summary": "4 passed in 0.03s",
+    "pass": true
+  },
+  "migrations": {
+    "count": 17,
+    "all_match": true,
+    "items": [
+      {
+        "version": "0001_base",
+        "db": "ae2b3bc1e7609828127a521603afb7bfa113dd85fe45b2734b0d88a3a62ff8ec",
+        "file": "ae2b3bc1e7609828127a521603afb7bfa113dd85fe45b2734b0d88a3a62ff8ec",
+        "match": true
+      },
+      {
+        "version": "0002_m0_canonical",
+        "db": "307588ef97faa13d2d4019d82412baebbcb5d6d2f714b43ba431e5790a7a78a2",
+        "file": "307588ef97faa13d2d4019d82412baebbcb5d6d2f714b43ba431e5790a7a78a2",
+        "match": true
+      },
+      {
+        "version": "0003_m1_retrieval",
+        "db": "82cdf80d5ec7feeb8ed3d7bca6c11d7f3a876ae08ae7f13f027ff243318288df",
+        "file": "82cdf80d5ec7feeb8ed3d7bca6c11d7f3a876ae08ae7f13f027ff243318288df",
+        "match": true
+      },
+      {
+        "version": "0004_m1_pgvector",
+        "db": "f8b21339f18642fb310247208a790f5ad596396367b41fc387ab642ff5f124dc",
+        "file": "f8b21339f18642fb310247208a790f5ad596396367b41fc387ab642ff5f124dc",
+        "match": true
+      },
+      {
+        "version": "0005_m2_continuity",
+        "db": "cd306e74737d473e1d83c1ae60b883ce2bd5a0c51ad1357df2123775c7494545",
+        "file": "cd306e74737d473e1d83c1ae60b883ce2bd5a0c51ad1357df2123775c7494545",
+        "match": true
+      },
+      {
+        "version": "0006_m3_tenant_rls",
+        "db": "197f228e4c535720f14609dbfb051365bbcb3fd0de952045aed408d84ccba575",
+        "file": "197f228e4c535720f14609dbfb051365bbcb3fd0de952045aed408d84ccba575",
+        "match": true
+      },
+      {
+        "version": "0007_m5_multiagent",
+        "db": "b17537c6e5f3f076c995eb27b02d242df5dbceadb02166a9c8099e0536fbaeb2",
+        "file": "b17537c6e5f3f076c995eb27b02d242df5dbceadb02166a9c8099e0536fbaeb2",
+        "match": true
+      },
+      {
+        "version": "0008_governor_contract",
+        "db": "4ea876f5e3df3bd0cb98c55655249b4a73d25fdc2099d79b7036f2af6be22fba",
+        "file": "4ea876f5e3df3bd0cb98c55655249b4a73d25fdc2099d79b7036f2af6be22fba",
+        "match": true
+      },
+      {
+        "version": "0009_external_conversation_resolver",
+        "db": "19be14045e0449f971ea42112247cf9bed5b4721317307f15d646a58064571f2",
+        "file": "19be14045e0449f971ea42112247cf9bed5b4721317307f15d646a58064571f2",
+        "match": true
+      },
+      {
+        "version": "0010_conversation_ingestion",
+        "db": "850d18b13d7aae3aed94718d564c8bea6567f2d52f2e4cf6e0a7ff6d191aca69",
+        "file": "850d18b13d7aae3aed94718d564c8bea6567f2d52f2e4cf6e0a7ff6d191aca69",
+        "match": true
+      },
+      {
+        "version": "0011_runtime_role_grants",
+        "db": "49912d0c7f40586b2bede7174b4902264bca1b840a58430d6c9cfeb7f9911f9e",
+        "file": "49912d0c7f40586b2bede7174b4902264bca1b840a58430d6c9cfeb7f9911f9e",
+        "match": true
+      },
+      {
+        "version": "0012_trust_and_outcome_learning",
+        "db": "33f6e8e42b7f1ded69ddf01a8b7f279b6fdeeeea574ebf6c8cac0b486f720c37",
+        "file": "33f6e8e42b7f1ded69ddf01a8b7f279b6fdeeeea574ebf6c8cac0b486f720c37",
+        "match": true
+      },
+      {
+        "version": "0013_embedding_stale",
+        "db": "7c8b1f6f6fe54135cc53751e8f2e6d5f4fa3bef7ec85f06934f967016cfaefc3",
+        "file": "7c8b1f6f6fe54135cc53751e8f2e6d5f4fa3bef7ec85f06934f967016cfaefc3",
+        "match": true
+      },
+      {
+        "version": "0014_version_bound_learning_policy",
+        "db": "f0920eb719409f4cc0af46bba5f00c2c6227f84ee2cf331823522d5a746efac4",
+        "file": "f0920eb719409f4cc0af46bba5f00c2c6227f84ee2cf331823522d5a746efac4",
+        "match": true
+      },
+      {
+        "version": "0015_universal_auth_and_derived_dependencies",
+        "db": "4601800c7d6f7bf7299e9902cb4bde4fdb7fc72b7618ed354c912a60f2482205",
+        "file": "4601800c7d6f7bf7299e9902cb4bde4fdb7fc72b7618ed354c912a60f2482205",
+        "match": true
+      },
+      {
+        "version": "0016_decommission_legacy_governor_auth",
+        "db": "e72e6542bf3bdb889c5e1b6082fe4cd22ab2159669df4ab73529d4f23f4ad19c",
+        "file": "e72e6542bf3bdb889c5e1b6082fe4cd22ab2159669df4ab73529d4f23f4ad19c",
+        "match": true
+      },
+      {
+        "version": "0017_reconcile_legacy_governor_bindings",
+        "db": "7ded6ed96efdf31ea18267ce73955f80143db306371225d4156994f298bd3050",
+        "file": "7ded6ed96efdf31ea18267ce73955f80143db306371225d4156994f298bd3050",
+        "match": true
+      }
+    ]
+  },
+  "p05_p06": {
+    "result": "PASS",
+    "failed": [],
+    "proof_sha256": "ba62ee5cb97f3532e9778971a67583eb50e2f913dd25f469fd99e67ddd049304",
+    "active_legacy_bindings": 0,
+    "stale_v1_types": [
+      "CHECKPOINT",
+      "CONTEXT_PACK",
+      "EMBEDDING",
+      "RETRIEVAL_TRACE",
+      "SESSION_CHECKPOINT"
+    ],
+    "schema": "memory-0.14.2",
+    "registry": {
+      "5": {
+        "item_id": "mem-89026d1b43e74430b3cface0783a2e89",
+        "item_validation_status": "VALIDATED",
+        "item_governor_eligible": false,
+        "current_content_sha256": "05b73fc76da7685ac5e921cb7dcb4267f65abc2d74a8fb6212ae3b124a6ce8e6",
+        "source_version": "MEMORIA_PLUS_V3",
+        "version_no": 3,
+        "version_id": "ver-e34848117b0b4543a887df5d28f51443",
+        "implemented_version": "0.14.2",
+        "memory_status": "PROVEN",
+        "validation_id": "val-76c09a8dab774a6bb0b70914632fe95e",
+        "validation_status": "VALIDATED",
+        "validation_content_sha256": "05b73fc76da7685ac5e921cb7dcb4267f65abc2d74a8fb6212ae3b124a6ce8e6",
+        "validation_matches_current": true
+      },
+      "6": {
+        "item_id": "mem-300aad836c4e42469bb4a1a54f605d44",
+        "item_validation_status": "VALIDATED",
+        "item_governor_eligible": false,
+        "current_content_sha256": "b059fcb14ee8c060d9754132ea3ce1f96c6f2d4ad60172b5ec91d6d2ba780ea4",
+        "source_version": "MEMORIA_PLUS_V3",
+        "version_no": 3,
+        "version_id": "ver-fcee8ae8bf584c1da2cea2367bde36ed",
+        "implemented_version": "0.14.2",
+        "memory_status": "PROVEN",
+        "validation_id": "val-258b0dd91dcc4675a9a09a025bd4892a",
+        "validation_status": "VALIDATED",
+        "validation_content_sha256": "b059fcb14ee8c060d9754132ea3ce1f96c6f2d4ad60172b5ec91d6d2ba780ea4",
+        "validation_matches_current": true
+      }
+    },
+    "registry_file_sha256": "1e136763f386f7d3ba65bade496fabd4a868c1dc81ccc782b7cd294af8e35da9"
+  },
+  "legacy_governor_active_bindings": 0,
+  "audit": {
+    "events": 3412,
+    "invalid_hash": [],
+    "missing_parent": [],
+    "manifest_root": "39f18e94848cb5c4c3558d1fbd00a06cddfca0a318567b5b87613c69185fcb0a",
+    "pass": true
+  },
+  "backup": {
+    "manifest": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p05-p06\\memory-20260902-100053.manifest.json",
+    "dump_file": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p05-p06\\memory-20260902-100053.dump",
+    "dump_bytes": 8096862,
+    "sha256": "2B5CF577E0A2AED52909844C44E9423E6CC1C4CEE5AAD4B43914E85BCE61CA07",
+    "restore_catalog_entries": 334,
+    "backup_valid": true,
+    "row_security": "ON",
+    "tenant_context": "__SYSTEM__"
+  },
+  "wheel": {
+    "file": "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\baseline-wheel-0.14.2\\memoria_permanente-0.14.2-py3-none-any.whl",
+    "bytes": 65948,
+    "sha256": "868ef8b54dacb7481ac187da875b22e74e8baf4b8f7a4d38b6f0323497e8f4f2",
+    "forbidden_entries": [],
+    "clean": true
+  },
+  "strict_errors": [],
+  "failed": []
+}

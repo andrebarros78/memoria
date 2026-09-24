@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "reconciled_at": "2026-09-02T17:46:15.240695-03:00",
+  "migration": "0030_input_guard_v2",
+  "original_applied_sha256": "6e4d912797506f8213c767ae4f8ac86efc95dc112567753d13985c8520378318",
+  "reconciled_source_sha256": "461ed916ec65a6f2d224caa0ca7bb6a9264dbf881c2941e5093ed3ddd328be9b",
+  "semantic_contract": {
+    "schema_version": "memory-0.23.0",
+    "input_guard_version": "IG-2.0.0",
+    "input_guard_languages": "en,pt,es,it,fr,de",
+    "input_guard_encodings": "PERCENT,HTML_ENTITY,UNICODE_ESCAPE,BASE64,URLSAFE_BASE64,HEX",
+    "input_guard_structured_sources": "MEMORY,ATTACHMENT,TOOL_OUTPUT,EXTERNAL_DOCUMENT,WEB_CONTENT",
+    "input_guard_distributed_detection": "true"
+  },
+  "source_is_metadata_only": true,
+  "source_is_idempotent": true,
+  "reason": "Source file was overwritten during the same in-progress P15 recovery after the original migration had already been applied; source was reconstructed to the exact observed semantic contract before checksum reconciliation."
+}

@@ -1,0 +1,86 @@
+{
+  "proof_id": "V5.2_FINAL_PROOF_20260904",
+  "generated_at_brt": "2026-09-04T18:57:21.441515-03:00",
+  "branch": "v5.2-rebase-acquisitions-20260904",
+  "base_head_before_final_commit": "65025dc606b22f618277900b4c9a630d989e1bce",
+  "v4_baseline": "c77686471dbec0b53002b8d2653cf7dcb90b658f",
+  "rc1_validated_head": "65025dc606b22f618277900b4c9a630d989e1bce",
+  "runtime": {
+    "v4_api": "127.0.0.1:8787",
+    "v4_phoenix": "127.0.0.1:6006",
+    "v52_rc1_api": "127.0.0.1:8792",
+    "rc1_database": "memoria_permanente_v52_rc1",
+    "runtime_profile": "V5.2-RC1",
+    "release_channel": "rc1-parallel"
+  },
+  "implemented": {
+    "human_operational_panel": true,
+    "human_memory_identity": true,
+    "retrieval_explainability": true,
+    "local_signed_observability": true,
+    "mcp_human_view": true,
+    "mcp_search_explain": true,
+    "health_runtime_profile": true
+  },
+  "api_validation": {
+    "health_status": 200,
+    "unsigned_human_dashboard_status": 401,
+    "signed_human_dashboard_status": 200,
+    "human_dashboard_contract": "V5.2_HUMAN_OPERATIONAL_VIEW",
+    "signed_observability_status": 200,
+    "observability_contract": "V5.2_OBSERVABILITY_LOCAL_V1",
+    "context_retrieve_explain_status": 200,
+    "explainability_contract": "RETRIEVAL_EXPLAINABILITY_V1",
+    "retrieval_modes": [
+      "LEXICAL",
+      "SEMANTIC"
+    ],
+    "selected_count": 1,
+    "v4_trace_count_unchanged": true,
+    "v4_trace_before": 95,
+    "v4_trace_after": 95,
+    "rc1_trace_before": 98,
+    "rc1_trace_after": 99
+  },
+  "mcp_validation": {
+    "tools_list_exit": 0,
+    "memory_human_view_exit": 0,
+    "memory_human_view_contract": "V5.2_MCP_HUMAN_VIEW",
+    "direct_database_access": false
+  },
+  "database_recovery": {
+    "dump_exit": 0,
+    "restore_exit": 0,
+    "pg_amcheck_source_exit": 0,
+    "pg_amcheck_restore_exit": 0,
+    "table_sets_equal": true,
+    "source_table_count": 76,
+    "restore_table_count": 76,
+    "row_counts_equal": true,
+    "restore_database_removed": true
+  },
+  "quality_gates": {
+    "pytest_total": "186/186 PASS",
+    "pytest_exit": 0,
+    "git_diff_check_exit": 0,
+    "script_parse_errors": 0,
+    "defender_project_threats": 0
+  },
+  "phoenix_parallel": {
+    "status": "NOT_PROMOTED",
+    "decision": "replaced by signed local observability for V5.2 RC1 on this host",
+    "fallback": "/metrics signed + retrieval_traces + v52 observability endpoint"
+  },
+  "git_status_before_commit": "M deploy/v5.2-rc1/start-api.ps1\n M src/memory_permanent/api.py\n M src/memory_permanent/client_auth.py\n M src/memory_permanent/mcp_server.py\n M src/memory_permanent/static/app.js\n M src/memory_permanent/static/index.html\n M src/memory_permanent/static/styles.css\n M src/memory_permanent/store.py\n?? .agents/mcp-v52-human.err\n?? .agents/mcp-v52-human.json\n?? .agents/mcp-v52-rc1.json\n?? .agents/mcp-v52-tools.err\n?? .agents/mcp-v52-tools.json\n?? .agents/patch_v52_backend.py\n?? .agents/patch_v52_health.py\n?? .agents/patch_v52_mcp.py\n?? .agents/patch_v52_ui.py\n?? .agents/v52-final-current.txt\n?? .agents/v52-final-restore-db.txt\n?? .agents/v52_final_parity.py\n?? .agents/v52_operational_probe.py\n?? .agents/write_v52_final_evidence.py\n?? .agents/write_v52_module.py\n?? .agents/write_v52_probe.py\n?? .agents/write_v52_tests.py\n?? src/memory_permanent/v52_operational.py\n?? tests/test_v52_operational.py",
+  "changed_files": [
+    "deploy/v5.2-rc1/start-api.ps1",
+    "src/memory_permanent/api.py",
+    "src/memory_permanent/client_auth.py",
+    "src/memory_permanent/mcp_server.py",
+    "src/memory_permanent/static/app.js",
+    "src/memory_permanent/static/index.html",
+    "src/memory_permanent/static/styles.css",
+    "src/memory_permanent/store.py"
+  ],
+  "result": "V5.2_READY_FOR_FINAL_COMMIT"
+}

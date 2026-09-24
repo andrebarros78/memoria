@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-08-25T13:44:12.574304-03:00",
+  "session_id": "m9-proof-1787676251",
+  "required_memory_ids": [
+    "mem-5283bd2abe1943798f66dbd84aeacbdf",
+    "mem-ed895250a0614f86bc8d155814e7c96f"
+  ],
+  "old_binding_id": "bind-9225854b81534e7a913c05057736e959",
+  "successful_new_binding_id": "bind-732023909f364c299b25be80f1ca5b76",
+  "successful_rotation_id": "rot-1655d9b3eb1e452a9d244d8c0621cedf",
+  "context_sha256": "4c97c8a7820ba004ab02aecd98f69bc3a85db7be54c8e7f5a4ca1ae4508d2b53",
+  "checkpoint_id": "scp-d7138c7312e749bea8357c4b11e99424",
+  "memory_before_mb": 120.0,
+  "memory_after_mb": 35.0,
+  "memory_released_mb": 85.0,
+  "checks": {
+    "WAITING_SAFE_POINT": true,
+    "SAFE_POINT_PROMOTION": true,
+    "CHECKPOINT_CONTEXT_PACK": true,
+    "REQUIRED_MEMORY_IDS_PRESERVED": true,
+    "FAILURE_PRESERVES_OLD_SESSION": true,
+    "BAD_NEW_BINDING_ABORTED": true,
+    "OLD_KEPT_UNTIL_VALIDATION": true,
+    "SUCCESSFUL_ROTATION": true,
+    "SINGLE_CURRENT_BINDING": true,
+    "RECOVERY_PLAN": true,
+    "AUDIT_CHAIN": true
+  },
+  "failed_checks": [],
+  "M9_MEMORY_CORE_PROOF": "PASS"
+}

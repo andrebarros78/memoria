@@ -1,0 +1,13 @@
+{
+    "started_at":  "2026-08-30T06:54:17.7539623-03:00",
+    "wmcp_pid_before":  32856,
+    "memory_before":  "ok",
+    "wmcp_offline_observed":  true,
+    "memory_during_wmcp_offline":  "ok",
+    "memory_count_during_wmcp_offline":  514,
+    "wmcp_restored":  false,
+    "wmcp_pid_after":  null,
+    "memory_after":  "ok",
+    "P6_WMCP_OFFLINE_MEMORY_ALIVE":  "FAIL",
+    "finished_at":  "2026-08-30T06:55:10.7326415-03:00"
+}

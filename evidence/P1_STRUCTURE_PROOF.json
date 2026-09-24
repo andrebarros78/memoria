@@ -1,0 +1,20 @@
+{
+  "project_root": "C:\\New Projet\\MEMORIA-PERMANENTE",
+  "independent_root": true,
+  "missing": [],
+  "forbidden_imports": [],
+  "required_files": 10,
+  "hashes": {
+    "pyproject.toml": "c3ad9118bc9146da0aa2901aff6cf0c64f11a50bdce06c1fa5f37695e0220707",
+    "src\\memory_permanent\\__init__.py": "151a4e278da3a3b7d8b7fa36305f1f5b7740e962af987051ec191caecb1dd5db",
+    "src\\memory_permanent\\domain.py": "f0615ad2276bf188987c3ebb583cc8c20399bf829f3e859eb293fdb303f5e409",
+    "src\\memory_permanent\\input_guard.py": "4cd2674622c21e81b986c2614561aa407de62998e2aea0654b74af60f3812a0f",
+    "src\\memory_permanent\\store.py": "3deaf99654564b6bdb9ec236dd7ee9421cdc667e7d60ed8562dccf03068fe96a",
+    "src\\memory_permanent\\report.py": "2d16d8cb2864eb239950f25739ec92d2b4894c6c3489f8fb4efb5e4f51f2a953",
+    "src\\memory_permanent\\api.py": "95aaca2997fc7054caf11532ed31e3b8cc7c6640ee4e9c1e895a880cd9c332b3",
+    "src\\memory_permanent\\static\\index.html": "cf25347181042b5f6f815211f2a5d57d9caf9657632680e81a793a92852fa8fd",
+    "src\\memory_permanent\\static\\styles.css": "f89dde39ae3cdb2cca03a08874db05f2887be702ae03cd661f267c9bfdf10714",
+    "src\\memory_permanent\\static\\app.js": "4bfd492f8f4f3b7c73a5a9a5578cbbd7b7c8fbd9c9e026d6740287b298f61067"
+  },
+  "P1_INDEPENDENT_MODULE": "PASS"
+}

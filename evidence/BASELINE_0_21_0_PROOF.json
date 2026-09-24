@@ -1,0 +1,155 @@
+{
+  "generated_at": "2026-09-02T19:18:02.229435+00:00",
+  "result": "PASS",
+  "failed": [],
+  "checks": {
+    "api_0_21_0": true,
+    "schema_memory_0_21_0": true,
+    "economic_memory_em_1_0_0": true,
+    "bitemporal_bt_1_0_0": true,
+    "p13_proof_40_40": true,
+    "p13_registry_proof_hash": true,
+    "p13_memory_core_proven": true,
+    "p13_validation_exact": true,
+    "core_108_pass": true,
+    "adapter_3_pass": true,
+    "audit_pass": true,
+    "migrations_28_exact": true,
+    "backup_hash_exact": true,
+    "backup_restore_render_pass": true,
+    "wheel_clean": true,
+    "v4_full_proven_false": true
+  },
+  "version": "0.21.0",
+  "schema": {
+    "schema_version": "memory-0.21.0",
+    "economic_memory_version": "EM-1.0.0",
+    "experience_graph_version": "EG-1.0.0",
+    "decision_record_version": "DR-1.1.0",
+    "bitemporal_version": "BT-1.0.0"
+  },
+  "core": "108 passed in 2.74s",
+  "adapter": "3 passed in 0.04s",
+  "audit": {
+    "events": 3844,
+    "invalid_hash": [],
+    "missing_parent": [],
+    "fork_group_count": 17,
+    "fork_event_count": 40,
+    "fork_groups": [
+      [
+        573,
+        574,
+        575,
+        576,
+        577,
+        578
+      ],
+      [
+        582,
+        583
+      ],
+      [
+        584,
+        585
+      ],
+      [
+        588,
+        589,
+        590
+      ],
+      [
+        593,
+        594,
+        595
+      ],
+      [
+        611,
+        612
+      ],
+      [
+        630,
+        631
+      ],
+      [
+        634,
+        635
+      ],
+      [
+        637,
+        638
+      ],
+      [
+        1226,
+        1227
+      ],
+      [
+        1248,
+        1249
+      ],
+      [
+        2638,
+        2639
+      ],
+      [
+        2650,
+        2651
+      ],
+      [
+        2737,
+        2738
+      ],
+      [
+        2764,
+        2765
+      ],
+      [
+        2804,
+        2805
+      ],
+      [
+        2938,
+        2939
+      ]
+    ],
+    "manifest_root": "c30f85220fc808347b25ce230a92a8cce2ccb4c2672739ca4920e2e3b87c0663",
+    "PASS": true
+  },
+  "migrations": {
+    "count": 28,
+    "latest": {
+      "version": "0028_economic_memory",
+      "checksum_sha256": "6bbd7623c8b46409287f2897f634b9ffd4035694920d1250d041ee7ab71414f3"
+    },
+    "migration_0028_sha256": "6bbd7623c8b46409287f2897f634b9ffd4035694920d1250d041ee7ab71414f3"
+  },
+  "p13": {
+    "item_id": "mem-40d6ba435bc3405991d68cc303814b12",
+    "version_no": 2,
+    "version_id": "ver-504597d3b34547439f55611c1fd08376",
+    "content_sha256": "a9a4c22c880c9312dcd197fc64dc641041a662b138ecdbf96372cd31368e3259",
+    "validation_id": "val-5267c92cf56f457f90eb7e28f5ae100a",
+    "status": "PROVEN",
+    "validation_status": "VALIDATED",
+    "proof_sha256": "21392602cfe0033d58d69725b529b28a97eb5156d04b51d7c62962b847f6dc98",
+    "registry_sha256": "ff279404868b935d6c18381e0a8f30b8a3f2923898217a64fa93c7ed6621cb4c"
+  },
+  "backup": {
+    "manifest": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p13-final\\memory-20260902-161633.manifest.json",
+    "dump": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p13-final\\memory-20260902-161633.dump",
+    "bytes": 8624476,
+    "sha256": "4bda650559f38876d5cbce34ae891b91e4ad1f3a4b083c388a11e4ecb6d3d416",
+    "restore_catalog_entries": 666,
+    "restore_render_rc": 0,
+    "restore_render_bytes": 28273095
+  },
+  "wheel": {
+    "file": "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\baseline-wheel-0.21.0\\memoria_permanente-0.21.0-py3-none-any.whl",
+    "bytes": 91393,
+    "sha256": "a1f5a83e39b1a4d2e4204092bafea672519fc28fcc8127fcd0ae9b80f9ba1120",
+    "entries": 36,
+    "forbidden_entries": [],
+    "clean": true
+  },
+  "v4_full_proven": false
+}

@@ -1,0 +1,14 @@
+{
+    "generated_at":  "2026-08-27T15:47:52.6510935-03:00",
+    "test":  "REAL_CONVERSATION_RECOVERY",
+    "provider":  "chatgpt",
+    "external_session_ref":  "g/g-p-6a7085df8b508191b87fbc528e2cb617/c/6a8c5325-1d80-83e9-ae7e-2da30ca98b8f",
+    "canonical_external_ref":  "6a8c5325-1d80-83e9-ae7e-2da30ca98b8f",
+    "found":  false,
+    "reason":  "NOT_CAPTURED",
+    "recoverable":  false,
+    "lookup_ms":  2215.705,
+    "browser_used":  false,
+    "learning_used":  false,
+    "verdict":  "FAIL_LIVE_CAPTURE_NOT_PRESENT"
+}

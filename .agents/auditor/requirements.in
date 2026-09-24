@@ -1,0 +1,4 @@
+# Direct, security-reviewed auditor dependencies. Transitive versions are pinned in requirements.lock.txt.
+openai-agents==0.22.0
+arize-phoenix-otel==0.17.1
+openinference-semantic-conventions==0.1.35

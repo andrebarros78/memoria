@@ -1,0 +1,49 @@
+{
+    "generated_at":  "2026-08-27T12:25:36.8686748-03:00",
+    "proof":  "POSTGRESQL_18_6_HOMOLOGATION",
+    "status":  "PASS",
+    "host":  "DESKTOP-JNS08PU",
+    "endpoint":  "127.0.0.1:55436",
+    "server_version":  "18.6",
+    "pgvector_version":  "0.8.6",
+    "schema_version":  "memory-0.8.0",
+    "api_version":  "0.8.1",
+    "service_path":  "\"C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\pgsql18-bin\\pgsql\\bin\\pg_ctl.exe\" runservice -N \"MEMORIA_PERMANENTE_PG\" -D \"C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\postgres18\\data\" -w",
+    "service_start_mode":  "Auto",
+    "before_restart_pid":  18844,
+    "after_restart_pid":  29780,
+    "regression_output":  "...........................                                              [100%]\n27 passed in 1.70s",
+    "audit_events":  559,
+    "audit_head":  "0f5790a422c315c3650de62deec34875b67b70d4c7b7ff43ef00538c42e73413",
+    "post_cutover_backup":  {
+                                "file":  "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\operational\\memory-20260827-122219.dump",
+                                "bytes":  2909758,
+                                "sha256":  "BC019C0CFC1A7AD36A039A4C0028CAEB7B4136E1DB2F28EA80AF40EB92A3B256",
+                                "pg_dump_version":  "pg_dump (PostgreSQL) 18.6"
+                            },
+    "binary_hashes":  {
+                          "postgres_exe":  "AF5B897CB69C9CE692A4A15ECD022B540DB85DB1ADD0F66D2B9F0697BE2451A0",
+                          "vector_dll":  "22F0B058BC095274EDBC0EFF5E164524F6D71415648C4B00E8FAD3D3F43C1FC1"
+                      },
+    "checks":  {
+                   "POSTGRES_18_6":  true,
+                   "PGVECTOR_0_8_6":  true,
+                   "SCHEMA_MEMORY_0_8_0":  true,
+                   "SERVICE_RUNNING":  true,
+                   "SERVICE_AUTO_START":  true,
+                   "SERVICE_USES_PG18":  true,
+                   "ENDPOINT_55436_READY":  true,
+                   "RESTART_PID_CHANGED":  true,
+                   "API_HEALTHY":  true,
+                   "API_VERSION_0_8_1":  true,
+                   "FULL_REGRESSION_27_PASS":  true,
+                   "AUDIT_CHAIN_VALID":  true,
+                   "FINAL_PARITY_PASS":  true,
+                   "POST_CUTOVER_BACKUP_VALID":  true,
+                   "POST_CUTOVER_BACKUP_USES_PG18":  true,
+                   "OLD_V4_PG17_INACTIVE":  true
+               },
+    "failed_checks":  [
+
+                      ]
+}

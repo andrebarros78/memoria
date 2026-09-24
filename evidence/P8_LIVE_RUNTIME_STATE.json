@@ -1,0 +1,12 @@
+{
+    "captured_at":  "2026-08-24T17:43:03.3703944-03:00",
+    "memory_pg_service_state":  "Running",
+    "memory_pg_start_mode":  "Auto",
+    "memory_db_ready":  true,
+    "governor_db_ready":  true,
+    "api_task_state":  "Running",
+    "memory_api_health":  "ok",
+    "memory_count":  135,
+    "wmcp_health":  "checked-separately",
+    "release_generation":  36
+}

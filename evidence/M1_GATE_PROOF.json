@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-08-25T13:41:04.517732-03:00",
+  "gate": "M1",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "dimensions": 384,
+  "pgvector_version": "0.8.6",
+  "index_definition": "CREATE INDEX idx_memory_embeddings_hnsw_cosine ON public.memory_embeddings USING hnsw (embedding_vector vector_cosine_ops) WHERE ((status = 'READY'::text) AND (embedding_vector IS NOT NULL))",
+  "semantic_backend": "PGVECTOR_HNSW_COSINE",
+  "namespace": "M1_PGVECTOR_1787676057-6E0425DA",
+  "mission_id": "m1-pgvector-mission-1787676057-6e0425da",
+  "item_ids": {
+    "semantic_target": "mem-ed9eedc7ddb3412c92c01d20c7a628d6",
+    "lexical_target": "mem-5aa173001b184ba2a105f134f1e64099",
+    "unrelated": "mem-f33cdafd152f4b2aa170b7eaea09aac3"
+  },
+  "checkpoint_id": "cp-5bfa14e0acdc46a3a0bf8a88bf9a3942",
+  "trace_id": "trace-924e1b37159340cf8a034d692eb63b98",
+  "retrieval_modes": [
+    "LEXICAL",
+    "SEMANTIC",
+    "STATE"
+  ],
+  "retrieval_source": "SEMANTIC_PGVECTOR",
+  "semantic_similarity": {
+    "target": 0.3915930653465779,
+    "unrelated": 0.08948430329648482
+  },
+  "worker": {
+    "ts": 1787676062.852865,
+    "model_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "dimensions": 384,
+    "jobs": 4,
+    "embedded": 4,
+    "failed": 0,
+    "errors": []
+  },
+  "checks": {
+    "API_VERSION_SUPPORTS_M1": true,
+    "SCHEMA_VERSION_SUPPORTS_M1": true,
+    "PGVECTOR_0_8_6_ENABLED": true,
+    "HNSW_COSINE_INDEX_PRESENT": true,
+    "THREE_PROOF_VECTORS_READY": true,
+    "ASYNC_WORKER_PASS": true,
+    "SEMANTIC_TARGET_NOT_LEXICAL_MATCH": true,
+    "LEXICAL_TARGET_FOUND": true,
+    "LEXICAL_MODE_USED": true,
+    "SEMANTIC_MODE_USED": true,
+    "STATE_MODE_USED": true,
+    "SEMANTIC_PATH_IS_PGVECTOR": true,
+    "SEMANTIC_PARAPHRASE_RECOVERED": true,
+    "SEMANTIC_TARGET_OUTRANKS_UNRELATED": true,
+    "CHECKPOINT_STATE_RECOVERED": true,
+    "TRACE_PERSISTED": true,
+    "TRACE_MODES_PERSISTED": true,
+    "DUAL_REPRESENTATION_AVAILABLE": true
+  },
+  "failed_checks": [],
+  "GATE_M1": "PASS",
+  "RETRIEVAL_PROVEN": true
+}

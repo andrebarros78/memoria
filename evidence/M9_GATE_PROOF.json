@@ -1,0 +1,44 @@
+{
+    "generated_at":  "2026-08-24T21:41:46.3670309-03:00",
+    "gate":  "M9",
+    "terminal_state":  "SESSION_ROTATION_PROVEN",
+    "core_evidence":  "evidence/M9_MEMORY_CORE_PROOF.json",
+    "external_evidence":  "C:/New Projet/MEMORIA-SESSION-MANAGER/evidence/M9_EXTERNAL_SESSION_ROTATION_PROOF.json",
+    "required_memory_ids":  [
+                                "mem-84da1ff35c034978856484660595c98a",
+                                "mem-c2191557827d43458589778d4768336d"
+                            ],
+    "context_sha256":  "b4b717bf3cd3a8a8583a21682ab3820584c47b21c7f80f063f861cfe5b703e1d",
+    "checkpoint_id":  "scp-7683f73d41ef4718bd4ab1db469e15ea",
+    "old_pid":  17740,
+    "good_pid":  17840,
+    "sustained_rss_samples_mb":  [
+                                     205.051,
+                                     205.051,
+                                     205.051,
+                                     205.051,
+                                     205.051
+                                 ],
+    "old_rss_before_close_mb":  205.094,
+    "new_rss_after_rotation_mb":  55.109,
+    "measured_client_ram_released_mb":  149.985,
+    "system_available_delta_mb":  150.98,
+    "checks":  {
+                   "CORE_PROOF":  true,
+                   "EXTERNAL_PROOF":  true,
+                   "EXTERNAL_CHECKS_16_OF_16":  true,
+                   "REAL_SUSTAINED_PRESSURE":  true,
+                   "REAL_RAM_RELEASE":  true,
+                   "BAD_VALIDATION_FAIL_CLOSED":  true,
+                   "OLD_CLOSE_AFTER_VALIDATION":  true,
+                   "NO_CRITICAL_OLD_DEPENDENCY":  true,
+                   "MANAGER_HTTP_ONLY":  true,
+                   "MEMORY_HEALTH":  true,
+                   "PUBLIC_API_ROUTES":  true
+               },
+    "failed_checks":  [
+
+                      ],
+    "GATE_M9":  "PASS",
+    "SESSION_ROTATION_PROVEN":  true
+}

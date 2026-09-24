@@ -1,0 +1,379 @@
+{
+    "schema":  "memoria-permanente.terminal-proof.v1",
+    "generated_at":  "2026-09-04T14:27:01.9636942-03:00",
+    "project":  "MEMORIA_PERMANENTE_IA_SISTEMAS_V4",
+    "workspace":  "C:\\New Projet\\MEMORIA-PERMANENTE",
+    "code_baseline":  {
+                          "commit":  "9f24d7140b5d19cb51084acb295c350a21f4e480",
+                          "tree":  "ff2fc481211e002538211c7022a784e557e70a89",
+                          "baseline_tag":  "baseline-0.26.1"
+                      },
+    "product":  {
+                    "service":  "MEMORIA-PERMANENTE",
+                    "status":  "ok",
+                    "version":  "0.26.1-recovery",
+                    "product_id":  "memory-permanente-v4",
+                    "dna_sha256":  "1b39519b550e88c3913ea28a90469bb649cd792ab21de99ea34f215263ee7ead",
+                    "dna_verified":  true,
+                    "trust_class":  "FIRST_PARTY_INTERNAL"
+                },
+    "gates":  {
+                  "regression":  {
+                                     "result":  "PASS",
+                                     "tests_passed":  162,
+                                     "tests_failed":  0,
+                                     "exit_code":  0
+                                 },
+                  "mcp_inspector":  {
+                                        "tools_list_exit":  0,
+                                        "tools_call_exit":  0,
+                                        "signed_memory_api":  true
+                                    },
+                  "opa":  {
+                              "allow_legitimate":  true,
+                              "deny_direct_db":  true,
+                              "deny_wrong_client":  true,
+                              "deny_write":  true
+                          },
+                  "learning_loop":  {
+                                        "skill_version_id":  "osv-15f20d1dd5904c058242c7bb98bbfbe8",
+                                        "implementation_sha256":  "27aefd1afb41f31f7621adb816d9412cfb27257ff6ac1aa0897dbec3a85607a1",
+                                        "replay_exit":  0,
+                                        "recovery_exit":  0,
+                                        "proof_gate":  "REPLAY+RECOVERY",
+                                        "status":  "PROVEN",
+                                        "activation_opa_allow":  true,
+                                        "unproven_activation_denied":  true,
+                                        "baseline_score":  0,
+                                        "reused_score":  1,
+                                        "improved":  true
+                                    },
+                  "restore":  {
+                                  "dump_sha256":  "df263a5ff03c082cc3bf37486f7fcbe80e4ef62288ebe5e7f5e1dfa1b3ed823d",
+                                  "pg_restore_exit":  0,
+                                  "parity_exit":  0,
+                                  "table_sets_equal":  true,
+                                  "source_table_count":  72,
+                                  "restore_table_count":  72,
+                                  "row_counts_equal":  true,
+                                  "pg_amcheck_restore_exit":  0
+                              },
+                  "database":  {
+                                   "pg_amcheck_canonical_final_exit":  0,
+                                   "migration_0039_sha256":  "91d80246769756f99e98c280387941627a29df7b9b7aece7946a185141a44349"
+                               },
+                  "security":  {
+                                   "trivy_full_terminal_exit":  0,
+                                   "trivy_post0039_clean_head_exit":  0,
+                                   "trivy_post0039_note":  "source snapshot: secret scanner clean; vuln/misconfig scanners reported no supported artifacts in this snapshot",
+                                   "defender_terminal_exit":  0,
+                                   "defender_post0039_clean_head_exit":  0,
+                                   "defender_post0039_result":  "found no threats"
+                               },
+                  "supervisor":  {
+                                     "scheduled_task_state":  "Running",
+                                     "project_health_verified":  true,
+                                     "supervisor_state":  "ready",
+                                     "isolated_worker_01":  "idle",
+                                     "runtime_acl":  "READ_EXECUTE_ONLY",
+                                     "sensitive_runtime_denies":  true
+                                 }
+              },
+    "evidence":  {
+                     "raw_root":  ".agents/evidence/mission-20260904-terminal",
+                     "file_count":  57,
+                     "root_sha256":  "b6ea9bf75dbc1be4ac5c923fa0d7a09f472675d1e1ddf7dcf36211a0a5f35171",
+                     "files":  [
+                                   {
+                                       "relative_path":  "backup/memoria-permanente-terminal-20260904111935.dump",
+                                       "bytes":  568414,
+                                       "sha256":  "8e1dc4d9d10b27a5e3f7ff9819091daa0e5716b70fd4a718fc2d5ced5536e1a6"
+                                   },
+                                   {
+                                       "relative_path":  "backup/memoria-permanente-terminal-20260904112138.dump",
+                                       "bytes":  568483,
+                                       "sha256":  "3d06e6eb45a1a45ce62f5c2d838ff66df6a08165753d043d55d97a5b67c7b688"
+                                   },
+                                   {
+                                       "relative_path":  "backup/pg_restore-list.txt",
+                                       "bytes":  73292,
+                                       "sha256":  "43da695a0e48b56ee459ede32b7fae0ae3ec9e927448795d8cfe325a8916924d"
+                                   },
+                                   {
+                                       "relative_path":  "backup/pg_restore-list-20260904112138.txt",
+                                       "bytes":  73292,
+                                       "sha256":  "e6c36e14b97fd555a84fc83072f46614eb7a54f0bae1f85a042055a5f732bcb0"
+                                   },
+                                   {
+                                       "relative_path":  "backup/restore-output.txt",
+                                       "bytes":  18978,
+                                       "sha256":  "fa447a2b713d3f0ebaa7cc2bc940932d88ceb5876f7a503938dee804323a24f1"
+                                   },
+                                   {
+                                       "relative_path":  "backup/restore-parity-20260904112138.json",
+                                       "bytes":  2018,
+                                       "sha256":  "94606c78e4760aa9c77ac9807d6ce6841055309a13eb25db24c0781f91eaff3c"
+                                   },
+                                   {
+                                       "relative_path":  "defender-clean-head.stderr.txt",
+                                       "bytes":  0,
+                                       "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                                   },
+                                   {
+                                       "relative_path":  "defender-clean-head.stdout.txt",
+                                       "bytes":  101,
+                                       "sha256":  "99ddc667eee5dacc964e566c90a97bddf6460e8ceb7d18eecaf392094d968aef"
+                                   },
+                                   {
+                                       "relative_path":  "defender-status-after.json",
+                                       "bytes":  196,
+                                       "sha256":  "24e661fbb21e41eea0a741a17c20f1d6f79026dd85184868048cbc86db26241d"
+                                   },
+                                   {
+                                       "relative_path":  "defender-status-before.json",
+                                       "bytes":  196,
+                                       "sha256":  "24e661fbb21e41eea0a741a17c20f1d6f79026dd85184868048cbc86db26241d"
+                                   },
+                                   {
+                                       "relative_path":  "defender-terminal.txt",
+                                       "bytes":  192,
+                                       "sha256":  "9bd00bb7f3bdf0e71d994d7d3c77d7030b5880eafa7ca5ce563e7514b93e33d2"
+                                   },
+                                   {
+                                       "relative_path":  "defender-terminal-exit.txt",
+                                       "bytes":  20,
+                                       "sha256":  "3d70711b920ed774fa547ad3a6fbbdfb034b3e4cde8f21f779b24cd5fa94a599"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/activation-decision.json",
+                                       "bytes":  66,
+                                       "sha256":  "d1da7bdfbcfc595515767bea272b3577e4f787de7266393f4388c82c5b5f4065"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/activation-opa-deny-input.json",
+                                       "bytes":  315,
+                                       "sha256":  "b6b15b06a19f3cac0470fc582dd66c56bb222d4f47cd410c30a2934f7ffffee0"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/activation-opa-deny-result.json",
+                                       "bytes":  269,
+                                       "sha256":  "539d6c6b6cf359ed92e95d67d2e608185c83bd12f8b57d66285271254e3993af"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/activation-opa-input.json",
+                                       "bytes":  313,
+                                       "sha256":  "585c516b527a3350dcc993e36ded4237dcf594b01014be75e07bb35052adda34"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/activation-opa-result.json",
+                                       "bytes":  268,
+                                       "sha256":  "590ae0012e41cae9ca46dfe37c8831727ef7e8cca61b9cff08fa6ec76a861b82"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/experience-after-inspector.txt",
+                                       "bytes":  535,
+                                       "sha256":  "5ea4cd896e0320c3079368de1b9054c565d7cff4dc6c8a2d06732884dde8249e"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/experience-before-inspector.txt",
+                                       "bytes":  433,
+                                       "sha256":  "08e201fb054fbe075be009acc45315fe764087529234b68da8660cc50b9d6596"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/experience-metrics.json",
+                                       "bytes":  226,
+                                       "sha256":  "efd1ef416d78ec017b58c327a7cb9e3107efe9f06f6a93491bf4e23cf18ffadb"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/learning-loop-state.json",
+                                       "bytes":  801,
+                                       "sha256":  "a775a654fd8caf0df72c501a85319289ac81085bc2caab7550b8227b1e0da49e"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/procedure.json",
+                                       "bytes":  1181,
+                                       "sha256":  "898d9ae79f1296eb219f02d7405748521733ad4f6ce5f053effda0c2124d902e"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/recovery-stack.txt",
+                                       "bytes":  79,
+                                       "sha256":  "3bf0238c082acfefa6097f8fc8a45a97f3a03093bbaeb4cf66349fe8d15aed05"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/recovery-stack-output.txt",
+                                       "bytes":  192,
+                                       "sha256":  "3b2e07fa76707e21b74969943b252e1cea80b1f7b52c8230225337338cac13ba"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/reuse-measurement.json",
+                                       "bytes":  246,
+                                       "sha256":  "e5bc8bd81d612230ea81a536af5aed869fe012649cbf5a25821fb247df4d6780"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/skill-creator-opa-input.json",
+                                       "bytes":  370,
+                                       "sha256":  "c749547b63d51f94f90b34d1544cd936f85238d928f846e7deb77adc20d75a02"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/skill-creator-opa-result.json",
+                                       "bytes":  263,
+                                       "sha256":  "02159ad564fb1f047b7c695367b9ac96d9e83198c9ff7371009cf341d046ea04"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/skill-creator-validation.txt",
+                                       "bytes":  36,
+                                       "sha256":  "c3387fbd7b7b30c8c9229d4f1342781e3317599aba06fa70544f006c83bb7925"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/skill-recovery.txt",
+                                       "bytes":  535,
+                                       "sha256":  "c23164f7192861585371d2d36ecdb32114778a735e83ad744eb605681aa5284c"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/skill-replay.txt",
+                                       "bytes":  530,
+                                       "sha256":  "ec2e13c91890822ba524709250a0d1c36f6692da08a8ecc3a2572a24cc28323d"
+                                   },
+                                   {
+                                       "relative_path":  "learning-loop/skill-reuse.txt",
+                                       "bytes":  535,
+                                       "sha256":  "c23164f7192861585371d2d36ecdb32114778a735e83ad744eb605681aa5284c"
+                                   },
+                                   {
+                                       "relative_path":  "opa-allow-input.json",
+                                       "bytes":  783,
+                                       "sha256":  "6f7a49440bb0e2cd4d32547e7107a3f116045417904d199f5d7a16ade7bca3b8"
+                                   },
+                                   {
+                                       "relative_path":  "opa-allow-result.json",
+                                       "bytes":  255,
+                                       "sha256":  "d488b6d64bd8a4de31bb800b32ece5b9154882f271b741772d251cba480ea503"
+                                   },
+                                   {
+                                       "relative_path":  "opa-deny_direct_db-input.json",
+                                       "bytes":  782,
+                                       "sha256":  "0a7a1c7bcc6085a21d6838a6c19f70abf3d8d4d285985738c78378a0b55d996c"
+                                   },
+                                   {
+                                       "relative_path":  "opa-deny_direct_db-result.json",
+                                       "bytes":  256,
+                                       "sha256":  "b82f33d6765a1448418d45b320f314b9620dab951c597f811e2314a74f327414"
+                                   },
+                                   {
+                                       "relative_path":  "opa-deny_write-input.json",
+                                       "bytes":  784,
+                                       "sha256":  "7916198c1928d50cf56718e7bc50ecb84403615f3ee55b6d063d5a762cc8bb27"
+                                   },
+                                   {
+                                       "relative_path":  "opa-deny_write-result.json",
+                                       "bytes":  256,
+                                       "sha256":  "b82f33d6765a1448418d45b320f314b9620dab951c597f811e2314a74f327414"
+                                   },
+                                   {
+                                       "relative_path":  "opa-deny_wrong_client-input.json",
+                                       "bytes":  777,
+                                       "sha256":  "265fbaf1f806257c89b0c3214ca5804652932134eabe6f01c0d9ec685de4f62a"
+                                   },
+                                   {
+                                       "relative_path":  "opa-deny_wrong_client-result.json",
+                                       "bytes":  256,
+                                       "sha256":  "b82f33d6765a1448418d45b320f314b9620dab951c597f811e2314a74f327414"
+                                   },
+                                   {
+                                       "relative_path":  "opa-deny-summary.json",
+                                       "bytes":  1066,
+                                       "sha256":  "32ffe061dbb720e96b0c5e08b8ff930e1529007336db6ed486e8230f27d8ca2a"
+                                   },
+                                   {
+                                       "relative_path":  "pg_amcheck_terminal.txt",
+                                       "bytes":  836,
+                                       "sha256":  "4ca88d539ea646d5f2757934b847df44a02e3807f2d515e5ac651ca4521d51dc"
+                                   },
+                                   {
+                                       "relative_path":  "pg_amcheck_terminal_exit.txt",
+                                       "bytes":  40,
+                                       "sha256":  "5bd4898a4397263776c4570a775bbefed9502f0abd9f6fe55fd77a851becb364"
+                                   },
+                                   {
+                                       "relative_path":  "pg_amcheck-canonical-final.txt",
+                                       "bytes":  836,
+                                       "sha256":  "64029abf46db4f6e1ca062c7cea9faf7d815309bbf8b339525ddcdc5bc1b48da"
+                                   },
+                                   {
+                                       "relative_path":  "pg_amcheck-final.txt",
+                                       "bytes":  836,
+                                       "sha256":  "4ca88d539ea646d5f2757934b847df44a02e3807f2d515e5ac651ca4521d51dc"
+                                   },
+                                   {
+                                       "relative_path":  "pg_amcheck-final-exit.txt",
+                                       "bytes":  28,
+                                       "sha256":  "1aaeaf1e27942b4b4a0429ba8e7e0a2afb64b98c03e7f1da65a21827740bf8ff"
+                                   },
+                                   {
+                                       "relative_path":  "pytest-final.txt",
+                                       "bytes":  530,
+                                       "sha256":  "b5a79f64725b4b49179e2c68af5011c03d84830706d9a20e1eb8ceb92af06230"
+                                   },
+                                   {
+                                       "relative_path":  "pytest-restore-fix-focused.txt",
+                                       "bytes":  202,
+                                       "sha256":  "4e50fc1daae1b7ba78944e6a42c7b72dffe343a73dfb24201cbdc6c2b97f996c"
+                                   },
+                                   {
+                                       "relative_path":  "pytest-terminal.txt",
+                                       "bytes":  530,
+                                       "sha256":  "8e7ffa369fdcd039cf043b06832b14415d7fc655e9b243c40021bd0198b10988"
+                                   },
+                                   {
+                                       "relative_path":  "pytest-terminal-exit.txt",
+                                       "bytes":  18,
+                                       "sha256":  "d3c28559415beaf621dcbf70dd2806dfe021735470c0fcfb61412dd105a2c6e0"
+                                   },
+                                   {
+                                       "relative_path":  "restore-final-20260904-140933/memoria_permanente.dump",
+                                       "bytes":  568483,
+                                       "sha256":  "df263a5ff03c082cc3bf37486f7fcbe80e4ef62288ebe5e7f5e1dfa1b3ed823d"
+                                   },
+                                   {
+                                       "relative_path":  "restore-final-20260904-140933/parity.txt",
+                                       "bytes":  308,
+                                       "sha256":  "5364207ae9848605856cd0f0a39e94aebe3d14f6d409d3a63217a6cea7283caf"
+                                   },
+                                   {
+                                       "relative_path":  "restore-final-20260904-140933/pg_amcheck_restore.txt",
+                                       "bytes":  836,
+                                       "sha256":  "5712e87f1673ada953326fd6c66d957f7ed70dca84390ff5a77530f10428c73a"
+                                   },
+                                   {
+                                       "relative_path":  "trivy-clean-head.stderr.txt",
+                                       "bytes":  1162,
+                                       "sha256":  "5e9fd58113360e969dc67ac7556c4ca1e9e282baecc7188d78bbb7fe4fe1b791"
+                                   },
+                                   {
+                                       "relative_path":  "trivy-clean-head.stdout.txt",
+                                       "bytes":  834,
+                                       "sha256":  "659f91ef3886d0ea376f8e6bdc1e3082729d9bb9f53c8120579d8edfa8f388ff"
+                                   },
+                                   {
+                                       "relative_path":  "trivy-final-post0039.txt",
+                                       "bytes":  2074,
+                                       "sha256":  "8f990ecd71b85b24115e08f1806cf80465a4f2f0c406f60f25adbec33bc87b06"
+                                   },
+                                   {
+                                       "relative_path":  "trivy-terminal.json",
+                                       "bytes":  575,
+                                       "sha256":  "f294dbc08b09730ef3f769e8928a9a8a5dcb7fb842ed96808c0dd09feeeba768"
+                                   },
+                                   {
+                                       "relative_path":  "trivy-terminal-exit.txt",
+                                       "bytes":  17,
+                                       "sha256":  "dbce11f5ac71c97cb30cfba8cf80e3078aba7ec7347c228a0f3d2fcb789734da"
+                                   }
+                               ]
+                 },
+    "terminal":  {
+                     "technical_gates_pass":  true,
+                     "known_correctable_failures_open":  0,
+                     "mission_proven":  true
+                 }
+}

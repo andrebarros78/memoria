@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-08-24T17:44:09.513144-03:00",
+  "rest_health": true,
+  "openapi_status": 200,
+  "openapi_title": "MEMORIA-PERMANENTE",
+  "openapi_required_paths_present": true,
+  "rest_context_status": 200,
+  "rest_context_trace_persisted": true,
+  "rest_poison_not_selected": true,
+  "rest_selected_count": 1,
+  "mcp_server_name": "memoria-permanente",
+  "mcp_tools": [
+    "memory_list",
+    "memory_search",
+    "memory_summary"
+  ],
+  "mcp_required_tools_present": true,
+  "mcp_summary_call_ok": true,
+  "P4_MEMORY_GATEWAY_PROOF": "PASS"
+}

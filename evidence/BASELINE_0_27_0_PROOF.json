@@ -1,0 +1,45 @@
+{
+  "schema": "memoria-permanente.baseline-proof.v1",
+  "generated_at": "2026-09-04T20:28:24.099465-03:00",
+  "release_version": "0.27.0",
+  "functional_milestone": "V5.2",
+  "runtime_profile": "V5.2-PRIMARY",
+  "release_channel": "primary-promoted",
+  "branch": "v5.2-rebase-acquisitions-20260904",
+  "source_head_before_release": "8a97d397adfa0c74359d7281cbe4ddfb8eece88b",
+  "validation": {
+    "pytest": {
+      "passed": 186,
+      "failed": 0,
+      "result": "PASS"
+    },
+    "v52_focused": {
+      "passed": 8,
+      "failed": 0,
+      "result": "PASS"
+    },
+    "compileall": "PASS",
+    "migration_immutability": "PASS",
+    "package_version": "0.27.0",
+    "inprocess_health": {
+      "status_code": 200,
+      "version": "0.27.0"
+    },
+    "live_health": {
+      "status": "ok",
+      "version": "0.27.0",
+      "runtime_profile": "V5.2-PRIMARY",
+      "release_channel": "primary-promoted"
+    },
+    "database": {
+      "name": "memoria_permanente_v52_primary",
+      "schema_version": "memory-0.26.0",
+      "retrieval_quality_contract": "RQ-1.0.0",
+      "evolution_capacity_contract": "EC-1.0.0",
+      "migration_0040_sha256": "62287e3326152be707da6121c6e1c0ce2508f8e83057252dfc75d8ecc9b3becb",
+      "migration_0041_sha256": "8f66c0ffc228206ce6007830de4ff6f16f13e13036454450938e2ce0f143b847",
+      "file_db_checksum_match": true
+    }
+  },
+  "result": "PASS_BASELINE_VALIDATED"
+}

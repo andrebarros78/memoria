@@ -1,0 +1,133 @@
+{
+  "auth_scheme": "MEMORY-HMAC-SHA256-V1",
+  "registry": "C:\\ProgramData\\MemoriaPermanente\\auth\\clients.json",
+  "registry_sha256": "c08b2fd4ebec2c5151a8b8e706a03aedd16819eb65d3aa6c49a5df579bdd86e5",
+  "secrets_storage": "WINDOWS_DPAPI_MACHINE",
+  "clients": [
+    {
+      "client_id": "local-admin",
+      "permissions": [
+        "*"
+      ],
+      "tenants": [
+        "*"
+      ],
+      "projects": [
+        "*"
+      ],
+      "secret_blob_bytes": 318,
+      "secret_blob_sha256": "3128aac1fd85f0a531ba26b58645e532fb3d69499bd3685c4e24bc346972cf39",
+      "secret_material_exposed": false,
+      "consumer_mirror": null,
+      "consumer_mirror_sha256": null
+    },
+    {
+      "client_id": "chatgpt-capture",
+      "permissions": [
+        "conversation:ingest"
+      ],
+      "tenants": [
+        "LEGACY"
+      ],
+      "projects": [
+        "*"
+      ],
+      "secret_blob_bytes": 318,
+      "secret_blob_sha256": "bc596c046cb45e2d1cd9ddfda37c8efc750849ae9c2ed887275a9bcbb7084454",
+      "secret_material_exposed": false,
+      "consumer_mirror": null,
+      "consumer_mirror_sha256": null
+    },
+    {
+      "client_id": "governor-runtime",
+      "permissions": [
+        "memory:read",
+        "memory:write",
+        "memory:context"
+      ],
+      "tenants": [
+        "LEGACY"
+      ],
+      "projects": [
+        "*"
+      ],
+      "secret_blob_bytes": 318,
+      "secret_blob_sha256": "c0e2c286e7845e0e64e0d5a5a78f56780e997cd31b2e553e1d7ea3610a468e7f",
+      "secret_material_exposed": false,
+      "consumer_mirror": "C:\\ProgramData\\GovernorWindows\\memory-auth\\governor-runtime.dpapi",
+      "consumer_mirror_sha256": "2929e244a3a454f9b9835dc80c4f953ad1cc8caf2cd1e3b04eeee5cf773f35f0"
+    },
+    {
+      "client_id": "wmcp-memory-bridge",
+      "permissions": [
+        "memory:context"
+      ],
+      "tenants": [
+        "LEGACY"
+      ],
+      "projects": [
+        "*"
+      ],
+      "secret_blob_bytes": 318,
+      "secret_blob_sha256": "521e4d2d368d8b3f497af5b6694438e6bba4336794f15964a51998643d51df59",
+      "secret_material_exposed": false,
+      "consumer_mirror": null,
+      "consumer_mirror_sha256": null
+    },
+    {
+      "client_id": "mcp-memory-reader",
+      "permissions": [
+        "memory:read",
+        "memory:context"
+      ],
+      "tenants": [
+        "LEGACY"
+      ],
+      "projects": [
+        "*"
+      ],
+      "secret_blob_bytes": 318,
+      "secret_blob_sha256": "b95983c6f2a169c6276d7d05c75c641af1c7d08b9645ab4e777effdfb79faff8",
+      "secret_material_exposed": false,
+      "consumer_mirror": null,
+      "consumer_mirror_sha256": null
+    },
+    {
+      "client_id": "memory-steward-agent",
+      "permissions": [
+        "memory:read",
+        "memory:experience",
+        "memory:operational"
+      ],
+      "tenants": [
+        "LEGACY"
+      ],
+      "projects": [
+        "*"
+      ],
+      "secret_blob_bytes": 318,
+      "secret_blob_sha256": "5154b28f22f403ac2f6d003b47454227caa417e65de9ce99c533b71ae6dbd332",
+      "secret_material_exposed": false,
+      "consumer_mirror": null,
+      "consumer_mirror_sha256": null
+    },
+    {
+      "client_id": "recovery-integrity-agent",
+      "permissions": [
+        "memory:read"
+      ],
+      "tenants": [
+        "LEGACY"
+      ],
+      "projects": [
+        "*"
+      ],
+      "secret_blob_bytes": 318,
+      "secret_blob_sha256": "b2dd980c72130539a26e1a1d34bc60e6191e496eb733527e10f0993c9906351f",
+      "secret_material_exposed": false,
+      "consumer_mirror": null,
+      "consumer_mirror_sha256": null
+    }
+  ],
+  "PASS": true
+}

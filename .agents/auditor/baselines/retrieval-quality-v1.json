@@ -1,0 +1,23 @@
+﻿{
+  "schema_version": 1,
+  "baseline_id": "retrieval-quality-v1",
+  "api_base": "http://127.0.0.1:8788",
+  "client_id": "wmcp-memory-bridge",
+  "namespace": "QA_RETRIEVAL_V1",
+  "thresholds": {
+    "pass_rate": 1.0,
+    "scope_leaks": 0,
+    "api_failures": 0,
+    "conflicts": 0,
+    "max_case_latency_ms": 5000.0
+  },
+  "cases": [
+    {"name":"global-positive","query":"ALFA_GLOBAL_73","expected_key":"qa.global.alpha","headers":{},"context":{}},
+    {"name":"project-positive","query":"BRAVO_PROJECT_RED_41","expected_key":"qa.project.red","headers":{"X-Memory-Project":"qa-project-red"},"context":{}},
+    {"name":"project-negative","query":"BRAVO_PROJECT_RED_41","expected_empty":true,"headers":{},"context":{}},
+    {"name":"mission-positive","query":"CHARLIE_MISSION_BLUE_29","expected_key":"qa.mission.blue","headers":{},"context":{"mission_id":"qa-mission-blue"}},
+    {"name":"mission-negative","query":"CHARLIE_MISSION_BLUE_29","expected_empty":true,"headers":{},"context":{}},
+    {"name":"session-positive","query":"DELTA_SESSION_GREEN_17","expected_key":"qa.session.green","headers":{},"context":{"session_id":"qa-session-green"}},
+    {"name":"session-negative","query":"DELTA_SESSION_GREEN_17","expected_empty":true,"headers":{},"context":{}}
+  ]
+}

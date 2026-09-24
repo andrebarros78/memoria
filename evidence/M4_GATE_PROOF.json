@@ -1,0 +1,35 @@
+{
+    "generated_at":  "2026-08-25T13:43:25.4937525-03:00",
+    "gate":  "M4",
+    "proof":  "PG_DUMP_RESTORE_PLUS_RESTORED_API_RESUME",
+    "restore_database":  "m4_restore_20260825134315_9df5a2b9",
+    "temporary_api_port":  8788,
+    "dump_bytes":  2900453,
+    "source_manifest_sha256":  "9fdb599b4b2afc7bf953b4d418303a3321cf133e6b4dc9ab751fdfd26a24a1b5",
+    "target_manifest_sha256":  "9fdb599b4b2afc7bf953b4d418303a3321cf133e6b4dc9ab751fdfd26a24a1b5",
+    "session_id":  "m4-restore-session-20260825134315-9df5a2b9",
+    "checkpoint_id":  "scp-c2a0f34464644cc9b9e52c83b07883e8",
+    "context_sha256":  "5b9db36331a85ccd7def16f999dd29cd20fc032b5cfd4a2ab3a8123c58645827",
+    "checks":  {
+                   "DUMP_CREATED":  true,
+                   "RESTORE_DATABASE_CREATED":  true,
+                   "RESTORE_COMPLETED":  true,
+                   "MANIFEST_SHA256_MATCH":  true,
+                   "RESTORED_API_HEALTHY":  true,
+                   "SESSION_ID_PRESERVED":  true,
+                   "OBJECTIVE_PRESERVED":  true,
+                   "OPERATIONAL_STATE_PRESERVED":  true,
+                   "CHECKPOINT_ID_PRESERVED":  true,
+                   "CHECKPOINT_HASH_PRESERVED":  true,
+                   "CONTEXT_PACK_ID_PRESERVED":  true,
+                   "CONTEXT_HASH_PRESERVED":  true,
+                   "REQUIRED_MEMORY_IDS_PRESERVED":  true,
+                   "RESUME_INTEGRITY_VALID":  true,
+                   "PGVECTOR_RESTORED":  true
+               },
+    "failed_checks":  [
+
+                      ],
+    "GATE_M4":  "PASS",
+    "RECOVERY_PROVEN":  true
+}

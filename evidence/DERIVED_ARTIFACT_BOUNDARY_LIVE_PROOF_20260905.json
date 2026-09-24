@@ -1,0 +1,54 @@
+{
+  "gate": "DERIVED_ARTIFACT_RUNTIME_BOUNDARY",
+  "result": "PASS",
+  "generated_at": "2026-09-06T14:46:38.782248+00:00",
+  "database_role": "memory_app",
+  "latest_migration": "0051_reserved_system_and_restore_gate_hardening",
+  "checks": [
+    {
+      "name": "runtime_privilege_matrix",
+      "pass": true,
+      "actual": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "expected": [
+        false,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "security_definer_owner_non_privileged",
+      "pass": true,
+      "actual": [
+        "memory_admin",
+        false,
+        false
+      ]
+    },
+    {
+      "name": "direct_insert_denied",
+      "pass": true,
+      "sqlstate": "42501",
+      "error_type": "InsufficientPrivilege"
+    },
+    {
+      "name": "direct_update_denied",
+      "pass": true,
+      "sqlstate": "42501",
+      "error_type": "InsufficientPrivilege"
+    },
+    {
+      "name": "memory_app_system_tenant_denied",
+      "pass": true,
+      "sqlstate": "42501",
+      "error_type": "InsufficientPrivilege"
+    }
+  ],
+  "failed": [],
+  "secret_material_exposed": false
+}

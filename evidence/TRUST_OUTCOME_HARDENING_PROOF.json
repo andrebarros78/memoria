@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-09-01T18:41:26.702806+00:00",
+  "item_id": "mem-d2cc8687b04143aa9b10c21ae19de38a",
+  "project": "TRUST-PROOF-3DA417A30C2A",
+  "statuses": {
+    "bad_create": 403,
+    "writer_validate": 403,
+    "admin_validate": 200,
+    "revision": 201,
+    "revalidate": 200,
+    "application": 201,
+    "outcome": 201
+  },
+  "validation_history": [
+    {
+      "version_no": 1,
+      "content_sha256": "e274e741d84c34c32ca9feaa72831bc5ecdb671f5bc68582b7c0fd6eb9103982",
+      "status": "VALIDATED",
+      "governor_eligible": true,
+      "validator_client_id": "local-admin"
+    }
+  ],
+  "provenance_after_revision": {
+    "trust": {
+      "basis": "AUTHENTICATED_IDENTITY_UNATTESTED",
+      "trusted": false,
+      "capability": null
+    },
+    "trusted": false,
+    "secret_refs": [
+      "vault://memory/legacy/e1b1aaba9afc69df98c13073"
+    ],
+    "asserted_source": "sovereign-system",
+    "secret_sanitized": true,
+    "trust_assigned_by": "memory-api-identity",
+    "asserted_provenance": {
+      "claimed": "sovereign"
+    },
+    "authenticated_client_id": "governor-runtime"
+  },
+  "application_id": "app-1a75121c0e604af1b1646241bf59d9c0",
+  "outcome_id": "out-39e32cd11768446e8e2779b69f3cf5a2",
+  "graph_edges": 3,
+  "checks": {
+    "CREATE_OK": true,
+    "GENERAL_WRITER_CANNOT_CREATE_VALIDATED": true,
+    "GENERAL_WRITER_CANNOT_VALIDATE": true,
+    "AUTHORITY_VALIDATED_V1": true,
+    "REVISION_OK": true,
+    "REVISION_SECRET_NOT_PLAINTEXT": true,
+    "INITIAL_SECRET_NOT_PLAINTEXT": true,
+    "REVISION_SECRET_REF_PRESENT": true,
+    "CALLER_TRUST_IGNORED": true,
+    "SOURCE_DERIVED_FROM_AUTH_IDENTITY": true,
+    "VALIDATION_INVALIDATED_ON_CONTENT_CHANGE": true,
+    "EMBEDDING_STALE_ON_CONTENT_CHANGE": true,
+    "V1_VALIDATION_PRESERVED_AS_HISTORY": true,
+    "V2_REVALIDATION_REQUIRED_AND_DONE": true,
+    "APPLICATION_RECORDED": true,
+    "OUTCOME_COUNTERS_UPDATED": true,
+    "CONFIDENCE_ADJUSTED": true,
+    "EXPERIENCE_GRAPH_CREATED": true,
+    "BITEMPORAL_APPLICATION": true,
+    "OUTCOME_RECORDED": true,
+    "WORKER_READY_BEFORE_REVISION": true
+  },
+  "failed_checks": [],
+  "TRUST_OUTCOME_HARDENING": "PASS"
+}

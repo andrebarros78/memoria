@@ -1,0 +1,30 @@
+{
+  "schema": "memoria-permanente.product-dna.v2",
+  "product_id": "memoria-permanente",
+  "product_name": "MEMORIA-PERMANENTE",
+  "manufacturer": "MEMORIA_PERMANENTE_IA_SISTEMAS",
+  "manufacturer_project_id": "memoria-permanente",
+  "canonical_identity": "MEMORIA-PERMANENTE",
+  "origin_urn": "urn:andrebarros:memoria-permanente:v5.5",
+  "origin_domain": "andrebarros.tech.br",
+  "identity_sha256": "26dee4ad1c7fd6481e6835ec14f92629c9d9dbac2c33d28455a41453dfa11ad0",
+  "identity_digest_policy": "STABLE_PRODUCT_ID_ADD_VERSIONED_PROOFS",
+  "trust_class": "FIRST_PARTY_SOVEREIGN",
+  "dna_version": 3,
+  "product_root_hint": "MEMORIA-PERMANENTE",
+  "architecture_generation": "V5.5",
+  "product_class": "UNIVERSAL_CONTEXT_MEMORY_INFRASTRUCTURE",
+  "capabilities": [
+    "memory.capture",
+    "memory.context",
+    "memory.search",
+    "memory.checkpoint",
+    "memory.resume",
+    "memory.state",
+    "conversation.context",
+    "ai.integration.optional",
+    "mcp.integration",
+    "rest.openapi.integration"
+  ],
+  "destructive_capabilities": []
+}

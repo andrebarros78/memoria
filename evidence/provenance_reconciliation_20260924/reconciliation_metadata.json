@@ -1,0 +1,10 @@
+﻿{
+    "reconciled_at":  "2026-09-24T13:20:05.6788667Z",
+    "reason":  "ORPHANED_GIT_WORKTREE_POINTER",
+    "orphan_pointer_sha256":  "58e979d449c77781680154b639c980861deaa45a989ba2a7886a6293999b5af3",
+    "baseline_manifest_sha256":  "9631888d14861139b599de4c7ccf57cae16371b71cb1c8d32e06f54cf04e837f",
+    "prior_source_head":  "9701e124a19bfda03048abbaa671b4bfdc2d6d9a",
+    "current_package_version":  "0.29.2",
+    "history_recovery":  "ORIGINAL_GIT_OBJECT_DATABASE_NOT_PRESENT",
+    "action":  "NEW_CANONICAL_REPOSITORY_FROM_VERIFIED_CURRENT_SNAPSHOT"
+}

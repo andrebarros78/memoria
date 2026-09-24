@@ -1,0 +1,166 @@
+{
+    "schema":  "memoria-permanente.retrieval-quality-foundation-proof.v1",
+    "generated_at":  "2026-09-04T15:47:05.1961591-03:00",
+    "project":  "MEMORIA_PERMANENTE_IA_SISTEMAS",
+    "branch":  "v5.2-rebase-acquisitions-20260904",
+    "base_commit":  "2fe6befe58ad1cd5da0285d52fb72e7bc49bb470",
+    "v4_terminal_tag":  "mission-proven-0.26.1-20260904",
+    "contract_version":  "RQ-1.0.0",
+    "capabilities":  [
+                         "versioned_golden_sets",
+                         "precision_recall_gate",
+                         "forbidden_memory_detection",
+                         "scope_isolation_gate",
+                         "temporal_violation_gate",
+                         "authority_violation_gate",
+                         "retrieval_trace_evidence",
+                         "canonical_persistence",
+                         "append_only_quality_runs",
+                         "tenant_rls",
+                         "opa_promotion_gate",
+                         "restore_parity"
+                     ],
+    "gates":  {
+                  "focused_tests":  {
+                                        "passed":  16,
+                                        "failed":  0,
+                                        "exit":  0
+                                    },
+                  "full_regression":  {
+                                          "passed":  174,
+                                          "failed":  0,
+                                          "exit":  0
+                                      },
+                  "migration":  {
+                                    "version":  "0040_retrieval_quality_foundation",
+                                    "checksum_sha256":  "62287e3326152be707da6121c6e1c0ce2508f8e83057252dfc75d8ecc9b3becb",
+                                    "file_db_match":  true
+                                },
+                  "database":  {
+                                   "canonical_pg_amcheck_exit":  0,
+                                   "rls_forced":  true,
+                                   "cross_tenant_visible_golden":  0,
+                                   "cross_tenant_visible_runs":  0,
+                                   "append_only_blocked":  true
+                               },
+                  "opa":  {
+                              "legitimate_allow":  true,
+                              "scope_violation_denied":  true,
+                              "allow_exit":  0,
+                              "deny_exit":  0
+                          },
+                  "restore":  {
+                                  "dump_exit":  0,
+                                  "restore_exit":  0,
+                                  "parity_exit":  0,
+                                  "table_sets_equal":  true,
+                                  "source_table_count":  74,
+                                  "restore_table_count":  74,
+                                  "row_counts_equal":  true,
+                                  "pg_amcheck_restore_exit":  0,
+                                  "cleanup_exit":  0,
+                                  "restore_db_exists_after_cleanup":  0
+                              },
+                  "security":  {
+                                   "trivy_exit":  0,
+                                   "trivy_secrets":  0,
+                                   "trivy_misconfigurations":  0,
+                                   "defender_exit":  0,
+                                   "defender_threats":  0
+                               },
+                  "git_diff_check_exit":  0
+              },
+    "code":  [
+                 {
+                     "path":  "migrations/0040_retrieval_quality_foundation.sql",
+                     "sha256":  "62287e3326152be707da6121c6e1c0ce2508f8e83057252dfc75d8ecc9b3becb"
+                 },
+                 {
+                     "path":  "src/memory_permanent/retrieval_quality.py",
+                     "sha256":  "eacc41a73c2500e0591b447c3faf2cd0a14f4c605e9dd154ad50c358dea93406"
+                 },
+                 {
+                     "path":  "src/memory_permanent/store.py",
+                     "sha256":  "1d7cb446d96a750b12755f8b01372b6356d50755f33f09d171c17d6a587ac6b1"
+                 },
+                 {
+                     "path":  "tests/test_retrieval_quality.py",
+                     "sha256":  "63b61d03ebe29d09fcf28298723c7f0e79d84d2f44f1ee1b9c4a7c8b80f485a8"
+                 },
+                 {
+                     "path":  "tests/test_canonical_mutation_boundary.py",
+                     "sha256":  "6d2b6f5a97a07ec1d0b2141cef0acc57d01443db38350fda08460cc0d8bdeb6e"
+                 },
+                 {
+                     "path":  ".agents/auditor/policy/retrieval_quality_promotion.rego",
+                     "sha256":  "6084bc2e2a8c68d059938a6205d7e3a7f6816f5e0adf82e2a61f8a0c9434b393"
+                 },
+                 {
+                     "path":  ".agents/generated-skills/retrieval-quality-validation/SKILL.md",
+                     "sha256":  "82cb9f46fc4f88b936fbd93591fd2001dd5e19f2d012f0716f6208b49e5d25f4"
+                 }
+             ],
+    "evidence":  [
+                     {
+                         "path":  ".agents/evidence/rq-foundation-20260904-153059/pytest_final.txt",
+                         "bytes":  530,
+                         "sha256":  "c3ed93e7efa616c7aa26ef36e5c950bff1f37702a914855a2150aae64bb5caa7"
+                     },
+                     {
+                         "path":  ".agents/evidence/rq-foundation-20260904-153059/migration_checksum_final.txt",
+                         "bytes":  164,
+                         "sha256":  "745d2df2d63f41205a352d65ab409de8f7e545499295720a7327b99d165b115b"
+                     },
+                     {
+                         "path":  ".agents/evidence/rq-foundation-20260904-153059/parity.txt",
+                         "bytes":  308,
+                         "sha256":  "9596d2199368d9be968810f7286ca7224a3b2f90ebda69dba84074a7a6485b9a"
+                     },
+                     {
+                         "path":  ".agents/evidence/rq-foundation-20260904-153059/pg_amcheck_restore.txt",
+                         "bytes":  836,
+                         "sha256":  "7252f2691d8ac408adae4378b355ee4fbda86b213396f32421928b8c50b2f836"
+                     },
+                     {
+                         "path":  ".agents/evidence/rq-foundation-20260904-153059/pg_amcheck_canonical.txt",
+                         "bytes":  836,
+                         "sha256":  "0288171b5d8d3712b42956349c410609b944264d3b6e0cbd43ba2f4fbb2c76e4"
+                     },
+                     {
+                         "path":  ".agents/evidence/rq-foundation-20260904-153059/db_security_proof_final.txt",
+                         "bytes":  1990,
+                         "sha256":  "fabd6502c8bf67958d401ce63b7994350860624a1b3d7b75b81abf3c8588cdc6"
+                     },
+                     {
+                         "path":  ".agents/evidence/rq-foundation-20260904-153059/opa_rq_allow.txt",
+                         "bytes":  14,
+                         "sha256":  "58f4910e82c7d6c6a2c56202c92ae3aec4d20cdf447135fed95ccfdd7bbab90f"
+                     },
+                     {
+                         "path":  ".agents/evidence/rq-foundation-20260904-153059/opa_rq_deny.txt",
+                         "bytes":  16,
+                         "sha256":  "8cee067e4bee2fde882dc7245f99949c67ae3c5fe0b1ed32dc1b5b0164975338"
+                     },
+                     {
+                         "path":  ".agents/evidence/rq-foundation-20260904-153059/trivy_final.json",
+                         "bytes":  259,
+                         "sha256":  "cda384cf092da3f45ca3aaa06162c43e65b1fe403ec4e89bd2e2cdcf252d94c9"
+                     },
+                     {
+                         "path":  ".agents/evidence/rq-foundation-20260904-153059/defender_final.txt",
+                         "bytes":  194,
+                         "sha256":  "bf31aadcbd80835a1298032ca626e6e1d22128e31b0fc22e9eefa66ba2f6ff27"
+                     },
+                     {
+                         "path":  ".agents/evidence/rq-foundation-20260904-153059/restore_cleanup.txt",
+                         "bytes":  31,
+                         "sha256":  "af2b22d098f4ca6aaa6a259cf07e505ddea41982da9b9482f6e22834940207d3"
+                     },
+                     {
+                         "path":  ".agents/evidence/rq-foundation-20260904-153059/memoria_permanente.dump",
+                         "bytes":  575782,
+                         "sha256":  "643a6f84400b9232aee2ffd74d2455feca987de1dce21a2df4df894d575b6cfd"
+                     }
+                 ],
+    "foundation_proven":  true
+}

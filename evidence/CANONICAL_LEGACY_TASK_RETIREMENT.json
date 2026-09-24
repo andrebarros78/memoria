@@ -1,0 +1,54 @@
+﻿{
+    "generated_at":  "2026-09-08T18:08:59.1635040-03:00",
+    "status":  "PASS",
+    "policy":  "legacy tasks preserved but disabled after canonical restart/restore proof",
+    "before":  [
+                   {
+                       "name":  "MEMORIA_PERMANENTE_API",
+                       "state":  "Ready",
+                       "enabled":  true,
+                       "action_path_legacy":  true
+                   },
+                   {
+                       "name":  "MEMORIA_PERMANENTE_PHOENIX",
+                       "state":  "Ready",
+                       "enabled":  true,
+                       "action_path_legacy":  true
+                   },
+                   {
+                       "name":  "MEMORIA-PERMANENTE-EMBEDDING-WORKER",
+                       "state":  "Running",
+                       "enabled":  true,
+                       "action_path_legacy":  true
+                   },
+                   {
+                       "name":  "MEMORIA-PERMANENTE-CONVERSATION-INGESTION-WORKER",
+                       "state":  "Running",
+                       "enabled":  true,
+                       "action_path_legacy":  true
+                   }
+               ],
+    "after":  [
+                  {
+                      "name":  "MEMORIA_PERMANENTE_API",
+                      "state":  "Disabled",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "MEMORIA_PERMANENTE_PHOENIX",
+                      "state":  "Disabled",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "MEMORIA-PERMANENTE-EMBEDDING-WORKER",
+                      "state":  "Disabled",
+                      "enabled":  false
+                  },
+                  {
+                      "name":  "MEMORIA-PERMANENTE-CONVERSATION-INGESTION-WORKER",
+                      "state":  "Disabled",
+                      "enabled":  false
+                  }
+              ],
+    "deleted_tasks":  0
+}

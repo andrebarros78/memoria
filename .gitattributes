@@ -1,0 +1,14 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.sql text eol=lf
+migrations/*.sql -text -eol whitespace=cr-at-eol,-blank-at-eof
+*.js text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.txt text eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+.agents/skills/** whitespace=-blank-at-eol,-blank-at-eof

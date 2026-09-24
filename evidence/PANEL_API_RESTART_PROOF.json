@@ -1,0 +1,11 @@
+{
+    "task":  "MEMORIA-PERMANENTE-API",
+    "startup_trigger":  true,
+    "task_state":  "Running",
+    "pid_before":  13088,
+    "offline_observed":  true,
+    "restored":  true,
+    "pid_after":  19140,
+    "pid_changed":  true,
+    "PANEL_API_RESTART_PROOF":  "PASS"
+}

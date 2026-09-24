@@ -1,0 +1,259 @@
+{
+  "generated_at": "2026-09-02T15:36:33.581951+00:00",
+  "baseline": "0.17.0",
+  "result": "PASS",
+  "failed": [],
+  "checks": {
+    "api_0_17_0": true,
+    "schema_0_17_0": true,
+    "causal_policy_cp_1_0_0": true,
+    "core_tests": true,
+    "adapter_tests": true,
+    "migrations_23_exact": true,
+    "p09_proof_pass": true,
+    "p09_registry_proven": true,
+    "p09_validated_exact": true,
+    "audit_integrity": true,
+    "backup_valid": true,
+    "backup_restore_render": true,
+    "wheel_clean": true
+  },
+  "api": {
+    "status": "ok",
+    "service": "MEMORIA-PERMANENTE",
+    "version": "0.17.0",
+    "purge_direct_enabled": false,
+    "product_id": "memory-permanente-v4",
+    "dna_sha256": "1b39519b550e88c3913ea28a90469bb649cd792ab21de99ea34f215263ee7ead",
+    "trust_class": "FIRST_PARTY_INTERNAL"
+  },
+  "schema": "memory-0.17.0",
+  "causal_policy_version": "CP-1.0.0",
+  "postgresql": "18.6",
+  "pgvector": "0.8.6",
+  "pytest": {
+    "returncode": 0,
+    "summary": "75 passed in 1.06s",
+    "pass": true
+  },
+  "adapter_pytest": {
+    "returncode": 0,
+    "summary": "4 passed in 0.04s",
+    "pass": true
+  },
+  "migrations": {
+    "count": 23,
+    "all_match": true,
+    "items": [
+      {
+        "version": "0001_base",
+        "db": "ae2b3bc1e7609828127a521603afb7bfa113dd85fe45b2734b0d88a3a62ff8ec",
+        "file": "ae2b3bc1e7609828127a521603afb7bfa113dd85fe45b2734b0d88a3a62ff8ec",
+        "match": true
+      },
+      {
+        "version": "0002_m0_canonical",
+        "db": "307588ef97faa13d2d4019d82412baebbcb5d6d2f714b43ba431e5790a7a78a2",
+        "file": "307588ef97faa13d2d4019d82412baebbcb5d6d2f714b43ba431e5790a7a78a2",
+        "match": true
+      },
+      {
+        "version": "0003_m1_retrieval",
+        "db": "82cdf80d5ec7feeb8ed3d7bca6c11d7f3a876ae08ae7f13f027ff243318288df",
+        "file": "82cdf80d5ec7feeb8ed3d7bca6c11d7f3a876ae08ae7f13f027ff243318288df",
+        "match": true
+      },
+      {
+        "version": "0004_m1_pgvector",
+        "db": "f8b21339f18642fb310247208a790f5ad596396367b41fc387ab642ff5f124dc",
+        "file": "f8b21339f18642fb310247208a790f5ad596396367b41fc387ab642ff5f124dc",
+        "match": true
+      },
+      {
+        "version": "0005_m2_continuity",
+        "db": "cd306e74737d473e1d83c1ae60b883ce2bd5a0c51ad1357df2123775c7494545",
+        "file": "cd306e74737d473e1d83c1ae60b883ce2bd5a0c51ad1357df2123775c7494545",
+        "match": true
+      },
+      {
+        "version": "0006_m3_tenant_rls",
+        "db": "197f228e4c535720f14609dbfb051365bbcb3fd0de952045aed408d84ccba575",
+        "file": "197f228e4c535720f14609dbfb051365bbcb3fd0de952045aed408d84ccba575",
+        "match": true
+      },
+      {
+        "version": "0007_m5_multiagent",
+        "db": "b17537c6e5f3f076c995eb27b02d242df5dbceadb02166a9c8099e0536fbaeb2",
+        "file": "b17537c6e5f3f076c995eb27b02d242df5dbceadb02166a9c8099e0536fbaeb2",
+        "match": true
+      },
+      {
+        "version": "0008_governor_contract",
+        "db": "4ea876f5e3df3bd0cb98c55655249b4a73d25fdc2099d79b7036f2af6be22fba",
+        "file": "4ea876f5e3df3bd0cb98c55655249b4a73d25fdc2099d79b7036f2af6be22fba",
+        "match": true
+      },
+      {
+        "version": "0009_external_conversation_resolver",
+        "db": "19be14045e0449f971ea42112247cf9bed5b4721317307f15d646a58064571f2",
+        "file": "19be14045e0449f971ea42112247cf9bed5b4721317307f15d646a58064571f2",
+        "match": true
+      },
+      {
+        "version": "0010_conversation_ingestion",
+        "db": "850d18b13d7aae3aed94718d564c8bea6567f2d52f2e4cf6e0a7ff6d191aca69",
+        "file": "850d18b13d7aae3aed94718d564c8bea6567f2d52f2e4cf6e0a7ff6d191aca69",
+        "match": true
+      },
+      {
+        "version": "0011_runtime_role_grants",
+        "db": "49912d0c7f40586b2bede7174b4902264bca1b840a58430d6c9cfeb7f9911f9e",
+        "file": "49912d0c7f40586b2bede7174b4902264bca1b840a58430d6c9cfeb7f9911f9e",
+        "match": true
+      },
+      {
+        "version": "0012_trust_and_outcome_learning",
+        "db": "33f6e8e42b7f1ded69ddf01a8b7f279b6fdeeeea574ebf6c8cac0b486f720c37",
+        "file": "33f6e8e42b7f1ded69ddf01a8b7f279b6fdeeeea574ebf6c8cac0b486f720c37",
+        "match": true
+      },
+      {
+        "version": "0013_embedding_stale",
+        "db": "7c8b1f6f6fe54135cc53751e8f2e6d5f4fa3bef7ec85f06934f967016cfaefc3",
+        "file": "7c8b1f6f6fe54135cc53751e8f2e6d5f4fa3bef7ec85f06934f967016cfaefc3",
+        "match": true
+      },
+      {
+        "version": "0014_version_bound_learning_policy",
+        "db": "f0920eb719409f4cc0af46bba5f00c2c6227f84ee2cf331823522d5a746efac4",
+        "file": "f0920eb719409f4cc0af46bba5f00c2c6227f84ee2cf331823522d5a746efac4",
+        "match": true
+      },
+      {
+        "version": "0015_universal_auth_and_derived_dependencies",
+        "db": "4601800c7d6f7bf7299e9902cb4bde4fdb7fc72b7618ed354c912a60f2482205",
+        "file": "4601800c7d6f7bf7299e9902cb4bde4fdb7fc72b7618ed354c912a60f2482205",
+        "match": true
+      },
+      {
+        "version": "0016_decommission_legacy_governor_auth",
+        "db": "e72e6542bf3bdb889c5e1b6082fe4cd22ab2159669df4ab73529d4f23f4ad19c",
+        "file": "e72e6542bf3bdb889c5e1b6082fe4cd22ab2159669df4ab73529d4f23f4ad19c",
+        "match": true
+      },
+      {
+        "version": "0017_reconcile_legacy_governor_bindings",
+        "db": "7ded6ed96efdf31ea18267ce73955f80143db306371225d4156994f298bd3050",
+        "file": "7ded6ed96efdf31ea18267ce73955f80143db306371225d4156994f298bd3050",
+        "match": true
+      },
+      {
+        "version": "0018_formal_knowledge_ontology",
+        "db": "8517f1c8679ed9329ef7e10fc6491fc31403b71b559bfdbc86c924eb3d801418",
+        "file": "8517f1c8679ed9329ef7e10fc6491fc31403b71b559bfdbc86c924eb3d801418",
+        "match": true
+      },
+      {
+        "version": "0019_knowledge_relation_category_snapshots",
+        "db": "77c7f901162e21f4ebd555cfa24fe94aabb949ddf16a5d2254fcd454867990c7",
+        "file": "77c7f901162e21f4ebd555cfa24fe94aabb949ddf16a5d2254fcd454867990c7",
+        "match": true
+      },
+      {
+        "version": "0020_fix_ontology_transition_function",
+        "db": "20f8a43278c029491c2382d6073e6603f92e90cbdd74c9263472cf143d570260",
+        "file": "20f8a43278c029491c2382d6073e6603f92e90cbdd74c9263472cf143d570260",
+        "match": true
+      },
+      {
+        "version": "0021_complete_experience_graph",
+        "db": "742ab7043d8b84b16acf589766a0cfc0dd4ef5d84f52b1f4aabd75757aa14f99",
+        "file": "742ab7043d8b84b16acf589766a0cfc0dd4ef5d84f52b1f4aabd75757aa14f99",
+        "match": true
+      },
+      {
+        "version": "0022_fix_experience_graph_edge_validation",
+        "db": "a34a62c4b6fb8267df113eebde0f22f0c7c740f67fc3480530ae0ea9174f82ac",
+        "file": "a34a62c4b6fb8267df113eebde0f22f0c7c740f67fc3480530ae0ea9174f82ac",
+        "match": true
+      },
+      {
+        "version": "0023_causal_memory_policy",
+        "db": "696ee480795ced3fa49c2e9751c7315dd3420a65bdcf5d894df25a887f741d34",
+        "file": "696ee480795ced3fa49c2e9751c7315dd3420a65bdcf5d894df25a887f741d34",
+        "match": true
+      }
+    ]
+  },
+  "p09": {
+    "result": "PASS",
+    "failed": [],
+    "proof_sha256": "4251f71723daf06ed7ea698381cc1d329a0bf495ff4437dd8663193b6fcff11e",
+    "registry": {
+      "item_validation_status": "VALIDATED",
+      "item_governor_eligible": false,
+      "current_content_sha256": "c6d5ea4707d66431cfe618c945b9398a1404274c92ee53041a2ec4090a586904",
+      "memory_status": "PROVEN",
+      "implemented_version": "0.17.0",
+      "causal_policy_version": "CP-1.0.0",
+      "validation_id": "val-ac4ab9f1a1c84202b256250d69032212",
+      "validation_version_id": "ver-c862d016106d4e099486ab5dc72ac90c",
+      "validation_version_no": 2,
+      "validation_content_sha256": "c6d5ea4707d66431cfe618c945b9398a1404274c92ee53041a2ec4090a586904",
+      "validation_status": "VALIDATED",
+      "validation_governor_eligible": false,
+      "validation_matches_current": true
+    },
+    "registry_file_sha256": "f985cb6ef092bcde72038de2600cd42999ebf507c78609c7df890e1732542fb7"
+  },
+  "audit": {
+    "events": 3593,
+    "invalid_hash": [],
+    "missing_parent": [],
+    "fork_group_count": 17,
+    "fork_event_count": 40,
+    "manifest_root": "0c92558bcbd0b09ff6d8e2385bb65ee759a5b0625799847ee6217d073ab13249",
+    "pass": true
+  },
+  "backup": {
+    "generated_at": "2026-09-02T12:28:00.7222998-03:00",
+    "database": "memoria_permanente",
+    "host": "127.0.0.1",
+    "port": 55436,
+    "role": "memory_app",
+    "dump_file": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p09\\memory-20260902-122758.dump",
+    "dump_bytes": 8284195,
+    "sha256": "78DC0D203B54B5F0142C69D755B985E78D65A12B06A856B851AA80796F8D3B6F",
+    "restore_catalog_entries": 461,
+    "pg_dump_version": "pg_dump (PostgreSQL) 18.6",
+    "row_security": "ON",
+    "tenant_context": "__SYSTEM__",
+    "backup_valid": true,
+    "manifest": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p09\\memory-20260902-122758.manifest.json",
+    "sha256_actual": "78DC0D203B54B5F0142C69D755B985E78D65A12B06A856B851AA80796F8D3B6F",
+    "hash_matches": true,
+    "restore_render_rc": 0,
+    "restore_render_bytes": 27004362,
+    "restore_render_pass": true
+  },
+  "wheel": {
+    "file": "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\baseline-wheel-0.17.0\\memoria_permanente-0.17.0-py3-none-any.whl",
+    "bytes": 76257,
+    "sha256": "de8fc5d049fb008d245bcb7480d6c38905927d341e4a3a9cb526ae8af6f1c246",
+    "entries": 32,
+    "forbidden_entries": [],
+    "clean": true
+  },
+  "runtime_supervision": {
+    "task": "MEMORIA-PERMANENTE-API",
+    "expected_state": "Running",
+    "verified_separately": true
+  },
+  "security": {
+    "staged_files": null,
+    "forbidden_paths": [],
+    "secret_hits": [],
+    "diff_check_pass": null
+  },
+  "v4_full_proven": false
+}

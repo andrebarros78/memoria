@@ -1,0 +1,56 @@
+{
+  "schema": "memoria-permanente.architecture.v5.5",
+  "status": "APPROVED_CANONICAL_ARCHITECTURE",
+  "approved_at": "2026-09-06T13:31:17-03:00",
+  "architecture_generation": "V5.5",
+  "universal_contract": "MEMORIA_PERMANENTE_UNIVERSAL_PRODUCT_V2",
+  "product_class": "UNIVERSAL_CONTEXT_MEMORY_INFRASTRUCTURE",
+  "approved_service_model": "A Memoria Permanente sempre atende um ou mais sistemas consumidores, mas permanece produto independente. Pode ser instalada junto do consumidor, em outra maquina, em servidor proprio ou como servico compartilhado.",
+  "ai_required_for_core": false,
+  "consumer_identity_binding": false,
+  "runtime_identity_binding": false,
+  "ai_engine_identity_binding": false,
+  "deployment_profiles": [
+    "CO_LOCATED",
+    "DEDICATED_HOST",
+    "SHARED_SERVICE",
+    "DISTRIBUTED_HA"
+  ],
+  "capability_profiles": [
+    "CORE",
+    "CONVERSATIONAL",
+    "AI",
+    "OPERATIONAL",
+    "INTELLIGENCE",
+    "FULL"
+  ],
+  "consumer_classes": [
+    "AI_AND_AGENTS",
+    "CONVERSATIONAL_SYSTEMS",
+    "INTELLIGENCE_SYSTEMS",
+    "INFRASTRUCTURE_ORCHESTRATORS",
+    "TRADITIONAL_APPLICATIONS",
+    "FUTURE_CONFORMANT_CONSUMERS"
+  ],
+  "scope_hierarchy": [
+    "GLOBAL_USER",
+    "PROJECT",
+    "MISSION",
+    "SESSION"
+  ],
+  "closure_points": [
+    "DNA_UNIVERSAL_DEFINITIVO",
+    "CONTRATO_UNIVERSAL_DE_CONSUMIDOR",
+    "PERFIS_DE_IMPLANTACAO",
+    "PERFIS_DE_CAPACIDADE",
+    "ADAPTERS_OFICIAIS",
+    "ISOLAMENTO_UNIVERSAL",
+    "KIT_DE_CONFORMIDADE",
+    "PORTABILIDADE_COMPROVADA"
+  ],
+  "runtime_proof_at_registration": {
+    "runtime_profile": "V5.3-PRIMARY",
+    "platform": "WINDOWS_JNS",
+    "v5_5_operationally_proven": false
+  }
+}

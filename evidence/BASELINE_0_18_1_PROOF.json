@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-09-02T16:06:20.164347+00:00",
+  "baseline": "0.18.1",
+  "result": "PASS",
+  "failed": [],
+  "checks": {
+    "api_0_18_1": true,
+    "schema_0_18_1": true,
+    "decision_record_1_1_0": true,
+    "p10_proof_pass": true,
+    "p10_proof_lf_sha_matches_registry": true,
+    "p10_proven": true,
+    "p10_validated_current": true,
+    "migrations_25_exact": true,
+    "core_85_passed": true,
+    "adapter_4_passed": true,
+    "audit_integrity": true,
+    "backup_valid": true,
+    "backup_restore_render": true,
+    "wheel_clean": true,
+    "api_supervised": true
+  },
+  "api": {
+    "status": "ok",
+    "service": "MEMORIA-PERMANENTE",
+    "version": "0.18.1",
+    "purge_direct_enabled": false,
+    "product_id": "memory-permanente-v4",
+    "dna_sha256": "1b39519b550e88c3913ea28a90469bb649cd792ab21de99ea34f215263ee7ead",
+    "trust_class": "FIRST_PARTY_INTERNAL"
+  },
+  "schema_meta": {
+    "ontology_version": "KO-1.0.0",
+    "experience_graph_version": "EG-1.0.0",
+    "causal_policy_version": "CP-1.0.0",
+    "decision_record_version": "DR-1.1.0",
+    "schema_version": "memory-0.18.1"
+  },
+  "tests": {
+    "core": "85 passed in 1.14s",
+    "adapter": "4 passed in 0.04s",
+    "phase": "FINAL_PRE_SNAPSHOT"
+  },
+  "audit": {
+    "events_at_snapshot_check": 3634,
+    "manifest_root": "931487ca7f6d5bb7e62e4876cb43c80614e65ffb34062196140d936f70683781",
+    "invalid_hash": [],
+    "missing_parent": [],
+    "pass": true
+  },
+  "migrations": {
+    "count": 25,
+    "mismatches": [],
+    "0024": "f0f352fda3d1c5063f7a9d0890c1139071fc8139686dac63b3b37d199fc51966",
+    "0025": "69ef485a0a2c006c35727111935761a0e0106630b4fbd21b341cd55b09c0b697"
+  },
+  "p10": {
+    "item_version_no": 3,
+    "item_content_sha256": "3caca1fe0d62e5c25581d86cdb8d83e69ee72550bad4a6ddcab6a687631c6a08",
+    "validation_content_sha256": "3caca1fe0d62e5c25581d86cdb8d83e69ee72550bad4a6ddcab6a687631c6a08",
+    "proof_sha256": "bfba45cfe5a5a9f8adeaeef756da62d0036d78dd62425eb761ca41af9587b99b",
+    "registry_sha256": "d8e9b963cf32570d659bd1c7139cc88808f0ce7b2a2cfac7acef529adaedd13c",
+    "status": "PROVEN",
+    "validation_status": "VALIDATED"
+  },
+  "decision_counts": {
+    "sovereign_decisions": 3,
+    "sovereign_decision_evidence": 3,
+    "sovereign_decision_outcomes": 3,
+    "sovereign_decision_replays": 6,
+    "sovereign_decision_legacy_inventory": 8
+  },
+  "backup": {
+    "file": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p10\\memory-20260902-130506.dump",
+    "bytes": 8340763,
+    "sha256": "5f258a4f52c1277461a5efd438fa7af596923953949ab12b2a5d10400f943772",
+    "catalog_entries": 518,
+    "restore_render_rc": 0
+  },
+  "wheel": {
+    "file": "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\baseline-wheel-0.18.1\\memoria_permanente-0.18.1-py3-none-any.whl",
+    "bytes": 82279,
+    "sha256": "2cdf455e362652e7050190dade17d32233a8d6249b9f11b72679a211b49465cd",
+    "entries": 33,
+    "forbidden_entries": []
+  },
+  "v4_full_proven": false
+}

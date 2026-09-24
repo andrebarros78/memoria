@@ -1,0 +1,59 @@
+# Python / test caches
+.venv/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Runtime state, models, databases, operational secrets and logs
+runtime/
+*.log
+*.pid
+*.dump
+*.bak
+
+# Backups are operational artifacts, never source control
+backups/
+
+# Environment / private key material
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Known credential file names (not source modules)
+pgpass.conf
+credentials.json
+secrets.json
+service-account.json
+
+# Local editor / OS state
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+# Generated release/archive artifacts
+*.whl
+*.zip
+*.tar.gz
+*.sqlite
+*.sqlite3
+*.db
+*.pre-*
+*.pre_*
+
+# Agent operational runtimes and acquired executable payloads
+.agents/runtime/
+.agents/tools/
+.agents/artifacts/
+.agents/evidence/
+.agents/validation-runtime/
+.agents/auditor/runs/

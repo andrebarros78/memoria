@@ -1,0 +1,9 @@
+{
+  "pytest_exit_code": 0,
+  "tests_passed": 52,
+  "tests_pass": true,
+  "trust_guard_ok": true,
+  "release_generation": 36,
+  "memory_client_adapter_protected": true,
+  "P5_GOVERNOR_REGRESSION_PROOF": "PASS"
+}

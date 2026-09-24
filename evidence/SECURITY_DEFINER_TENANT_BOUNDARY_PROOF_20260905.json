@@ -1,0 +1,72 @@
+{
+  "cross_tenant_checks": {
+    "legacy_base_erasure_direct": {
+      "denied": true,
+      "error_type": "InsufficientPrivilege",
+      "sqlstate": "42501"
+    },
+    "legal_erasure_wrapper": {
+      "denied": true,
+      "error_type": "InsufficientPrivilege",
+      "sqlstate": "42501"
+    },
+    "lifecycle_wrapper": {
+      "denied": true,
+      "error_type": "InsufficientPrivilege",
+      "sqlstate": "42501"
+    },
+    "ontology_wrapper": {
+      "denied": true,
+      "error_type": "InsufficientPrivilege",
+      "sqlstate": "42501"
+    }
+  },
+  "functions": [
+    {
+      "config": "search_path=pg_catalog, public, pg_temp",
+      "owner": "postgres",
+      "proname": "memory_apply_legal_erasure",
+      "runtime_execute": false
+    },
+    {
+      "config": "search_path=pg_catalog, public, pg_temp",
+      "owner": "memory_admin",
+      "proname": "memory_apply_legal_erasure_extended",
+      "runtime_execute": true
+    },
+    {
+      "config": "search_path=pg_catalog, public, pg_temp",
+      "owner": "postgres",
+      "proname": "memory_apply_legal_erasure_extended_internal_0049",
+      "runtime_execute": false
+    },
+    {
+      "config": "search_path=pg_catalog, public, pg_temp",
+      "owner": "memory_admin",
+      "proname": "memory_apply_ontology_transition",
+      "runtime_execute": true
+    },
+    {
+      "config": "search_path=pg_catalog, public, pg_temp",
+      "owner": "postgres",
+      "proname": "memory_apply_ontology_transition_internal_0049",
+      "runtime_execute": false
+    },
+    {
+      "config": "search_path=pg_catalog, public, pg_temp",
+      "owner": "memory_admin",
+      "proname": "memory_lifecycle_finalize_payload",
+      "runtime_execute": true
+    },
+    {
+      "config": "search_path=pg_catalog, public, pg_temp",
+      "owner": "postgres",
+      "proname": "memory_lifecycle_finalize_payload_internal_0049",
+      "runtime_execute": false
+    }
+  ],
+  "migration": "0050_security_definer_tenant_boundary",
+  "secret_material_exposed": false,
+  "status": "PASS",
+  "transaction_fail_safe_rollback": true
+}

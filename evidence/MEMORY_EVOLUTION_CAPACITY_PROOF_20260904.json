@@ -1,0 +1,31 @@
+{
+    "schema":  "memoria-permanente.evolution-capacity-proof.v1",
+    "generated_at":  "2026-09-04T16:42:45.2720728-03:00",
+    "branch":  "v5.2-rebase-acquisitions-20260904",
+    "parent_head":  "b2a00665e932090747c6bd0717301bea60e4ee38",
+    "migration":  "0041_memory_evolution_capacity",
+    "migration_sha256":  "8f66c0ffc228206ce6007830de4ff6f16f13e13036454450938e2ce0f143b847",
+    "agent_sha256":  "2a7e7476dd8fec4abf7d9da0ef248097303611cb7c7bb4d44338c0316803800e",
+    "tests":  178,
+    "pytest_exit":  0,
+    "pg_amcheck_canonical_exit":  0,
+    "migration_runner_exit":  0,
+    "restore":  {
+                    "row_counts_equal":  true,
+                    "restore_exit":  0,
+                    "amcheck_exit":  0,
+                    "parity_exit":  0,
+                    "restore_tables":  76,
+                    "dump_exit":  0,
+                    "source_tables":  76,
+                    "create_exit":  0
+                },
+    "functional_probe":  {
+                             "append_only_block":  "ObjectNotInPrerequisiteState",
+                             "exit":  0,
+                             "capacity_state":  "PROTECT",
+                             "evolution_status":  "PASS"
+                         },
+    "defender_project_threats":  0,
+    "diff_check_exit":  0
+}

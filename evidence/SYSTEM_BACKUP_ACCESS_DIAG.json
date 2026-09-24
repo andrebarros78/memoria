@@ -1,0 +1,44 @@
+[
+    {
+        "path":  "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\secrets\\pgpass.conf",
+        "exists":  true,
+        "metadata":  true,
+        "error":  null
+    },
+    {
+        "path":  "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\secrets\\postgres_admin.pw",
+        "exists":  false,
+        "metadata":  false,
+        "error":  "UnauthorizedAccessException"
+    },
+    {
+        "path":  "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\pgsql18-bin\\pgsql\\bin\\pg_dump.exe",
+        "exists":  true,
+        "metadata":  true,
+        "error":  null
+    },
+    {
+        "path":  "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\pgsql18-bin\\pgsql\\bin\\pg_restore.exe",
+        "exists":  true,
+        "metadata":  true,
+        "error":  null
+    },
+    {
+        "path":  "C:\\New Projet\\MEMORIA-PERMANENTE\\backups",
+        "exists":  true,
+        "metadata":  true,
+        "error":  null
+    },
+    {
+        "path":  "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\pre-audit-reseal-20260901",
+        "exists":  true,
+        "metadata":  true,
+        "error":  null
+    },
+    {
+        "path":  "C:\\New Projet\\MEMORIA-PERMANENTE\\evidence",
+        "exists":  true,
+        "metadata":  true,
+        "error":  null
+    }
+]

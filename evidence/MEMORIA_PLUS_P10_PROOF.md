@@ -1,0 +1,44 @@
+# MEMORIA PLUS P10 — Prova tecnica
+
+- Resultado: **PASS**
+- API/schema: `0.18.1 / memory-0.18.1`
+- Decision Record: `DR-1.1.0`
+- Decisao: `dec-50f55c09ef6f434a96d88f3438ee2150`
+- Core SHA-256: `79e5a2c5e61dfc66a3a2f55d8cbf350fe5dc299597fd60d7c21d6e1ed0cbb6d3`
+- Replay SHA-256: `8e8e18c35d5b59429532e3ea5a8609d68c9dcca3ff9533ba4a886b997f7d5d7c`
+
+## Checks
+- api_0_18_1: PASS
+- spec_requires_auth: PASS
+- decision_record_version: PASS
+- critical_requires_two_alternatives: PASS
+- critical_requires_evidence: PASS
+- caller_cannot_assert_authority: PASS
+- critical_decision_created: PASS
+- mission_anchor_checkpoint: PASS
+- authority_derived: PASS
+- core_sha256_exact: PASS
+- explanation_complete: PASS
+- legacy_textual_decision_rejected_for_new_application: PASS
+- formal_decision_application_created: PASS
+- evidence_version_snapshot_preserved: PASS
+- evidence_content_snapshot_preserved: PASS
+- early_actual_outcome_rejected: PASS
+- actual_outcome_recorded: PASS
+- replay_contains_actual_outcome: PASS
+- replay_contains_action: PASS
+- replay_contains_mission_snapshot: PASS
+- replay_get_matches_bundle: PASS
+- materialized_replays_deterministic: PASS
+- replay_no_side_effect_mode: PASS
+- direct_decision_insert_rejected: PASS
+- decision_append_only: PASS
+- outcome_append_only: PASS
+- four_canonical_insert_guards: PASS
+- decision_tables_force_rls: PASS
+- legacy_decisions_inventoried: PASS
+- decision_audit_events_recorded: PASS
+- schema_version: PASS
+- decision_schema_version: PASS
+- migration_0024_exact: PASS
+- migration_0025_exact: PASS

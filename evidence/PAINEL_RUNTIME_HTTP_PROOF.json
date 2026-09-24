@@ -1,0 +1,13 @@
+{
+    "health":  "ok",
+    "service":  "MEMORIA-PERMANENTE",
+    "memories_total":  5,
+    "items_returned":  5,
+    "panel_status":  200,
+    "panel_has_title":  true,
+    "report_status":  200,
+    "report_has_delete_eligible":  true,
+    "purge_status":  405,
+    "direct_purge_blocked":  true,
+    "HTTP_PANEL_PROOF":  "PASS"
+}

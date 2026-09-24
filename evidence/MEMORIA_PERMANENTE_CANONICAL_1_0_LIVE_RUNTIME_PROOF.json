@@ -1,0 +1,177 @@
+{
+  "generated_at": "2026-09-24T12:43:28.808274+00:00",
+  "base": "http://127.0.0.1:8787",
+  "expected_release_channel": "MEMORIA_PERMANENTE_CANONICAL_1.0",
+  "health": {
+    "status": "ok",
+    "service": "MEMORIA-PERMANENTE",
+    "runtime_profile": "V5.5-PRIMARY",
+    "release_channel": "MEMORIA_PERMANENTE_CANONICAL_1.0"
+  },
+  "health_details": {
+    "status": "ok",
+    "service": "MEMORIA-PERMANENTE",
+    "version": "0.29.2",
+    "purge_direct_enabled": false,
+    "product_id": "memoria-permanente",
+    "dna_sha256": "8926fd35a0899b1fa2bc567db04f9d97908d82fa9d8da4f931c65023857fc12a",
+    "trust_class": "FIRST_PARTY_SOVEREIGN",
+    "runtime_profile": "V5.5-PRIMARY",
+    "release_channel": "MEMORIA_PERMANENTE_CANONICAL_1.0",
+    "ai_integration_adapter": "V5.3_AI_INTEGRATION_ADAPTER",
+    "agent_skill_plane": {
+      "status": "HEALTHY",
+      "agents_total": 4,
+      "agents_loaded": 4,
+      "skills_total": 6,
+      "skills_callable": 6,
+      "errors": []
+    },
+    "database": {
+      "status": "READY",
+      "role": "memory_app",
+      "postgresql": "18.6"
+    },
+    "v55": {
+      "required": true,
+      "ready": true,
+      "contract": "MEMORIA_PERMANENTE_V5_5_RUNTIME_V1",
+      "closure_points_count": 8,
+      "security_layer_count": 15,
+      "all_official_adapters_available": true
+    }
+  },
+  "runtime_contract": "MEMORIA_PERMANENTE_V5_5_RUNTIME_V1",
+  "closure_points_count": 8,
+  "security_layer_count": 15,
+  "all_official_adapters_available": true,
+  "consumer_adapter": {
+    "contract": "MEMORIA_PERMANENTE_CONSUMER_ADAPTER_V1",
+    "operations": [
+      "memory.capture",
+      "memory.context",
+      "memory.search",
+      "memory.checkpoint",
+      "memory.resume",
+      "memory.state"
+    ],
+    "transports": [
+      "HTTP_LOOPBACK",
+      "HTTPS_REMOTE"
+    ],
+    "direct_database_access": false,
+    "database_driver_dependency": false,
+    "consumer_specific_dependency": false
+  },
+  "conversational_adapter": {
+    "contract": "MEMORIA_PERMANENTE_CONVERSATIONAL_ADAPTER_V1",
+    "provider_neutral": true,
+    "supported_consumer_classes": [
+      "WHATSAPP_API",
+      "CHAT",
+      "SUPPORT",
+      "SALES",
+      "CRM"
+    ],
+    "requires_ai": false,
+    "direct_database_access": false,
+    "persistence_path": "PUBLIC_MEMORY_API",
+    "scope_policy": "SESSION_IF_AVAILABLE_ELSE_PROJECT_ELSE_GLOBAL_USER"
+  },
+  "simple_profile": {
+    "deployment_profile": "CO_LOCATED",
+    "capability_profiles": [
+      "CORE",
+      "CONVERSATIONAL"
+    ],
+    "expanded_capabilities": [
+      "context",
+      "conversation_context",
+      "customer_context",
+      "persistence",
+      "security",
+      "session_continuity",
+      "state"
+    ],
+    "ai_required": false,
+    "core_always_required": true,
+    "contract_changes_required": false
+  },
+  "full_profile": {
+    "deployment_profile": "SHARED_SERVICE",
+    "capability_profiles": [
+      "FULL"
+    ],
+    "expanded_capabilities": [
+      "ai_suggestions",
+      "checkpoint",
+      "context",
+      "conversation_context",
+      "customer_context",
+      "embeddings",
+      "experience",
+      "knowledge",
+      "learning",
+      "operational_state",
+      "persistence",
+      "procedures",
+      "provider_adapters",
+      "recovery",
+      "resume",
+      "security",
+      "semantic_retrieval",
+      "session_continuity",
+      "state"
+    ],
+    "ai_required": true,
+    "core_always_required": true,
+    "contract_changes_required": false
+  },
+  "unauthenticated_runtime_spec_status": 401,
+  "conformance_evidence": {
+    "CAPTURE": true,
+    "CONTEXT_RECOVERY": true,
+    "POSITIVE_SCOPE_ACCESS": true,
+    "NEGATIVE_SCOPE_ISOLATION": true,
+    "AUTHENTICATION_AUTHORIZATION": true,
+    "IDEMPOTENCY": true,
+    "CHECKPOINT_RESUME": true,
+    "RESTART_RECOVERY": true,
+    "NO_DIRECT_DATABASE_ACCESS": true,
+    "SECURITY_REGRESSION": true,
+    "INTEGRITY_AUDIT": true
+  },
+  "conformance": {
+    "contract": "MEMORIA_PERMANENTE_CONFORMANCE_V1",
+    "compatible": true,
+    "passed": [
+      "CAPTURE",
+      "CONTEXT_RECOVERY",
+      "POSITIVE_SCOPE_ACCESS",
+      "NEGATIVE_SCOPE_ISOLATION",
+      "AUTHENTICATION_AUTHORIZATION",
+      "IDEMPOTENCY",
+      "CHECKPOINT_RESUME",
+      "RESTART_RECOVERY",
+      "NO_DIRECT_DATABASE_ACCESS",
+      "SECURITY_REGRESSION",
+      "INTEGRITY_AUDIT"
+    ],
+    "failed": []
+  },
+  "state_path": "C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0\\evidence\\MEMORIA_PERMANENTE_CANONICAL_1_0_LIVE_PROOF_STATE.json",
+  "restart_recovery_verified": true,
+  "all_required_checks": [
+    "CAPTURE",
+    "CONTEXT_RECOVERY",
+    "POSITIVE_SCOPE_ACCESS",
+    "NEGATIVE_SCOPE_ISOLATION",
+    "AUTHENTICATION_AUTHORIZATION",
+    "IDEMPOTENCY",
+    "CHECKPOINT_RESUME",
+    "RESTART_RECOVERY",
+    "NO_DIRECT_DATABASE_ACCESS",
+    "SECURITY_REGRESSION",
+    "INTEGRITY_AUDIT"
+  ]
+}

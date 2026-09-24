@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "project": "MEMORIA_PERMANENTE_IA_SISTEMAS",
+  "contract": "DETERMINISTIC_AGENT_SKILL_PLANE_V1",
+  "agents": [
+    {
+      "id": "memory-steward-agent",
+      "name": "Memory Steward Agent",
+      "module": "memory_permanent.memory_steward_agent",
+      "class": "MemoryStewardAgent",
+      "responsibility": "Govern measured experience and derive reusable procedures without direct database ownership.",
+      "model": "DETERMINISTIC_NO_LLM",
+      "allowed_skills": ["skill-creator", "mcp-builder"],
+      "callers": ["orchestrator", "proof-runner"],
+      "timeout_seconds": 30,
+      "retry_policy": "CALLER_CONTROLLED",
+      "fallback_policy": "FAIL_CLOSED",
+      "state": "CONFIGURED"
+    },
+    {
+      "id": "memory-evolution-capacity-agent",
+      "name": "Memory Evolution Capacity Agent",
+      "module": "memory_permanent.memory_evolution_capacity_agent",
+      "class": "MemoryEvolutionCapacityAgent",
+      "responsibility": "Gate storage pressure and schema/evolution changes using measured capacity and recovery proof.",
+      "model": "DETERMINISTIC_NO_LLM",
+      "allowed_skills": ["retrieval-quality-validation", "phoenix-tracing"],
+      "callers": ["orchestrator", "proof-runner"],
+      "timeout_seconds": 30,
+      "retry_policy": "CALLER_CONTROLLED",
+      "fallback_policy": "FAIL_CLOSED",
+      "state": "CONFIGURED"
+    },
+    {
+      "id": "recovery-integrity-agent",
+      "name": "Recovery Integrity Agent",
+      "module": "memory_permanent.recovery_integrity_agent",
+      "class": "RecoveryIntegrityAgent",
+      "responsibility": "Verify recovery evidence, artifact hashes, restore checks and security scan outcomes read-only.",
+      "model": "DETERMINISTIC_NO_LLM",
+      "allowed_skills": ["mcp-inspector-powershell-call", "phoenix-tracing"],
+      "callers": ["orchestrator", "proof-runner"],
+      "timeout_seconds": 30,
+      "retry_policy": "CALLER_CONTROLLED",
+      "fallback_policy": "FAIL_CLOSED",
+      "state": "CONFIGURED"
+    },
+    {
+      "id": "retrieval-quality-agent",
+      "name": "Retrieval Quality Agent",
+      "module": "memory_permanent.retrieval_quality",
+      "class": "RetrievalQualityAgent",
+      "responsibility": "Fail closed on retrieval relevance, scope, temporal and authority regressions against golden cases.",
+      "model": "DETERMINISTIC_NO_LLM",
+      "allowed_skills": ["retrieval-quality-validation", "phoenix-evals", "phoenix-tracing"],
+      "callers": ["orchestrator", "memory-evolution-capacity-agent", "proof-runner"],
+      "timeout_seconds": 60,
+      "retry_policy": "CALLER_CONTROLLED",
+      "fallback_policy": "DENY",
+      "state": "CONFIGURED"
+    }
+  ]
+}

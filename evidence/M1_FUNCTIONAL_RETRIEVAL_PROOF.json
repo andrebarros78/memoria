@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-08-25T07:30:41.532116-03:00",
+  "gate": "M1",
+  "namespace": "M1_PROOF_1787653835-ED5FD626",
+  "mission_id": "m1-mission-1787653835-ed5fd626",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "dimensions": 384,
+  "semantic_backend": "POSTGRES_DOUBLE_ARRAY_PLUS_LOCAL_COSINE",
+  "pgvector_installed": false,
+  "pgvector_release_conformance": false,
+  "item_ids": {
+    "semantic_target": "mem-11d0db3584aa4d74b03a46f509f3bd9d",
+    "lexical_target": "mem-bc5f734213e647b896849bd5027be880",
+    "unrelated": "mem-d0d18d48dcff4a398edaaa29075c37e9"
+  },
+  "checkpoint_id": "cp-4580a71b52634b27a30f1da55eeac23f",
+  "worker": {
+    "model_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "dimensions": 384,
+    "jobs": 3,
+    "embedded": 3,
+    "failed": 0,
+    "errors": []
+  },
+  "semantic_similarity": {
+    "target": 0.4522934869435733,
+    "unrelated": 0.09158419694862246
+  },
+  "retrieval_modes": [
+    "LEXICAL",
+    "SEMANTIC",
+    "STATE"
+  ],
+  "trace_id": "trace-a7d8d4df85e04182a2241bf615d1f4c4",
+  "checks": {
+    "API_VERSION_0_3_0": true,
+    "SCHEMA_VERSION_0_3_0": true,
+    "CANONICAL_WRITE_PRECEDES_EMBEDDING": true,
+    "SEMANTIC_TARGET_NOT_LEXICALLY_MATCHED": true,
+    "LEXICAL_TARGET_FOUND": true,
+    "ASYNC_EMBEDDING_WORKER_PASS": true,
+    "THREE_PROOF_EMBEDDINGS_READY": true,
+    "LEXICAL_MODE_USED": true,
+    "SEMANTIC_MODE_USED": true,
+    "STATE_MODE_USED": true,
+    "SEMANTIC_PARAPHRASE_RECOVERED": true,
+    "SEMANTIC_TARGET_OUTRANKS_UNRELATED": true,
+    "CHECKPOINT_STATE_IN_CONTEXT": true,
+    "TRACE_PERSISTED": true,
+    "TRACE_MODES_PERSISTED": true,
+    "TRACE_STATE_PERSISTED": true
+  },
+  "failed_checks": [],
+  "M1_FUNCTIONAL_RETRIEVAL_PROOF": "PASS",
+  "GATE_M1": "BLOCKED_PGVECTOR_0_8_6"
+}

@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-09-02T15:57:23.439753+00:00",
+  "tag": "MEMORIA PLUS",
+  "priority": 10,
+  "title": "Memoria de decisoes e missoes formal",
+  "result": "PASS",
+  "failed": [],
+  "checks": {
+    "api_0_18_1": true,
+    "spec_requires_auth": true,
+    "decision_record_version": true,
+    "critical_requires_two_alternatives": true,
+    "critical_requires_evidence": true,
+    "caller_cannot_assert_authority": true,
+    "critical_decision_created": true,
+    "mission_anchor_checkpoint": true,
+    "authority_derived": true,
+    "core_sha256_exact": true,
+    "explanation_complete": true,
+    "legacy_textual_decision_rejected_for_new_application": true,
+    "formal_decision_application_created": true,
+    "evidence_version_snapshot_preserved": true,
+    "evidence_content_snapshot_preserved": true,
+    "early_actual_outcome_rejected": true,
+    "actual_outcome_recorded": true,
+    "replay_contains_actual_outcome": true,
+    "replay_contains_action": true,
+    "replay_contains_mission_snapshot": true,
+    "replay_get_matches_bundle": true,
+    "materialized_replays_deterministic": true,
+    "replay_no_side_effect_mode": true,
+    "direct_decision_insert_rejected": true,
+    "decision_append_only": true,
+    "outcome_append_only": true,
+    "four_canonical_insert_guards": true,
+    "decision_tables_force_rls": true,
+    "legacy_decisions_inventoried": true,
+    "decision_audit_events_recorded": true,
+    "schema_version": true,
+    "decision_schema_version": true,
+    "migration_0024_exact": true,
+    "migration_0025_exact": true
+  },
+  "schema": "memory-0.18.1",
+  "decision_record_version": "DR-1.1.0",
+  "decision_id": "dec-50f55c09ef6f434a96d88f3438ee2150",
+  "mission_id": "P10-MISSION-253F58F73622",
+  "core_sha256": "79e5a2c5e61dfc66a3a2f55d8cbf350fe5dc299597fd60d7c21d6e1ed0cbb6d3",
+  "replay_sha256": "8e8e18c35d5b59429532e3ea5a8609d68c9dcca3ff9533ba4a886b997f7d5d7c",
+  "evidence_binding": {
+    "item_id": "mem-fc07af6643584a8db487360febf2b759",
+    "version_id": "ver-41868889450447a4b6d9bfbc5950f54a",
+    "content_sha256": "7a0bd44cf0cd919b161199b54539b92b07efbe1deee70575e8735138413f22b3"
+  },
+  "actual_outcome_id": "dout-83b51983121e4250a6b176424e7a2539",
+  "application_id": "app-56149188d8d841919dd227c01ba1e884",
+  "sqlstates": {
+    "direct_insert": "42501",
+    "decision_update": "55000",
+    "outcome_update": "55000"
+  },
+  "audit_counts": {
+    "SOVEREIGN_DECISION_OUTCOME_RECORDED": 3,
+    "SOVEREIGN_DECISION_RECORDED": 3,
+    "SOVEREIGN_DECISION_REPLAY_MATERIALIZED": 6
+  },
+  "legacy_inventory_count": 8,
+  "migrations": {
+    "0024": "f0f352fda3d1c5063f7a9d0890c1139071fc8139686dac63b3b37d199fc51966",
+    "0025": "69ef485a0a2c006c35727111935761a0e0106630b4fbd21b341cd55b09c0b697"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-09-02T02:10:12.275906+00:00",
+  "tag": "MEMORIA PLUS",
+  "items": [
+    {
+      "rank": 3,
+      "item_id": "mem-bb20a5a895fe4574bb3e4dbcbd5886d5",
+      "version_no": 2,
+      "content_sha256": "7adfb445e323afa31b8d030dc83c78f2730f8d7fd75b74cc1a49ab31b586fefa",
+      "validation": {
+        "validation_id": "val-a00ed703c8664d0a86d053af3acaa3dc",
+        "item_id": "mem-bb20a5a895fe4574bb3e4dbcbd5886d5",
+        "version_id": "ver-ec5fde924cbf4a578bf9f89d609917d4",
+        "version_no": 2,
+        "content_sha256": "7adfb445e323afa31b8d030dc83c78f2730f8d7fd75b74cc1a49ab31b586fefa",
+        "validation_status": "VALIDATED",
+        "governor_eligible": false
+      }
+    },
+    {
+      "rank": 4,
+      "item_id": "mem-954f8f4fde484b26bc789c57c58cb312",
+      "version_no": 2,
+      "content_sha256": "9eb144148ff07fc554f95dadbae1cb28c74a5674ef19e7141a8bb064b3048d4b",
+      "validation": {
+        "validation_id": "val-7ecd490f40454f809e7387f55c98f9ee",
+        "item_id": "mem-954f8f4fde484b26bc789c57c58cb312",
+        "version_id": "ver-6ed4c93fecbb4120a728aa3eb2211760",
+        "version_no": 2,
+        "content_sha256": "9eb144148ff07fc554f95dadbae1cb28c74a5674ef19e7141a8bb064b3048d4b",
+        "validation_status": "VALIDATED",
+        "governor_eligible": false
+      }
+    }
+  ],
+  "status": "PASS"
+}

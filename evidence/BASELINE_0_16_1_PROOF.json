@@ -1,0 +1,355 @@
+{
+  "generated_at": "2026-09-02T14:58:49.221786+00:00",
+  "baseline": "0.16.1",
+  "result": "PASS",
+  "failed": [],
+  "checks": {
+    "api_health": true,
+    "schema_version": true,
+    "experience_graph_version": true,
+    "ontology_version": true,
+    "core_pytest": true,
+    "adapter_pytest": true,
+    "migrations_exact": true,
+    "p08_proof": true,
+    "p08_registry": true,
+    "p08_live_proven": true,
+    "p08_live_validated": true,
+    "audit": true,
+    "backup": true,
+    "restore_render": true,
+    "wheel": true,
+    "staged_diff_check": true,
+    "forbidden_paths": true,
+    "secret_scan": true
+  },
+  "api": {
+    "status": "ok",
+    "service": "MEMORIA-PERMANENTE",
+    "version": "0.16.1",
+    "purge_direct_enabled": false,
+    "product_id": "memory-permanente-v4",
+    "dna_sha256": "1b39519b550e88c3913ea28a90469bb649cd792ab21de99ea34f215263ee7ead",
+    "trust_class": "FIRST_PARTY_INTERNAL"
+  },
+  "schema": "memory-0.16.1",
+  "experience_graph_version": "EG-1.0.0",
+  "ontology_version": "KO-1.0.0",
+  "postgresql": "18.6",
+  "pgvector": "0.8.6",
+  "pytest": {
+    "returncode": 0,
+    "summary": "70 passed in 1.40s",
+    "pass": true
+  },
+  "adapter_pytest": {
+    "returncode": 0,
+    "summary": "4 passed in 0.08s",
+    "pass": true
+  },
+  "migrations": {
+    "count": 22,
+    "all_match": true,
+    "items": [
+      {
+        "version": "0001_base",
+        "db": "ae2b3bc1e7609828127a521603afb7bfa113dd85fe45b2734b0d88a3a62ff8ec",
+        "file": "ae2b3bc1e7609828127a521603afb7bfa113dd85fe45b2734b0d88a3a62ff8ec",
+        "match": true,
+        "applied_at": "2026-08-25T07:02:07.206078-03:00"
+      },
+      {
+        "version": "0002_m0_canonical",
+        "db": "307588ef97faa13d2d4019d82412baebbcb5d6d2f714b43ba431e5790a7a78a2",
+        "file": "307588ef97faa13d2d4019d82412baebbcb5d6d2f714b43ba431e5790a7a78a2",
+        "match": true,
+        "applied_at": "2026-08-25T07:02:07.227595-03:00"
+      },
+      {
+        "version": "0003_m1_retrieval",
+        "db": "82cdf80d5ec7feeb8ed3d7bca6c11d7f3a876ae08ae7f13f027ff243318288df",
+        "file": "82cdf80d5ec7feeb8ed3d7bca6c11d7f3a876ae08ae7f13f027ff243318288df",
+        "match": true,
+        "applied_at": "2026-08-25T07:28:07.183446-03:00"
+      },
+      {
+        "version": "0004_m1_pgvector",
+        "db": "f8b21339f18642fb310247208a790f5ad596396367b41fc387ab642ff5f124dc",
+        "file": "f8b21339f18642fb310247208a790f5ad596396367b41fc387ab642ff5f124dc",
+        "match": true,
+        "applied_at": "2026-08-25T07:42:57.704103-03:00"
+      },
+      {
+        "version": "0005_m2_continuity",
+        "db": "cd306e74737d473e1d83c1ae60b883ce2bd5a0c51ad1357df2123775c7494545",
+        "file": "cd306e74737d473e1d83c1ae60b883ce2bd5a0c51ad1357df2123775c7494545",
+        "match": true,
+        "applied_at": "2026-08-25T08:35:12.310455-03:00"
+      },
+      {
+        "version": "0006_m3_tenant_rls",
+        "db": "197f228e4c535720f14609dbfb051365bbcb3fd0de952045aed408d84ccba575",
+        "file": "197f228e4c535720f14609dbfb051365bbcb3fd0de952045aed408d84ccba575",
+        "match": true,
+        "applied_at": "2026-08-25T10:17:27.841915-03:00"
+      },
+      {
+        "version": "0007_m5_multiagent",
+        "db": "b17537c6e5f3f076c995eb27b02d242df5dbceadb02166a9c8099e0536fbaeb2",
+        "file": "b17537c6e5f3f076c995eb27b02d242df5dbceadb02166a9c8099e0536fbaeb2",
+        "match": true,
+        "applied_at": "2026-08-25T11:16:59.907985-03:00"
+      },
+      {
+        "version": "0008_governor_contract",
+        "db": "4ea876f5e3df3bd0cb98c55655249b4a73d25fdc2099d79b7036f2af6be22fba",
+        "file": "4ea876f5e3df3bd0cb98c55655249b4a73d25fdc2099d79b7036f2af6be22fba",
+        "match": true,
+        "applied_at": "2026-08-25T11:37:10.192854-03:00"
+      },
+      {
+        "version": "0009_external_conversation_resolver",
+        "db": "19be14045e0449f971ea42112247cf9bed5b4721317307f15d646a58064571f2",
+        "file": "19be14045e0449f971ea42112247cf9bed5b4721317307f15d646a58064571f2",
+        "match": true,
+        "applied_at": "2026-08-27T13:33:42.797918-03:00"
+      },
+      {
+        "version": "0010_conversation_ingestion",
+        "db": "850d18b13d7aae3aed94718d564c8bea6567f2d52f2e4cf6e0a7ff6d191aca69",
+        "file": "850d18b13d7aae3aed94718d564c8bea6567f2d52f2e4cf6e0a7ff6d191aca69",
+        "match": true,
+        "applied_at": "2026-08-27T16:30:33.268111-03:00"
+      },
+      {
+        "version": "0011_runtime_role_grants",
+        "db": "49912d0c7f40586b2bede7174b4902264bca1b840a58430d6c9cfeb7f9911f9e",
+        "file": "49912d0c7f40586b2bede7174b4902264bca1b840a58430d6c9cfeb7f9911f9e",
+        "match": true,
+        "applied_at": "2026-08-28T08:51:59.232754-03:00"
+      },
+      {
+        "version": "0012_trust_and_outcome_learning",
+        "db": "33f6e8e42b7f1ded69ddf01a8b7f279b6fdeeeea574ebf6c8cac0b486f720c37",
+        "file": "33f6e8e42b7f1ded69ddf01a8b7f279b6fdeeeea574ebf6c8cac0b486f720c37",
+        "match": true,
+        "applied_at": "2026-09-01T15:14:00.020725-03:00"
+      },
+      {
+        "version": "0013_embedding_stale",
+        "db": "7c8b1f6f6fe54135cc53751e8f2e6d5f4fa3bef7ec85f06934f967016cfaefc3",
+        "file": "7c8b1f6f6fe54135cc53751e8f2e6d5f4fa3bef7ec85f06934f967016cfaefc3",
+        "match": true,
+        "applied_at": "2026-09-01T15:19:24.714003-03:00"
+      },
+      {
+        "version": "0014_version_bound_learning_policy",
+        "db": "f0920eb719409f4cc0af46bba5f00c2c6227f84ee2cf331823522d5a746efac4",
+        "file": "f0920eb719409f4cc0af46bba5f00c2c6227f84ee2cf331823522d5a746efac4",
+        "match": true,
+        "applied_at": "2026-09-01T23:05:33.127132-03:00"
+      },
+      {
+        "version": "0015_universal_auth_and_derived_dependencies",
+        "db": "4601800c7d6f7bf7299e9902cb4bde4fdb7fc72b7618ed354c912a60f2482205",
+        "file": "4601800c7d6f7bf7299e9902cb4bde4fdb7fc72b7618ed354c912a60f2482205",
+        "match": true,
+        "applied_at": "2026-09-02T06:46:03.169513-03:00"
+      },
+      {
+        "version": "0016_decommission_legacy_governor_auth",
+        "db": "e72e6542bf3bdb889c5e1b6082fe4cd22ab2159669df4ab73529d4f23f4ad19c",
+        "file": "e72e6542bf3bdb889c5e1b6082fe4cd22ab2159669df4ab73529d4f23f4ad19c",
+        "match": true,
+        "applied_at": "2026-09-02T06:55:13.149474-03:00"
+      },
+      {
+        "version": "0017_reconcile_legacy_governor_bindings",
+        "db": "7ded6ed96efdf31ea18267ce73955f80143db306371225d4156994f298bd3050",
+        "file": "7ded6ed96efdf31ea18267ce73955f80143db306371225d4156994f298bd3050",
+        "match": true,
+        "applied_at": "2026-09-02T09:51:53.730255-03:00"
+      },
+      {
+        "version": "0018_formal_knowledge_ontology",
+        "db": "8517f1c8679ed9329ef7e10fc6491fc31403b71b559bfdbc86c924eb3d801418",
+        "file": "8517f1c8679ed9329ef7e10fc6491fc31403b71b559bfdbc86c924eb3d801418",
+        "match": true,
+        "applied_at": "2026-09-02T10:36:33.901295-03:00"
+      },
+      {
+        "version": "0019_knowledge_relation_category_snapshots",
+        "db": "77c7f901162e21f4ebd555cfa24fe94aabb949ddf16a5d2254fcd454867990c7",
+        "file": "77c7f901162e21f4ebd555cfa24fe94aabb949ddf16a5d2254fcd454867990c7",
+        "match": true,
+        "applied_at": "2026-09-02T10:39:22.435340-03:00"
+      },
+      {
+        "version": "0020_fix_ontology_transition_function",
+        "db": "20f8a43278c029491c2382d6073e6603f92e90cbdd74c9263472cf143d570260",
+        "file": "20f8a43278c029491c2382d6073e6603f92e90cbdd74c9263472cf143d570260",
+        "match": true,
+        "applied_at": "2026-09-02T10:43:22.208862-03:00"
+      },
+      {
+        "version": "0021_complete_experience_graph",
+        "db": "742ab7043d8b84b16acf589766a0cfc0dd4ef5d84f52b1f4aabd75757aa14f99",
+        "file": "742ab7043d8b84b16acf589766a0cfc0dd4ef5d84f52b1f4aabd75757aa14f99",
+        "match": true,
+        "applied_at": "2026-09-02T11:34:45.809662-03:00"
+      },
+      {
+        "version": "0022_fix_experience_graph_edge_validation",
+        "db": "a34a62c4b6fb8267df113eebde0f22f0c7c740f67fc3480530ae0ea9174f82ac",
+        "file": "a34a62c4b6fb8267df113eebde0f22f0c7c740f67fc3480530ae0ea9174f82ac",
+        "match": true,
+        "applied_at": "2026-09-02T11:39:31.457587-03:00"
+      }
+    ]
+  },
+  "p08": {
+    "result": "PASS",
+    "failed": [],
+    "proof_sha256": "48bf67ef34e6615fa5f36bf96fc0f620c403734e027d40d55cd70b37ea1cb44e",
+    "registry": {
+      "item_validation_status": "VALIDATED",
+      "item_governor_eligible": false,
+      "current_content_sha256": "06a789b721f0e6f7dd74bf28b1f13aeea717d12a1a6b5a63aba2ccc483f5a2a0",
+      "memory_status": "PROVEN",
+      "implemented_version": "0.16.1",
+      "validation_id": "val-e4768545a99c45d6a3e2d359baf36b30",
+      "validation_version_id": "ver-522ac34e062d4760ab0c63c46c467556",
+      "validation_version_no": 2,
+      "validation_content_sha256": "06a789b721f0e6f7dd74bf28b1f13aeea717d12a1a6b5a63aba2ccc483f5a2a0",
+      "validation_status": "VALIDATED",
+      "validation_governor_eligible": false,
+      "validation_matches_current": true
+    },
+    "registry_file_sha256": "7c652a756fa2e5b58d63e4a578f5c9fd5d3f83f1a5ca8d717a0971bb96cd5af0"
+  },
+  "audit": {
+    "events": 3568,
+    "invalid_hash": [],
+    "missing_parent": [],
+    "fork_group_count": 17,
+    "fork_event_count": 40,
+    "fork_groups": [
+      [
+        573,
+        574,
+        575,
+        576,
+        577,
+        578
+      ],
+      [
+        582,
+        583
+      ],
+      [
+        584,
+        585
+      ],
+      [
+        588,
+        589,
+        590
+      ],
+      [
+        593,
+        594,
+        595
+      ],
+      [
+        611,
+        612
+      ],
+      [
+        630,
+        631
+      ],
+      [
+        634,
+        635
+      ],
+      [
+        637,
+        638
+      ],
+      [
+        1226,
+        1227
+      ],
+      [
+        1248,
+        1249
+      ],
+      [
+        2638,
+        2639
+      ],
+      [
+        2650,
+        2651
+      ],
+      [
+        2737,
+        2738
+      ],
+      [
+        2764,
+        2765
+      ],
+      [
+        2804,
+        2805
+      ],
+      [
+        2938,
+        2939
+      ]
+    ],
+    "manifest_root": "a27702ffc043b447afe28439c0445c6d49d42875fa1682410233e51d35310c11",
+    "PASS": true
+  },
+  "backup": {
+    "generated_at": "2026-09-02T11:58:14.1297534-03:00",
+    "database": "memoria_permanente",
+    "host": "127.0.0.1",
+    "port": 55436,
+    "role": "memory_app",
+    "dump_file": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p08\\memory-20260902-115812.dump",
+    "dump_bytes": 8247528,
+    "sha256": "5268B7B75B4C8D22E03BFF518F08DB017828DDAD644F318F45BB757D34551B18",
+    "restore_catalog_entries": 432,
+    "pg_dump_version": "pg_dump (PostgreSQL) 18.6",
+    "row_security": "ON",
+    "tenant_context": "__SYSTEM__",
+    "backup_valid": true,
+    "manifest": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p08\\memory-20260902-115812.manifest.json",
+    "restore_render_rc": 0,
+    "restore_render_pass": true,
+    "isolated_database_restore": "NOT_REPEATED",
+    "reason": "operational role lacks CREATEDB; full isolated restore remains covered by prior recovery gate, while this final dump was fully rendered by pg_restore"
+  },
+  "runtime_role": {
+    "name": "memory_app",
+    "createdb": false,
+    "superuser": false
+  },
+  "wheel": {
+    "file": "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\baseline-wheel-0.16.1\\memoria_permanente-0.16.1-py3-none-any.whl",
+    "bytes": 73129,
+    "sha256": "8229be7f22130c9a9d63bb39408fc9cae49fa36ed63dcc8cd6af14c67867f2f6",
+    "entries": 31,
+    "forbidden_entries": [],
+    "clean": true
+  },
+  "security": {
+    "staged_files": 16,
+    "forbidden_paths": [],
+    "secret_hits": [],
+    "diff_check_pass": true
+  },
+  "v4_full_proven": false
+}

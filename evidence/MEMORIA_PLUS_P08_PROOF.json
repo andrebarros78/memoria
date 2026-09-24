@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-09-02T14:47:24.948363+00:00",
+  "tag": "MEMORIA PLUS",
+  "priority": 8,
+  "title": "Experience Graph completo",
+  "result": "PASS",
+  "failed": [],
+  "checks": {
+    "api_0_16_1": true,
+    "spec_requires_auth": true,
+    "graph_spec_version": true,
+    "exact_first_class_types": true,
+    "exact_7_causal_rules": true,
+    "seven_bound_first_class_nodes_created": true,
+    "complete_graph_has_7_bound_nodes": true,
+    "complete_graph_has_6_chain_edges": true,
+    "mission_reconstruction_complete": true,
+    "causal_order_exact": true,
+    "timeline_exact": true,
+    "invalid_memory_binding_api_422": true,
+    "invalid_relation_api_422": true,
+    "cross_mission_edge_api_403": true,
+    "temporal_violation_api_422": true,
+    "historical_category_snapshot_preserved": true,
+    "historical_version_snapshot_preserved": true,
+    "reconstruction_survives_source_transition": true,
+    "schema_invalid_relation_rejected": true,
+    "schema_temporal_violation_rejected": true,
+    "nodes_append_only": true,
+    "edges_append_only": true,
+    "causal_rules_immutable": true,
+    "experience_tables_force_rls": true,
+    "tenant_isolation_proven": true,
+    "legacy_experience_graph_preserved": true,
+    "audit_events_recorded": true,
+    "schema_version": true,
+    "experience_graph_schema_version": true
+  },
+  "api": {
+    "version": "0.16.1",
+    "unsigned_spec": 401,
+    "invalid_binding": 422,
+    "invalid_relation": 422,
+    "cross_mission": 403,
+    "temporal_violation": 422
+  },
+  "schema": "memory-0.16.1",
+  "experience_graph_version": "EG-1.0.0",
+  "mission_id": "P08-MISSION-40960388B0E1",
+  "first_class_node_ids": {
+    "hypothesis": "egn-4676a0971054466aacecf6c8da7ae34b",
+    "evidence": "egn-6a35406f5e3a48cd99c9159b079e73eb",
+    "decision": "egn-7098fcccbc2e4f64a1f6e6b7b585faac",
+    "intervention": "egn-3d0694038e5a4979b0225d5fcfac9399",
+    "result": "egn-543a5264ad0640bebdfed525843741fd",
+    "learning": "egn-9d9a9424a842490fb1ce90f37b8f90bd",
+    "knowledge": "egn-588b40321678419ea291cc931efe6b9e"
+  },
+  "causal_order": [
+    "egn-4676a0971054466aacecf6c8da7ae34b",
+    "egn-6a35406f5e3a48cd99c9159b079e73eb",
+    "egn-7098fcccbc2e4f64a1f6e6b7b585faac",
+    "egn-3d0694038e5a4979b0225d5fcfac9399",
+    "egn-543a5264ad0640bebdfed525843741fd",
+    "egn-9d9a9424a842490fb1ce90f37b8f90bd",
+    "egn-588b40321678419ea291cc931efe6b9e"
+  ],
+  "timeline": [
+    "egn-4676a0971054466aacecf6c8da7ae34b",
+    "egn-6a35406f5e3a48cd99c9159b079e73eb",
+    "egn-7098fcccbc2e4f64a1f6e6b7b585faac",
+    "egn-3d0694038e5a4979b0225d5fcfac9399",
+    "egn-543a5264ad0640bebdfed525843741fd",
+    "egn-9d9a9424a842490fb1ce90f37b8f90bd",
+    "egn-588b40321678419ea291cc931efe6b9e"
+  ],
+  "historical_snapshot": {
+    "node_id": "egn-4676a0971054466aacecf6c8da7ae34b",
+    "memory_item_id": "mem-26deb8e44ab64a3b91eba972c23ac941",
+    "memory_version_id": "ver-8e6d5e4e08364a1e9b583668347bc811",
+    "memory_content_sha256": "c5fa9b0c0a201f9893fbc0d2a3574bff37124d2fe646d7db163fccab4e469b3c",
+    "memory_category_snapshot": "HYPOTHESIS",
+    "current_item_transition": {
+      "transition_id": "trn-72c3cd2590284d65acaab1c4dc871ae4",
+      "item_id": "mem-26deb8e44ab64a3b91eba972c23ac941",
+      "from_category": "HYPOTHESIS",
+      "to_category": "FACT",
+      "validation_status": "UNVALIDATED",
+      "governor_eligible": false
+    }
+  },
+  "schema_rejection_sqlstates": {
+    "invalid_relation": "23514",
+    "temporal_violation": "23514",
+    "node_update": "55000",
+    "edge_delete": "55000",
+    "rule_mutation": "42501"
+  },
+  "rls": [
+    [
+      "experience_graph_edges",
+      true,
+      true
+    ],
+    [
+      "experience_graph_nodes",
+      true,
+      true
+    ]
+  ],
+  "legacy_edge_count": 31,
+  "audit_counts": {
+    "EXPERIENCE_GRAPH_EDGE_CREATED": 24,
+    "EXPERIENCE_GRAPH_NODE_CREATED": 45
+  }
+}

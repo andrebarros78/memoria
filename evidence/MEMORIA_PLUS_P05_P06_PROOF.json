@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-09-02T13:00:09.110509+00:00",
+  "tag": "MEMORIA PLUS",
+  "block": [
+    "05",
+    "06"
+  ],
+  "result": "PASS",
+  "failed": [],
+  "checks": {
+    "api_0_14_2": true,
+    "universal_adapter_1_1": true,
+    "legacy_unsigned_401": true,
+    "legacy_governor_key_not_auth_401": true,
+    "legacy_signed_route_removed_404": true,
+    "no_active_governor_auth_source": true,
+    "all_required_artifact_types_ready_before_revision": true,
+    "all_required_artifact_types_stale_after_revision": true,
+    "stale_bound_to_v1": true,
+    "state_transition_events_recorded": true,
+    "db_invalidation_trigger_active": true,
+    "v2_embedding_ready": true,
+    "v2_embedding_depends_on_v2": true,
+    "schema_0_14_2": true,
+    "generic_checkpoint_via_universal_adapter": true,
+    "context_pack_created": true,
+    "legacy_bindings_disabled": true
+  },
+  "p05": {
+    "adapter_version": "1.1.0",
+    "unsigned_old": 401,
+    "govkey_old": 401,
+    "signed_old": 404,
+    "active_legacy_refs": [],
+    "active_legacy_bindings": 0
+  },
+  "p06": {
+    "item_id": "mem-0d2d459a96f94636a4869dbad919dc9e",
+    "v1_version_id": "ver-e282f99e6be5448ca4c1d73f77e6af51",
+    "v1_content_sha256": "b62ed4c6deb7794d60e84af0c20569baffb492c358831778da2889ddc69b048f",
+    "v2_version_id": "ver-ef957c6a84404319afd6c07277230aca",
+    "before_ready_types": [
+      "CHECKPOINT",
+      "CONTEXT_PACK",
+      "EMBEDDING",
+      "RETRIEVAL_TRACE",
+      "SESSION_CHECKPOINT"
+    ],
+    "stale_v1_types": [
+      "CHECKPOINT",
+      "CONTEXT_PACK",
+      "EMBEDDING",
+      "RETRIEVAL_TRACE",
+      "SESSION_CHECKPOINT"
+    ],
+    "stale_v1_count": 5,
+    "state_events": 5,
+    "dependency_rows": 6,
+    "context_pack_id": "ctx-e38db81d65354a4c82ac938d8b5fedee",
+    "session_checkpoint_id": "scp-861714834f9a45e981d4fa845ddecaae",
+    "checkpoint_id": "cp-5d8babf5d2d34749a1f9db51a091e3b5",
+    "ready_v2_embeddings": 1
+  },
+  "schema": "memory-0.14.2"
+}

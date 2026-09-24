@@ -1,0 +1,51 @@
+{
+  "schema": "memoria-permanente.baseline-proof.v1",
+  "generated_at": "2026-09-05T00:29:05.3700918-03:00",
+  "release_version": "0.28.0",
+  "functional_milestone": "V5.3",
+  "runtime_profile": "V5.3-PRIMARY",
+  "release_channel": "v5.3-primary-promoted",
+  "head_before_baseline": "ed311b35951633a660ea65ba160e04de8894f27a",
+  "tree_before_baseline": "3f708b387443a1b6900174349b917e8e600e3383",
+  "validation": {
+    "full_pytest": {
+      "passed": 260,
+      "skipped": 2,
+      "exit_code": 0
+    },
+    "v53_focused": {
+      "passed": 15,
+      "exit_code": 0
+    },
+    "compileall_exit": 0,
+    "migration_immutability_exit": 0,
+    "git_diff_check_exit": 0,
+    "live_health": {
+      "status": "ok",
+      "version": "0.28.0",
+      "runtime_profile": "V5.3-PRIMARY",
+      "ai_integration_adapter": "V5.3_AI_INTEGRATION_ADAPTER"
+    },
+    "database": {
+      "applied_migrations": 46,
+      "matched_files": 46,
+      "missing_files": 0,
+      "checksum_mismatches": 0,
+      "v53_rls_force_rls": true
+    },
+    "runtime_role": {
+      "name": "memory_app",
+      "superuser": false,
+      "bypassrls": false
+    },
+    "privileged_integrity_proof": {
+      "source": "evidence/V5_3_AI_INTEGRATION_ADAPTER_PROOF_20260904.json",
+      "sha256": "8e91961d6104443f50f2863b43e766f16938c16ddbd97acc79aae82c18af3177",
+      "amcheck_primary_exit": 0,
+      "amcheck_restore_exit": 0,
+      "restore_table_count": 78,
+      "row_counts_equal": true
+    }
+  },
+  "result": "PASS_BASELINE_VALIDATED"
+}

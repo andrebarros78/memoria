@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-08-24T17:49:25.963940-03:00",
+  "checks": {
+    "HEALTH_OK": true,
+    "PANEL_HTTP_200": true,
+    "PANEL_REQUIRED_CONTROLS": true,
+    "PANEL_RESPONSIVE_STYLES": true,
+    "SUMMARY_REAL_DATA": true,
+    "LIVE_CLASSIFICATION": true,
+    "CLASSIFICATION_DID_NOT_DELETE": true,
+    "MARKDOWN_REPORT": true,
+    "DIRECT_PURGE_BLOCKED": true,
+    "OPENAPI_PRESENT": true,
+    "CORE_PROOF": true,
+    "API_RESTART_PROOF": true,
+    "M10_INDEPENDENCE": true
+  },
+  "failed_checks": [],
+  "memories_total": 136,
+  "operator_classes": {
+    "PROTEGIDA": 1,
+    "ARQUIVADA": 1,
+    "PERMANENTE": 1,
+    "DESCARTÁVEL": 4,
+    "ATIVA": 129
+  },
+  "classification_response": {
+    "updated": 1,
+    "operator_class": "PERMANENTE",
+    "lifecycle_state": "HOT",
+    "purge_allowed": false,
+    "direct_delete": false
+  },
+  "report_bytes": 782,
+  "purge_status": 405,
+  "PAINEL_OPERATIONAL_PROVEN": "PASS",
+  "V5_PANEL_PRIORITY_CRITERION_SATISFIED": true
+}

@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-09-01T13:46:07",
+  "gate": "M3",
+  "proof": "POISONING_AUTH_HARDENED",
+  "tenant": "TENANT_POISON_8B6838E3A4",
+  "item_id": "mem-e032fd618e714083921013ce50c2992b",
+  "trace_id": "trace-b728c4da334f40d18aa891c475582caa",
+  "guard": {
+    "decision": "QUARANTINE",
+    "reason": "UNTRUSTED_PROVENANCE;PATTERN:ignore\\s+(all\\s+)?previous\\s+instructions;PATTERN:disable\\s+(security|policy|audit)",
+    "risk_score": 80
+  },
+  "checks": {
+    "SIGNED_API_USED": true,
+    "MALICIOUS_ITEM_PERSISTED_AS_CONTENT": true,
+    "CATEGORY_NOT_RULE": true,
+    "SOURCE_UNTRUSTED": true,
+    "NOT_IN_ACCEPTED_CONTEXT": true,
+    "QUARANTINED_BY_INPUT_GUARD": true,
+    "GUARD_DECISION_QUARANTINE": true,
+    "GUARD_RISK_AT_LEAST_50": true,
+    "ORIGIN_PRESERVED": true,
+    "WORKER_OK": true
+  },
+  "failed_checks": [],
+  "M3_POISONING_PROOF": "PASS"
+}

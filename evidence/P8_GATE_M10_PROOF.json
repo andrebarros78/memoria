@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-08-25T13:43:40.928898-03:00",
+  "gate": "M10",
+  "objective": "MEMORY_MODULE_INDEPENDENCE_PROVEN",
+  "checks": {
+    "P1_INDEPENDENT_MODULE": true,
+    "P2_DB_ISOLATION": true,
+    "P3_REUSED_COMPONENTS": true,
+    "P4_PUBLIC_GATEWAY": true,
+    "P5_CLIENT_ADAPTER": true,
+    "P5_GOVERNOR_REGRESSION": true,
+    "P6_MEMORY_OFFLINE_WMCP_ALIVE": true,
+    "P6_GOVERNOR_OFFLINE_MEMORY_ALIVE": true,
+    "P6_WMCP_OFFLINE_MEMORY_ALIVE": true,
+    "P7_DATA_MIGRATION": true,
+    "PANEL_API_RESTART": true,
+    "ACTIVE_CONSUMER_NO_INTERNAL_COUPLING": true,
+    "PUBLIC_MEMORY_ENDPOINT": true,
+    "NO_MEMORY_DB_PORT_IN_GOVERNOR_CONFIG": true,
+    "MEMORY_PG_RUNNING": true,
+    "MEMORY_PG_AUTOSTART": true,
+    "MEMORY_DB_READY": true,
+    "GOVERNOR_DB_READY": true,
+    "MEMORY_API_RUNNING": true,
+    "WMCP_CURRENTLY_HEALTHY": true,
+    "MIGRATION_DATA_LOSS_ZERO": true,
+    "GOVERNOR_RELEASE_TRUSTED": true
+  },
+  "failed_checks": [],
+  "active_consumer_scan": {
+    "files_checked": [
+      "C:\\New Projet\\GOVERNADOR-WINDOWS\\src\\governor_windows\\runtime_components.py",
+      "C:\\New Projet\\GOVERNADOR-WINDOWS\\src\\governor_windows\\engineer_runtime.py",
+      "C:\\New Projet\\GOVERNADOR-WINDOWS\\src\\governor_windows\\cli.py",
+      "C:\\New Projet\\GOVERNADOR-WINDOWS\\src\\governor_windows\\service.py",
+      "C:\\New Projet\\GOVERNADOR-WINDOWS\\src\\governor_windows\\memory_client_adapter.py"
+    ],
+    "findings": [],
+    "finding_count": 0,
+    "memory_gateway_endpoint": "http://127.0.0.1:8787",
+    "endpoint_is_public_contract": true,
+    "governor_config_contains_memory_db_port": false
+  },
+  "memory_count_live_snapshot": 135,
+  "governor_release_generation": 36,
+  "postgres_runtime_version_note": "Current development runtime PostgreSQL 17.10; V4 release target 18.6 remains a separate homologation requirement and is not part of M10 independence semantics.",
+  "GATE_M10": "PASS",
+  "MEMORY_MODULE_INDEPENDENCE_PROVEN": true
+}

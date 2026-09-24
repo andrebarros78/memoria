@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-09-02T19:54:38.028668+00:00",
+  "result": "PASS",
+  "failed": [],
+  "checks": {
+    "api_0_22_0": true,
+    "schema_memory_0_22_0": true,
+    "operational_memory_om_1_0_0": true,
+    "operational_statuses_exact": true,
+    "replay_recovery_required": true,
+    "p14_proof_45_45": true,
+    "p14_registry_proof_hash": true,
+    "p14_implementation_hash": true,
+    "p14_memory_core_proven": true,
+    "p14_validation_exact": true,
+    "core_120_pass": true,
+    "adapter_4_pass": true,
+    "audit_pass": true,
+    "migrations_29_exact": true,
+    "operational_force_rls": true,
+    "backup_hash_exact": true,
+    "backup_restore_render_pass": true,
+    "wheel_clean": true,
+    "v4_full_proven_false": true
+  },
+  "version": "0.22.0",
+  "schema": {
+    "economic_memory_version": "EM-1.0.0",
+    "operational_memory_version": "OM-1.0.0",
+    "operational_memory_statuses": "PROVEN,STALE,FAILED,DEPRECATED",
+    "operational_memory_required_proofs": "REPLAY,RECOVERY",
+    "schema_version": "memory-0.22.0",
+    "bitemporal_version": "BT-1.0.0"
+  },
+  "core": "120 passed in 1.64s",
+  "adapter": "4 passed in 0.04s",
+  "audit": {
+    "events": 3882,
+    "invalid_hash": [],
+    "missing_parent": [],
+    "fork_group_count": 17,
+    "fork_event_count": 40,
+    "fork_groups": [
+      [
+        573,
+        574,
+        575,
+        576,
+        577,
+        578
+      ],
+      [
+        582,
+        583
+      ],
+      [
+        584,
+        585
+      ],
+      [
+        588,
+        589,
+        590
+      ],
+      [
+        593,
+        594,
+        595
+      ],
+      [
+        611,
+        612
+      ],
+      [
+        630,
+        631
+      ],
+      [
+        634,
+        635
+      ],
+      [
+        637,
+        638
+      ],
+      [
+        1226,
+        1227
+      ],
+      [
+        1248,
+        1249
+      ],
+      [
+        2638,
+        2639
+      ],
+      [
+        2650,
+        2651
+      ],
+      [
+        2737,
+        2738
+      ],
+      [
+        2764,
+        2765
+      ],
+      [
+        2804,
+        2805
+      ],
+      [
+        2938,
+        2939
+      ]
+    ],
+    "manifest_root": "959c908a73bacaf05326069acd811c1584aa2aa35ee6efbeaa8b7522c8fc2a09",
+    "PASS": true
+  },
+  "migrations": {
+    "count": 29,
+    "latest": {
+      "version": "0029_operational_memory_b2",
+      "checksum_sha256": "af5d4b7823ddacc43a7afad68d1b58c2c98047d1bb93fde2d9e35bacc034272e"
+    },
+    "migration_0029_sha256": "af5d4b7823ddacc43a7afad68d1b58c2c98047d1bb93fde2d9e35bacc034272e"
+  },
+  "p14": {
+    "item_id": "mem-ce5d6cb61a1e43f2978e3cd12d9af01b",
+    "version_no": 2,
+    "version_id": "ver-7b8fc6354a024dfb930b4aec6d45e066",
+    "content_sha256": "711dcbf05b7894d35e9966f7e6293068d48e95fae9b6011d5edf9d357fabbe9d",
+    "validation_id": "val-3544fe3d571a4544ae0f9326fa227dd6",
+    "status": "PROVEN",
+    "validation_status": "VALIDATED",
+    "proof_sha256": "a3d1701d127afb0fb47b2755321385ab7da969f488022fee808149d56f35c466",
+    "registry_sha256": "c813e308fccf6580504f9cfc27358d7f4e2a455a7b870373de72aa0f41fbfb3e",
+    "implementation_sha256": "adc3c20e28d4212b803be242231d83cdf6a37aeb3b9bb4275c701f371aae17db"
+  },
+  "backup": {
+    "manifest": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p14-final\\memory-20260902-165319.manifest.json",
+    "dump": "C:\\New Projet\\MEMORIA-PERMANENTE\\backups\\post-memoria-plus-p14-final\\memory-20260902-165319.dump",
+    "bytes": 8689988,
+    "sha256": "5d4c77fccfdefa2070d203eabeb6b364c74cd89d257f9fa9da333795aa6fac3a",
+    "restore_catalog_entries": 755,
+    "restore_render_rc": 0,
+    "restore_render_bytes": 28361546
+  },
+  "wheel": {
+    "file": "C:\\New Projet\\MEMORIA-PERMANENTE\\runtime\\baseline-wheel-0.22.0\\memoria_permanente-0.22.0-py3-none-any.whl",
+    "bytes": 96949,
+    "sha256": "466a4853287cffa81bd4c27e21c33a889cffbe7c0a9288194f5686fd3fcb3c7f",
+    "entries": 37,
+    "forbidden_entries": [],
+    "clean": true
+  },
+  "v4_full_proven": false
+}

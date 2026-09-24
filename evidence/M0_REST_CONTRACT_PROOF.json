@@ -1,0 +1,23 @@
+{
+    "generated_at":  "2026-08-25T07:20:43.8215652-03:00",
+    "gate":  "M0",
+    "api_health":  {
+                       "status":  "ok",
+                       "service":  "MEMORIA-PERMANENTE",
+                       "version":  "0.2.0",
+                       "purge_direct_enabled":  false
+                   },
+    "item_id":  "mem-c05499cce64641bb97a20f52eba20ce8",
+    "checks":  {
+                   "API_VERSION_0_2_0":  true,
+                   "IDEMPOTENT_CREATE_SAME_ID":  true,
+                   "IDEMPOTENCY_CONFLICT_409":  true,
+                   "IDEMPOTENT_REVISION_SAME_VERSION":  true,
+                   "VERSIONS_ENDPOINT_TWO_VERSIONS":  true,
+                   "VERSION_SEQUENCE_1_2":  true
+               },
+    "failed_checks":  [
+
+                      ],
+    "M0_REST_CONTRACT_PROOF":  "PASS"
+}

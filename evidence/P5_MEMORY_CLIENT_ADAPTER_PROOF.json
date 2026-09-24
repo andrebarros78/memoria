@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-08-24T17:44:22.341977-03:00",
+  "memory_gateway_endpoint": "http://127.0.0.1:8787",
+  "memory_health": true,
+  "created_item_id": "mem-84da1ff35c034978856484660595c98a",
+  "retrieval_trace_id": "trace-c34a98205d524bfe967e2887296743ff",
+  "created_item_recovered": true,
+  "active_runtime_forbidden_imports": [],
+  "active_runtime_forbidden_imports_count": 0,
+  "adapter_has_direct_db_coupling": false,
+  "adapter_transport": "HTTP_PUBLIC_CONTRACT",
+  "P5_MEMORY_CLIENT_ADAPTER_PROOF": "PASS"
+}

@@ -1,0 +1,53 @@
+# MEMORIA PLUS P14 — Memória operacional B2
+
+- Resultado: **PASS**
+- Checks: `45/45`
+- Contrato: `OM-1.0.0`
+
+## Checks
+
+- [x] `api_0_22_0`
+- [x] `operational_spec_requires_auth`
+- [x] `operational_spec_om_1_0_0`
+- [x] `operational_entities_exact`
+- [x] `operational_statuses_exact`
+- [x] `replay_recovery_required`
+- [x] `competency_created`
+- [x] `skill_created`
+- [x] `current_skill_version_created`
+- [x] `three_capabilities_bound`
+- [x] `new_version_is_unproven`
+- [x] `direct_api_proven_assertion_rejected`
+- [x] `append_only_competency_rejects_update`
+- [x] `recovery_read_after_rejected_mutation`
+- [x] `current_replay_pass_recorded`
+- [x] `current_recovery_pass_autoproves`
+- [x] `current_skill_proven_with_exact_evidence`
+- [x] `catalog_knows_current_proven_capability`
+- [x] `state_machine_skill_created`
+- [x] `fixture_v1_created`
+- [x] `failed_replay_sets_failed`
+- [x] `recovery_alone_does_not_clear_failed`
+- [x] `fresh_replay_plus_recovery_reproves`
+- [x] `proven_can_be_marked_stale`
+- [x] `replay_only_after_stale_not_enough`
+- [x] `both_fresh_proofs_after_stale_reprove`
+- [x] `superseding_v2_created`
+- [x] `supersession_auto_stales_prior_proven`
+- [x] `new_superseding_version_unproven`
+- [x] `v2_proven_after_both_proofs`
+- [x] `stale_prior_version_deprecated`
+- [x] `deprecated_version_rejects_new_proof`
+- [x] `deprecated_status_is_terminal`
+- [x] `schema_memory_0_22_0`
+- [x] `schema_om_1_0_0`
+- [x] `schema_status_contract_exact`
+- [x] `six_bitemporal_operational_entities`
+- [x] `all_operational_tables_force_rls`
+- [x] `migration_0029_checksum_exact`
+- [x] `fixture_history_contains_all_states`
+- [x] `direct_operational_insert_requires_canonical_boundary`
+- [x] `db_status_rejects_missing_version`
+- [x] `temporal_contract_registry_remains_immutable`
+- [x] `final_catalog_exact_statuses`
+- [x] `final_catalog_preserves_current_implementation_hash`

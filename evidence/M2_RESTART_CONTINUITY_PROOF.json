@@ -1,0 +1,45 @@
+{
+    "generated_at":  "2026-08-25T13:42:50.2979062-03:00",
+    "gate":  "M2",
+    "proof":  "RESTART",
+    "session_id":  "m2-restart-session-20260825134239-9584b6d7",
+    "namespace":  "M2_RESTART_20260825134239-9584B6D7",
+    "pid_before":  17256,
+    "pid_after":  12244,
+    "api_health":  {
+                       "status":  "ok",
+                       "service":  "MEMORIA-PERMANENTE",
+                       "version":  "0.8.1",
+                       "purge_direct_enabled":  false
+                   },
+    "binding_id":  "bind-e318168dd8494e9eaa9d75a581ceed3e",
+    "checkpoint_id":  "scp-3287acd4afa440f49c9c4934f1cffe5e",
+    "checkpoint_sha256":  "801f5a66578dc3a1b4cbd9fd64b64d581b884800b8e49e480877c7fd7fa4b28e",
+    "context_pack_id":  "ctx-a2b67dd58d0741b58599b51b65420e67",
+    "context_sha256":  "83086e3c3389fe30e6d17a09488f1af4050b9d398c90c96a3eb651d29a8abb94",
+    "required_memory_ids":  [
+                                "mem-d07c313f1c6b4e7fb67ed4f743344bb9",
+                                "mem-fb29eaebdb1d4a198ca855fc3bc0a00c"
+                            ],
+    "checks":  {
+                   "API_WAS_DOWN":  true,
+                   "API_PID_CHANGED":  true,
+                   "API_RECOVERED":  true,
+                   "SESSION_ID_PRESERVED":  true,
+                   "OBJECTIVE_PRESERVED":  true,
+                   "OPERATIONAL_STATE_PRESERVED":  true,
+                   "CURRENT_BINDING_PRESERVED":  true,
+                   "PROVIDER_PRESERVED":  true,
+                   "CHECKPOINT_ID_PRESERVED":  true,
+                   "CHECKPOINT_HASH_PRESERVED":  true,
+                   "CONTEXT_PACK_ID_PRESERVED":  true,
+                   "CONTEXT_HASH_PRESERVED":  true,
+                   "REQUIRED_MEMORY_IDS_PRESERVED":  true,
+                   "NEXT_SAFE_ACTION_PRESERVED":  true,
+                   "INTEGRITY_VALID":  true
+               },
+    "failed_checks":  [
+
+                      ],
+    "M2_RESTART_CONTINUITY_PROOF":  "PASS"
+}

@@ -1,0 +1,10 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.74.0"
+  },
+  "ReportID": "01a069f8-d85a-7645-bf72-2753a673774c",
+  "CreatedAt": "2026-09-03T22:11:51.130411-03:00",
+  "ArtifactName": "C:/New Projet/MEMORIA-PERMANENTE/.agents/runtime/agent-plane",
+  "ArtifactType": "filesystem"
+}

@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-09-01T14:47:42",
+  "adapter": "memoria-client-adapter",
+  "version": "1.0.0",
+  "client_id": "governor-runtime",
+  "endpoint": "http://127.0.0.1:8787",
+  "item_id": "mem-0b0f93ea3ce04142853892cb610329af",
+  "trace_id": "trace-7ade48da40f04a2fabaac5ff3aea733f",
+  "checks": {
+    "HEALTH_OK": true,
+    "READ_OK": true,
+    "CONTEXT_OK": true,
+    "WRITE_OK": true,
+    "LEAST_PRIVILEGE_ADMIN_DENIED": true,
+    "NO_CONSUMER_SPECIFIC_IMPLEMENTATION": true,
+    "NO_DIRECT_DATABASE_COUPLING": true
+  },
+  "failed_checks": [],
+  "UNIVERSAL_ADAPTER_PROVEN": true
+}

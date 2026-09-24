@@ -1,0 +1,95 @@
+{
+  "gate": "SECURITY_AUTH_HARDENING",
+  "result": "PASS",
+  "auth_scheme": "MEMORY-HMAC-SHA256-V1",
+  "api_version": "0.10.1",
+  "checks": [
+    {
+      "name": "public_health",
+      "actual": 200,
+      "expected": 200,
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unsigned_general_rejected",
+      "actual": 401,
+      "expected": 401,
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unsigned_identity_spoof_rejected",
+      "actual": 401,
+      "expected": 401,
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "signed_admin_allowed",
+      "actual": 200,
+      "expected": 200,
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tampered_signature_rejected",
+      "actual": 401,
+      "expected": 401,
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tampered_body_rejected",
+      "actual": 401,
+      "expected": 401,
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replay_first_request_allowed",
+      "actual": 200,
+      "expected": 200,
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replay_second_request_rejected",
+      "actual": 401,
+      "expected": 401,
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "capture_client_ingest_allowed",
+      "actual": 201,
+      "expected": 201,
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "capture_client_admin_denied",
+      "actual": 403,
+      "expected": 403,
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "capture_client_tenant_spoof_denied",
+      "actual": 403,
+      "expected": 403,
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "stale_timestamp_rejected",
+      "actual": 401,
+      "expected": 401,
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "failed_checks": [],
+  "secrets_exposed": false,
+  "generated_at_epoch": 1790253771
+}

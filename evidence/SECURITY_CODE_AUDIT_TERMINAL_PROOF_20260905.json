@@ -1,0 +1,145 @@
+{
+  "audit": "MEMORIA_PERMANENTE_V53_SECURITY_CODE_AUDIT",
+  "date_brasilia": "2026-09-05",
+  "baseline_before_audit": "9406d1d2692f46de2ace808892f2f9d970f34556",
+  "branch": "v5.3-primary-20260904",
+  "result": "PASS_WITH_REPOSITORY_MAINTENANCE_DEBT",
+  "critical_findings": [
+    {
+      "id": "AUD-CRIT-001",
+      "title": "reserved __SYSTEM__ tenant context could bypass runtime RLS",
+      "pre_fix_proof": {
+        "nonexistent_tenant_visible_items": 0,
+        "reserved_system_visible_items": 19
+      },
+      "fix": "0051_reserved_system_and_restore_gate_hardening",
+      "post_fix_proof": {
+        "reserved_system_visible_items": 0,
+        "reserved_system_agent_bypass": false
+      },
+      "status": "FIXED_AND_RETESTED"
+    },
+    {
+      "id": "AUD-CRIT-002",
+      "title": "memory_app could mutate restore/governance runtime gate through SECURITY DEFINER",
+      "pre_fix_proof": {
+        "runtime_restore_gate_mutation_allowed": true
+      },
+      "fix": "0051_reserved_system_and_restore_gate_hardening",
+      "post_fix_proof": {
+        "runtime_restore_gate_denied": true,
+        "sqlstate": "42501",
+        "function_owner": "memory_admin"
+      },
+      "status": "FIXED_AND_RETESTED"
+    }
+  ],
+  "high_findings": [
+    {
+      "id": "AUD-HIGH-001",
+      "title": "legacy SECURITY DEFINER functions lacked explicit tenant-bound wrappers",
+      "fix": "0050_security_definer_tenant_boundary",
+      "live_cross_tenant_denials": 4,
+      "sqlstate": "42501",
+      "status": "FIXED_AND_RETESTED"
+    }
+  ],
+  "medium_findings": [
+    {
+      "id": "AUD-MED-001",
+      "title": "RecoveryIntegrityAgent manifest path traversal",
+      "fix": "manifest targets are resolved and constrained to verification root; invalid manifests fail closed",
+      "directed_tests": 4,
+      "status": "FIXED_AND_RETESTED"
+    },
+    {
+      "id": "AUD-MED-002",
+      "title": "public health/API documentation exposed more runtime metadata than required",
+      "fix": "public health minimized; detailed health protected by memory:admin; OpenAPI/docs/redoc disabled",
+      "live_proof": {
+        "/health": 200,
+        "/openapi.json": 404,
+        "/docs": 404,
+        "/v1/health/details_unauthenticated": 401
+      },
+      "status": "FIXED_AND_RETESTED"
+    },
+    {
+      "id": "AUD-MED-003",
+      "title": "secret sanitizer coverage gaps for common token/key formats and keyed fields",
+      "fix": "expanded token, database URL, bearer, cookie, private-key and sensitive-field sanitization",
+      "status": "FIXED_AND_RETESTED"
+    }
+  ],
+  "leakage_audit": {
+    "current_secret_values_checked": 3,
+    "tracked_file_hits": 0,
+    "git_history_hits": 0,
+    "runtime_log_hits": 0,
+    "plaintext_secret_leak_detected": false,
+    "secret_material_exposed_by_audit": false,
+    "windows_secret_acl": "SYSTEM + operational user only"
+  },
+  "database": {
+    "postgresql": "18.6",
+    "pgvector": "0.8.6",
+    "runtime_role": "memory_app",
+    "runtime_role_privileged": false,
+    "migration_count": 51,
+    "latest_migration": "0051_reserved_system_and_restore_gate_hardening"
+  },
+  "live_security_proofs": {
+    "security_definer_tenant_boundary": "PASS",
+    "reserved_system_restore_gate": "PASS",
+    "authentication_hardening": "12/12 PASS"
+  },
+  "regression": {
+    "compileall": "PASS",
+    "ruff_src_tests": "PASS",
+    "mypy": "PASS: 48 source files",
+    "bandit_src": "PASS",
+    "pytest": "300 passed, 2 skipped, 1 third-party deprecation warning",
+    "pip_check": "PASS",
+    "pip_audit_local": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "backup_restore": {
+    "backup_id": "v52-20260906T004940Z-e8584873",
+    "cipher": "AES-256-GCM",
+    "ciphertext_sha256": "9f149845ec6914052ba8395c51282d8805195b05d9bc9be96f5df7ee1198011e",
+    "manifest_authenticated": true,
+    "plaintext_retained": false,
+    "pg_amcheck": "PASS",
+    "restore_migration_count": 51,
+    "audit_chain_ok": true,
+    "audit_events": 294,
+    "erasure_replay": "PASS",
+    "restore_runtime_preflight": "READY"
+  },
+  "release": {
+    "wheel": "memoria_permanente-0.28.0-py3-none-any.whl",
+    "sha256": "efea18d77e5110649a339b79376fcd6200f78011f3460d595215954af484354d",
+    "migration_files": 51,
+    "forbidden_entries": 0,
+    "resource_ok": true,
+    "clean": true,
+    "direct_wheel_import": "PASS",
+    "recovery_path_boundary_present": true
+  },
+  "runtime_restart": {
+    "status": "PASS",
+    "runtime_profile": "V5.3-PRIMARY",
+    "release_channel": "v5.3-primary-promoted",
+    "migration_count": 51,
+    "latest_migration": "0051_reserved_system_and_restore_gate_hardening"
+  },
+  "repository_maintenance_debt": {
+    "legacy_or_historical_scripts_with_runtime_secret_path_references": 30,
+    "release_contains_scripts": false,
+    "active_deploy_recovery_chain_uses_inline_database_password": false,
+    "global_legacy_script_ruff_findings": 215,
+    "classification": "NON_RUNTIME_MAINTENANCE_DEBT",
+    "note": "These scripts are not referenced by the V5.3 deploy/recovery chain and are not packaged in the release wheel. They should be refactored or retired before being reused operationally."
+  },
+  "security_claim": "Defense in depth materially reduces attack surface; this audit does not claim absolute invulnerability."
+}

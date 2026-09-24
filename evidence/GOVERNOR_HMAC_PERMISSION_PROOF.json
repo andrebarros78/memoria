@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-09-01T14:37:09",
+  "client_id": "governor-runtime",
+  "permissions_expected": [
+    "memory:read",
+    "memory:write",
+    "memory:context"
+  ],
+  "created_item_id": "mem-abe3e3c8466c4c169b9266b47ce93736",
+  "checks": {
+    "READ_ALLOWED": true,
+    "CONTEXT_ALLOWED": true,
+    "WRITE_ALLOWED": true,
+    "ADMIN_DASHBOARD_DENIED": true,
+    "ADMIN_CLASSIFY_DENIED": true,
+    "PURGE_DENIED": true
+  },
+  "failed_checks": [],
+  "PASS": true
+}

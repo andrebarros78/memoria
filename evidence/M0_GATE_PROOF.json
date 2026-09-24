@@ -1,0 +1,225 @@
+{
+  "generated_at": "2026-08-25T13:40:56.522713-03:00",
+  "gate": "M0",
+  "postgres_version": "17.10",
+  "schema_version": "memory-0.8.0",
+  "migrations": [
+    {
+      "version": "0001_base",
+      "filename": "0001_base.sql",
+      "checksum_sha256": "ae2b3bc1e7609828127a521603afb7bfa113dd85fe45b2734b0d88a3a62ff8ec",
+      "applied_at": "2026-08-25T07:02:07.206078-03:00"
+    },
+    {
+      "version": "0002_m0_canonical",
+      "filename": "0002_m0_canonical.sql",
+      "checksum_sha256": "307588ef97faa13d2d4019d82412baebbcb5d6d2f714b43ba431e5790a7a78a2",
+      "applied_at": "2026-08-25T07:02:07.227595-03:00"
+    },
+    {
+      "version": "0003_m1_retrieval",
+      "filename": "0003_m1_retrieval.sql",
+      "checksum_sha256": "82cdf80d5ec7feeb8ed3d7bca6c11d7f3a876ae08ae7f13f027ff243318288df",
+      "applied_at": "2026-08-25T07:28:07.183446-03:00"
+    },
+    {
+      "version": "0004_m1_pgvector",
+      "filename": "0004_m1_pgvector.sql",
+      "checksum_sha256": "f8b21339f18642fb310247208a790f5ad596396367b41fc387ab642ff5f124dc",
+      "applied_at": "2026-08-25T07:42:57.704103-03:00"
+    },
+    {
+      "version": "0005_m2_continuity",
+      "filename": "0005_m2_continuity.sql",
+      "checksum_sha256": "cd306e74737d473e1d83c1ae60b883ce2bd5a0c51ad1357df2123775c7494545",
+      "applied_at": "2026-08-25T08:35:12.310455-03:00"
+    },
+    {
+      "version": "0006_m3_tenant_rls",
+      "filename": "0006_m3_tenant_rls.sql",
+      "checksum_sha256": "197f228e4c535720f14609dbfb051365bbcb3fd0de952045aed408d84ccba575",
+      "applied_at": "2026-08-25T10:17:27.841915-03:00"
+    },
+    {
+      "version": "0007_m5_multiagent",
+      "filename": "0007_m5_multiagent.sql",
+      "checksum_sha256": "b17537c6e5f3f076c995eb27b02d242df5dbceadb02166a9c8099e0536fbaeb2",
+      "applied_at": "2026-08-25T11:16:59.907985-03:00"
+    },
+    {
+      "version": "0008_governor_contract",
+      "filename": "0008_governor_contract.sql",
+      "checksum_sha256": "4ea876f5e3df3bd0cb98c55655249b4a73d25fdc2099d79b7036f2af6be22fba",
+      "applied_at": "2026-08-25T11:37:10.192854-03:00"
+    }
+  ],
+  "item_id": "mem-afe8c1c0d0ce492c9a1ae83b562a5e46",
+  "versions": [
+    {
+      "version_id": "ver-b6934e3040d84d07ab10129394469e8f",
+      "item_id": "mem-afe8c1c0d0ce492c9a1ae83b562a5e46",
+      "version_no": 1,
+      "content_json": {
+        "gate": "M0",
+        "value": "canonical-v1",
+        "suffix": "1787676055-5c02684a"
+      },
+      "content_text": "Gate M0 canonical persistence proof 1787676055-5c02684a version one",
+      "provenance": {
+        "proof": "GATE_M0",
+        "suffix": "1787676055-5c02684a",
+        "trusted": true
+      },
+      "confidence": 1.0,
+      "source": "sovereign-system",
+      "source_version": "M0-v1",
+      "tags": [
+        "GATE_M0",
+        "CANONICAL"
+      ],
+      "content_sha256": "6322ba9d1b90e2ad4180248d6203edfd0eb47cce2ef01e788bbd44d145648b6e",
+      "previous_version_id": null,
+      "request_sha256": "f4442f6042b2d08dc4049e62ba70c80e2f3f3c7dec9b1a13050cc940f18ab8cf",
+      "created_by": "prove_gate_m0",
+      "created_at": "2026-08-25T13:40:55.502179-03:00",
+      "valid_from": "2026-08-25T13:40:55.502179-03:00",
+      "valid_until": "2026-08-25T13:40:55.860992-03:00"
+    },
+    {
+      "version_id": "ver-6024b79a19f048028ec9b9142190e343",
+      "item_id": "mem-afe8c1c0d0ce492c9a1ae83b562a5e46",
+      "version_no": 2,
+      "content_json": {
+        "gate": "M0",
+        "value": "canonical-v2",
+        "suffix": "1787676055-5c02684a"
+      },
+      "content_text": "Gate M0 canonical persistence proof 1787676055-5c02684a version two",
+      "provenance": {
+        "proof": "GATE_M0",
+        "suffix": "1787676055-5c02684a",
+        "trusted": true,
+        "revision": 2
+      },
+      "confidence": 1.0,
+      "source": "sovereign-system",
+      "source_version": "M0-v2",
+      "tags": [
+        "GATE_M0",
+        "CANONICAL",
+        "VERSION_2"
+      ],
+      "content_sha256": "cf28be68dda3a45ab409e0532df4ca4502f735f3f8b5bf283a35b874206ce924",
+      "previous_version_id": "ver-b6934e3040d84d07ab10129394469e8f",
+      "request_sha256": "0b06ccc4eae8880be5dab0a15333e25dec9d0febafb252e7d8dc65232daa5baa",
+      "created_by": "prove_gate_m0",
+      "created_at": "2026-08-25T13:40:55.860992-03:00",
+      "valid_from": "2026-08-25T13:40:55.860992-03:00",
+      "valid_until": null
+    }
+  ],
+  "memory_events": [
+    {
+      "event_id": "evt-c0da65f607e542dfa1e7baf8c956b1d5",
+      "event_type": "MEMORY_CREATED",
+      "version_id": "ver-b6934e3040d84d07ab10129394469e8f",
+      "request_sha256": "f4442f6042b2d08dc4049e62ba70c80e2f3f3c7dec9b1a13050cc940f18ab8cf",
+      "created_at": "2026-08-25T13:40:55.502179-03:00"
+    },
+    {
+      "event_id": "evt-9c3d1f384ab14503b0c4a7a7955e826a",
+      "event_type": "MEMORY_REVISED",
+      "version_id": "ver-6024b79a19f048028ec9b9142190e343",
+      "request_sha256": "0b06ccc4eae8880be5dab0a15333e25dec9d0febafb252e7d8dc65232daa5baa",
+      "created_at": "2026-08-25T13:40:55.860992-03:00"
+    }
+  ],
+  "idempotency_records": [
+    {
+      "operation": "remember",
+      "idempotency_key": "m0-create-1787676055-5c02684a",
+      "request_sha256": "f4442f6042b2d08dc4049e62ba70c80e2f3f3c7dec9b1a13050cc940f18ab8cf",
+      "response_json": {
+        "item_id": "mem-afe8c1c0d0ce492c9a1ae83b562a5e46",
+        "version_id": "ver-b6934e3040d84d07ab10129394469e8f",
+        "version_no": 1
+      }
+    },
+    {
+      "operation": "revise:mem-afe8c1c0d0ce492c9a1ae83b562a5e46",
+      "idempotency_key": "m0-revise-1787676055-5c02684a",
+      "request_sha256": "0b06ccc4eae8880be5dab0a15333e25dec9d0febafb252e7d8dc65232daa5baa",
+      "response_json": {
+        "status": "REVISED",
+        "item_id": "mem-afe8c1c0d0ce492c9a1ae83b562a5e46",
+        "version_id": "ver-6024b79a19f048028ec9b9142190e343",
+        "version_no": 2
+      }
+    }
+  ],
+  "append_only_attempts": {
+    "memory_versions_update": {
+      "blocked": true,
+      "sqlstate": "55000",
+      "error_type": "ObjectNotInPrerequisiteState",
+      "error": "append-only table memory_versions forbids UPDATE"
+    },
+    "memory_versions_delete": {
+      "blocked": true,
+      "sqlstate": "55000",
+      "error_type": "ObjectNotInPrerequisiteState",
+      "error": "append-only table memory_versions forbids DELETE"
+    },
+    "memory_events_update": {
+      "blocked": true,
+      "sqlstate": "55000",
+      "error_type": "ObjectNotInPrerequisiteState",
+      "error": "append-only table memory_events forbids UPDATE"
+    },
+    "memory_events_delete": {
+      "blocked": true,
+      "sqlstate": "55000",
+      "error_type": "ObjectNotInPrerequisiteState",
+      "error": "append-only table memory_events forbids DELETE"
+    },
+    "audit_events_update": {
+      "blocked": true,
+      "sqlstate": "55000",
+      "error_type": "ObjectNotInPrerequisiteState",
+      "error": "append-only table audit_events forbids UPDATE"
+    },
+    "audit_events_delete": {
+      "blocked": true,
+      "sqlstate": "55000",
+      "error_type": "ObjectNotInPrerequisiteState",
+      "error": "append-only table audit_events forbids DELETE"
+    }
+  },
+  "audit": {
+    "ok": true,
+    "errors": [],
+    "events": 487,
+    "head": "93bc65b1a3e29c0a6dee6e06386796b76a9e21bdc6d3408d7454d2053a94f48d"
+  },
+  "checks": {
+    "POSTGRESQL_LIVE": true,
+    "MIGRATIONS_VERSIONED": true,
+    "MIGRATION_CHECKSUMS_PRESENT": true,
+    "SCHEMA_VERSION_SUPPORTS_M0": true,
+    "IDEMPOTENT_CREATE_REPLAY": true,
+    "IDEMPOTENT_CREATE_CONFLICT_REJECTED": true,
+    "IDEMPOTENT_REVISION_REPLAY": true,
+    "IDEMPOTENT_REVISION_CONFLICT_REJECTED": true,
+    "ONE_MEMORY_CREATED": true,
+    "TWO_CANONICAL_VERSIONS": true,
+    "VERSION_CHAIN_LINKED": true,
+    "TWO_APPEND_ONLY_MEMORY_EVENTS": true,
+    "TWO_IDEMPOTENCY_RECORDS": true,
+    "CURRENT_PROJECTION_IS_V2": true,
+    "APPEND_ONLY_DB_ENFORCEMENT": true,
+    "AUDIT_CHAIN_VALID": true
+  },
+  "failed_checks": [],
+  "GATE_M0": "PASS",
+  "CANONICAL_PERSISTENCE_PROVEN": true
+}

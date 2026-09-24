@@ -1,0 +1,145 @@
+{
+  "result": "PASS",
+  "mode": "CREATE_AND_RETRIEVE",
+  "generated_at": "2026-09-24T12:44:47.086943+00:00",
+  "runtime_health": {
+    "status": "ok",
+    "service": "MEMORIA-PERMANENTE",
+    "runtime_profile": "V5.5-PRIMARY",
+    "release_channel": "MEMORIA_PERMANENTE_CANONICAL_1.0"
+  },
+  "agent_skill_plane": {
+    "status": "HEALTHY",
+    "agents_total": 4,
+    "agents_loaded": 4,
+    "skills_total": 6,
+    "skills_callable": 6,
+    "errors": []
+  },
+  "agents": {
+    "memory_steward": {
+      "procedure_id": "procedure-12f456e38cef76242b99",
+      "sha256": "12f456e38cef76242b99ef436ebf06e25f8ae462685855ba800cfcc5f3365e9f"
+    },
+    "memory_evolution_capacity": {
+      "capacity_state": "NORMAL",
+      "free_ratio": 0.5687149181653817,
+      "evolution_status": "DENY",
+      "evolution_reasons": [
+        "BACKUP_FAILED",
+        "ISOLATED_APPLY_FAILED",
+        "RESTORE_FAILED",
+        "NO_ROLLBACK_OR_ROLLFORWARD"
+      ],
+      "retrieval_quality_propagated": "PASS"
+    },
+    "recovery_integrity": {
+      "passed": true,
+      "detail": "product-dna.json:8926fd35a0899b1fa2bc567db04f9d97908d82fa9d8da4f931c65023857fc12a"
+    },
+    "retrieval_quality": {
+      "status": "PASS",
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "case_pass_rate": 1.0,
+        "forbidden_hit_rate": 0.0,
+        "scope_violation_rate": 0.0,
+        "temporal_violation_rate": 0.0,
+        "authority_violation_rate": 0.0
+      },
+      "trace_id": "trace-42a88d00794a41a4b13fd9d3fcb2e2a6"
+    }
+  },
+  "skills": [
+    {
+      "name": "skill-creator",
+      "consumer": "memory-steward-agent",
+      "execution_mode": "GATED_SCRIPT_TOOL",
+      "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+      "content_bytes": 33168
+    },
+    {
+      "name": "mcp-builder",
+      "consumer": "memory-steward-agent",
+      "execution_mode": "GATED_SCRIPT_TOOL",
+      "sha256": "0f4592dcb53cf2b5d6b7febee6b4152018b565551a1c29e3c612f57b218ab295",
+      "content_bytes": 9092
+    },
+    {
+      "name": "phoenix-evals",
+      "consumer": "retrieval-quality-agent",
+      "execution_mode": "INSTRUCTION_RESOURCE",
+      "sha256": "4c5faed1fd50250767bbaad57bc288db3f4ecd08c988ae334e3739fb08a96c9d",
+      "content_bytes": 5111
+    },
+    {
+      "name": "phoenix-tracing",
+      "consumer": "retrieval-quality-agent",
+      "execution_mode": "INSTRUCTION_RESOURCE",
+      "sha256": "11d0d27acf4efa600034c916e073970038f0fc4475673112c039996d0b7acc38",
+      "content_bytes": 6574
+    },
+    {
+      "name": "mcp-inspector-powershell-call",
+      "consumer": "recovery-integrity-agent",
+      "execution_mode": "INSTRUCTION_RESOURCE",
+      "sha256": "fbf446cd96dc104b5321260cadb643a98b41e4438abc27b7a396a84b663d0165",
+      "content_bytes": 1214
+    },
+    {
+      "name": "retrieval-quality-validation",
+      "consumer": "retrieval-quality-agent",
+      "execution_mode": "INSTRUCTION_RESOURCE",
+      "sha256": "82cb9f46fc4f88b936fbd93591fd2001dd5e19f2d012f0716f6208b49e5d25f4",
+      "content_bytes": 1998
+    }
+  ],
+  "e2e": {
+    "tenant": "LEGACY",
+    "namespace": "AGENT_SKILL_E2E_PROOF_4595F569B4604F01",
+    "mission_id": "mission:agent-skill-e2e:4595F569B4604F01",
+    "checkpoint_id": "cp-agent-skill-e2e-4595F569B4604F01",
+    "checkpoint_result": {
+      "checkpoint_id": "cp-agent-skill-e2e-4595F569B4604F01",
+      "namespace": "AGENT_SKILL_E2E_PROOF_4595F569B4604F01",
+      "mission_id": "mission:agent-skill-e2e:4595F569B4604F01",
+      "project_id": null,
+      "step_index": 1,
+      "state": {
+        "phase": "E2E_CREATED",
+        "item_id": "mem-d76e8ef469054cebab7635d121d9ae55",
+        "token": "vault://memory/legacy/da2a0b3d83a2f53ac6459cbe"
+      },
+      "state_sha256": "e8474433b89bd820fc8a55a5b5ec2bccae8916fbf7cbe7bbee76e9dd85db4d5a",
+      "created_at": "2026-09-24T12:44:48.126731+00:00",
+      "occurred_at": "2026-09-24T12:44:48.126710+00:00",
+      "observed_at": "2026-09-24T12:44:48.126710+00:00",
+      "valid_from": "2026-09-24T12:44:48.126710+00:00",
+      "valid_to": null,
+      "late_arrival": false,
+      "version": "BT-1.0.0"
+    },
+    "item_id": "mem-d76e8ef469054cebab7635d121d9ae55",
+    "token": "AGENT-SKILL-E2E-4595F569B4604F01",
+    "retrieval_trace_id": "trace-09c6b4b725aa4d168bc6768d5d413d2e",
+    "selected_item_ids": [
+      "mem-d76e8ef469054cebab7635d121d9ae55"
+    ]
+  },
+  "restart_verified": true,
+  "runtime_health_after_restart": {
+    "status": "ok",
+    "service": "MEMORIA-PERMANENTE",
+    "runtime_profile": "V5.5-PRIMARY",
+    "release_channel": "MEMORIA_PERMANENTE_CANONICAL_1.0"
+  },
+  "restart_verification": {
+    "memory_versions": 1,
+    "checkpoint_id": "cp-agent-skill-e2e-4595F569B4604F01",
+    "retrieval_trace_id": "trace-655e6ec6a8de457dbacb22d6965d2c1f",
+    "selected_item_ids": [
+      "mem-d76e8ef469054cebab7635d121d9ae55"
+    ]
+  }
+}

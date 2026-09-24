@@ -1,0 +1,33 @@
+{
+    "status":  "V5.2_RC1_API_DB_DEPLOYED_WITH_OBSERVABILITY_BLOCKER",
+    "timestamp":  "2026-09-04T17:10:00-03:00",
+    "branch":  "v5.2-rebase-acquisitions-20260904",
+    "head":  "1791965cfdd651864ed1eb98acb4d5d5460a3f61",
+    "v4_baseline":  "c77686471dbec0b53002b8d2653cf7dcb90b658f",
+    "v4_api":  "http://127.0.0.1:8787",
+    "rc1_api":  "http://127.0.0.1:8792",
+    "rc1_database":  "memoria_permanente_v52_rc1",
+    "v4_health":  "ok",
+    "rc1_health":  "ok",
+    "v4_trace_count":  95,
+    "rc1_trace_count":  97,
+    "unauth_context_expected":  "401 observed",
+    "signed_context_no_hit":  "200 trace-abf0288c9e2942bcace441ecf8cba78a selected_count=0",
+    "signed_context_hit":  "200 trace-d571e1e346ed4998a07e42d595370b12 selected_count=1 modes=LEXICAL,SEMANTIC",
+    "db_migrations":  [
+                          "0040_retrieval_quality_foundation",
+                          "0041_memory_evolution_capacity"
+                      ],
+    "rls_forced_tables":  [
+                              "retrieval_quality_golden_sets",
+                              "retrieval_quality_runs",
+                              "memory_capacity_snapshots",
+                              "memory_evolution_proofs"
+                          ],
+    "pytest":  "178 passed",
+    "defender_project_threats":  0,
+    "rollback_script":  "deploy/v5.2-rc1/rollback.ps1",
+    "phoenix_v4":  "http://127.0.0.1:6006 healthz=200",
+    "phoenix_rc1":  "BLOCKED: process bootstrap did not open 6007/4318 within validation window",
+    "promotion_allowed":  false
+}

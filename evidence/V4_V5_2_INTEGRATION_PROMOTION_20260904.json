@@ -1,0 +1,82 @@
+﻿{
+    "mission":  "V4_V5_2_INTEGRATION_AND_PROMOTION",
+    "status":  "V5.2_PRIMARY_PROMOTED_WITH_V4_ROLLBACK_PROVEN",
+    "timestamp_brt":  "2026-09-04T20:12:00-03:00",
+    "git_before":  "90626872ccf88c653844fe7ae62a67bc25bb9ae0",
+    "primary_runtime":  {
+                            "api":  "127.0.0.1:8787",
+                            "runtime_profile":  "V5.2-PRIMARY",
+                            "release_channel":  "primary-promoted",
+                            "database":  "memoria_permanente_v52_primary"
+                        },
+    "legacy_preserved":  {
+                             "database":  "memoria_permanente",
+                             "traces":  95,
+                             "worktree":  "C:\\New Projet\\MEMORIA-PERMANENTE-V4-ROLLBACK",
+                             "head":  "c77686471dbec0b53002b8d2653cf7dcb90b658f",
+                             "tag":  "mission-proven-0.26.1-20260904",
+                             "rollback_test":  "PASS"
+                         },
+    "rc1_secondary":  {
+                          "port":  "8792",
+                          "final_state":  "STOPPED",
+                          "database":  "memoria_permanente_v52_rc1",
+                          "traces":  99
+                      },
+    "primary_validation":  {
+                               "health":  "PASS",
+                               "unsigned_human_memory":  401,
+                               "signed_human_memory":  200,
+                               "human_contract":  "V5.2_HUMAN_OPERATIONAL_VIEW",
+                               "human_memories":  8,
+                               "observability_status":  200,
+                               "observability_contract":  "V5.2_OBSERVABILITY_LOCAL_V1",
+                               "explain_status":  200,
+                               "explain_contract":  "RETRIEVAL_EXPLAINABILITY_V1",
+                               "explain_selected_count":  1,
+                               "explain_modes":  [
+                                                     "LEXICAL",
+                                                     "SEMANTIC"
+                                                 ],
+                               "primary_traces":  103
+                           },
+    "mcp_validation":  {
+                           "tools_list":  "PASS",
+                           "memory_human_view":  "PASS",
+                           "contract":  "V5.2_MCP_HUMAN_VIEW",
+                           "direct_database_access":  false
+                       },
+    "database_recovery":  {
+                              "dump":  "PASS",
+                              "restore":  "PASS",
+                              "pg_amcheck_primary":  0,
+                              "pg_amcheck_restore":  0,
+                              "table_sets_equal":  true,
+                              "source_table_count":  76,
+                              "restore_table_count":  76,
+                              "row_counts_equal":  true,
+                              "restore_database_removed":  true
+                          },
+    "migrations":  {
+                       "0040_retrieval_quality_foundation":  "62287e3326152be707da6121c6e1c0ce2508f8e83057252dfc75d8ecc9b3becb",
+                       "0041_memory_evolution_capacity":  "8f66c0ffc228206ce6007830de4ff6f16f13e13036454450938e2ce0f143b847"
+                   },
+    "rls_forced":  [
+                       "retrieval_quality_golden_sets",
+                       "retrieval_quality_runs",
+                       "memory_capacity_snapshots",
+                       "memory_evolution_proofs"
+                   ],
+    "tests":  {
+                  "pytest":  "186 passed",
+                  "pytest_exit":  0,
+                  "diff_check_exit":  0,
+                  "defender_project_threats":  0
+              },
+    "ports_final":  [
+                        "127.0.0.1:8787",
+                        "127.0.0.1:6006"
+                    ],
+    "phoenix_note":  "Phoenix legacy remains on 6006; V5.2 primary observability is signed local metrics plus retrieval traces plus /v1/observability/v52.",
+    "conclusion":  "MISSION_PROVEN"
+}

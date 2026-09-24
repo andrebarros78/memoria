@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-09-02T04:13:59.323059+00:00",
+  "baseline": "0.13.0",
+  "api": {
+    "status": "ok",
+    "service": "MEMORIA-PERMANENTE",
+    "version": "0.13.0",
+    "purge_direct_enabled": false,
+    "product_id": "memory-permanente-v4",
+    "dna_sha256": "ca8a55485e5ab67cbdbd7c7c4c3a66af1e5660d83571b96418e11e39c1e29ae7",
+    "trust_class": "FIRST_PARTY_INTERNAL"
+  },
+  "database": {
+    "schema_version": "memory-0.13.0",
+    "postgresql": "18.6",
+    "pgvector": "0.8.6",
+    "migration_count": 14,
+    "last_migration": "0014_version_bound_learning_policy"
+  },
+  "compileall_pass": true,
+  "pytest": {
+    "returncode": 0,
+    "passed": 53
+  },
+  "audit": {
+    "ok": true,
+    "errors": [],
+    "events": 3347,
+    "head": "e0f76d858bc7ebf2469809c4b74cdf6aa9e94bf0fe37249a0ba8e6e40648e8f3",
+    "resealed": true,
+    "reseal_seq": 3261,
+    "sealed_until_seq": 3260,
+    "legacy_manifest_root": "63b391508976de8b1cb64bf650944f823705bf9c3c63a4ab3ff56a4e61bba144",
+    "legacy_manifest_matches_seal": true,
+    "legacy_fork_group_count": 17,
+    "legacy_fork_event_count": 40,
+    "legacy_invalid_hash": [],
+    "legacy_missing_parent": [],
+    "strict_chain_from_seq": 3261,
+    "strict_errors": []
+  },
+  "wheel": {
+    "file": "memoria_permanente-0.13.0-py3-none-any.whl",
+    "sha256": "24c2daf75cb716aa689b32d670b704bad77c582b4a27dfcf8d9e16c17d51000e",
+    "bytes": 68692
+  },
+  "backup": {
+    "sha256": "526350404ebc0dc0ad04f6526814da3de44d7c6f85aac0e207edf3dd05362290",
+    "bytes": 8028476
+  },
+  "secret_scan": {
+    "hits": [
+      {
+        "file": "src/memory_permanent/secret_sanitizer.py",
+        "pattern": "private_key",
+        "safe": true
+      }
+    ],
+    "unclassified": []
+  },
+  "forbidden_tracked": [],
+  "memoria_plus": {
+    "01": "PROVEN",
+    "02": "PROVEN",
+    "03": "PROVEN",
+    "04": "PROVEN",
+    "05_18": "OPEN"
+  },
+  "PASS": true
+}
