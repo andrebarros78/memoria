@@ -1,0 +1,32 @@
+﻿{
+    "phase":  "F01",
+    "title":  "Cognitive Kernel Contracts",
+    "timestamp":  "2026-09-24T19:48:08.1276645-03:00",
+    "baseline_head":  "5ca1908ac63a94ba6fc48850fd1de4019e13324c",
+    "behavior_change":  false,
+    "schema_migration_required":  false,
+    "modules":  [
+                    "cognitive_contracts.py",
+                    "cognitive_types.py",
+                    "cognitive_policy.py"
+                ],
+    "targeted_tests":  {
+                           "passed":  8,
+                           "failed":  0
+                       },
+    "regression":  {
+                       "warning":  1,
+                       "skipped":  2,
+                       "failed":  0,
+                       "passed":  348
+                   },
+    "lint":  "PASS",
+    "security":  {
+                     "direct_mutation":  false,
+                     "scope_fail_closed":  true,
+                     "explicit_capability":  true,
+                     "direct_promotion":  false,
+                     "shadow_only":  true
+                 },
+    "rollback":  "Remove F01 modules/tests/docs; no DB/API/runtime migration to reverse."
+}
