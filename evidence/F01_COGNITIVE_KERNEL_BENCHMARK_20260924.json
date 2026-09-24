@@ -1,0 +1,1 @@
+﻿{"accepted": 100000, "benchmark": "cognitive_policy_evaluation", "elapsed_seconds": 0.7566495000210125, "iterations": 100000, "microseconds_per_operation": 7.566495000210125, "operations_per_second": 132161.5886843551, "phase": "F01", "purpose": "baseline measurement only; F01 defines no performance gate", "threshold": null}

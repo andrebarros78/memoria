@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from dataclasses import dataclass
 from enum import StrEnum
@@ -26,6 +26,21 @@ class CognitiveRelation(StrEnum):
     DECISION_DEPENDENCY = "DECISION_DEPENDENCY"
     CONTRADICTION = "CONTRADICTION"
     SUPPORT = "SUPPORT"
+
+
+class HumanAutomationLevel(StrEnum):
+    AUTO_ALLOWED = "AUTO_ALLOWED"
+    AUTO_WITH_EVIDENCE = "AUTO_WITH_EVIDENCE"
+    HUMAN_REVIEW = "HUMAN_REVIEW"
+    HUMAN_APPROVAL_REQUIRED = "HUMAN_APPROVAL_REQUIRED"
+    FORBIDDEN_AUTOMATION = "FORBIDDEN_AUTOMATION"
+
+
+class CapabilityClass(StrEnum):
+    CORE = "CORE"
+    OPTIONAL_SYNC = "OPTIONAL_SYNC"
+    OPTIONAL_ASYNC = "OPTIONAL_ASYNC"
+    EXTERNAL_ADAPTER = "EXTERNAL_ADAPTER"
 
 
 @dataclass(frozen=True, slots=True)

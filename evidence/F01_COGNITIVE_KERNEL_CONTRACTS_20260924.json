@@ -1,32 +1,38 @@
 ﻿{
     "phase":  "F01",
     "title":  "Cognitive Kernel Contracts",
-    "timestamp":  "2026-09-24T19:48:08.1276645-03:00",
-    "baseline_head":  "5ca1908ac63a94ba6fc48850fd1de4019e13324c",
+    "executive_project":  "PROJETO_EXECUTIVO_MEMORIA_UNIVERSAL_COGNITIVA_ANALOGA_HUMANA-1 (1).md",
+    "baseline_head":  "c96b020c047b9e5b74df885e8d455075b48e9ba4",
+    "contract_version":  "CKC-1.1.0",
+    "policy_version":  "CKP-1.1.0",
     "behavior_change":  false,
     "schema_migration_required":  false,
+    "migration_head":  "0054_embedding_worker_role_login_normalization",
+    "migration_files_changed":  [
+
+                                ],
+    "migration_decision":  "N/A: F01 forbids behavior change and 0055 is reserved by the executive project for cognitive activation",
     "modules":  [
-                    "cognitive_contracts.py",
-                    "cognitive_types.py",
-                    "cognitive_policy.py"
+                    "src/memory_permanent/cognitive_contracts.py",
+                    "src/memory_permanent/cognitive_types.py",
+                    "src/memory_permanent/cognitive_policy.py"
                 ],
-    "targeted_tests":  {
-                           "passed":  8,
-                           "failed":  0
-                       },
-    "regression":  {
-                       "warning":  1,
-                       "skipped":  2,
-                       "failed":  0,
-                       "passed":  348
-                   },
+    "tests":  {
+                  "targeted_passed":  15,
+                  "targeted_failed":  0,
+                  "full_passed":  355,
+                  "full_skipped":  2,
+                  "full_failed":  0,
+                  "warning_count":  1,
+                  "e2e_restart":  "PASS",
+                  "api_contract_unchanged":  "PASS",
+                  "security":  "PASS"
+              },
     "lint":  "PASS",
-    "security":  {
-                     "direct_mutation":  false,
-                     "scope_fail_closed":  true,
-                     "explicit_capability":  true,
-                     "direct_promotion":  false,
-                     "shadow_only":  true
-                 },
-    "rollback":  "Remove F01 modules/tests/docs; no DB/API/runtime migration to reverse."
+    "feature_flags_default_off":  true,
+    "direct_mutation":  false,
+    "direct_promotion":  false,
+    "scope_fail_closed":  true,
+    "benchmark_file":  "evidence/F01_COGNITIVE_KERNEL_BENCHMARK_20260924.json",
+    "rollback":  "Git revert F01 commits; no DB rollback because F01 has no schema change."
 }
