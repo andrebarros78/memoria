@@ -5,14 +5,14 @@ Módulo soberano externo e infraestrutura universal de memória, contexto, estad
 ## Baseline vigente
 
 - Produto universal: **MEMORIA-PERMANENTE**.
-- Produto/API: `0.28.1`.
+- Produto/API da arvore canonica atual: 0.29.3.
 - Marco funcional operacional comprovado: `V5.3`.
 - Arquitetura canônica aprovada para evolução: `V5.5`.
 - Contrato universal: `MEMORIA_PERMANENTE_UNIVERSAL_PRODUCT_V2`.
 - Classe técnica V5.5: `UNIVERSAL_CONTEXT_MEMORY_INFRASTRUCTURE`.
 - Runtime operacional comprovado atual: **Windows JNS** em `C:\New Projet\MEMORIA-PERMANENTE`.
 - Desenvolvimento, CI, build, comparação e sincronização: **Linux**, quando explicitamente sincronizado e provado.
-- Schema/migration head: `0051_reserved_system_and_restore_gate_hardening` (51 migrations).
+- Schema/migration head da arvore canonica atual: 0054_embedding_worker_role_login_normalization (54 migrations numeradas; equivalencias historicas 0030z/0032z preservadas).
 - AI Integration Adapter: `V5.3_AI_INTEGRATION_ADAPTER`.
 - IA obrigatória para o núcleo: **NÃO**.
 - Purge direto: desabilitado por desenho.
