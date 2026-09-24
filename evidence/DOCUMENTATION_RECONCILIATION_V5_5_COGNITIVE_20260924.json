@@ -1,0 +1,26 @@
+﻿{
+    "generated_at":  "2026-09-24T16:40:20.4364264Z",
+    "baseline_version":  "0.29.3",
+    "runtime_profile":  "V5.5-PRIMARY",
+    "release_channel":  "MEMORIA_PERMANENTE_CANONICAL_1.0",
+    "cognitive_status":  "PLANNED",
+    "cognitive_mission_proven":  false,
+    "checks":  {
+                   "file:README.md":  true,
+                   "file:00_DOCUMENTATION_AUTHORITY.md":  true,
+                   "file:01_V5_5_PROVEN_BASELINE.md":  true,
+                   "file:02_MEMORIA_UNIVERSAL_COGNITIVA_TARGET.md":  true,
+                   "file:03_V5_5_TO_COGNITIVE_RECONCILIATION.md":  true,
+                   "baseline_0_29_3":  true,
+                   "v55_primary":  true,
+                   "release_canonical":  true,
+                   "cognitive_planned":  true,
+                   "cognitive_not_proven":  true,
+                   "providers_not_core":  true,
+                   "no_provider_as_unproven":  true,
+                   "installed_version_0_29_3":  true,
+                   "runtime_health_ok":  true,
+                   "concrete_provider_module_absent":  true
+               },
+    "pass":  true
+}
