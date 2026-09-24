@@ -1,0 +1,36 @@
+﻿{
+    "generated_at":  "2026-09-24T16:41:19.7072957Z",
+    "baseline_version":  "0.29.3",
+    "runtime_profile":  "V5.5-PRIMARY",
+    "release_channel":  "MEMORIA_PERMANENTE_CANONICAL_1.0",
+    "v55_status":  "PROVEN_CURRENT",
+    "cognitive_status":  "PLANNED",
+    "cognitive_mission_proven":  false,
+    "files":  [
+                  {
+                      "file":  "00_DOCUMENTATION_AUTHORITY.md",
+                      "bytes":  2348,
+                      "sha256":  "f56003e596a11309c370aaf4399ce9ee2fb52feb06ceecfded59f3c949788efa"
+                  },
+                  {
+                      "file":  "01_V5_5_PROVEN_BASELINE.md",
+                      "bytes":  3499,
+                      "sha256":  "424e85bfd03ce831371236120ea6b67cbcb4ed65e0f980c249cba3bb7f9717cd"
+                  },
+                  {
+                      "file":  "02_MEMORIA_UNIVERSAL_COGNITIVA_TARGET.md",
+                      "bytes":  5947,
+                      "sha256":  "121c71340aceb173a7700d14003d5dfd3a490b19829150ac5c42a866b7cccbc6"
+                  },
+                  {
+                      "file":  "03_V5_5_TO_COGNITIVE_RECONCILIATION.md",
+                      "bytes":  4246,
+                      "sha256":  "e371c1cab4a2f69b85b7399fc56b553bd1e4a74f434a52fc376cec38a4e7cf40"
+                  },
+                  {
+                      "file":  "README.md",
+                      "bytes":  1022,
+                      "sha256":  "3b8c3ef618f47abb7e6254605a025bd34edcc9465e0bf2c366a6f6b9843729f3"
+                  }
+              ]
+}

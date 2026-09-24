@@ -1,0 +1,21 @@
+﻿{
+    "generated_at":  "2026-09-24T16:40:48.8485176Z",
+    "baseline_version":  "0.29.3",
+    "runtime_profile":  "V5.5-PRIMARY",
+    "release_channel":  "MEMORIA_PERMANENTE_CANONICAL_1.0",
+    "previous_terminal_report":  "evidence/INTEGRAL_SYSTEM_CONSOLIDATION_MISSION_PROVEN_20260924.md",
+    "previous_report_role":  "HISTORICAL_EVIDENCE",
+    "current_documentation_root":  "docs/canonical",
+    "concrete_llm_inference_in_core":  false,
+    "cognitive_evolution":  "PLANNED",
+    "cognitive_mission_proven":  false,
+    "full_regression":  "340 passed, 2 skipped, 0 failed",
+    "security_regression":  "101 passed",
+    "v55_live_runtime":  "PASS",
+    "conformance_compatible":  true,
+    "restart_recovery_verified":  true,
+    "agent_skill_e2e":  "PASS",
+    "agent_skill_restart_verified":  true,
+    "wheel_sha256":  "bb7e7a5ab0d0116706cf4f293f31c42eb53592cb239c3c97a3b14227272f29cc",
+    "code_commit":  "7088f09a92a76b34921872ba29cacc17f7e50818"
+}
