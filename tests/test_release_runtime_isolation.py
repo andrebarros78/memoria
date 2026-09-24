@@ -59,3 +59,14 @@ def test_background_workers_do_not_inject_source_tree() -> None:
         assert "sys.path.insert" not in normalized
         assert 'root / "src"' not in normalized
         assert "from memory_permanent." in text
+
+def test_canonical_api_and_workers_strip_inherited_pythonpath() -> None:
+    for relative in (
+        "deploy/canonical/start-canonical.ps1",
+        "deploy/canonical/start-workers.ps1",
+    ):
+        text = (ROOT / relative).read_text(encoding="utf-8")
+        normalized = text.replace("/", "\\").lower()
+        assert "remove-item env:pythonpath" in normalized
+        assert "pythonnousersite" in normalized
+        assert " -i" in normalized or "'-i'" in normalized

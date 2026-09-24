@@ -67,13 +67,13 @@ def product_universality_spec() -> dict[str, Any]:
         "capability_profiles": {
             "CORE": ["persistence", "context", "state", "security"],
             "CONVERSATIONAL": ["conversation_context", "session_continuity", "customer_context"],
-            "AI": ["provider_adapters", "embeddings", "semantic_retrieval", "ai_suggestions"],
+            "AI": ["external_ai_integration", "embeddings", "semantic_retrieval", "ai_suggestions"],
             "OPERATIONAL": ["checkpoint", "resume", "recovery", "operational_state"],
             "INTELLIGENCE": ["learning", "experience", "procedures", "knowledge"],
             "FULL": ["CORE", "CONVERSATIONAL", "AI", "OPERATIONAL", "INTELLIGENCE"],
         },
         "consumer_classes": {
-            "ai_and_agents": "GPT, Claude, Gemini, local models and future AI providers through governed adapters",
+            "ai_and_agents": "GPT, Claude, Gemini, local models and future AI systems through governed public integration",
             "conversational_systems": "WhatsApp API, chat, support, sales and CRM contexts",
             "intelligence_systems": "Market Intelligence, Marketing Intelligence and analytical products",
             "infrastructure_orchestrators": "LMCP, WMCP and other execution/orchestration systems",
@@ -109,6 +109,7 @@ def product_universality_spec() -> dict[str, Any]:
             "co_located_or_remote_deployment": True,
             "shared_service_supported_by_contract": True,
             "ai_optional_and_replaceable": True,
+            "llm_inference_owned_by_memory_core": False,
             "cross_project_memory_leakage_forbidden": True,
         },
     }

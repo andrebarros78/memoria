@@ -1,5 +1,7 @@
 param([string]$OutputDir = "")
 $ErrorActionPreference='Stop'
+Remove-Item Env:PYTHONPATH -ErrorAction SilentlyContinue
+$env:PYTHONNOUSERSITE='1'
 $Root=Split-Path -Parent $PSScriptRoot
 $Python=Join-Path $Root '.venv\Scripts\python.exe'
 if(-not $OutputDir){$OutputDir=Join-Path $Root 'runtime\release-wheel'}

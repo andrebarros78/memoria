@@ -70,5 +70,5 @@ def test_erasure_api_contract_has_gate_replay_and_no_delete():
         "/v1/erasure/requests/{erasure_id}",
     )
     assert all(path in paths for path in required)
-    assert app.version == "0.29.2"
+    assert app.version == "0.29.3"
     assert all("delete" not in {str(k).lower() for k in methods} for methods in paths.values())

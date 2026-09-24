@@ -10,6 +10,7 @@ $discoveryPass=Join-Path $env:ProgramData 'MemoriaPermanente\postgres\embedding-
 if(-not (Test-Path $discoveryPass)){throw 'Embedding worker discovery credential store is missing.'}
 $env:PGPASSFILE=$pgPass
 $env:MEMORY_EMBEDDING_DISCOVERY_PGPASSFILE=$discoveryPass
+Remove-Item Env:PYTHONPATH -ErrorAction SilentlyContinue
 $env:PYTHONNOUSERSITE='1'
 $env:PYTHONUTF8='1'
 $env:MEMORY_DATABASE_URL='postgresql://memory_app@127.0.0.1:55436/memoria_permanente_v52_primary'

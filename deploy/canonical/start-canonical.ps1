@@ -46,7 +46,7 @@ if(-not $packagePath.StartsWith($expectedSite,[StringComparison]::OrdinalIgnoreC
   throw "Release integrity failure: memory_permanent resolved outside canonical runtime site-packages: $packagePath"
 }
 $installedVersion = (& $py -I -c "import importlib.metadata; print(importlib.metadata.version('memoria-permanente'))").Trim()
-if($installedVersion -ne '0.29.2'){ throw "Release integrity failure: expected 0.29.2, got $installedVersion" }
+if($installedVersion -ne '0.29.3'){ throw "Release integrity failure: expected 0.29.3, got $installedVersion" }
 
 & $py -I -m memory_permanent.runtime_preflight
 if($LASTEXITCODE -ne 0){ throw 'Canonical runtime preflight failed.' }

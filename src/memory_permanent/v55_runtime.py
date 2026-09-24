@@ -58,7 +58,7 @@ DEPLOYMENT_PROFILES: dict[str, dict[str, Any]] = {
 CAPABILITY_PROFILES: dict[str, tuple[str, ...]] = {
     "CORE": ("persistence", "context", "state", "security"),
     "CONVERSATIONAL": ("conversation_context", "session_continuity", "customer_context"),
-    "AI": ("provider_adapters", "embeddings", "semantic_retrieval", "ai_suggestions"),
+    "AI": ("external_ai_integration", "embeddings", "semantic_retrieval", "ai_suggestions"),
     "OPERATIONAL": ("checkpoint", "resume", "recovery", "operational_state"),
     "INTELLIGENCE": ("learning", "experience", "procedures", "knowledge"),
 }
@@ -72,9 +72,6 @@ OFFICIAL_ADAPTERS: dict[str, dict[str, Any]] = {
     "MEMORY_CLIENT": {"module": "memory_permanent.consumer_adapter", "role": "reusable consumer-side adapter", "core_dependency": False},
     "AI_INTEGRATION": {"module": "memory_permanent.ai_integration_adapter", "role": "governed AI suggestions", "core_dependency": False},
     "CONVERSATIONAL": {"module": "memory_permanent.conversational_adapter", "role": "provider-neutral chat/WhatsApp context normalization", "core_dependency": False},
-    "OPENAI": {"module": "memory_permanent.provider_adapter", "class": "OpenAIProviderAdapter", "role": "optional AI provider", "core_dependency": False},
-    "OLLAMA": {"module": "memory_permanent.provider_adapter", "class": "OllamaProviderAdapter", "role": "optional local AI provider", "core_dependency": False},
-    "LLAMA_CPP": {"module": "memory_permanent.provider_adapter", "class": "LlamaCppProviderAdapter", "role": "optional local AI provider", "core_dependency": False},
 }
 
 SECURITY_LAYERS: tuple[str, ...] = (
@@ -156,6 +153,7 @@ def v55_runtime_spec() -> dict[str, Any]:
         "official_adapters": adapters,
         "all_official_adapters_available": all(row["available"] for row in adapters.values()),
         "ai_required_for_core": False,
+        "external_llm_inference_owned_by_core": False,
         "direct_external_database_access": False,
         "security_layers": list(SECURITY_LAYERS),
         "security_layer_count": len(SECURITY_LAYERS),
