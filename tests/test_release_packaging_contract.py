@@ -12,5 +12,6 @@ def test_release_script_requires_runtime_resources_and_rejects_keys():
         "len(migrations)==expected_migrations",
         "'.dpapi'",
         "resource_ok",
+        "--outdir $OutputDir $Root",
     ):
         assert marker in text

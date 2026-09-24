@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import importlib.util
 import os
@@ -17,7 +17,7 @@ V55_RUNTIME_CONTRACT = "MEMORIA_PERMANENTE_V5_5_RUNTIME_V1"
 V55_CONSUMER_CONTRACT = "MEMORIA_PERMANENTE_CONSUMER_V1"
 V55_CONFORMANCE_CONTRACT = "MEMORIA_PERMANENTE_CONFORMANCE_V1"
 V55_RUNTIME_PROFILE = "V5.5-PRIMARY"
-V55_RELEASE_CHANNEL = "v5.5-primary-promoted"
+V55_RELEASE_CHANNEL = "MEMORIA_PERMANENTE_CANONICAL_1.0"
 V55_CONSTRUCTION_RUNTIME_PROFILE = "V5.5-CONSTRUCTION"
 V55_CONSTRUCTION_RELEASE_CHANNEL = "v5.5-construction"
 
@@ -147,7 +147,7 @@ def v55_runtime_spec() -> dict[str, Any]:
         "architecture_generation": ARCHITECTURE_GENERATION,
         "product_class": PRODUCT_CLASS,
         "runtime_profile": V55_RUNTIME_PROFILE,
-        "release_channel": V55_RELEASE_CHANNEL,
+        "release_channel": (os.getenv("MEMORY_RELEASE_CHANNEL", V55_RELEASE_CHANNEL).strip() or V55_RELEASE_CHANNEL),
         "closure_points": list(V5_5_CLOSURE_POINTS),
         "closure_points_count": len(V5_5_CLOSURE_POINTS),
         "universal_operations": dict(UNIVERSAL_OPERATIONS),
@@ -205,5 +205,3 @@ def validate_profile_selection(deployment_profile: str, capability_profiles: lis
         "core_always_required": True,
         "contract_changes_required": False,
     }
-
-

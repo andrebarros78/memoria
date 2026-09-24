@@ -12,7 +12,7 @@ def test_v55_runtime_closes_all_eight_points_and_security_depth():
     spec = v55_runtime_spec()
     assert spec["architecture_generation"] == "V5.5"
     assert spec["runtime_profile"] == "V5.5-PRIMARY"
-    assert spec["release_channel"] == "v5.5-primary-promoted"
+    assert spec["release_channel"] == "MEMORIA_PERMANENTE_CANONICAL_1.0"
     assert spec["product_class"] == "UNIVERSAL_CONTEXT_MEMORY_INFRASTRUCTURE"
     assert spec["closure_points_count"] == 8
     assert len(spec["closure_points"]) == 8

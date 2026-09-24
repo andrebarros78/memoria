@@ -137,7 +137,7 @@
   "restart_verification": {
     "memory_versions": 1,
     "checkpoint_id": "cp-agent-skill-e2e-4595F569B4604F01",
-    "retrieval_trace_id": "trace-655e6ec6a8de457dbacb22d6965d2c1f",
+    "retrieval_trace_id": "trace-f5c7f39b97cc44899a9981300688cceb",
     "selected_item_ids": [
       "mem-d76e8ef469054cebab7635d121d9ae55"
     ]

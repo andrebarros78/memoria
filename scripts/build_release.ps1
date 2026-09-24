@@ -1,4 +1,4 @@
-﻿param([string]$OutputDir = "")
+param([string]$OutputDir = "")
 $ErrorActionPreference='Stop'
 $Root=Split-Path -Parent $PSScriptRoot
 $Python=Join-Path $Root '.venv\Scripts\python.exe'
@@ -14,7 +14,7 @@ $env:SOURCE_DATE_EPOCH=([string]$epoch).Trim()
 Remove-Item -Recurse -Force (Join-Path $Root 'build') -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force $OutputDir | Out-Null
 Remove-Item -Force (Join-Path $OutputDir '*.whl') -ErrorAction SilentlyContinue
-& $Python -m build --wheel --outdir $OutputDir
+& $Python -m build --wheel --outdir $OutputDir $Root
 if($LASTEXITCODE -ne 0){throw "wheel build failed rc=$LASTEXITCODE"}
 $wheel=Get-ChildItem (Join-Path $OutputDir '*.whl') | Select-Object -First 1
 if(-not $wheel){throw 'wheel not produced'}
@@ -40,4 +40,3 @@ sys.exit(0 if clean else 2)
 $check | & $Python -
 if($LASTEXITCODE -ne 0){throw 'wheel content verification failed'}
 Remove-Item -Recurse -Force (Join-Path $Root 'build') -ErrorAction SilentlyContinue
-

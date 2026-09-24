@@ -70,6 +70,7 @@ def main() -> int:
     runtime = _signed(client, "GET", "/v1/v5.5/runtime")
     consumer = _signed(client, "GET", "/v1/v5.5/consumer-adapter")
     conversational = _signed(client, "GET", "/v1/v5.5/conversational-adapter")
+    _assert(runtime.get("release_channel") == EXPECTED_RELEASE_CHANNEL, "V55_RUNTIME_SPEC_RELEASE_CHANNEL")
     _assert(runtime.get("closure_points_count") == 8, "V55_EIGHT_POINTS")
     _assert(runtime.get("security_layer_count", 0) >= 10, "V55_SECURITY_DEPTH")
     _assert(runtime.get("all_official_adapters_available") is True, "V55_ADAPTERS_AVAILABLE")
@@ -225,5 +226,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
-
