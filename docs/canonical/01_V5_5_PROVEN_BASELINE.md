@@ -1,5 +1,8 @@
 ﻿# BASELINE OPERACIONAL CANÃ”NICA â€” V5.5
 
+> **Snapshot de origem:** esta peÃ§a preserva a prova da baseline `0.29.3`. O runtime atual `0.30.0` a estende com F01/F02 sem invalidar estas provas; o estado cognitivo corrente Ã© registrado em `03_V5_5_TO_COGNITIVE_RECONCILIATION.md`.
+
+
 **Estado:** `PROVEN_CURRENT`  
 **Produto:** `MEMORIA-PERMANENTE`  
 **VersÃ£o:** `0.29.3`  

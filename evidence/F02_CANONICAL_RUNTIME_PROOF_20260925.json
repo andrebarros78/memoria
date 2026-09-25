@@ -1,0 +1,113 @@
+{
+  "phase": "F02",
+  "phase_name": "Activation + Priming + Salience",
+  "phase_status": "PROVEN_CURRENT_SHADOW",
+  "cognitive_mission_proven": false,
+  "mission_proven": false,
+  "baseline": {
+    "version": "0.29.3",
+    "runtime_profile": "V5.5-PRIMARY",
+    "release": "MEMORIA_PERMANENTE_CANONICAL_1.0"
+  },
+  "current_release": {
+    "package_version": "0.30.0",
+    "runtime_profile": "V5.5-PRIMARY",
+    "release": "MEMORIA_PERMANENTE_CANONICAL_1.0",
+    "implementation_commit": "3327b4e68a7b056a2b39aa20d8413b62c3b5c460",
+    "release_commit": "49a774c",
+    "wheel": "memoria_permanente-0.30.0-py3-none-any.whl",
+    "wheel_sha256": "dc9a18e850523614fbadfe0a4dc68d533bae6225fc3b9e7d27a8127c7771c1b1",
+    "wheel_clean": true,
+    "wheel_migrations": 56
+  },
+  "database": {
+    "migration_count": 56,
+    "migration_head": "0056_cognitive_salience",
+    "0055_checksum": "5b3e6bd34f79647ba9fe871f86106d3c4bd50554331ae839a0373d2e2b3c8050",
+    "0056_checksum": "401a5a232f52bddedfd45d3c7e21fd528c946d5b9538b2d32cfe1b8667dc95fb",
+    "forced_rls_tables": 5
+  },
+  "tests": {
+    "targeted_cognitive": {"passed": 34, "failed": 0},
+    "version_affected": {"passed": 46, "failed": 0},
+    "full_regression": {"passed": 374, "skipped": 2, "failed": 0},
+    "ruff_active_scope": "PASS",
+    "git_diff_check": "PASS",
+    "compileall": "PASS",
+    "known_warning": "Starlette/AnyIO BlockingPortal deprecation only"
+  },
+  "isolated_shadow": {
+    "status": "PASS",
+    "activation_persisted": true,
+    "priming_persisted": true,
+    "salience_persisted": true,
+    "restart_new_interpreter": true,
+    "cross_tenant_read_isolated": true,
+    "cross_tenant_write_blocked": true,
+    "direct_runtime_table_write_blocked": true,
+    "canonical_memory_hash_unchanged": true,
+    "retrieval_baseline_p95_ms": 320.6248,
+    "retrieval_shadow_p95_ms": 242.0861,
+    "retrieval_p95_overhead_percent": -24.495516,
+    "retrieval_p95_requirement_percent": 20.0
+  },
+  "live_runtime": {
+    "ports": [8787, 8790],
+    "both_healthy": true,
+    "package_version": "0.30.0",
+    "v55_live_runtime": "PASS",
+    "restart_recovery_verified": true,
+    "conformance_compatible": true,
+    "primary_f02_hook": "PASS",
+    "preupgrade_cognitive_state_persisted": true
+  },
+  "security": {
+    "result": "PASS",
+    "checks_total": 12,
+    "checks_passed": 12,
+    "failed_checks": [],
+    "secrets_exposed": false
+  },
+  "backup_recovery": {
+    "predeploy_backup_id": "v52-20260925T123044Z-7f1790e4",
+    "predeploy_ciphertext_sha256": "095bd10df9e0e925d321bc0d71759b5c1414ed2b4befa79a0b96c4bfbb64eec8",
+    "postdeploy_backup_id": "v52-20260925T125140Z-66b79710",
+    "postdeploy_ciphertext_sha256": "b9673ca3548af7361479532261ffc3b2c49ddc774734f0eb3abd4f685ecdea88",
+    "cipher": "AES-256-GCM",
+    "plaintext_retained": false,
+    "restore_status": "PASS",
+    "restore_target": "memoria_permanente_v52_restoreproof",
+    "pg_amcheck": "PASS",
+    "audit_chain_ok": true,
+    "audit_events": 1636,
+    "erasure_replay": "PASS",
+    "restore_migration_count": 56,
+    "restore_migration_head": "0056_cognitive_salience"
+  },
+  "rollback": {
+    "feature_flags_default_off": true,
+    "disable_flags": ["COGNITIVE_ACTIVATION", "COGNITIVE_PRIMING", "COGNITIVE_SALIENCE"],
+    "previous_wheel": "memoria_permanente-0.29.3-py3-none-any.whl",
+    "previous_wheel_sha256": "bb7e7a5ab0d0116706cf4f293f31c42eb53592cb239c3c97a3b14227272f29cc",
+    "previous_version": "0.29.3",
+    "schema_rule": "Never rewrite applied migrations; use a reviewed reverse migration or restore the authenticated pre-deploy backup."
+  },
+  "expected_security_denials_observed": [
+    "Cross-scope priming without the memory project access context was denied by PostgreSQL policy during canary proof development."
+  ],
+  "gates": {
+    "C0": "PROVEN",
+    "C1": "PROVEN",
+    "C2": "PROVEN",
+    "C3": "OPEN",
+    "C4": "OPEN",
+    "C5": "OPEN",
+    "C6": "OPEN",
+    "C7": "OPEN",
+    "C8": "OPEN",
+    "C9": "OPEN",
+    "C10": "OPEN",
+    "C11": "OPEN",
+    "C12": "OPEN"
+  }
+}

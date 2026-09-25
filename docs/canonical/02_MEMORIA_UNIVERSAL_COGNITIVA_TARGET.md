@@ -1,3 +1,9 @@
+# IMPLEMENTAÃ‡ÃƒO CORRENTE
+
+F01 (Cognitive Kernel Contracts) e F02 (Activation/Priming/Salience) estÃ£o `PROVEN_CURRENT` em `SHADOW` no pacote `0.30.0`. As demais capacidades deste documento continuam alvo planejado atÃ© prova. A matriz autoritativa Ã© `03_V5_5_TO_COGNITIVE_RECONCILIATION.md`.
+
+---
+
 ﻿# MEMÃ“RIA UNIVERSAL COGNITIVA â€” ALVO EXECUTIVO RECONCILIADO
 
 **ClassificaÃ§Ã£o:** `PLANNED`  

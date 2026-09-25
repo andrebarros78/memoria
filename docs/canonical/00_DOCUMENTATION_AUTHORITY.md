@@ -1,7 +1,8 @@
 ﻿# AUTORIDADE DOCUMENTAL CANÃ”NICA â€” MEMORIA-PERMANENTE
 
-**Estado:** CANÃ”NICO  
-**Baseline operacional:** `0.29.3` / `V5.5-PRIMARY`  
+**Estado:** CANÃ”NICO
+**Baseline de origem comprovada:** `0.29.3` / `V5.5-PRIMARY`
+**Pacote operacional atual:** `0.30.0` / `V5.5-PRIMARY`
 **Release:** `MEMORIA_PERMANENTE_CANONICAL_1.0`
 
 ## Regra de autoridade
@@ -30,7 +31,7 @@ Nenhum documento de arquitetura futura pode converter uma capacidade planejada e
 
 ```text
 Produto: MEMORIA-PERMANENTE
-VersÃ£o: 0.29.3
+VersÃ£o: 0.30.0
 Runtime: V5.5-PRIMARY
 Release: MEMORIA_PERMANENTE_CANONICAL_1.0
 Classe atual: UNIVERSAL_CONTEXT_MEMORY_INFRASTRUCTURE
