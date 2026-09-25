@@ -180,11 +180,17 @@ class MemoryStorePort(Protocol):
 
 
 class GraphStorePort(Protocol):
-    """Marker contract; concrete methods arrive with capability conformance."""
+    """F03 read/trace contract for bounded associative traversal."""
+
+    def neighbors(self, memory_id: str, **kwargs: Any) -> tuple[Any, ...]: ...
+
+    def record_traversal_shadow(self, result: Any, **kwargs: Any) -> str: ...
 
 
 class VectorStorePort(Protocol):
-    """Marker contract; concrete methods arrive with capability conformance."""
+    """F03 semantic-neighbor evidence contract; vector similarity is not truth."""
+
+    def neighbors(self, memory_id: str, **kwargs: Any) -> tuple[Any, ...]: ...
 
 
 class CheckpointStorePort(Protocol):

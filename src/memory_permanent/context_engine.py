@@ -286,9 +286,31 @@ class ContextEngine:
             try:
                 submit = getattr(self.cognitive_observer, "submit_retrieval", None)
                 if callable(submit):
-                    submit(selected=tuple(selected), trace_id=trace_id)
+                    try:
+                        submit(
+                            selected=tuple(selected),
+                            trace_id=trace_id,
+                            namespaces=tuple(normalized),
+                            mission_id=mission_id,
+                            session_id=session_id,
+                        )
+                    except TypeError as compat_exc:
+                        if "unexpected keyword argument" not in str(compat_exc):
+                            raise
+                        submit(selected=tuple(selected), trace_id=trace_id)
                 else:
-                    self.cognitive_observer.observe_retrieval(selected=tuple(selected), trace_id=trace_id)
+                    try:
+                        self.cognitive_observer.observe_retrieval(
+                            selected=tuple(selected),
+                            trace_id=trace_id,
+                            namespaces=tuple(normalized),
+                            mission_id=mission_id,
+                            session_id=session_id,
+                        )
+                    except TypeError as compat_exc:
+                        if "unexpected keyword argument" not in str(compat_exc):
+                            raise
+                        self.cognitive_observer.observe_retrieval(selected=tuple(selected), trace_id=trace_id)
             except Exception:
                 record_failure = getattr(self.cognitive_observer, "record_failure", None)
                 if callable(record_failure):

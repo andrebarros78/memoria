@@ -14,6 +14,7 @@ _ALLOWED_METRICS = frozenset(
         "memory_activation_total",
         "priming_events_total",
         "salience_computations_total",
+        "association_traversals_total",
         "cognitive_shadow_failures_total",
         "cognitive_shadow_dropped_total",
     }

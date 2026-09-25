@@ -15,6 +15,7 @@ from .priming_policy import PrimingDecision, evaluate_priming
 from .provenance_policy import is_system_assigned_trust
 from .salience_engine import SalienceEngine, SalienceResult
 from .salience_policy import SALIENCE_DIMENSIONS
+from .spreading_activation import SpreadingActivationEngine
 
 ACTIVATION_POLICY_VERSION = "ACT-1.0.0"
 ACTIVATION_HALF_LIFE_HOURS = 72.0
@@ -285,15 +286,23 @@ class CognitiveShadowObserver:
         activation_enabled: bool = True,
         priming_enabled: bool = True,
         salience_enabled: bool = True,
+        association_enabled: bool = False,
         activation_engine: CognitiveActivationEngine | None = None,
         salience_engine: SalienceEngine | None = None,
+        association_store: Any | None = None,
+        spreading_engine: SpreadingActivationEngine | None = None,
     ) -> None:
         self.store = store
         self.activation_enabled = bool(activation_enabled)
         self.priming_enabled = bool(priming_enabled)
         self.salience_enabled = bool(salience_enabled)
+        self.association_enabled = bool(association_enabled)
         self.activation_engine = activation_engine or CognitiveActivationEngine()
         self.salience_engine = salience_engine or SalienceEngine()
+        self.association_store = association_store
+        self.spreading_engine = spreading_engine or SpreadingActivationEngine()
+        if self.association_enabled and self.association_store is None:
+            raise ValueError("association_store is required when association is enabled")
 
     def observe_capture(
         self,
@@ -352,11 +361,34 @@ class CognitiveShadowObserver:
             evidence_refs=refs,
         )
 
-    def submit_retrieval(self, *, selected: tuple[dict[str, Any], ...], trace_id: str) -> bool:
+    def submit_retrieval(
+        self,
+        *,
+        selected: tuple[dict[str, Any], ...],
+        trace_id: str,
+        namespaces: tuple[str, ...] = (),
+        mission_id: str | None = None,
+        session_id: str | None = None,
+    ) -> bool:
         snapshot = tuple(dict(item) for item in selected)
-        return dispatcher.submit(self.observe_retrieval, selected=snapshot, trace_id=trace_id)
+        return dispatcher.submit(
+            self.observe_retrieval,
+            selected=snapshot,
+            trace_id=trace_id,
+            namespaces=tuple(namespaces),
+            mission_id=mission_id,
+            session_id=session_id,
+        )
 
-    def observe_retrieval(self, *, selected: tuple[dict[str, Any], ...], trace_id: str) -> None:
+    def observe_retrieval(
+        self,
+        *,
+        selected: tuple[dict[str, Any], ...],
+        trace_id: str,
+        namespaces: tuple[str, ...] = (),
+        mission_id: str | None = None,
+        session_id: str | None = None,
+    ) -> None:
         for item in selected:
             memory_id = str(item.get("item_id") or "").strip()
             if not memory_id:
@@ -405,6 +437,35 @@ class CognitiveShadowObserver:
                         trace_id=trace_id,
                     )
                     metrics.increment("salience_computations_total")
+
+        if self.association_enabled and self.association_store is not None and selected:
+            seed_ids = tuple(str(item.get("item_id") or "").strip() for item in selected)
+            seed_ids = tuple(item_id for item_id in seed_ids if item_id)
+            association_namespaces = tuple(
+                str(value).strip().upper() for value in namespaces if str(value).strip()
+            ) or tuple(
+                sorted({str(item.get("namespace") or "").strip().upper() for item in selected if str(item.get("namespace") or "").strip()})
+            )
+            if seed_ids and association_namespaces:
+                limits = self.spreading_engine.limits
+                result = self.spreading_engine.traverse(
+                    seed_ids,
+                    lambda memory_id, _depth: self.association_store.neighbors(
+                        memory_id,
+                        namespaces=association_namespaces,
+                        mission_id=mission_id,
+                        session_id=session_id,
+                        semantic_min_similarity=limits.semantic_min_similarity,
+                        limit=min(32, limits.node_budget),
+                    ),
+                )
+                self.association_store.record_traversal_shadow(
+                    result,
+                    retrieval_trace_id=trace_id,
+                    mission_id=mission_id,
+                    session_id=session_id,
+                )
+                metrics.increment("association_traversals_total")
 
     def prime(
         self,

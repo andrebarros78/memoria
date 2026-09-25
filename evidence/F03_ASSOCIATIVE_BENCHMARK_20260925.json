@@ -1,0 +1,14 @@
+{
+  "retrieval_baseline_p95_ms": 319.5844,
+  "retrieval_shadow_p95_ms": 297.5975,
+  "retrieval_p95_overhead_percent": -6.879841,
+  "retrieval_p95_requirement_percent": 20.0,
+  "associative_precision": 1.0,
+  "associative_precision_requirement": 0.8,
+  "associative_recall": 1.0,
+  "associative_recall_requirement": 0.75,
+  "traversal_elapsed_ms": 469.8021,
+  "phase": "F03",
+  "status": "PASS",
+  "corpus": "isolated_deterministic_synthetic_ground_truth"
+}

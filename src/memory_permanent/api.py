@@ -20,6 +20,7 @@ from .ai_integration_adapter import (
     ensure_promotable_memory_create,
     normalize_ai_suggestion,
 )
+from .associative_memory import PostgresAssociationStore
 from .canonical_mutation import CanonicalMutationService
 from .causal_policy import causal_policy_spec
 from .client_auth import (
@@ -232,13 +233,16 @@ def get_cognitive_shadow_observer(store: PostgresMemoryStore) -> CognitiveShadow
     activation = _feature_enabled("COGNITIVE_ACTIVATION")
     priming = _feature_enabled("COGNITIVE_PRIMING")
     salience = _feature_enabled("COGNITIVE_SALIENCE")
-    if not any((activation, priming, salience)):
+    association = _feature_enabled("COGNITIVE_ASSOCIATION")
+    if not any((activation, priming, salience, association)):
         return None
     return CognitiveShadowObserver(
         PostgresActivationStore(store),
         activation_enabled=activation,
         priming_enabled=priming,
         salience_enabled=salience,
+        association_enabled=association,
+        association_store=PostgresAssociationStore(store) if association else None,
     )
 
 
