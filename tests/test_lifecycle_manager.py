@@ -83,4 +83,4 @@ def test_openapi_exposes_governed_workflow_but_no_delete_method() -> None:
     ):
         assert path in paths
     assert all("delete" not in methods for methods in paths.values())
-    assert app.version == "0.30.0"
+    assert app.version == "0.31.0"

@@ -87,7 +87,7 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(
     title="MEMORIA-PERMANENTE",
-    version="0.30.0",
+    version="0.31.0",
     description="Infraestrutura universal soberana de memoria e contexto V5.5",
     docs_url=None,
     redoc_url=None,
@@ -700,7 +700,7 @@ def _health_details() -> dict[str, object]:
     return {
         "status": "ok" if dependencies_ok else "degraded",
         "service": "MEMORIA-PERMANENTE",
-        "version": "0.30.0",
+        "version": "0.31.0",
         "purge_direct_enabled": False,
         "product_id": identity["product_id"],
         "dna_sha256": identity["dna_sha256"],
