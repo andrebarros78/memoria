@@ -13,17 +13,19 @@ Este diretório é o ponto de entrada documental canônico para o produto vivo e
 
 ```text
 ORIGIN_BASELINE = 0.29.3 / PROVEN
-CURRENT_PACKAGE = 0.30.0
+CURRENT_PACKAGE = 0.31.0
 RUNTIME_PROFILE = V5.5-PRIMARY
 MEMORIA_UNIVERSAL = CURRENT_CONTRACT
 F01_COGNITIVE_CONTRACTS = PROVEN_CURRENT
 F02_ACTIVATION_PRIMING_SALIENCE = PROVEN_CURRENT / SHADOW
+F03_ASSOCIATIVE_MEMORY = PROVEN_CURRENT / SHADOW
 C0 = PROVEN
 C1 = PROVEN
 C2 = PROVEN
-C3-C12 = OPEN
+C3 = PROVEN
+C4-C12 = OPEN
 COGNITIVE_MISSION_PROVEN = NÃO
 CONCRETE_LLM_INFERENCE_IN_CORE = NÃO
 ```
 
-A documentação futura nunca prevalece sobre o runtime e as evidências atuais. O core continua independente de LLM concreto.
+A documentação futura nunca prevalece sobre o runtime e as evidências atuais. O core continua independente de LLM concreto. F03 adiciona acessibilidade associativa derivada, não uma nova fonte de verdade e não altera o ranking canônico em `SHADOW`.

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T12:50:14.030525+00:00",
+  "generated_at": "2026-09-25T15:19:12.813828+00:00",
   "base": "http://127.0.0.1:8787",
   "expected_release_channel": "MEMORIA_PERMANENTE_CANONICAL_1.0",
   "health": {
@@ -11,7 +11,7 @@
   "health_details": {
     "status": "ok",
     "service": "MEMORIA-PERMANENTE",
-    "version": "0.30.0",
+    "version": "0.31.0",
     "purge_direct_enabled": false,
     "product_id": "memoria-permanente",
     "dna_sha256": "8926fd35a0899b1fa2bc567db04f9d97908d82fa9d8da4f931c65023857fc12a",

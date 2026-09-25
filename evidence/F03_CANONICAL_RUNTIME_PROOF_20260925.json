@@ -1,0 +1,258 @@
+{
+  "backup": {
+    "predeploy": {
+      "acl_preserved": true,
+      "backup_id": "v52-20260925T141552Z-a0e78819",
+      "cipher": "AES-256-GCM",
+      "ciphertext_sha256": "fa912a7a1ef41b9a5b00449f38fcc8a3cf2262b3642bba7ed08152374d85c7af",
+      "database": "memoria_permanente_v52_primary",
+      "encrypted_path": "C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0\\backups\\v52-encrypted\\v52-20260925T141552Z-a0e78819.mpb",
+      "latest_migration": "0056_cognitive_salience",
+      "manifest_authenticated": true,
+      "manifest_path": "C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0\\backups\\v52-encrypted\\v52-20260925T141552Z-a0e78819.encrypted.manifest.json",
+      "migration_count": 56,
+      "owner_preserved": true,
+      "plaintext_retained": false,
+      "secret_material_exposed": false,
+      "status": "PASS"
+    },
+    "terminal": {
+      "acl_preserved": true,
+      "backup_id": "v52-20260925T151925Z-1a50055f",
+      "cipher": "AES-256-GCM",
+      "ciphertext_sha256": "c1b46566045fc050ef77c0211990e4dc810ac1945e743fea153b8f7b0b79640d",
+      "database": "memoria_permanente_v52_primary",
+      "encrypted_path": "C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0\\backups\\v52-encrypted\\v52-20260925T151925Z-1a50055f.mpb",
+      "latest_migration": "0057_cognitive_associative_memory",
+      "manifest_authenticated": true,
+      "manifest_path": "C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0\\backups\\v52-encrypted\\v52-20260925T151925Z-1a50055f.encrypted.manifest.json",
+      "migration_count": 57,
+      "owner_preserved": true,
+      "plaintext_retained": false,
+      "secret_material_exposed": false,
+      "status": "PASS"
+    }
+  },
+  "canonical_status": "PROVEN_CURRENT_SHADOW",
+  "checks": {
+    "all_cognitive_rls_forced": true,
+    "canonical_hash_unchanged": true,
+    "canonical_sources_multi_source": true,
+    "cross_tenant_isolated": true,
+    "direct_write_blocked": true,
+    "f03_direct_grants_select_only": true,
+    "final_backup": true,
+    "final_restore": true,
+    "health_both_ports": true,
+    "isolated_f03_pass": true,
+    "live_association_both_ports": true,
+    "migration_head_0057": true,
+    "package_version": true,
+    "precision_requirement": true,
+    "recall_requirement": true,
+    "restart_persistence": true,
+    "security_12_of_12": true,
+    "terminal_regression": true,
+    "v55_conformance": true
+  },
+  "cognitive_mission_proven": false,
+  "database": {
+    "cognitive_rls": [
+      {
+        "rls_enabled": true,
+        "rls_forced": true,
+        "table": "memory_activation_events"
+      },
+      {
+        "rls_enabled": true,
+        "rls_forced": true,
+        "table": "memory_activation_state"
+      },
+      {
+        "rls_enabled": true,
+        "rls_forced": true,
+        "table": "memory_association_candidates"
+      },
+      {
+        "rls_enabled": true,
+        "rls_forced": true,
+        "table": "memory_association_traversals"
+      },
+      {
+        "rls_enabled": true,
+        "rls_forced": true,
+        "table": "memory_interference_events"
+      },
+      {
+        "rls_enabled": true,
+        "rls_forced": true,
+        "table": "memory_priming_edges"
+      },
+      {
+        "rls_enabled": true,
+        "rls_forced": true,
+        "table": "memory_salience"
+      }
+    ],
+    "counts": {
+      "association_candidates": 93,
+      "association_traversals": 18
+    },
+    "f03_memory_app_direct_grants": [
+      {
+        "privilege": "SELECT",
+        "table": "memory_association_candidates"
+      },
+      {
+        "privilege": "SELECT",
+        "table": "memory_association_traversals"
+      }
+    ],
+    "migration_count": 57,
+    "migration_head": "0057_cognitive_associative_memory"
+  },
+  "gates": {
+    "C0": "PROVEN",
+    "C1": "PROVEN",
+    "C2": "PROVEN",
+    "C3": "PROVEN",
+    "C4_C12": "OPEN"
+  },
+  "generated_at": "2026-09-25T15:25:41.217218+00:00",
+  "implementation_head": "e94a9d524a2452e93aca8030d939fccd8e09c49c",
+  "isolated_proof": {
+    "bounded_traversal": true,
+    "canonical_memory_hashes_unchanged": true,
+    "canonical_sources": [
+      "EXPERIENCE_GRAPH",
+      "ONTOLOGY",
+      "PGVECTOR"
+    ],
+    "cross_tenant_read_isolated": true,
+    "cross_tenant_write_blocked": true,
+    "deterministic_trace": true,
+    "direct_runtime_table_write_blocked": true,
+    "loop_protection": true,
+    "precision": 1.0,
+    "precision_requirement": 0.8,
+    "recall": 1.0,
+    "recall_requirement": 0.75,
+    "retrieval_p95_overhead_percent": -12.574237,
+    "scope_isolation": true
+  },
+  "live_runtime": {
+    "association_ports": {
+      "8787": {
+        "candidate_count": 12,
+        "candidate_source_kinds": [
+          "PGVECTOR"
+        ],
+        "created_at": "2026-09-25T12:18:42.690110-03:00",
+        "elapsed_ms": 607.2879999992438,
+        "policy_version": "ASP-1.0.0",
+        "seed_count": 8,
+        "time_budget_ms": 1000,
+        "trace_id": "trace-ecad81ed33444b82b6220ff543265546",
+        "traversal_id": "ast-e71e5507a86f48bbbee2f5f39a439787",
+        "visited_count": 12
+      },
+      "8790": {
+        "candidate_count": 12,
+        "candidate_source_kinds": [
+          "PGVECTOR"
+        ],
+        "created_at": "2026-09-25T12:18:40.054640-03:00",
+        "elapsed_ms": 390.95820000511594,
+        "policy_version": "ASP-1.0.0",
+        "seed_count": 8,
+        "time_budget_ms": 1000,
+        "trace_id": "trace-df6e58c2635e46568815a2a84a199a4b",
+        "traversal_id": "ast-6a526b4166514ebab1c5638c71147198",
+        "visited_count": 12
+      }
+    },
+    "health": {
+      "8787": {
+        "release_channel": "MEMORIA_PERMANENTE_CANONICAL_1.0",
+        "runtime_profile": "V5.5-PRIMARY",
+        "service": "MEMORIA-PERMANENTE",
+        "status": "ok"
+      },
+      "8790": {
+        "release_channel": "MEMORIA_PERMANENTE_CANONICAL_1.0",
+        "runtime_profile": "V5.5-PRIMARY",
+        "service": "MEMORIA-PERMANENTE",
+        "status": "ok"
+      }
+    },
+    "pre_restart_traversal_persisted": true,
+    "security": {
+      "checks": 12,
+      "failed_checks": [],
+      "result": "PASS"
+    },
+    "v55_primary_proof": {
+      "compatible": true,
+      "restart_recovery_verified": true
+    }
+  },
+  "next_phase": "F04_OFFLINE_CONSOLIDATION",
+  "package_version": "0.31.0",
+  "phase": "F03_ASSOCIATIVE_MEMORY_SPREADING_ACTIVATION",
+  "recovery": {
+    "audit_chain_ok": true,
+    "audit_events": 1728,
+    "backup_id": "v52-20260925T151925Z-1a50055f",
+    "erasure_replay": {
+      "ledger_entries": 0,
+      "ledger_verified": true,
+      "matched_targets": 0,
+      "redacted_targets": 0,
+      "replay_id": "lrr-194519ad4b6b4db194aba29e34fc9c67",
+      "result": "PASS"
+    },
+    "migration_count_after_restore": 57,
+    "pg_amcheck": "PASS",
+    "plaintext_restore_temp_retained": false,
+    "restore_flow": [
+      "RESTORE",
+      "MIGRATE",
+      "ERASURE_REPLAY",
+      "VERIFY"
+    ],
+    "runtime_preflight": {
+      "database_role": "memory_app",
+      "database_role_privileged": false,
+      "latest_migration": "0057_cognitive_associative_memory",
+      "migration_count": 57,
+      "pgvector": "0.8.6",
+      "postgresql": "18.6",
+      "status": "READY"
+    },
+    "secret_material_exposed": false,
+    "status": "PASS",
+    "target_database": "memoria_permanente_v52_restoreproof"
+  },
+  "regression": {
+    "git_diff_check": "PASS",
+    "pytest": {
+      "passed": 389,
+      "skipped": 2,
+      "warnings": 1
+    },
+    "ruff": "PASS"
+  },
+  "release_channel": "MEMORIA_PERMANENTE_CANONICAL_1.0",
+  "rollback": {
+    "package_version": "0.30.0",
+    "sha256": "dc9a18e850523614fbadfe0a4dc68d533bae6225fc3b9e7d27a8127c7771c1b1",
+    "wheel": "memoria_permanente-0.30.0-py3-none-any.whl"
+  },
+  "runtime_profile": "V5.5-PRIMARY",
+  "status": "PASS",
+  "wheel": {
+    "bytes": 307023,
+    "name": "memoria_permanente-0.31.0-py3-none-any.whl",
+    "sha256": "2d8687f0304a86f6643a57c0c6313d8d6bbafbc464f891ea48a3cea34d574b7f"
+  }
+}

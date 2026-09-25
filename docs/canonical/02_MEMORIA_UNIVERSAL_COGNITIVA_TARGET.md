@@ -1,8 +1,9 @@
 # IMPLEMENTAÃ‡ÃƒO CORRENTE
 
-F01 (Cognitive Kernel Contracts) e F02 (Activation/Priming/Salience) estÃ£o `PROVEN_CURRENT` em `SHADOW` no pacote `0.30.0`. As demais capacidades deste documento continuam alvo planejado atÃ© prova. A matriz autoritativa Ã© `03_V5_5_TO_COGNITIVE_RECONCILIATION.md`.
+F01 (Cognitive Kernel Contracts), F02 (Activation/Priming/Salience) e F03 (Associative Memory / Spreading Activation) estÃ£o `PROVEN_CURRENT` em `SHADOW` no pacote `0.31.0`. F04+ continuam alvo planejado atÃ© prova. A matriz autoritativa Ã© `03_V5_5_TO_COGNITIVE_RECONCILIATION.md`.
 
 ---
+
 
 ﻿# MEMÃ“RIA UNIVERSAL COGNITIVA â€” ALVO EXECUTIVO RECONCILIADO
 
@@ -177,27 +178,27 @@ INTENTION â†’ TRIGGER â†’ AUTHORIZATION â†’ ACTION
 
 A baseline real termina em `0054_embedding_worker_role_login_normalization`.
 
-NÃºmeros `0055+` sÃ£o reserva conceitual e somente poderÃ£o ser usados apÃ³s inspeÃ§Ã£o do estado real no momento da implementaÃ§Ã£o.
+Migrations cognitivas `0055`, `0056` e `0057` estÃ£o aplicadas e comprovadas; novas migrations devem seguir o head real sem reutilizaÃ§Ã£o de nÃºmero.
 
 ## 10. Gates cognitivos
 
 ```text
-C0  Cognitive Architecture Frozen
-C1  Activation/Priming Proven
-C2  Salience Proven
-C3  Associative Memory Proven
-C4  Offline Consolidation Proven
-C5  Reconsolidation Proven
-C6  Concept Generalization Proven
-C7  Prospective Memory Proven
-C8  Embodied Memory Proven
-C9  Universal Integration Proven
-C10 Cognitive Recovery Proven
-C11 Full Regression Proven
-C12 Cognitive MISSION_PROVEN
+C0  Cognitive Architecture Frozen        PROVEN
+C1  Activation/Priming Proven            PROVEN
+C2  Salience Proven                      PROVEN
+C3  Associative Memory Proven            PROVEN
+C4  Offline Consolidation Proven         OPEN
+C5  Reconsolidation Proven               OPEN
+C6  Concept Generalization Proven        OPEN
+C7  Prospective Memory Proven            OPEN
+C8  Embodied Memory Proven               OPEN
+C9  Universal Integration Proven         OPEN
+C10 Cognitive Recovery Proven            OPEN
+C11 Full Regression Proven               OPEN
+C12 Cognitive MISSION_PROVEN             OPEN
 ```
 
-Todos estÃ£o `OPEN` atÃ© execuÃ§Ã£o futura.
+C0â€“C3 estÃ£o comprovados no runtime atual. C4â€“C12 permanecem abertos; provas de restart/recovery das fases anteriores nÃ£o antecipam os gates terminais da arquitetura completa.
 
 ## 11. EstratÃ©gia obrigatÃ³ria
 
