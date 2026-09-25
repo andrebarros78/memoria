@@ -159,7 +159,13 @@ class SpreadingActivationEngine:
                     edge.source_ref,
                 ),
             )
+            if monotonic() > deadline:
+                time_budget_exhausted = True
+                break
             for edge in neighbors:
+                if monotonic() > deadline:
+                    time_budget_exhausted = True
+                    break
                 if considered_edges >= limits.node_budget:
                     budget_exhausted = True
                     break
@@ -252,8 +258,23 @@ class SpreadingActivationEngine:
                 if next_depth < limits.max_depth and activation > prior_score:
                     best_expansion_score[expansion_key] = activation
                     heapq.heappush(queue, (-activation, next_depth, seed, target, candidate.path))
-            if budget_exhausted:
+            if budget_exhausted or time_budget_exhausted:
                 break
+
+        if time_budget_exhausted:
+            # Fail closed: wall-clock expiry must never leak a timing-dependent partial candidate set.
+            best_candidates.clear()
+            visited = set(seeds)
+            considered_edges = 0
+            loops_blocked = 0
+            evidence_rejections = 0
+            budget_exhausted = False
+            trace_steps = [
+                {
+                    "decision": "TIME_BUDGET_EXHAUSTED",
+                    "policy": "FAIL_CLOSED_NO_PARTIAL_CANDIDATES",
+                }
+            ]
 
         candidates = tuple(
             sorted(

@@ -57,7 +57,7 @@ _HIGH_EVIDENCE_RELATIONS = frozenset(
 class AssociationLimits:
     max_depth: int = 2
     node_budget: int = 64
-    time_budget_ms: int = 100
+    time_budget_ms: int = 500
     max_candidates: int = 32
     hop_decay: float = 0.72
     min_activation: float = 0.12

@@ -20,7 +20,7 @@ A retrieved seed memory may activate related memories without an explicit query.
 
 - maximum depth: 4 (default 2);
 - node budget: max 256 (default 64);
-- time budget: max 1000 ms (default 100 ms);
+- time budget: max 1000 ms (default 500 ms);
 - candidate budget: max 128 (default 32);
 - path loop protection;
 - deterministic trace;

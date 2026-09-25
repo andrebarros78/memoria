@@ -226,7 +226,7 @@ def main() -> int:
         limits = AssociationLimits(
             max_depth=2,
             node_budget=64,
-            time_budget_ms=500,
+            time_budget_ms=1000,
             max_candidates=16,
             hop_decay=0.72,
             min_activation=0.12,

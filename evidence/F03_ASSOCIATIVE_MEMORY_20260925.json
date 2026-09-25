@@ -7,10 +7,10 @@
   "bounded_traversal": true,
   "candidate_count": 4,
   "candidate_ids": [
-    "mem-51e29bb2ed8942c08142f6c1ee7339a8",
-    "mem-6b182035ac434d5b966a93248571388e",
-    "mem-dabb08eabb8f4861b21536cd77677b57",
-    "mem-de3e19cf29a446bca86b195d95a18d3d"
+    "mem-0bad115d16ad4cb1b25fb1726b6d3685",
+    "mem-4574d7ac606d4c14be0b60a9dd3af989",
+    "mem-ae80f2363d4848028d1dadc584b8002b",
+    "mem-f309a27c8bef43068eb5bd69dee92afa"
   ],
   "canonical_memory_hashes_unchanged": true,
   "canonical_sources": [
@@ -35,7 +35,7 @@
   "direct_runtime_table_write_blocked": true,
   "evidence_rejections": 0,
   "expected_relevant_count": 4,
-  "experience_graph_edge_id": "ege-bd550f7f0a5d4b1092684110e81947aa",
+  "experience_graph_edge_id": "ege-6958e6a95d7c455892abea4a1a92e89c",
   "graph_propagation": true,
   "loop_protection": true,
   "loops_blocked": 3,
@@ -43,23 +43,26 @@
   "migration_head": "0057_cognitive_associative_memory",
   "mode": "SHADOW",
   "ontology_relation_ids": [
-    "rel-3cc689a0ae53429ea0a26e1afc91e9ac",
-    "rel-38f584f912ee4814adbf9592f7664222"
+    "rel-74287ec9562c4b4d9ad3b707fc19a117",
+    "rel-21b3009f705a4dc698134fe776e6bad6"
   ],
   "persisted_candidate_rows": 4,
   "phase": "F03",
   "production_database_touched": false,
   "restart_new_interpreter": true,
-  "retrieval_baseline_p95_ms": 319.5844,
-  "retrieval_p95_overhead_percent": -6.879841,
+  "retrieval_baseline_p95_ms": 401.5329,
+  "retrieval_p95_overhead_percent": -12.574237,
   "retrieval_p95_requirement_percent": 20.0,
-  "retrieval_shadow_p95_ms": 297.5975,
+  "retrieval_shadow_p95_ms": 351.0432,
   "rls_forced_tables": 2,
   "scope_isolation": true,
   "secret_material_exposed": false,
   "status": "PASS",
-  "traversal_elapsed_ms": 469.8021,
+  "traversal_elapsed_ms": 475.7134,
   "visited_count": 5,
-  "evidence_kind": "ISOLATED_REPRODUCIBLE_PROOF",
-  "source_log": "runtime/f03-proof-run2.log"
+  "evidence_kind": "ISOLATED_REPRODUCIBLE_PROOF_HARDENED",
+  "source_log": "runtime/f03-proof-final.log",
+  "timeout_policy": "FAIL_CLOSED_NO_PARTIAL_CANDIDATES",
+  "runtime_default_time_budget_ms": 500,
+  "proof_time_budget_ms": 1000
 }

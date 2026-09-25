@@ -1,14 +1,17 @@
 {
-  "retrieval_baseline_p95_ms": 319.5844,
-  "retrieval_shadow_p95_ms": 297.5975,
-  "retrieval_p95_overhead_percent": -6.879841,
+  "retrieval_baseline_p95_ms": 401.5329,
+  "retrieval_shadow_p95_ms": 351.0432,
+  "retrieval_p95_overhead_percent": -12.574237,
   "retrieval_p95_requirement_percent": 20.0,
   "associative_precision": 1.0,
   "associative_precision_requirement": 0.8,
   "associative_recall": 1.0,
   "associative_recall_requirement": 0.75,
-  "traversal_elapsed_ms": 469.8021,
+  "traversal_elapsed_ms": 475.7134,
   "phase": "F03",
   "status": "PASS",
-  "corpus": "isolated_deterministic_synthetic_ground_truth"
+  "corpus": "isolated_deterministic_synthetic_ground_truth",
+  "proof_time_budget_ms": 1000,
+  "runtime_default_time_budget_ms": 500,
+  "timeout_policy": "FAIL_CLOSED_NO_PARTIAL_CANDIDATES"
 }

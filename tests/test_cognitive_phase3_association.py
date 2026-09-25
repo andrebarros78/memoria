@@ -118,9 +118,13 @@ def test_phase3_time_budget_stops_slow_traversal():
             return (_edge("B", AssociationRelation.SHARED_CONTEXT, 0.9),)
         return ()
 
-    result = engine.traverse(("A",), provider)
-    assert result.time_budget_exhausted is True
-    assert [candidate.memory_id for candidate in result.candidates] == ["B"]
+    first = engine.traverse(("A",), provider)
+    second = engine.traverse(("A",), provider)
+    assert first.time_budget_exhausted is True
+    assert first.candidates == ()
+    assert first.visited_count == 1
+    assert first.considered_edges == 0
+    assert first.deterministic_trace == second.deterministic_trace
 
 
 def test_phase3_store_contract_uses_only_canonical_evidence_sources():
