@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 import math
 from dataclasses import dataclass
 from datetime import datetime
@@ -7,6 +8,8 @@ from typing import Any
 
 from .canonical_mutation import CanonicalMutationRequired, CanonicalMutationService
 from .embedding_provider import EmbeddingProviderAdapter
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass(frozen=True, slots=True)
@@ -22,13 +25,21 @@ class ContextResult:
 class ContextEngine:
     """Compositor determinístico: busca lexical + semântica + estado/checkpoint."""
 
-    def __init__(self, store: Any, embedding_provider: EmbeddingProviderAdapter | None = None, *, semantic_min_similarity: float = 0.40) -> None:
+    def __init__(
+        self,
+        store: Any,
+        embedding_provider: EmbeddingProviderAdapter | None = None,
+        *,
+        semantic_min_similarity: float = 0.40,
+        cognitive_observer: Any | None = None,
+    ) -> None:
         threshold = float(semantic_min_similarity)
         if not 0.0 <= threshold <= 1.0:
             raise ValueError("semantic_min_similarity must be between 0 and 1")
         self.store = store
         self.embedding_provider = embedding_provider
         self.semantic_min_similarity = threshold
+        self.cognitive_observer = cognitive_observer
         self.mutations = CanonicalMutationService(store, actor_id="context-engine")
 
     def remember(self, **kwargs: Any) -> str:
@@ -73,7 +84,17 @@ class ContextEngine:
             + operator_weight
         )
 
-    def _semantic_candidates(self, query: str, namespaces: list[str], limit: int, *, mission_id: str | None = None, session_id: str | None = None, valid_at: datetime | None = None, known_at: datetime | None = None) -> list[dict[str, Any]]:
+    def _semantic_candidates(
+        self,
+        query: str,
+        namespaces: list[str],
+        limit: int,
+        *,
+        mission_id: str | None = None,
+        session_id: str | None = None,
+        valid_at: datetime | None = None,
+        known_at: datetime | None = None,
+    ) -> list[dict[str, Any]]:
         if self.embedding_provider is None:
             return []
         query_vector = self.embedding_provider.embed_query(query)
@@ -81,22 +102,48 @@ class ContextEngine:
             try:
                 try:
                     rows = self.store.semantic_search_pgvector(
-                        namespaces, self.embedding_provider.model_id, query_vector, limit=max(limit * 4, 20), mission_id=mission_id, session_id=session_id, valid_at=valid_at, known_at=known_at
+                        namespaces,
+                        self.embedding_provider.model_id,
+                        query_vector,
+                        limit=max(limit * 4, 20),
+                        mission_id=mission_id,
+                        session_id=session_id,
+                        valid_at=valid_at,
+                        known_at=known_at,
                     )
-                    return [row for row in rows if float(row.get("semantic_similarity") or -1.0) >= self.semantic_min_similarity]
+                    return [
+                        row
+                        for row in rows
+                        if float(row.get("semantic_similarity") or -1.0) >= self.semantic_min_similarity
+                    ]
                 except TypeError as compat_exc:
                     if "unexpected keyword argument" not in str(compat_exc):
                         raise
                     rows = self.store.semantic_search_pgvector(
-                        namespaces, self.embedding_provider.model_id, query_vector, limit=max(limit * 4, 20)
+                        namespaces,
+                        self.embedding_provider.model_id,
+                        query_vector,
+                        limit=max(limit * 4, 20),
                     )
-                    return [row for row in rows if float(row.get("semantic_similarity") or -1.0) >= self.semantic_min_similarity]
+                    return [
+                        row
+                        for row in rows
+                        if float(row.get("semantic_similarity") or -1.0) >= self.semantic_min_similarity
+                    ]
             except Exception as exc:
                 # pgvector is the release path. Fallback remains only for pre-cutover/dev compatibility.
                 if type(exc).__name__ not in {"UndefinedColumn", "UndefinedObject", "FeatureNotSupported"}:
                     raise
         try:
-            rows = self.store.semantic_candidates(namespaces, self.embedding_provider.model_id, limit=5000, mission_id=mission_id, session_id=session_id, valid_at=valid_at, known_at=known_at)
+            rows = self.store.semantic_candidates(
+                namespaces,
+                self.embedding_provider.model_id,
+                limit=5000,
+                mission_id=mission_id,
+                session_id=session_id,
+                valid_at=valid_at,
+                known_at=known_at,
+            )
         except TypeError as compat_exc:
             if "unexpected keyword argument" not in str(compat_exc):
                 raise
@@ -150,14 +197,30 @@ class ContextEngine:
             raise ValueError("ao menos um namespace é obrigatório")
 
         try:
-            lexical = self.store.memory_candidates(query, normalized, max(limit * 4, 20), mission_id=mission_id, session_id=session_id, valid_at=valid_at, known_at=known_at)
+            lexical = self.store.memory_candidates(
+                query,
+                normalized,
+                max(limit * 4, 20),
+                mission_id=mission_id,
+                session_id=session_id,
+                valid_at=valid_at,
+                known_at=known_at,
+            )
         except TypeError as compat_exc:
             if "unexpected keyword argument" not in str(compat_exc):
                 raise
             lexical = self.store.memory_candidates(query, normalized, max(limit * 4, 20))
         for item in lexical:
             item["retrieval_source"] = "LEXICAL"
-        semantic = self._semantic_candidates(query, normalized, limit, mission_id=mission_id, session_id=session_id, valid_at=valid_at, known_at=known_at)
+        semantic = self._semantic_candidates(
+            query,
+            normalized,
+            limit,
+            mission_id=mission_id,
+            session_id=session_id,
+            valid_at=valid_at,
+            known_at=known_at,
+        )
         candidates = self._merge_candidates(lexical, semantic)
         ranked = sorted(candidates, key=self._score, reverse=True)
 
@@ -191,7 +254,12 @@ class ContextEngine:
         selected = sorted(selected, key=self._score, reverse=True)[: max(1, int(limit))]
         if mission_id:
             try:
-                state = self.store.latest_checkpoint(mission_id, normalized, valid_at=valid_at, known_at=known_at)
+                state = self.store.latest_checkpoint(
+                    mission_id,
+                    normalized,
+                    valid_at=valid_at,
+                    known_at=known_at,
+                )
             except TypeError as compat_exc:
                 if "unexpected keyword argument" not in str(compat_exc):
                     raise
@@ -206,9 +274,29 @@ class ContextEngine:
         if state is not None:
             modes.append("STATE")
         trace_id = self.mutations.record_retrieval_trace(
-            query, normalized, candidates, selected, conflicts,
-            state=state, retrieval_modes=modes,
+            query,
+            normalized,
+            candidates,
+            selected,
+            conflicts,
+            state=state,
+            retrieval_modes=modes,
         )
+        if self.cognitive_observer is not None:
+            try:
+                submit = getattr(self.cognitive_observer, "submit_retrieval", None)
+                if callable(submit):
+                    submit(selected=tuple(selected), trace_id=trace_id)
+                else:
+                    self.cognitive_observer.observe_retrieval(selected=tuple(selected), trace_id=trace_id)
+            except Exception:
+                record_failure = getattr(self.cognitive_observer, "record_failure", None)
+                if callable(record_failure):
+                    record_failure()
+                logger.warning(
+                    "cognitive shadow observer failed; base retrieval remains authoritative",
+                    exc_info=True,
+                )
         return ContextResult(
             query=query,
             selected=tuple(selected),

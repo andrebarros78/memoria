@@ -27,6 +27,7 @@ from .client_auth import (
     issue_browser_session,
     principal_from_request,
 )
+from .cognitive_activation import CognitiveShadowObserver, PostgresActivationStore
 from .consumer_adapter import consumer_adapter_spec
 from .context_engine import ContextEngine
 from .conversation_ingestion_api import router as conversation_ingestion_router
@@ -223,9 +224,34 @@ def get_embedding_provider() -> FastEmbedProvider | None:
     return FastEmbedProvider(model_name=model_name, cache_dir=cache_dir, threads=2, identity=identity)
 
 
+def _feature_enabled(name: str) -> bool:
+    return os.getenv(name, "0").strip().lower() in {"1", "true", "yes", "on"}
+
+
+def get_cognitive_shadow_observer(store: PostgresMemoryStore) -> CognitiveShadowObserver | None:
+    activation = _feature_enabled("COGNITIVE_ACTIVATION")
+    priming = _feature_enabled("COGNITIVE_PRIMING")
+    salience = _feature_enabled("COGNITIVE_SALIENCE")
+    if not any((activation, priming, salience)):
+        return None
+    return CognitiveShadowObserver(
+        PostgresActivationStore(store),
+        activation_enabled=activation,
+        priming_enabled=priming,
+        salience_enabled=salience,
+    )
+
+
 def get_gateway(store: Annotated[PostgresMemoryStore, Depends(get_store)]) -> MemoryGateway:
     semantic_min_similarity = float(os.getenv("MEMORY_SEMANTIC_MIN_SIMILARITY", "0.40"))
-    return MemoryGateway(ContextEngine(store, get_embedding_provider(), semantic_min_similarity=semantic_min_similarity))
+    return MemoryGateway(
+        ContextEngine(
+            store,
+            get_embedding_provider(),
+            semantic_min_similarity=semantic_min_similarity,
+            cognitive_observer=get_cognitive_shadow_observer(store),
+        )
+    )
 
 
 StoreDep = Annotated[PostgresMemoryStore, Depends(get_store)]
@@ -1020,6 +1046,26 @@ def remember_memory(
             occurred_at=payload.occurred_at, observed_at=payload.observed_at,
             valid_from=payload.valid_from, valid_to=payload.valid_to,
         )
+        observer = gateway.context_engine.cognitive_observer
+        if observer is not None:
+            try:
+                raw_signals = payload.provenance.get("salience_signals") if isinstance(payload.provenance, dict) else None
+                evidence_refs = payload.provenance.get("evidence_refs", ()) if isinstance(payload.provenance, dict) else ()
+                submit_capture = getattr(observer, "submit_capture", None)
+                kwargs = {
+                    "memory_id": item_id,
+                    "base_strength": payload.confidence,
+                    "salience_signals": raw_signals if isinstance(raw_signals, dict) else None,
+                    "source_trust": 0.5,
+                    "evidence_refs": tuple(str(ref) for ref in evidence_refs if str(ref).strip()),
+                }
+                if callable(submit_capture):
+                    submit_capture(**kwargs)
+                else:
+                    observer.observe_capture(**kwargs)
+            except Exception:
+                observer.record_failure()
+                logger.warning("cognitive capture shadow failed; canonical capture remains authoritative", exc_info=True)
     except PermissionError as exc:
         raise HTTPException(status_code=403, detail=str(exc)) from exc
     except IdempotencyConflict as exc:

@@ -1,0 +1,59 @@
+{
+  "activation_events": 2,
+  "activation_persisted": true,
+  "baseline_version": "0.29.3",
+  "canonical_memory_hash_unchanged": true,
+  "canonical_runtime_deployment": "PENDING_AT_THIS_EVIDENCE_STAGE",
+  "cognitive_metrics": {
+    "cognitive_shadow_dropped_total": 0,
+    "cognitive_shadow_failures_total": 0,
+    "memory_activation_total": 24,
+    "priming_events_total": 0,
+    "salience_computations_total": 24
+  },
+  "cross_tenant_read_isolated": true,
+  "cross_tenant_write_blocked": true,
+  "database_kind": "temporary_isolated",
+  "direct_runtime_table_write_blocked": true,
+  "evidence_kind": "F02_ISOLATED_SHADOW_PROOF",
+  "executed_date": "2026-09-25",
+  "full_regression": {
+    "failed": 0,
+    "passed": 374,
+    "skipped": 2
+  },
+  "git_diff_check": "PASS",
+  "migration_count": 56,
+  "migration_head": "0056_cognitive_salience",
+  "phase": "F02",
+  "phase_status": "PROVEN_ISOLATED_SHADOW_NOT_YET_PROMOTED",
+  "priming_boost": 0.12,
+  "priming_persisted": true,
+  "production_database_touched": false,
+  "release": "MEMORIA_PERMANENTE_CANONICAL_1.0",
+  "repository_global_ruff": "NOT_USED_AS_F02_GATE: historical/repair tracked files outside active scope contain 3 pre-existing import-order findings",
+  "restart_new_interpreter": true,
+  "retrieval_baseline_p95_ms": 320.6248,
+  "retrieval_p95_overhead_percent": -24.495516,
+  "retrieval_p95_requirement_percent": 20.0,
+  "retrieval_shadow_p95_ms": 242.0861,
+  "rls_forced_tables": 5,
+  "ruff": {
+    "scope": [
+      "src",
+      "tests",
+      "scripts"
+    ],
+    "status": "PASS"
+  },
+  "runtime_profile": "V5.5-PRIMARY",
+  "salience_persisted": true,
+  "salience_rows": 1,
+  "secret_material_exposed": false,
+  "status": "PASS",
+  "targeted_tests": {
+    "failed": 0,
+    "passed": 34
+  },
+  "temporary_proof_databases_remaining": 0
+}

@@ -192,7 +192,17 @@ class CheckpointStorePort(Protocol):
 
 
 class ActivationStorePort(Protocol):
-    """Marker contract; concrete methods arrive in the activation phase."""
+    """F02 persistence contract for activation, priming and salience shadow state."""
+
+    def load_activation_state(self, memory_id: str) -> Mapping[str, Any] | None: ...
+
+    def load_priming_weight(self, memory_id: str) -> float: ...
+
+    def record_activation_shadow(self, result: Any, *, trace_id: str | None) -> str: ...
+
+    def record_priming_shadow(self, **kwargs: Any) -> str: ...
+
+    def record_salience_shadow(self, **kwargs: Any) -> str: ...
 
 
 class ProspectiveStorePort(Protocol):

@@ -1,0 +1,18 @@
+{
+  "cognitive_metrics": {
+    "cognitive_shadow_dropped_total": 0,
+    "cognitive_shadow_failures_total": 0,
+    "memory_activation_total": 24,
+    "priming_events_total": 0,
+    "salience_computations_total": 24
+  },
+  "date": "2026-09-25",
+  "mode": "SHADOW",
+  "phase": "F02",
+  "retrieval_baseline_p95_ms": 320.6248,
+  "retrieval_p95_overhead_percent": -24.495516,
+  "retrieval_p95_requirement_percent": 20.0,
+  "retrieval_shadow_p95_ms": 242.0861,
+  "sample_retrieval_iterations": 24,
+  "status": "PASS"
+}
