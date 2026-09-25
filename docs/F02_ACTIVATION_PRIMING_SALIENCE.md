@@ -1,6 +1,6 @@
 # F02 â€” Activation + Priming + Salience
 
-Status: implemented and isolated-proof validated; promotion requires canonical runtime deployment proof.
+Status: F02 runtime-proven in SHADOW. Package release: `0.30.0`; baseline preserved: `0.29.3`.
 
 ## Architectural role
 

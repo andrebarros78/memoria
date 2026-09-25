@@ -71,7 +71,7 @@ def test_sha_normalization_requires_lower_hex() -> None:
 
 def test_openapi_has_operational_routes_and_version() -> None:
     paths=app.openapi()['paths']
-    assert app.version=='0.29.3'
+    assert app.version=='0.30.0'
     assert '/v1/operational-memory/spec' in paths
     assert '/v1/operations/competencies' in paths
     assert '/v1/operations/skills' in paths

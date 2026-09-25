@@ -72,7 +72,7 @@ def main() -> int:
             "provenance": {"kind": "CANONICAL_SCOPE_SEAL_ENDURANCE", "proof_id": proof_id, "index": i},
             "confidence": 1.0,
             "source": "canonical-scope-seal-endurance",
-            "source_version": "0.29.3",
+            "source_version": "0.30.0",
             "tags": ["CANONICAL", "SCOPE_SEAL", "ENDURANCE"],
             "memory_scope": "PROJECT",
             "memory_scope_ref": project_a,

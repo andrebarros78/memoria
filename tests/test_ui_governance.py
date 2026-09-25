@@ -72,7 +72,7 @@ def test_discardable_is_only_delete_eligible_and_never_purge_allowed() -> None:
 
 
 def test_api_contract_exposes_governance_and_blocks_direct_purge() -> None:
-    assert app.version == "0.29.3"
+    assert app.version == "0.30.0"
     assert "/v1/ui-governance/spec" in app.openapi()["paths"]
     assert required_permission_for_path("/v1/ui-governance/spec", "GET") == "memory:read"
     assert ui_governance_spec(gate_status="PENDING")["p0_ui_b"]["enabled"] is False

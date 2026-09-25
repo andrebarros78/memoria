@@ -63,7 +63,7 @@ def main() -> int:
     _assert(health.get("release_channel") == EXPECTED_RELEASE_CHANNEL, "V55_RELEASE_CHANNEL")
 
     details = _signed(client, "GET", "/v1/health/details")
-    _assert(details.get("version") == "0.29.3", "V55_PACKAGE_VERSION")
+    _assert(details.get("version") == "0.30.0", "V55_PACKAGE_VERSION")
     _assert(details.get("product_id") == "memoria-permanente", "V55_PRODUCT_ID")
     _assert(details.get("v55", {}).get("ready") is True, "V55_HEALTH_GATE")
 
@@ -124,7 +124,7 @@ def main() -> int:
             "provenance": {"kind": "V55_CONFORMANCE_PROOF", "proof_id": proof_id},
             "confidence": 1.0,
             "source": "v55-conformance-proof",
-            "source_version": "0.29.3",
+            "source_version": "0.30.0",
             "tags": ["V55", "CONFORMANCE", "PROOF"],
             "memory_scope": "PROJECT",
             "memory_scope_ref": project_a,

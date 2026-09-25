@@ -46,7 +46,7 @@ def test_temporal_spec_is_explicit_and_not_created_at_validity() -> None:
 def test_temporal_spec_is_public_api_contract_but_requires_auth_runtime() -> None:
     paths = app.openapi()["paths"]
     assert "/v1/temporal-spec" in paths
-    assert app.version == "0.29.3"
+    assert app.version == "0.30.0"
 
 
 class _AsOfStore:
