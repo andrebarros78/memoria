@@ -63,6 +63,6 @@
   "evidence_kind": "ISOLATED_REPRODUCIBLE_PROOF_HARDENED",
   "source_log": "runtime/f03-proof-final.log",
   "timeout_policy": "FAIL_CLOSED_NO_PARTIAL_CANDIDATES",
-  "runtime_default_time_budget_ms": 500,
+  "runtime_default_time_budget_ms": 1000,
   "proof_time_budget_ms": 1000
 }

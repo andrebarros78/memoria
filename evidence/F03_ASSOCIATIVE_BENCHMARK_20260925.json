@@ -12,6 +12,6 @@
   "status": "PASS",
   "corpus": "isolated_deterministic_synthetic_ground_truth",
   "proof_time_budget_ms": 1000,
-  "runtime_default_time_budget_ms": 500,
+  "runtime_default_time_budget_ms": 1000,
   "timeout_policy": "FAIL_CLOSED_NO_PARTIAL_CANDIDATES"
 }

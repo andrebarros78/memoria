@@ -43,6 +43,7 @@ def test_phase3_policy_declares_all_executive_relation_types_and_shadow_mode():
     assert spec["truth_mutation_allowed"] is False
     assert spec["loop_protection"] is True
     assert spec["deterministic_trace"] is True
+    assert spec["limits"]["time_budget_ms"] == 1000
     assert set(spec["relation_types"]) == {relation.value for relation in AssociationRelation}
     assert len(spec["relation_types"]) == 13
 

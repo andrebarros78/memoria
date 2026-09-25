@@ -22,7 +22,7 @@ Status: **PASS (hardened isolated reproducible proof; canonical deployment is pr
 
 ## Hard budget semantics
 
-Runtime default time budget is **500 ms**; the multi-source proof uses **1000 ms** to make the deterministic benchmark insensitive to host jitter. If the wall-clock budget expires, F03 fails closed with `FAIL_CLOSED_NO_PARTIAL_CANDIDATES`: partial timing-dependent candidates are discarded and the timeout trace is deterministic.
+Runtime default time budget is **1000 ms**; the multi-source proof uses **1000 ms** to make the deterministic benchmark insensitive to host jitter. If the wall-clock budget expires, F03 fails closed with `FAIL_CLOSED_NO_PARTIAL_CANDIDATES`: partial timing-dependent candidates are discarded and the timeout trace is deterministic.
 
 ## Performance
 
