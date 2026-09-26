@@ -1,13 +1,15 @@
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 import os
 import sys
 from pathlib import Path
 
 ROOT = Path(os.getenv("MEMORY_PROJECT_ROOT", Path(__file__).resolve().parents[1]))
-sys.path.insert(0, str(ROOT / "src"))
+if importlib.util.find_spec("memory_permanent") is None:
+    sys.path.insert(0, str(ROOT / "src"))
 
 from memory_permanent.access_policy import AgentAccessContext  # noqa: E402
 from memory_permanent.consolidation_policy import (  # noqa: E402
