@@ -1,0 +1,10 @@
+{
+  "canonical_memory_hashes_unchanged": true,
+  "canonical_retrieval_unchanged": true,
+  "capture_retrieval_dependency": false,
+  "note": "F04 is an OPTIONAL_ASYNC one-shot worker and is not called from capture/retrieval request paths.",
+  "phase": "F04",
+  "retrieval_health_ceiling_ms": 2000.0,
+  "retrieval_p95_ms": 576.6835,
+  "status": "PASS"
+}

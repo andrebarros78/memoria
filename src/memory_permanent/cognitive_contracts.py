@@ -194,7 +194,19 @@ class VectorStorePort(Protocol):
 
 
 class CheckpointStorePort(Protocol):
-    """Marker contract; concrete methods arrive with capability conformance."""
+    """F04 durable background-control contract for replayable consolidation."""
+
+    def start_run(self, **kwargs: Any) -> str: ...
+
+    def resume_run(self, **kwargs: Any) -> str: ...
+
+    def checkpoint(self, **kwargs: Any) -> str: ...
+
+    def record_candidate(self, **kwargs: Any) -> str: ...
+
+    def finish_run(self, **kwargs: Any) -> Mapping[str, Any]: ...
+
+    def load_run(self, run_id: str) -> Mapping[str, Any] | None: ...
 
 
 class ActivationStorePort(Protocol):

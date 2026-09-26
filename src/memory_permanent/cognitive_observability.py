@@ -8,13 +8,15 @@ from time import monotonic
 from types import MappingProxyType
 from typing import Any
 
-COGNITIVE_OBSERVABILITY_VERSION = "COBS-1.1.0"
+COGNITIVE_OBSERVABILITY_VERSION = "COBS-1.2.0"
 _ALLOWED_METRICS = frozenset(
     {
         "memory_activation_total",
         "priming_events_total",
         "salience_computations_total",
         "association_traversals_total",
+        "consolidation_runs_total",
+        "consolidation_candidates_total",
         "cognitive_shadow_failures_total",
         "cognitive_shadow_dropped_total",
     }
