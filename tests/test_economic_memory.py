@@ -103,7 +103,7 @@ def test_economic_api_and_auth_contract() -> None:
     paths=app.openapi()["paths"]
     for path in ("/v1/economic-memory/spec","/v1/economy/entities","/v1/economy/states","/v1/economy/results","/v1/economy/history"):
         assert path in paths
-    assert app.version == "0.31.0"
+    assert app.version == "0.32.0"
     assert required_permission_for_path("/v1/economic-memory/spec","GET") == "memory:read"
     assert required_permission_for_path("/v1/economy/results","POST") == "memory:experience"
     assert required_permission_for_path("/v1/economy/history","GET") == "memory:read"
