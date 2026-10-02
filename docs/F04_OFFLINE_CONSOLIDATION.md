@@ -1,6 +1,6 @@
 # F04 — Offline Cognitive Consolidation
 
-**State before canonical promotion:** implementation/proof candidate
+**State:** `PROVEN_CURRENT / SHADOW` — `C4 = PROVEN`
 **Capability class:** `OPTIONAL_ASYNC`
 **Mode:** `SHADOW`
 **Feature flag:** `COGNITIVE_CONSOLIDATION` (default OFF)
@@ -70,3 +70,9 @@ C4 is promotable only after all of these pass:
 - no capture/retrieval regression.
 
 Isolated evidence: `evidence/F04_OFFLINE_CONSOLIDATION_20260926.json` and `.md`.
+
+## Canonical closure
+
+Terminal runtime evidence: `evidence/F04_CANONICAL_RUNTIME_PROOF_20261002.json` and `evidence/F04_CANONICAL_RUNTIME_PROOF_20261002.md`.
+
+F04 is closed as `F04_PROVEN`. Later cognitive gates remain independent and open until proven.

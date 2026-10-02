@@ -1,0 +1,252 @@
+{
+  "phase": "F04",
+  "title": "Offline Cognitive Consolidation",
+  "status": "PROVEN_CURRENT_SHADOW",
+  "gate": {
+    "C4": "PROVEN"
+  },
+  "generated_at": "2026-10-02T17:48:46.100275+00:00",
+  "release": "MEMORIA_PERMANENTE_CANONICAL_1.0",
+  "runtime_profile": "V5.5-PRIMARY",
+  "package_version": "0.32.0",
+  "source_head_before_closure": "429b60c52f8bc78c8d95dfdae76967590759ed11",
+  "implementation_commits": [
+    "3d7bec7",
+    "c413757",
+    "429b60c"
+  ],
+  "wheel": {
+    "path": "C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0\\runtime\\release-wheel-f04-0320\\memoria_permanente-0.32.0-py3-none-any.whl",
+    "sha256": "98e9bbfea0c0f881e54376735e304506a82e2f8efc19133806248cb73dd7ee38"
+  },
+  "database": {
+    "migration_count": 58,
+    "migration_head": "0058_cognitive_offline_consolidation",
+    "migration_checksum_sha256": "466135a96b36db3cdf912210b9fa8302083c388e71fa148a87cc800e97c9b7ef",
+    "forced_rls_tables": 4,
+    "memory_app_privileged": false,
+    "runs": 6,
+    "checkpoints": 73,
+    "candidates": 12,
+    "events": 100
+  },
+  "runtime": {
+    "apis": {
+      "8787": "HEALTHY",
+      "8790": "HEALTHY"
+    },
+    "v55_live_runtime": "PASS",
+    "v55_conformance_compatible": true,
+    "restart_recovery_verified": true
+  },
+  "security": {
+    "live_result": "PASS",
+    "passed": 12,
+    "failed": [],
+    "secrets_exposed": false,
+    "forced_rls": true,
+    "least_privilege_memory_app": true,
+    "canonical_promotions": 0
+  },
+  "tests": {
+    "targeted": {
+      "passed": 17,
+      "failed": 0
+    },
+    "full_regression": {
+      "passed": 406,
+      "skipped": 2,
+      "failed": 0,
+      "warning": 1
+    },
+    "ruff": "PASS",
+    "compileall": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "manual_consolidation": {
+    "candidate_count": 2,
+    "candidate_kinds": [
+      "ASSOCIATION_CLUSTER",
+      "REPEATED_PATTERN"
+    ],
+    "candidate_statuses": [
+      "REJECTED",
+      "VALIDATED_SHADOW"
+    ],
+    "canonical_promotions": 0,
+    "canonical_snapshot_count": 124,
+    "canonical_snapshot_sha256_after": "2ee31baa9ea8186a73e243f7c711cb815e85594f1f56a49a99a7c365fdf84240",
+    "canonical_snapshot_sha256_before": "2ee31baa9ea8186a73e243f7c711cb815e85594f1f56a49a99a7c365fdf84240",
+    "checkpoint_stages": [
+      "SELECT",
+      "REPLAY",
+      "COMPARE",
+      "CLUSTER",
+      "ASSOCIATE",
+      "DETECT_PATTERN",
+      "GENERATE_CANDIDATE",
+      "VALIDATE",
+      "CONSOLIDATE",
+      "RECORD_PROVENANCE"
+    ],
+    "checks": {
+      "all_candidates_shadow_or_rejected": true,
+      "all_checkpoint_stages": true,
+      "candidate_present": true,
+      "canonical_hashes_unchanged": true,
+      "canonical_promotions_zero": true,
+      "finished_event_present": true,
+      "manual_trigger": true,
+      "no_candidate_conflict_promoted": true,
+      "package_0_32_0": true,
+      "replay_pass": true,
+      "run_completed": true,
+      "source_count_bounded": true,
+      "validated_shadow_present": true
+    },
+    "mode": "MANUAL_CONSOLIDATION",
+    "package_version": "0.32.0",
+    "phase": "F04",
+    "project_scope": "scope-seal-a-a833146a8a53",
+    "replay": {
+      "candidate_count": 2,
+      "deterministic": true,
+      "replay_digest": "2b883cc3a771b5e3f7a6b1cac1e0b402934350a81450f58f5dd92f4fdd4e0f96",
+      "run_id": "conrun-77f10b1e071f407eb521745381cd8c3f",
+      "source_count": 64,
+      "source_digest": "6e385c79624ef848b4fcfd589c24212d2c6041c7a1c658577d84d5eacaa674fa",
+      "status": "PASS"
+    },
+    "run_id": "conrun-77f10b1e071f407eb521745381cd8c3f",
+    "secret_material_exposed": false,
+    "source_count": 64,
+    "status": "PASS",
+    "tenant": "LEGACY",
+    "trigger": "MANUAL",
+    "validated_candidate_count": 1
+  },
+  "forced_interruption_recovery": {
+    "candidate_count": 2,
+    "canonical_promotions": 0,
+    "canonical_snapshot_sha256_after": "2ee31baa9ea8186a73e243f7c711cb815e85594f1f56a49a99a7c365fdf84240",
+    "canonical_snapshot_sha256_before": "2ee31baa9ea8186a73e243f7c711cb815e85594f1f56a49a99a7c365fdf84240",
+    "checkpoint_stages": [
+      "SELECT",
+      "REPLAY",
+      "COMPARE",
+      "CLUSTER",
+      "ASSOCIATE",
+      "DETECT_PATTERN",
+      "GENERATE_CANDIDATE",
+      "REPLAY",
+      "COMPARE",
+      "CLUSTER",
+      "ASSOCIATE",
+      "DETECT_PATTERN",
+      "GENERATE_CANDIDATE",
+      "VALIDATE",
+      "CONSOLIDATE",
+      "RECORD_PROVENANCE"
+    ],
+    "checks": {
+      "canonical_hashes_unchanged": true,
+      "canonical_promotions_zero": true,
+      "checkpoint_replay_recovery_complete": true,
+      "fencing_token_advanced": true,
+      "lease_released_after_recovery": true,
+      "package_0_32_0": true,
+      "recovered_flag": true,
+      "replay_pass": true,
+      "run_completed": true,
+      "scheduler_reported_recovered": true
+    },
+    "initial_fencing_token": 6,
+    "package_version": "0.32.0",
+    "phase": "F04",
+    "proof": "LIVE_FORCED_INTERRUPTION_RECOVERY",
+    "recovery_fencing_token": 7,
+    "replay": {
+      "candidate_count": 2,
+      "deterministic": true,
+      "replay_digest": "2b883cc3a771b5e3f7a6b1cac1e0b402934350a81450f58f5dd92f4fdd4e0f96",
+      "run_id": "conrun-b787c6bfa4a34213afba3d14d3851dbb",
+      "source_count": 64,
+      "source_digest": "6e385c79624ef848b4fcfd589c24212d2c6041c7a1c658577d84d5eacaa674fa",
+      "status": "PASS"
+    },
+    "run_id": "conrun-b787c6bfa4a34213afba3d14d3851dbb",
+    "secret_material_exposed": false,
+    "source_count": 64,
+    "status": "PASS",
+    "validated_candidate_count": 1
+  },
+  "benchmark": {
+    "canonical_memory_hashes_unchanged": true,
+    "canonical_retrieval_unchanged": true,
+    "capture_retrieval_dependency": false,
+    "note": "F04 is an OPTIONAL_ASYNC one-shot worker and is not called from capture/retrieval request paths.",
+    "phase": "F04",
+    "retrieval_health_ceiling_ms": 2000.0,
+    "retrieval_p95_ms": 576.6835,
+    "status": "PASS"
+  },
+  "backup": {
+    "acl_preserved": true,
+    "backup_id": "v52-20261002T174343Z-a23488c5",
+    "cipher": "AES-256-GCM",
+    "ciphertext_sha256": "4547ed21ac9800130a8730c8749d8291d5220f954343b9f777efc515fa28cc88",
+    "database": "memoria_permanente_v52_primary",
+    "encrypted_path": "C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0\\backups\\v52-encrypted\\v52-20261002T174343Z-a23488c5.mpb",
+    "latest_migration": "0058_cognitive_offline_consolidation",
+    "manifest_authenticated": true,
+    "manifest_path": "C:\\New Projet\\MEMORIA_PERMANENTE_CANONICAL_1.0\\backups\\v52-encrypted\\v52-20261002T174343Z-a23488c5.encrypted.manifest.json",
+    "migration_count": 58,
+    "owner_preserved": true,
+    "plaintext_retained": false,
+    "secret_material_exposed": false,
+    "status": "PASS"
+  },
+  "restore": {
+    "audit_chain_ok": true,
+    "audit_events": 1819,
+    "backup_id": "v52-20261002T174343Z-a23488c5",
+    "erasure_replay": {
+      "ledger_entries": 0,
+      "ledger_verified": true,
+      "matched_targets": 0,
+      "redacted_targets": 0,
+      "replay_id": "lrr-c34eefd832364412b4091a1c6f7f97b3",
+      "result": "PASS"
+    },
+    "migration_count_after_restore": 58,
+    "pg_amcheck": "PASS",
+    "plaintext_restore_temp_retained": false,
+    "restore_flow": [
+      "RESTORE",
+      "MIGRATE",
+      "ERASURE_REPLAY",
+      "VERIFY"
+    ],
+    "runtime_preflight": {
+      "database_role": "memory_app",
+      "database_role_privileged": false,
+      "latest_migration": "0058_cognitive_offline_consolidation",
+      "migration_count": 58,
+      "pgvector": "0.8.6",
+      "postgresql": "18.6",
+      "status": "READY"
+    },
+    "secret_material_exposed": false,
+    "status": "PASS",
+    "target_database": "memoria_permanente_v52_restoreproof"
+  },
+  "rollback": {
+    "feature_flag": "COGNITIVE_CONSOLIDATION=0",
+    "canonical_truth_mutated_by_f04": false,
+    "schema_rule": "Never edit applied migration history; use reviewed reverse migration or authenticated pre-deploy backup restore.",
+    "procedure": "docs/F04_ROLLBACK_PROCEDURE.md"
+  },
+  "known_non_product_environment_issue": "Project .venv pip check reports missing optional windows-mcp dependencies; windows-mcp is not a MEMORIA-PERMANENTE project dependency and this was not added to the product contract.",
+  "terminal_decision": "F04_PROVEN",
+  "cognitive_mission_proven": false
+}
