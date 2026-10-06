@@ -10,7 +10,7 @@ from pathlib import Path
 
 import psycopg
 
-ROOT=Path(r"C:\New Projet\MEMORIA-PERMANENTE"); API='http://127.0.0.1:8787'
+ROOT=Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0"); API='http://127.0.0.1:8787'
 suffix=uuid.uuid4().hex[:12].upper(); tenant='TENANT_M4_'+suffix; ns='M4_RECOVERY_'+suffix; mission='m4-recovery-'+suffix.lower()
 H={'Content-Type':'application/json','Accept':'application/json','X-Memory-Tenant':tenant}
 def req(method,path,payload=None,extra=None):

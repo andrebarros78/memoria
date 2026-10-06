@@ -49,7 +49,7 @@ def product_universality_spec() -> dict[str, Any]:
         "ai_required_for_core": False,
         "current_proven_runtime": {
             "platform": "WINDOWS_JNS",
-            "path": r"C:\New Projet\MEMORIA-PERMANENTE",
+            "path": r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0",
             "runtime_profile": "V5.3-PRIMARY",
             "release_channel": "v5.3-primary-promoted",
             "meaning": "operationally proven runtime target, not product identity",

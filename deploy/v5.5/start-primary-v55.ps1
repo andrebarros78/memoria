@@ -1,5 +1,5 @@
 $ErrorActionPreference='Stop'
-$root='C:\New Projet\MEMORIA-PERMANENTE'
+$root=(Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
 $PgPass=Join-Path $root 'runtime\secrets\pgpass.conf'
 if(-not (Test-Path $PgPass)){ throw 'PGPASSFILE da Memoria Permanente ausente.' }
 $env:PGPASSFILE=$PgPass
@@ -11,7 +11,7 @@ $env:PYTHONUTF8='1'
 $env:MEMORY_DATABASE_URL='postgresql://memory_app@127.0.0.1:55436/memoria_permanente_v52_primary'
 $env:MEMORY_DSN='postgresql://memory_app@127.0.0.1:55436/memoria_permanente_v52_primary'
 $env:MEMORY_RUNTIME_PROFILE='V5.5-PRIMARY'
-$env:MEMORY_RELEASE_CHANNEL='v5.5-primary-promoted'
+$env:MEMORY_RELEASE_CHANNEL='MEMORIA_PERMANENTE_CANONICAL_1.0'
 $env:MEMORY_PROJECT_ROOT=$root
 $env:MEMORY_V55_WINDOWS_PROVEN='1'
 $env:MEMORY_V55_LINUX_PROVEN=$env:MEMORY_V55_LINUX_PROVEN
@@ -20,16 +20,16 @@ $env:MEMORY_EMBEDDING_MODEL='sentence-transformers/paraphrase-multilingual-MiniL
 $env:MEMORY_EMBEDDING_CACHE="$root\runtime\models\fastembed"
 $env:MEMORY_SEMANTIC_MIN_SIMILARITY='0.40'
 
-$py="$root\runtime\api-v55\Scripts\python.exe"
+$py="$root\runtime\canonical-api\Scripts\python.exe"
 if(-not (Test-Path $py)){ throw 'Runtime Python api-v55 ausente.' }
-$expectedSite=[IO.Path]::GetFullPath((Join-Path $root 'runtime\api-v55\Lib\site-packages'))
+$expectedSite=[IO.Path]::GetFullPath((Join-Path $root 'runtime\canonical-api\Lib\site-packages'))
 $packagePath=(& $py -I -c "import pathlib,memory_permanent; print(pathlib.Path(memory_permanent.__file__).resolve())").Trim()
 if($LASTEXITCODE -ne 0){ throw 'Nao foi possivel importar o pacote promovido em modo isolado.' }
 if(-not $packagePath.StartsWith($expectedSite,[StringComparison]::OrdinalIgnoreCase)){
   throw "Release integrity failure: memory_permanent resolved outside api-v55 site-packages: $packagePath"
 }
 $installedVersion=(& $py -I -c "import importlib.metadata; print(importlib.metadata.version('memoria-permanente'))").Trim()
-if($installedVersion -ne '0.29.3'){ throw "Release integrity failure: expected 0.29.3, got $installedVersion" }
+if($installedVersion -ne '0.32.0'){ throw "Release integrity failure: expected 0.32.0, got $installedVersion" }
 
 & $py -I -m memory_permanent.runtime_preflight
 if($LASTEXITCODE -ne 0){ throw 'Memory runtime preflight failed; API not started.' }
@@ -50,7 +50,7 @@ do {
   }
   try {
     $h=Invoke-RestMethod 'http://127.0.0.1:8787/health' -TimeoutSec 2
-    if($h.status -eq 'ok' -and $h.runtime_profile -eq 'V5.5-PRIMARY' -and $h.release_channel -eq 'v5.5-primary-promoted'){
+    if($h.status -eq 'ok' -and $h.runtime_profile -eq 'V5.5-PRIMARY' -and $h.release_channel -eq 'MEMORIA_PERMANENTE_CANONICAL_1.0'){
       Write-Output ($h | ConvertTo-Json -Compress -Depth 8)
       exit 0
     }

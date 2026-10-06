@@ -18,7 +18,7 @@ from memory_permanent.memory_evolution_capacity_agent import (
 from memory_permanent.runtime_preflight import verify_runtime_database
 from memory_permanent.store import PostgresMemoryStore
 
-ROOT = Path(r"C:\New Projet\MEMORIA-PERMANENTE")
+ROOT = Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0")
 EVIDENCE = ROOT / "evidence" / "TERMINAL_AGENT_EVOLUTION_PROOF_20260905.json"
 EVIDENCE_MD = ROOT / "evidence" / "TERMINAL_AGENT_EVOLUTION_PROOF_20260905.md"
 DSN = "postgresql://memory_app@127.0.0.1:55436/memoria_permanente_v52_primary"

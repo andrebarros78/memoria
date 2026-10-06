@@ -7,7 +7,7 @@ from pathlib import Path
 
 import psycopg
 
-ROOT=Path(r"C:\New Projet\MEMORIA-PERMANENTE")
+ROOT=Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0")
 manifest=json.loads((ROOT/'evidence/M4_SOURCE_MANIFEST.json').read_text(encoding='utf-8'))
 port=int(sys.argv[1]); db=sys.argv[2]
 dsn=f'host=127.0.0.1 port={port} dbname={db} user=postgres connect_timeout=5'

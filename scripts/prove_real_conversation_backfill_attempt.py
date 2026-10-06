@@ -9,7 +9,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-ROOT=Path(r'C:\New Projet\MEMORIA-PERMANENTE'); sys.path.insert(0,str(ROOT/'integration'))
+ROOT=Path(r'C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0'); sys.path.insert(0,str(ROOT/'integration'))
 from chatgpt_invisible_capture import capture_chatgpt_conversation  # noqa: E402
 
 

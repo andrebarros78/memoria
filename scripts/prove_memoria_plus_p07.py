@@ -12,7 +12,7 @@ from pathlib import Path
 import psycopg
 from psycopg.rows import dict_row
 
-ROOT = Path(r"C:\New Projet\MEMORIA-PERMANENTE")
+ROOT = Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0")
 ADAPTER_ROOT = Path(r"C:\New Projet\MEMORIA-CLIENT-ADAPTER")
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ADAPTER_ROOT / "src"))

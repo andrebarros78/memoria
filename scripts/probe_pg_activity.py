@@ -3,7 +3,7 @@ from pathlib import Path
 
 import psycopg
 
-ROOT=Path(r'C:\New Projet\MEMORIA-PERMANENTE')
+ROOT=Path(r'C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0')
 pw=(ROOT/'runtime/secrets/postgres_admin.pw').read_text(encoding='utf-8-sig').strip()
 with psycopg.connect(host='127.0.0.1',port=55436,dbname='memoria_permanente',user='memory_admin',password=pw,connect_timeout=5) as conn:
     with conn.cursor() as cur:

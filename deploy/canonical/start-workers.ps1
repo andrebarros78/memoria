@@ -30,7 +30,7 @@ if($LASTEXITCODE -ne 0){throw 'Canonical conversation ingestion worker probe fai
 if($LASTEXITCODE -ne 0){throw 'Canonical embedding worker probe failed.'}
 
 $canonicalRuntime=[IO.Path]::GetFullPath((Join-Path $root 'runtime\canonical-api'))
-$procs=Get-CimInstance Win32_Process | Where-Object { $_.ExecutablePath -and $_.CommandLine -and ([IO.Path]::GetFullPath($_.ExecutablePath)).StartsWith($canonicalRuntime,[StringComparison]::OrdinalIgnoreCase) }
+$procs=Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -and $_.CommandLine -like ('*'+$root+'*') }
 $ingestScript=[IO.Path]::GetFullPath((Join-Path $root 'scripts\conversation_ingestion_worker.py'))
 $embedScript=[IO.Path]::GetFullPath((Join-Path $root 'scripts\embedding_worker.py'))
 $ingest=$procs | Where-Object { $_.CommandLine -like "*$ingestScript*--loop*" } | Select-Object -First 1

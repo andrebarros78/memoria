@@ -1,5 +1,5 @@
 $ErrorActionPreference='Stop'
-$root='C:\New Projet\MEMORIA-PERMANENTE'
+$root='C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0'
 $api='http://127.0.0.1:8787'
 $suffix=(Get-Date -Format 'yyyyMMddHHmmss')+'-'+([guid]::NewGuid().ToString('N').Substring(0,8))
 $namespace=('M2_RESTART_'+$suffix).ToUpper()

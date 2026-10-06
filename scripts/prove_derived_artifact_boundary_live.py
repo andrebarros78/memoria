@@ -8,7 +8,7 @@ from pathlib import Path
 import psycopg
 from psycopg import errors
 
-ROOT = Path(r"C:\New Projet\MEMORIA-PERMANENTE")
+ROOT = Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0")
 EVIDENCE = ROOT / "evidence" / "DERIVED_ARTIFACT_BOUNDARY_LIVE_PROOF_20260905.json"
 EVIDENCE_MD = ROOT / "evidence" / "DERIVED_ARTIFACT_BOUNDARY_LIVE_PROOF_20260905.md"
 DSN = "postgresql://memory_app@127.0.0.1:55436/memoria_permanente_v52_primary"

@@ -5,7 +5,7 @@ import json
 import os
 from pathlib import Path
 
-ROOT = Path(r"C:\New Projet\MEMORIA-PERMANENTE")
+ROOT = Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0")
 PROGRAM_DATA = Path(os.environ.get("ProgramData", r"C:\ProgramData"))
 AUTH_ROOT = PROGRAM_DATA / "MemoriaPermanente" / "auth"
 CLIENT_DIR = AUTH_ROOT / "clients"

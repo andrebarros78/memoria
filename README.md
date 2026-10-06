@@ -10,7 +10,7 @@ Módulo soberano externo e infraestrutura universal de memória, contexto, estad
 - Arquitetura canônica operacional comprovada: `V5.5`.
 - Contrato universal: `MEMORIA_PERMANENTE_UNIVERSAL_PRODUCT_V2`.
 - Classe técnica V5.5: `UNIVERSAL_CONTEXT_MEMORY_INFRASTRUCTURE`.
-- Runtime operacional comprovado atual: **Windows JNS** em `C:\New Projet\MEMORIA-PERMANENTE`.
+- Runtime operacional comprovado atual: **Windows JNS** em `C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0`.
 - Desenvolvimento, CI, build, comparação e sincronização: **Linux**, quando explicitamente sincronizado e provado.
 - Schema/migration head da arvore canonica atual: 0058_cognitive_offline_consolidation (58 migrations numeradas; equivalencias historicas 0030z/0032z preservadas).
 - AI Integration Adapter: `V5.3_AI_INTEGRATION_ADAPTER`.
@@ -104,7 +104,7 @@ A V5.5 está implementada e comprovada no runtime Windows canônico. Evoluções
 - Versão da API/pacote: `0.32.0`.
 - Runtime profile: `V5.5-PRIMARY`.
 - Release channel: `MEMORIA_PERMANENTE_CANONICAL_1.0`.
-- Runtime Windows: `C:\New Projet\MEMORIA-PERMANENTE`.
+- Runtime Windows: `C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0`.
 - Fonte Git canônica: `C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0`.
 - Prova viva: `evidence/MEMORIA_PERMANENTE_CANONICAL_1_0_LIVE_RUNTIME_PROOF.json`.
 

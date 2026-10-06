@@ -11,7 +11,7 @@ import psycopg
 from memory_permanent.secret_sanitizer import LocalEncryptedVault, default_vault_root
 from memory_permanent.signed_client import SignedMemoryClient
 
-ROOT=Path(r"C:\New Projet\MEMORIA-PERMANENTE")
+ROOT=Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0")
 API='http://127.0.0.1:8787'
 CLIENT=SignedMemoryClient(API,'local-admin')
 suffix=uuid.uuid4().hex

@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-$root = 'C:\New Projet\MEMORIA-PERMANENTE'
+$root = 'C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0'
 Set-Location $root
 $env:PYTHONPATH = "$root\src"
 $env:PYTHONNOUSERSITE = '1'

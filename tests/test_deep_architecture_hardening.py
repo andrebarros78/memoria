@@ -3,14 +3,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def test_v53_recovery_delegates_to_canonical_launcher() -> None:
+def test_v55_recovery_delegates_to_canonical_launcher() -> None:
     recovery = (ROOT / ".agents" / "recovery" / "start-api.ps1").read_text(encoding="utf-8-sig")
     postgres = (ROOT / ".agents" / "recovery" / "start-postgres.ps1").read_text(encoding="utf-8-sig")
-    assert "deploy\\v5.3\\start-primary-v53.ps1" in recovery
+    assert "deploy\\canonical\\start-canonical.ps1" in recovery
     assert "MEMORY_DATABASE_URL=" not in recovery
     assert "MEMORY_DSN=" not in recovery
-    assert "V5.3-PRIMARY" in recovery
-    assert "memoria_permanente_v52_primary" in postgres
+    assert "V5.5-PRIMARY" in recovery
+    assert "MEMORIA_PERMANENTE_PG" in postgres
+    assert "Start-Service" in postgres
 
 
 def test_embedded_bootstrap_operator_class_matches_domain() -> None:

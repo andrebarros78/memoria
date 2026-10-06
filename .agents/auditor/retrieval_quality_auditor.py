@@ -37,7 +37,7 @@ from memory_permanent.network_policy import (  # noqa: E402
 
 AUTH_ENTROPY=b"MEMORIA-PERMANENTE:CLIENT-AUTH:V1"
 AUTH_ROOT=Path(r"C:\ProgramData\MemoriaPermanente\auth")
-OPA=Path(r"C:\New Projet\MEMORIA-PERMANENTE\.agents\tools\opa\opa.exe")
+OPA=Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0\.agents\tools\opa\opa.exe")
 ROOT=Path(__file__).resolve().parent
 POLICY=ROOT/"policy"/"retrieval_auditor.rego"
 POLICY_ROOT=ROOT/"policy"

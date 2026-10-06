@@ -1,6 +1,6 @@
 from pathlib import Path
 
-p=Path(r"C:\New Projet\MEMORIA-PERMANENTE\src\memory_permanent\input_guard.py")
+p=Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0\src\memory_permanent\input_guard.py")
 s=p.read_text(encoding="utf-8-sig")
 old='''        if re.search(r"\\b(mark|treat|consider|set|declare|classify|marque|trate|considere|defina|declare)\\b.{0,80}\\b(trusted|validated|authoritative|governor.?eligible|confiavel|validado|autoritativo)\\b", text):
             signals.append(("SELF_ATTEST_TRUST", 45))

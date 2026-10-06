@@ -7,7 +7,7 @@ from pathlib import Path
 from memory_permanent.access_policy import AgentAccessContext
 from memory_permanent.store import PostgresMemoryStore
 
-ROOT=Path(r'C:\New Projet\MEMORIA-PERMANENTE')
+ROOT=Path(r'C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0')
 raw=(ROOT/'runtime/secrets/pgpass.conf').read_text(encoding='ascii').strip(); h,p,d,u,pw=raw.split(':',4)
 dsn=f'host={h} port={p} dbname={d} user={u} password={pw} connect_timeout=5'
 store=PostgresMemoryStore(dsn,tenant_id='__SYSTEM__',access=AgentAccessContext.system(),initialize=False)

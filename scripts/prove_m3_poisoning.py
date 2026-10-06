@@ -10,7 +10,7 @@ import psycopg
 
 from memory_permanent.signed_client import SignedMemoryClient
 
-ROOT=Path(r"C:\New Projet\MEMORIA-PERMANENTE")
+ROOT=Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0")
 API='http://127.0.0.1:8787'
 CLIENT=SignedMemoryClient(API,'local-admin')
 tenant='TENANT_POISON_'+uuid.uuid4().hex[:10].upper()

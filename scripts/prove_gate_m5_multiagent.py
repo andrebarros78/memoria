@@ -14,7 +14,7 @@ import psycopg
 
 from memory_permanent.signed_client import SignedMemoryClient
 
-ROOT=Path(r"C:\New Projet\MEMORIA-PERMANENTE"); API='http://127.0.0.1:8787'
+ROOT=Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0"); API='http://127.0.0.1:8787'
 suffix=uuid.uuid4().hex[:10].upper(); tenant='TENANT_M5_'+suffix; ns='M5_MULTIAGENT_'+suffix
 A={'X-Memory-Tenant':tenant,'X-Memory-Agent':'agent-a','X-Memory-User':'user-a','X-Memory-Project':'project-1','X-Memory-Team':'team-1','X-Memory-Organization':'org-1'}
 B={'X-Memory-Tenant':tenant,'X-Memory-Agent':'agent-b','X-Memory-User':'user-b','X-Memory-Project':'project-1','X-Memory-Team':'team-1','X-Memory-Organization':'org-1'}

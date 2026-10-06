@@ -30,6 +30,6 @@ finally {
 }
 $Result.P6_GOVERNOR_OFFLINE_MEMORY_ALIVE = if($Result.governor_store_offline -and $Result.memory_health_while_governor_offline -eq 'ok' -and $Result.governor_store_restored){'PASS'}else{'FAIL'}
 $Json=$Result | ConvertTo-Json -Depth 4
-$Json | Set-Content -Encoding utf8 'C:\New Projet\MEMORIA-PERMANENTE\evidence\P6_GOVERNOR_OFFLINE_MEMORY_ALIVE.json'
+$Json | Set-Content -Encoding utf8 'C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0\evidence\P6_GOVERNOR_OFFLINE_MEMORY_ALIVE.json'
 $Json
 if($Result.P6_GOVERNOR_OFFLINE_MEMORY_ALIVE -ne 'PASS'){exit 1}

@@ -10,7 +10,7 @@ from pathlib import Path
 
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
-ROOT = Path(r"C:\New Projet\MEMORIA-PERMANENTE")
+ROOT = Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0")
 LEGACY = ROOT / "runtime" / "vault"
 PROGRAM_DATA = Path(os.environ.get("ProgramData", r"C:\ProgramData"))
 TARGET = PROGRAM_DATA / "MemoriaPermanente" / "vault"

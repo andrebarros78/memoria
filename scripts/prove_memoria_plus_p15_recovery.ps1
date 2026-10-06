@@ -1,5 +1,5 @@
 $ErrorActionPreference='Stop'
-$root='C:\New Projet\MEMORIA-PERMANENTE'
+$root='C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0'
 $pg=Join-Path $root 'runtime\pgsql18-bin\pgsql\bin'
 $backupDir=Join-Path $root 'backups\post-memoria-plus-p15-final'
 $evidence=Join-Path $root 'evidence\MEMORIA_PLUS_P15_RECOVERY_PROOF.json'

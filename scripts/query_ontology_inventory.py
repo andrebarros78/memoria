@@ -3,7 +3,7 @@ from pathlib import Path
 
 import psycopg
 
-ROOT=Path(r'C:\New Projet\MEMORIA-PERMANENTE')
+ROOT=Path(r'C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0')
 h,p,d,u,pw=(ROOT/'runtime/secrets/pgpass.conf').read_text(encoding='ascii').strip().split(':',4)
 with psycopg.connect(f'host={h} port={p} dbname={d} user={u} password={pw}') as c:
     c.execute("select set_config('app.current_tenant','__SYSTEM__',true)")

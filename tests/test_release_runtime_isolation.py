@@ -6,12 +6,13 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_primary_launcher_executes_promoted_wheel_in_isolated_mode() -> None:
-    launcher = (ROOT / "deploy" / "v5.3" / "start-primary-v53.ps1").read_text(encoding="utf-8")
+    launcher = (ROOT / "deploy" / "canonical" / "start-canonical.ps1").read_text(encoding="utf-8")
     normalized = launcher.replace("/", "\\").lower()
 
     assert "remove-item env:pythonpath" in normalized
     assert "$env:pythonpath=\"$root\\src\"" not in normalized
-    assert "runtime\\api-clean\\lib\\site-packages" in normalized
+    assert "runtime\\canonical-api\\lib\\site-packages" in normalized
+    assert "0.32.0" in normalized
     assert "release integrity failure" in normalized
     assert "@('-i','-m','uvicorn'" in normalized
     assert "scripts\\runtime_preflight.py" not in normalized
@@ -32,12 +33,12 @@ def test_recovery_accepts_only_canonical_isolated_api_process() -> None:
     normalized = recovery.replace("/", "\\").lower()
 
     assert "test-canonicalapiprocess" in normalized
-    assert "runtime\\api-clean\\scripts\\python.exe" in normalized
+    assert "runtime\\canonical-api\\scripts\\python.exe" in normalized
     assert " -i " in normalized
     assert " -m uvicorn " in normalized
     assert "memory_permanent.api:app" in normalized
-    assert "api_already_healthy_v53_isolated" in normalized
-    assert "api_recovery_v53_isolated_ready" in normalized
+    assert "api_already_healthy_v55_isolated" in normalized
+    assert "api_recovery_v55_isolated_ready" in normalized
 
 
 def test_auditor_launch_and_provision_are_isolated_from_connector_pythonpath() -> None:

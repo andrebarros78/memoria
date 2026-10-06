@@ -8,7 +8,7 @@ from pathlib import Path
 
 import psycopg
 
-ROOT=Path(r'C:\New Projet\MEMORIA-PERMANENTE')
+ROOT=Path(r'C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0')
 sys.path.insert(0,str(ROOT/'src'))
 from memory_permanent.signed_client import SignedMemoryClient  # noqa: E402
 

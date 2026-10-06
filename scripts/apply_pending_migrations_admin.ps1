@@ -1,7 +1,7 @@
 ﻿[CmdletBinding()]
 param(
   [Parameter(Mandatory=$true)][ValidatePattern('^[A-Za-z0-9_]{1,63}$')][string]$Database,
-  [string]$Root = 'C:\New Projet\MEMORIA-PERMANENTE',
+  [string]$Root = 'C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0',
   [string]$Python = ''
 )
 $ErrorActionPreference='Stop'

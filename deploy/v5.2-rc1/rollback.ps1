@@ -1,5 +1,5 @@
 $ErrorActionPreference='Continue'
-$root='C:\New Projet\MEMORIA-PERMANENTE'
+$root='C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0'
 $ports=@(8792,6007,4318)
 foreach($port in $ports){
   Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue | ForEach-Object {

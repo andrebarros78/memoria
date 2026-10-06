@@ -2,7 +2,7 @@
 param()
 
 $ErrorActionPreference='Stop'
-$root='C:\New Projet\MEMORIA-PERMANENTE'
+$root='C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0'
 $principal=New-ScheduledTaskPrincipal -UserId 'SYSTEM' -LogonType ServiceAccount -RunLevel Highest
 $settings=New-ScheduledTaskSettingsSet `
   -AllowStartIfOnBatteries `

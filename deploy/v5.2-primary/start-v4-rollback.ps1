@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference='Stop'
-$root='C:\New Projet\MEMORIA-PERMANENTE'
+$root='C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0'
 $PgPass=Join-Path $root 'runtime\secrets\pgpass.conf'
 if(-not (Test-Path $PgPass)){ throw 'PGPASSFILE da Memória Permanente ausente.' }
 $env:PGPASSFILE=$PgPass
-$v4Root='C:\New Projet\MEMORIA-PERMANENTE-V4-ROLLBACK'
+$v4Root='C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0-V4-ROLLBACK'
 if(Get-NetTCPConnection -LocalPort 8787 -State Listen -ErrorAction SilentlyContinue){ Write-Output 'PORT_8787_BUSY_STOP_BEFORE_ROLLBACK'; exit 2 }
 $env:PYTHONPATH="$v4Root\src"
 $env:PYTHONNOUSERSITE='1'

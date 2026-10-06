@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 from urllib.parse import urlparse
 
-ROOT = Path(os.environ.get("MEMORY_PROJECT_ROOT", r"C:\New Projet\MEMORIA-PERMANENTE"))
+ROOT = Path(os.environ.get("MEMORY_PROJECT_ROOT", r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0"))
 sys.path.insert(0, str(ROOT / "src"))
 
 import psycopg  # noqa: E402

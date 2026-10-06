@@ -28,7 +28,7 @@ from memory_permanent.spreading_activation import SpreadingActivationEngine
 from memory_permanent.store import PostgresMemoryStore
 
 ROOT = Path(__file__).resolve().parents[1]
-ADMIN_PASSFILE = Path(os.getenv("MEMORY_ADMIN_PGPASSFILE", r"C:\New Projet\MEMORIA-PERMANENTE\runtime\secrets\postgres.pgpass.conf"))
+ADMIN_PASSFILE = Path(os.getenv("MEMORY_ADMIN_PGPASSFILE", r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0\runtime\secrets\postgres.pgpass.conf"))
 HOST = "127.0.0.1"
 PORT = 55436
 TENANT = "F03_PROOF"

@@ -1,8 +1,11 @@
-﻿$ErrorActionPreference='Stop'
-$root='C:\New Projet\MEMORIA-PERMANENTE'
-& "$root\scripts\start_postgres18_task.ps1"
-if($LASTEXITCODE -ne 0){ throw "PostgreSQL recovery supervisor failed rc=$LASTEXITCODE" }
-$pgIsReady="$root\runtime\pgsql18-bin\pgsql\bin\pg_isready.exe"
-& $pgIsReady -h 127.0.0.1 -p 55436 -d memoria_permanente_v52_primary *> $null
-if($LASTEXITCODE -ne 0){ throw 'Canonical PostgreSQL database is not ready on 127.0.0.1:55436' }
-Write-Output 'POSTGRES_V53_PRIMARY_READY'
+$ErrorActionPreference='Stop'
+$root=(Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
+$pg=Join-Path $root 'runtime\pgsql18-bin\pgsql\bin\pg_isready.exe'
+$svc=Get-Service -Name 'MEMORIA_PERMANENTE_PG' -ErrorAction Stop
+if($svc.Status -ne 'Running'){ Start-Service -Name 'MEMORIA_PERMANENTE_PG' }
+for($i=0;$i -lt 60;$i++){
+  & $pg -h 127.0.0.1 -p 55436 -d sovereign_memory *> $null
+  if($LASTEXITCODE -eq 0){ Write-Output 'POSTGRES_SERVICE_READY'; exit 0 }
+  Start-Sleep -Seconds 1
+}
+throw 'MEMORIA_PERMANENTE_PG did not become ready on 127.0.0.1:55436'

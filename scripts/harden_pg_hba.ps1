@@ -1,6 +1,6 @@
 ﻿[CmdletBinding()]
 param(
-  [string]$Root = 'C:\New Projet\MEMORIA-PERMANENTE',
+  [string]$Root = 'C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0',
   [string]$Database = 'memoria_permanente_v52_primary'
 )
 $ErrorActionPreference='Stop'

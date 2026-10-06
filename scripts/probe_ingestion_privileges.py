@@ -3,7 +3,7 @@ from pathlib import Path
 
 import psycopg
 
-ROOT=Path(r'C:\New Projet\MEMORIA-PERMANENTE')
+ROOT=Path(r'C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0')
 raw=(ROOT/'runtime/secrets/pgpass.conf').read_text(encoding='ascii').strip()
 host,port,database,user,password=raw.split(':',4)
 with psycopg.connect(host=host,port=int(port),dbname=database,user=user,password=password,connect_timeout=5) as conn:

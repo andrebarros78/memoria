@@ -7,7 +7,7 @@ from pathlib import Path
 
 from memory_permanent.signed_client import SignedMemoryClient
 
-ROOT=Path(r"C:\New Projet\MEMORIA-PERMANENTE")
+ROOT=Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0")
 c=SignedMemoryClient("http://127.0.0.1:8787","governor-runtime")
 suffix=uuid.uuid4().hex[:12]
 checks={}

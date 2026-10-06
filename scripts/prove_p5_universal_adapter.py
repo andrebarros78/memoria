@@ -5,7 +5,7 @@ import json
 import time
 from pathlib import Path
 
-ROOT=Path(r"C:\New Projet\MEMORIA-PERMANENTE")
+ROOT=Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0")
 ADAPTER=Path(r"C:\New Projet\MEMORIA-CLIENT-ADAPTER")
 GOV=Path(r"C:\New Projet\GOVERNADOR-WINDOWS")
 EVID=ROOT/'evidence'

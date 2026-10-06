@@ -7,7 +7,7 @@ import time
 import urllib.request
 from pathlib import Path
 
-ROOT=Path(r"C:\New Projet\MEMORIA-PERMANENTE"); sys.path.insert(0,str(ROOT/'src'))
+ROOT=Path(r"C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0"); sys.path.insert(0,str(ROOT/'src'))
 from memory_permanent.migration_runner import migration_status  # noqa: E402
 from memory_permanent.store import PostgresMemoryStore  # noqa: E402
 

@@ -1,5 +1,5 @@
 $ErrorActionPreference='Stop'
-$Evidence='C:\New Projet\MEMORIA-PERMANENTE\evidence\P6_WMCP_OFFLINE_MEMORY_ALIVE.json'
+$Evidence='C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0\evidence\P6_WMCP_OFFLINE_MEMORY_ALIVE.json'
 $Result=[ordered]@{started_at=(Get-Date).ToString('o')}
 Start-Sleep -Seconds 3
 try {
