@@ -5,20 +5,20 @@ Módulo soberano externo e infraestrutura universal de memória, contexto, estad
 ## Baseline vigente
 
 - Produto universal: **MEMORIA-PERMANENTE**.
-- Produto/API da arvore canonica atual: 0.29.3.
-- Marco funcional operacional comprovado: `V5.3`.
-- Arquitetura canônica aprovada para evolução: `V5.5`.
+- Produto/API da arvore canonica atual: 0.32.0.
+- Marco funcional operacional comprovado: `V5.5`.
+- Arquitetura canônica operacional comprovada: `V5.5`.
 - Contrato universal: `MEMORIA_PERMANENTE_UNIVERSAL_PRODUCT_V2`.
 - Classe técnica V5.5: `UNIVERSAL_CONTEXT_MEMORY_INFRASTRUCTURE`.
 - Runtime operacional comprovado atual: **Windows JNS** em `C:\New Projet\MEMORIA-PERMANENTE`.
 - Desenvolvimento, CI, build, comparação e sincronização: **Linux**, quando explicitamente sincronizado e provado.
-- Schema/migration head da arvore canonica atual: 0054_embedding_worker_role_login_normalization (54 migrations numeradas; equivalencias historicas 0030z/0032z preservadas).
+- Schema/migration head da arvore canonica atual: 0058_cognitive_offline_consolidation (58 migrations numeradas; equivalencias historicas 0030z/0032z preservadas).
 - AI Integration Adapter: `V5.3_AI_INTEGRATION_ADAPTER`.
 - IA obrigatória para o núcleo: **NÃO**.
 - Purge direto: desabilitado por desenho.
-- `MISSION_PROVEN`: **SIM**, para a V5.3 no runtime Windows comprovado; **NÃO significa V5.5 operacionalmente concluída**.
+- `MISSION_PROVEN`: **SIM**, para a V5.5 no runtime Windows comprovado, com conformidade, segurança e restart/recovery validados.
 
-A prova histórica da baseline V5.3 está em `evidence/BASELINE_0_28_0_PROOF.md` e `evidence/V5_3_AI_INTEGRATION_ADAPTER_PROOF_20260904.md`. Runtime comprovado não redefine a identidade do produto.
+A prova histórica da baseline V5.3 está em `evidence/BASELINE_0_28_0_PROOF.md` e `evidence/V5_3_AI_INTEGRATION_ADAPTER_PROOF_20260904.md`. A prova viva V5.5 está em `evidence/MEMORIA_PERMANENTE_CANONICAL_1_0_LIVE_RUNTIME_PROOF.json`. Runtime comprovado não redefine a identidade do produto.
 
 ## Decisão arquitetural V5.5
 
@@ -96,9 +96,19 @@ O purge direto permanece proibido. Exclusão destrutiva somente pode ocorrer pel
 
 Código gerado, testes unitários isolados ou uma baseline histórica não bastam para conclusão. O produto só pode receber `MISSION_PROVEN` depois de regressão, segurança, integração, persistência, concorrência, backup/restore, restart/recovery, integridade e gates finais aplicáveis terem sido executados e comprovados.
 
-A arquitetura V5.5 aprovada não pode ser confundida com implementação V5.5 concluída. Os oito pontos precisam de implementação e prova antes da promoção operacional da versão.
+A V5.5 está implementada e comprovada no runtime Windows canônico. Evoluções posteriores continuam subordinadas aos mesmos gates de regressão, segurança, integração, persistência, recovery e integridade.
 
-## Governança de runtime V5.3
+## Governança atual de runtime V5.5
+
+- Branch canônica de fonte: `canonical/memoria-permanente-1.0-reconciled`.
+- Versão da API/pacote: `0.32.0`.
+- Runtime profile: `V5.5-PRIMARY`.
+- Release channel: `MEMORIA_PERMANENTE_CANONICAL_1.0`.
+- Runtime Windows: `C:\New Projet\MEMORIA-PERMANENTE`.
+- Fonte Git canônica: `C:\New Projet\MEMORIA_PERMANENTE_CANONICAL_1.0`.
+- Prova viva: `evidence/MEMORIA_PERMANENTE_CANONICAL_1_0_LIVE_RUNTIME_PROOF.json`.
+
+## Governança histórica de runtime V5.3
 
 Estado corrigido em 2026-09-05:
 
